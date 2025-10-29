@@ -1,0 +1,2413 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\microgreen_control\build\microgreen_control.elf D:\Project_microgreen\microgreen_control\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 16 2025 11:33:31[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a51ch (107804) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002a544 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002e4c8 vaddr=40080000 size=01b50h (  6992) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8d07ch (577660) map[0m
+[0;32mI (334) esp_image: segment 4: paddr=000bd0a4 vaddr=40081b50 size=163e4h ( 91108) load[0m
+[0;32mI (369) esp_image: segment 5: paddr=000d3490 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (381) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (381) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (400) cpu_start: Pro cpu start user code[0m
+[0;32mI (400) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (400) app_init: Application information:[0m
+[0;32mI (400) app_init: Project name:     microgreen_control[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (409) app_init: Compile time:     Oct 16 2025 11:19:24[0m
+[0;32mI (414) app_init: ELF file SHA256:  fa3b264a9...[0m
+[0;32mI (418) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (422) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (426) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (430) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (434) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (440) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (445) heap_init: At 3FFB85C0 len 00027A40 (158 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (455) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40097F34 len 000080CC (32 KiB): IRAM[0m
+[0;33mW (468) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (479) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;33mW (486) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (498) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (506) main_task: Started on CPU0[0m
+[0;32mI (516) main_task: Calling app_main()[0m
+[0;32mI (516) main_task: Returned from app_main()[0m
+[0;33mW (536) DHT_FAN: DHT read failed[0m
+[0;32mI (546) wifi:wifi driver task: 3ffc3124, prio:23, stack:6656, core=0[0m
+[0;32mI (556) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (556) wifi:wifi certification version: v7.0[0m
+[0;32mI (556) wifi:config NVS flash: enabled[0m
+[0;32mI (556) wifi:config nano formatting: disabled[0m
+[0;32mI (566) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (566) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (566) wifi:Init management short buffer num: 32[0m
+[0;32mI (576) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (576) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (586) wifi:Init static rx buffer num: 10[0m
+[0;32mI (586) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (596) wifi_init: rx ba win: 6[0m
+[0;32mI (596) wifi_init: accept mbox: 6[0m
+[0;32mI (596) wifi_init: tcpip mbox: 32[0m
+[0;32mI (596) wifi_init: udp mbox: 6[0m
+[0;32mI (606) wifi_init: tcp mbox: 6[0m
+[0;32mI (606) wifi_init: tcp tx win: 5760[0m
+[0;32mI (606) wifi_init: tcp rx win: 5760[0m
+[0;32mI (616) wifi_init: tcp mss: 1440[0m
+[0;32mI (616) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (616) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (626) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (636) SOIL_PUMP: RAW=1667 Moisture=90% Pump=OFF[0m
+[0;32mI (706) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (726) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (726) wifi:enable tsf[0m
+[0;32mI (736) NET: Connecting to Wi-Fi: Areena ...[0m
+[0;32mI (746) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (746) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (756) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (766) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1696) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;33mW (2536) DHT_FAN: DHT read failed[0m
+[0;32mI (2756) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (3816) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;33mW (4536) DHT_FAN: DHT read failed[0m
+[0;32mI (4876) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (5936) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;33mW (6536) DHT_FAN: DHT read failed[0m
+[0;32mI (6996) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (8056) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;33mW (8536) DHT_FAN: DHT read failed[0m
+[0;32mI (9116) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (10176) SOIL_PUMP: RAW=1662 Moisture=91% Pump=OFF[0m
+[0;33mW (10536) DHT_FAN: DHT read failed[0m
+[0;32mI (10766) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (10786) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (10786) NET: WiFi disconnected, retry...[0m
+[0;32mI (11236) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (12296) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;33mW (12536) DHT_FAN: DHT read failed[0m
+[0;33mW (13206) NET: WiFi disconnected, retry...[0m
+[0;32mI (13216) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13216) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (13226) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (13236) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (13356) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (14416) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;33mW (14536) DHT_FAN: DHT read failed[0m
+[0;32mI (15476) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;33mW (16536) DHT_FAN: DHT read failed[0m
+[0;32mI (16536) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (17596) SOIL_PUMP: RAW=1683 Moisture=89% Pump=OFF[0m
+[0;33mW (18536) DHT_FAN: DHT read failed[0m
+[0;32mI (18656) SOIL_PUMP: RAW=1680 Moisture=90% Pump=OFF[0m
+[0;32mI (19716) SOIL_PUMP: RAW=1628 Moisture=92% Pump=OFF[0m
+[0;33mW (20536) DHT_FAN: DHT read failed[0m
+[0;32mI (20776) SOIL_PUMP: RAW=1625 Moisture=93% Pump=OFF[0m
+[0;32mI (21836) SOIL_PUMP: RAW=1626 Moisture=93% Pump=OFF[0m
+[0;33mW (22536) DHT_FAN: DHT read failed[0m
+[0;32mI (22896) SOIL_PUMP: RAW=1624 Moisture=93% Pump=OFF[0m
+[0;32mI (23236) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (23246) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (23246) NET: WiFi disconnected, retry...[0m
+[0;32mI (23956) SOIL_PUMP: RAW=1623 Moisture=93% Pump=OFF[0m
+[0;33mW (24536) DHT_FAN: DHT read failed[0m
+[0;32mI (25016) SOIL_PUMP: RAW=1623 Moisture=93% Pump=OFF[0m
+[0;33mW (25666) NET: WiFi disconnected, retry...[0m
+[0;32mI (25676) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25676) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (25686) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (25696) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (26076) SOIL_PUMP: RAW=1623 Moisture=93% Pump=OFF[0m
+[0;33mW (26536) DHT_FAN: DHT read failed[0m
+[0;32mI (27136) SOIL_PUMP: RAW=1622 Moisture=93% Pump=OFF[0m
+[0;32mI (28196) SOIL_PUMP: RAW=1622 Moisture=93% Pump=OFF[0m
+[0;33mW (28536) DHT_FAN: DHT read failed[0m
+[0;32mI (29256) SOIL_PUMP: RAW=1622 Moisture=93% Pump=OFF[0m
+[0;32mI (30316) SOIL_PUMP: RAW=1623 Moisture=93% Pump=OFF[0m
+[0;33mW (30536) DHT_FAN: DHT read failed[0m
+[0;32mI (31376) SOIL_PUMP: RAW=1623 Moisture=93% Pump=OFF[0m
+[0;32mI (32436) SOIL_PUMP: RAW=1623 Moisture=93% Pump=OFF[0m
+[0;33mW (32536) DHT_FAN: DHT read failed[0m
+[0;32mI (33496) SOIL_PUMP: RAW=1624 Moisture=93% Pump=OFF[0m
+[0;33mW (34536) DHT_FAN: DHT read failed[0m
+[0;32mI (34556) SOIL_PUMP: RAW=1625 Moisture=93% Pump=OFF[0m
+[0;32mI (35616) SOIL_PUMP: RAW=1623 Moisture=93% Pump=OFF[0m
+[0;32mI (35696) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (35716) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (35716) NET: WiFi disconnected, retry...[0m
+[0;33mW (36536) DHT_FAN: DHT read failed[0m
+[0;32mI (36676) SOIL_PUMP: RAW=1623 Moisture=93% Pump=OFF[0m
+[0;32mI (37736) SOIL_PUMP: RAW=1626 Moisture=93% Pump=OFF[0m
+[0;33mW (38136) NET: WiFi disconnected, retry...[0m
+[0;32mI (38146) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38146) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (38156) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (38166) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (38536) DHT_FAN: DHT read failed[0m
+[0;32mI (38796) SOIL_PUMP: RAW=1623 Moisture=93% Pump=OFF[0m
+[0;32mI (39856) SOIL_PUMP: RAW=1626 Moisture=93% Pump=OFF[0m
+[0;33mW (40536) DHT_FAN: DHT read failed[0m
+[0;32mI (40916) SOIL_PUMP: RAW=1647 Moisture=91% Pump=OFF[0m
+[0;32mI (41976) SOIL_PUMP: RAW=1647 Moisture=91% Pump=OFF[0m
+[0;33mW (42536) DHT_FAN: DHT read failed[0m
+[0;32mI (43036) SOIL_PUMP: RAW=3504 Moisture=0% Pump=ON[0m
+[0;32mI (44096) SOIL_PUMP: RAW=3490 Moisture=0% Pump=ON[0m
+[0;33mW (44536) DHT_FAN: DHT read failed[0m
+[0;32mI (45156) SOIL_PUMP: RAW=3237 Moisture=3% Pump=ON[0m
+[0;32mI (46216) SOIL_PUMP: RAW=3163 Moisture=7% Pump=ON[0m
+[0;33mW (46536) DHT_FAN: DHT read failed[0m
+[0;32mI (47276) SOIL_PUMP: RAW=3091 Moisture=11% Pump=ON[0m
+[0;32mI (48166) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (48176) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (48176) NET: WiFi disconnected, retry...[0m
+[0;32mI (48336) SOIL_PUMP: RAW=3037 Moisture=14% Pump=ON[0m
+[0;33mW (48536) DHT_FAN: DHT read failed[0m
+[0;32mI (49396) SOIL_PUMP: RAW=2989 Moisture=17% Pump=ON[0m
+[0;32mI (50456) SOIL_PUMP: RAW=2963 Moisture=18% Pump=ON[0m
+[0;33mW (50536) DHT_FAN: DHT read failed[0m
+[0;33mW (50596) NET: WiFi disconnected, retry...[0m
+[0;32mI (50606) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (50606) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (50616) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (50626) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (51516) SOIL_PUMP: RAW=2954 Moisture=19% Pump=ON[0m
+[0;33mW (52536) DHT_FAN: DHT read failed[0m
+[0;32mI (52576) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (53636) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (54536) DHT_FAN: DHT read failed[0m
+[0;32mI (54696) SOIL_PUMP: RAW=2191 Moisture=61% Pump=ON[0m
+[0;32mI (55756) SOIL_PUMP: RAW=2151 Moisture=63% Pump=ON[0m
+[0;33mW (56536) DHT_FAN: DHT read failed[0m
+[0;32mI (56816) SOIL_PUMP: RAW=2263 Moisture=57% Pump=ON[0m
+[0;32mI (57876) SOIL_PUMP: RAW=1512 Moisture=99% Pump=ON[0m
+[0;33mW (58536) DHT_FAN: DHT read failed[0m
+[0;32mI (58936) SOIL_PUMP: RAW=1827 Moisture=81% Pump=OFF[0m
+[0;32mI (59996) SOIL_PUMP: RAW=1838 Moisture=81% Pump=OFF[0m
+[0;33mW (60536) DHT_FAN: DHT read failed[0m
+[0;32mI (60626) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (60636) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (60636) NET: WiFi disconnected, retry...[0m
+[0;32mI (61056) SOIL_PUMP: RAW=1840 Moisture=81% Pump=OFF[0m
+[0;32mI (62116) SOIL_PUMP: RAW=1840 Moisture=81% Pump=OFF[0m
+[0;33mW (62536) DHT_FAN: DHT read failed[0m
+[0;33mW (63056) NET: WiFi disconnected, retry...[0m
+[0;32mI (63066) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (63066) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (63076) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (63086) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (63176) SOIL_PUMP: RAW=1840 Moisture=81% Pump=OFF[0m
+[0;32mI (64236) SOIL_PUMP: RAW=1841 Moisture=81% Pump=OFF[0m
+[0;33mW (64536) DHT_FAN: DHT read failed[0m
+[0;32mI (65296) SOIL_PUMP: RAW=1845 Moisture=80% Pump=OFF[0m
+[0;32mI (66356) SOIL_PUMP: RAW=1843 Moisture=80% Pump=OFF[0m
+[0;33mW (66536) DHT_FAN: DHT read failed[0m
+[0;32mI (67416) SOIL_PUMP: RAW=1844 Moisture=80% Pump=OFF[0m
+[0;32mI (68476) SOIL_PUMP: RAW=1845 Moisture=80% Pump=OFF[0m
+[0;33mW (68536) DHT_FAN: DHT read failed[0m
+[0;32mI (69536) SOIL_PUMP: RAW=1847 Moisture=80% Pump=OFF[0m
+[0;33mW (70536) DHT_FAN: DHT read failed[0m
+[0;32mI (70596) SOIL_PUMP: RAW=1845 Moisture=80% Pump=OFF[0m
+[0;32mI (71656) SOIL_PUMP: RAW=1846 Moisture=80% Pump=OFF[0m
+[0;33mW (72536) DHT_FAN: DHT read failed[0m
+[0;32mI (72716) SOIL_PUMP: RAW=1847 Moisture=80% Pump=OFF[0m
+[0;32mI (73086) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (73096) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (73096) NET: WiFi disconnected, retry...[0m
+[0;32mI (73776) SOIL_PUMP: RAW=1847 Moisture=80% Pump=OFF[0m
+[0;33mW (74536) DHT_FAN: DHT read failed[0m
+[0;32mI (74836) SOIL_PUMP: RAW=1847 Moisture=80% Pump=OFF[0m
+[0;33mW (75516) NET: WiFi disconnected, retry...[0m
+[0;32mI (75896) SOIL_PUMP: RAW=1850 Moisture=80% Pump=OFF[0m
+[0;33mW (76536) DHT_FAN: DHT read failed[0m
+[0;32mI (76956) SOIL_PUMP: RAW=1849 Moisture=80% Pump=OFF[0m
+[0;33mW (77926) NET: WiFi disconnected, retry...[0m
+[0;32mI (77936) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (77936) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (77956) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (77966) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (78016) SOIL_PUMP: RAW=1847 Moisture=80% Pump=OFF[0m
+[0;33mW (78536) DHT_FAN: DHT read failed[0m
+[0;32mI (79076) SOIL_PUMP: RAW=1849 Moisture=80% Pump=OFF[0m
+[0;32mI (80136) SOIL_PUMP: RAW=1849 Moisture=80% Pump=OFF[0m
+[0;33mW (80536) DHT_FAN: DHT read failed[0m
+[0;32mI (81196) SOIL_PUMP: RAW=1923 Moisture=76% Pump=OFF[0m
+[0;32mI (82256) SOIL_PUMP: RAW=2592 Moisture=39% Pump=OFF[0m
+[0;33mW (82536) DHT_FAN: DHT read failed[0m
+[0;32mI (83316) SOIL_PUMP: RAW=2523 Moisture=43% Pump=OFF[0m
+[0;32mI (84376) SOIL_PUMP: RAW=2583 Moisture=39% Pump=OFF[0m
+[0;33mW (84536) DHT_FAN: DHT read failed[0m
+[0;32mI (85436) SOIL_PUMP: RAW=2614 Moisture=38% Pump=OFF[0m
+[0;32mI (86496) SOIL_PUMP: RAW=2544 Moisture=42% Pump=OFF[0m
+[0;33mW (86536) DHT_FAN: DHT read failed[0m
+[0;32mI (87556) SOIL_PUMP: RAW=2538 Moisture=42% Pump=OFF[0m
+[0;32mI (87966) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (87976) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (87976) NET: WiFi disconnected, retry...[0m
+[0;33mW (88536) DHT_FAN: DHT read failed[0m
+[0;32mI (88616) SOIL_PUMP: RAW=2543 Moisture=42% Pump=OFF[0m
+[0;32mI (89676) SOIL_PUMP: RAW=2543 Moisture=42% Pump=OFF[0m
+[0;33mW (90396) NET: WiFi disconnected, retry...[0m
+[0;32mI (90406) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (90406) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (90456) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (90476) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (90536) DHT_FAN: DHT read failed[0m
+[0;32mI (90736) SOIL_PUMP: RAW=2603 Moisture=38% Pump=OFF[0m
+[0;32mI (91796) SOIL_PUMP: RAW=2579 Moisture=40% Pump=OFF[0m
+[0;33mW (92536) DHT_FAN: DHT read failed[0m
+[0;32mI (92856) SOIL_PUMP: RAW=2559 Moisture=41% Pump=OFF[0m
+[0;32mI (93916) SOIL_PUMP: RAW=2559 Moisture=41% Pump=OFF[0m
+[0;33mW (94536) DHT_FAN: DHT read failed[0m
+[0;32mI (94976) SOIL_PUMP: RAW=2654 Moisture=35% Pump=ON[0m
+[0;32mI (96036) SOIL_PUMP: RAW=2610 Moisture=38% Pump=ON[0m
+[0;33mW (96536) DHT_FAN: DHT read failed[0m
+[0;32mI (97096) SOIL_PUMP: RAW=2527 Moisture=42% Pump=ON[0m
+[0;32mI (98156) SOIL_PUMP: RAW=2502 Moisture=44% Pump=ON[0m
+[0;33mW (98536) DHT_FAN: DHT read failed[0m
+[0;32mI (99216) SOIL_PUMP: RAW=2515 Moisture=43% Pump=ON[0m
+[0;32mI (100276) SOIL_PUMP: RAW=2397 Moisture=50% Pump=ON[0m
+[0;32mI (100476) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (100486) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (100486) NET: WiFi disconnected, retry...[0m
+[0;33mW (100536) DHT_FAN: DHT read failed[0m
+[0;32mI (101336) SOIL_PUMP: RAW=2485 Moisture=45% Pump=ON[0m
+[0;32mI (102396) SOIL_PUMP: RAW=2433 Moisture=48% Pump=ON[0m
+[0;33mW (102536) DHT_FAN: DHT read failed[0m
+[0;33mW (102906) NET: WiFi disconnected, retry...[0m
+[0;32mI (102916) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (102916) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (102926) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (102936) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (103456) SOIL_PUMP: RAW=2559 Moisture=41% Pump=ON[0m
+[0;32mI (104516) SOIL_PUMP: RAW=2620 Moisture=37% Pump=ON[0m
+[0;33mW (104536) DHT_FAN: DHT read failed[0m
+[0;32mI (105576) SOIL_PUMP: RAW=2559 Moisture=41% Pump=ON[0m
+[0;33mW (106536) DHT_FAN: DHT read failed[0m
+[0;32mI (106636) SOIL_PUMP: RAW=2514 Moisture=43% Pump=ON[0m
+[0;32mI (107696) SOIL_PUMP: RAW=2640 Moisture=36% Pump=ON[0m
+[0;33mW (108536) DHT_FAN: DHT read failed[0m
+[0;32mI (108756) SOIL_PUMP: RAW=2515 Moisture=43% Pump=ON[0m
+[0;32mI (109816) SOIL_PUMP: RAW=2480 Moisture=45% Pump=ON[0m
+[0;33mW (110536) DHT_FAN: DHT read failed[0m
+[0;32mI (110876) SOIL_PUMP: RAW=2477 Moisture=45% Pump=ON[0m
+[0;32mI (111936) SOIL_PUMP: RAW=2475 Moisture=45% Pump=ON[0m
+[0;33mW (112536) DHT_FAN: DHT read failed[0m
+[0;32mI (112936) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (112946) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (112946) NET: WiFi disconnected, retry...[0m
+[0;32mI (112996) SOIL_PUMP: RAW=2471 Moisture=46% Pump=ON[0m
+[0;32mI (114056) SOIL_PUMP: RAW=2467 Moisture=46% Pump=ON[0m
+[0;33mW (114536) DHT_FAN: DHT read failed[0m
+[0;32mI (115116) SOIL_PUMP: RAW=2463 Moisture=46% Pump=ON[0m
+[0;33mW (115366) NET: WiFi disconnected, retry...[0m
+[0;32mI (115376) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (115376) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (115406) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (115416) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (116176) SOIL_PUMP: RAW=2461 Moisture=46% Pump=ON[0m
+[0;33mW (116536) DHT_FAN: DHT read failed[0m
+[0;32mI (117236) SOIL_PUMP: RAW=2459 Moisture=46% Pump=ON[0m
+[0;32mI (118296) SOIL_PUMP: RAW=2457 Moisture=46% Pump=ON[0m
+[0;33mW (118536) DHT_FAN: DHT read failed[0m
+[0;32mI (119356) SOIL_PUMP: RAW=2455 Moisture=46% Pump=ON[0m
+[0;32mI (120416) SOIL_PUMP: RAW=2453 Moisture=47% Pump=ON[0m
+[0;33mW (120536) DHT_FAN: DHT read failed[0m
+[0;32mI (121476) SOIL_PUMP: RAW=2450 Moisture=47% Pump=ON[0m
+[0;33mW (122536) DHT_FAN: DHT read failed[0m
+[0;32mI (122536) SOIL_PUMP: RAW=2449 Moisture=47% Pump=ON[0m
+[0;32mI (123596) SOIL_PUMP: RAW=2449 Moisture=47% Pump=ON[0m
+[0;33mW (124536) DHT_FAN: DHT read failed[0m
+[0;32mI (124656) SOIL_PUMP: RAW=2448 Moisture=47% Pump=ON[0m
+[0;32mI (125416) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (125426) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (125426) NET: WiFi disconnected, retry...[0m
+[0;32mI (125716) SOIL_PUMP: RAW=2448 Moisture=47% Pump=ON[0m
+[0;33mW (126536) DHT_FAN: DHT read failed[0m
+[0;32mI (126776) SOIL_PUMP: RAW=2448 Moisture=47% Pump=ON[0m
+[0;32mI (127836) SOIL_PUMP: RAW=2447 Moisture=47% Pump=ON[0m
+[0;33mW (127846) NET: WiFi disconnected, retry...[0m
+[0;33mW (128536) DHT_FAN: DHT read failed[0m
+[0;32mI (128896) SOIL_PUMP: RAW=2559 Moisture=41% Pump=ON[0m
+[0;32mI (129956) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;33mW (130256) NET: WiFi disconnected, retry...[0m
+[0;32mI (130276) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (130276) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (130536) DHT_FAN: DHT read failed[0m
+[0;32mI (131016) SOIL_PUMP: RAW=2359 Moisture=52% Pump=ON[0m
+[0;32mI (131286) wifi:state: auth -> init (0x200)[0m
+[0;32mI (131296) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (131296) NET: WiFi disconnected, retry...[0m
+[0;32mI (132076) SOIL_PUMP: RAW=2629 Moisture=37% Pump=ON[0m
+[0;33mW (132536) DHT_FAN: DHT read failed[0m
+[0;32mI (133136) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (133716) NET: WiFi disconnected, retry...[0m
+[0;32mI (134196) SOIL_PUMP: RAW=2655 Moisture=35% Pump=OFF[0m
+[0;33mW (134536) DHT_FAN: DHT read failed[0m
+[0;32mI (135256) SOIL_PUMP: RAW=2658 Moisture=35% Pump=OFF[0m
+[0;33mW (136126) NET: WiFi disconnected, retry...[0m
+[0;32mI (136316) SOIL_PUMP: RAW=2658 Moisture=35% Pump=OFF[0m
+[0;33mW (136536) DHT_FAN: DHT read failed[0m
+[0;32mI (137376) SOIL_PUMP: RAW=2659 Moisture=35% Pump=OFF[0m
+[0;32mI (138436) SOIL_PUMP: RAW=2659 Moisture=35% Pump=OFF[0m
+[0;33mW (138536) DHT_FAN: DHT read failed[0m
+[0;33mW (138546) NET: WiFi disconnected, retry...[0m
+[0;32mI (138546) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (138546) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (138566) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (138576) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (139496) SOIL_PUMP: RAW=2660 Moisture=35% Pump=OFF[0m
+[0;33mW (140536) DHT_FAN: DHT read failed[0m
+[0;32mI (140556) SOIL_PUMP: RAW=2659 Moisture=35% Pump=OFF[0m
+[0;32mI (141616) SOIL_PUMP: RAW=2659 Moisture=35% Pump=OFF[0m
+[0;33mW (142536) DHT_FAN: DHT read failed[0m
+[0;32mI (142676) SOIL_PUMP: RAW=2662 Moisture=35% Pump=OFF[0m
+[0;32mI (143736) SOIL_PUMP: RAW=2662 Moisture=35% Pump=ON[0m
+[0;33mW (144536) DHT_FAN: DHT read failed[0m
+[0;32mI (144796) SOIL_PUMP: RAW=2661 Moisture=35% Pump=ON[0m
+[0;32mI (145856) SOIL_PUMP: RAW=2659 Moisture=35% Pump=ON[0m
+[0;33mW (146536) DHT_FAN: DHT read failed[0m
+[0;32mI (146916) SOIL_PUMP: RAW=2661 Moisture=35% Pump=ON[0m
+[0;32mI (147976) SOIL_PUMP: RAW=2661 Moisture=35% Pump=ON[0m
+[0;33mW (148536) DHT_FAN: DHT read failed[0m
+[0;32mI (148576) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (148596) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (148596) NET: WiFi disconnected, retry...[0m
+[0;32mI (149036) SOIL_PUMP: RAW=2662 Moisture=35% Pump=ON[0m
+[0;32mI (150096) SOIL_PUMP: RAW=2662 Moisture=35% Pump=ON[0m
+[0;33mW (150536) DHT_FAN: DHT read failed[0m
+[0;33mW (151016) NET: WiFi disconnected, retry...[0m
+[0;32mI (151026) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (151026) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (151036) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (151056) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (151156) SOIL_PUMP: RAW=2661 Moisture=35% Pump=ON[0m
+[0;32mI (152216) SOIL_PUMP: RAW=2662 Moisture=35% Pump=ON[0m
+[0;33mW (152536) DHT_FAN: DHT read failed[0m
+[0;32mI (153276) SOIL_PUMP: RAW=2659 Moisture=35% Pump=ON[0m
+[0;32mI (154336) SOIL_PUMP: RAW=2653 Moisture=35% Pump=ON[0m
+[0;33mW (154536) DHT_FAN: DHT read failed[0m
+[0;32mI (155396) SOIL_PUMP: RAW=2400 Moisture=50% Pump=ON[0m
+[0;32mI (156456) SOIL_PUMP: RAW=2335 Moisture=53% Pump=ON[0m
+[0;33mW (156536) DHT_FAN: DHT read failed[0m
+[0;32mI (157516) SOIL_PUMP: RAW=2480 Moisture=45% Pump=ON[0m
+[0;33mW (158536) DHT_FAN: DHT read failed[0m
+[0;32mI (158576) SOIL_PUMP: RAW=2258 Moisture=57% Pump=ON[0m
+[0;32mI (159636) SOIL_PUMP: RAW=1777 Moisture=84% Pump=OFF[0m
+[0;33mW (160536) DHT_FAN: DHT read failed[0m
+[0;32mI (160696) SOIL_PUMP: RAW=1967 Moisture=74% Pump=OFF[0m
+[0;32mI (161056) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (161066) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (161066) NET: WiFi disconnected, retry...[0m
+[0;32mI (161756) SOIL_PUMP: RAW=1968 Moisture=74% Pump=OFF[0m
+[0;33mW (162536) DHT_FAN: DHT read failed[0m
+[0;32mI (162816) SOIL_PUMP: RAW=1959 Moisture=74% Pump=OFF[0m
+[0;33mW (163486) NET: WiFi disconnected, retry...[0m
+[0;32mI (163496) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (163496) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (163506) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (163516) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (163876) SOIL_PUMP: RAW=1958 Moisture=74% Pump=OFF[0m
+[0;33mW (164536) DHT_FAN: DHT read failed[0m
+[0;32mI (164936) SOIL_PUMP: RAW=1953 Moisture=74% Pump=OFF[0m
+[0;32mI (165996) SOIL_PUMP: RAW=1947 Moisture=75% Pump=OFF[0m
+[0;33mW (166536) DHT_FAN: DHT read failed[0m
+[0;32mI (167056) SOIL_PUMP: RAW=1943 Moisture=75% Pump=OFF[0m
+[0;32mI (168116) SOIL_PUMP: RAW=1941 Moisture=75% Pump=OFF[0m
+[0;33mW (168536) DHT_FAN: DHT read failed[0m
+[0;32mI (169176) SOIL_PUMP: RAW=1941 Moisture=75% Pump=OFF[0m
+[0;32mI (170236) SOIL_PUMP: RAW=1939 Moisture=75% Pump=OFF[0m
+[0;33mW (170536) DHT_FAN: DHT read failed[0m
+[0;32mI (171296) SOIL_PUMP: RAW=1938 Moisture=75% Pump=OFF[0m
+[0;32mI (172356) SOIL_PUMP: RAW=1936 Moisture=75% Pump=OFF[0m
+[0;33mW (172536) DHT_FAN: DHT read failed[0m
+[0;32mI (173416) SOIL_PUMP: RAW=1936 Moisture=75% Pump=OFF[0m
+[0;32mI (173516) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (173526) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (173526) NET: WiFi disconnected, retry...[0m
+[0;32mI (174476) SOIL_PUMP: RAW=1934 Moisture=75% Pump=OFF[0m
+[0;33mW (174536) DHT_FAN: DHT read failed[0m
+[0;32mI (175536) SOIL_PUMP: RAW=1931 Moisture=76% Pump=OFF[0m
+[0;33mW (175946) NET: WiFi disconnected, retry...[0m
+[0;32mI (175946) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (175956) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (176536) DHT_FAN: DHT read failed[0m
+[0;32mI (176596) SOIL_PUMP: RAW=1933 Moisture=75% Pump=OFF[0m
+[0;32mI (176966) wifi:state: auth -> init (0x200)[0m
+[0;32mI (176976) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (176976) NET: WiFi disconnected, retry...[0m
+[0;32mI (177656) SOIL_PUMP: RAW=1930 Moisture=76% Pump=OFF[0m
+[0;33mW (178536) DHT_FAN: DHT read failed[0m
+[0;32mI (178716) SOIL_PUMP: RAW=1934 Moisture=75% Pump=OFF[0m
+[0;33mW (179396) NET: WiFi disconnected, retry...[0m
+[0;32mI (179776) SOIL_PUMP: RAW=1934 Moisture=75% Pump=OFF[0m
+[0;33mW (180536) DHT_FAN: DHT read failed[0m
+[0;32mI (180836) SOIL_PUMP: RAW=1933 Moisture=75% Pump=OFF[0m
+[0;33mW (181806) NET: WiFi disconnected, retry...[0m
+[0;32mI (181896) SOIL_PUMP: RAW=1934 Moisture=75% Pump=OFF[0m
+[0;33mW (182536) DHT_FAN: DHT read failed[0m
+[0;32mI (182956) SOIL_PUMP: RAW=1931 Moisture=76% Pump=OFF[0m
+[0;32mI (184016) SOIL_PUMP: RAW=1930 Moisture=76% Pump=OFF[0m
+[0;33mW (184226) NET: WiFi disconnected, retry...[0m
+[0;32mI (184236) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (184236) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (184536) DHT_FAN: DHT read failed[0m
+[0;32mI (185076) SOIL_PUMP: RAW=1929 Moisture=76% Pump=OFF[0m
+[0;32mI (185246) wifi:state: auth -> init (0x200)[0m
+[0;32mI (185256) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (185256) NET: WiFi disconnected, retry...[0m
+[0;32mI (186136) SOIL_PUMP: RAW=1930 Moisture=76% Pump=OFF[0m
+[0;33mW (186536) DHT_FAN: DHT read failed[0m
+[0;32mI (187196) SOIL_PUMP: RAW=1927 Moisture=76% Pump=OFF[0m
+[0;33mW (187676) NET: WiFi disconnected, retry...[0m
+[0;32mI (187676) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (187686) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (187696) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (187706) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (188256) SOIL_PUMP: RAW=1927 Moisture=76% Pump=OFF[0m
+[0;33mW (188536) DHT_FAN: DHT read failed[0m
+[0;32mI (189316) SOIL_PUMP: RAW=1929 Moisture=76% Pump=OFF[0m
+[0;32mI (190376) SOIL_PUMP: RAW=1926 Moisture=76% Pump=OFF[0m
+[0;33mW (190536) DHT_FAN: DHT read failed[0m
+[0;32mI (191436) SOIL_PUMP: RAW=1926 Moisture=76% Pump=OFF[0m
+[0;32mI (192496) SOIL_PUMP: RAW=1925 Moisture=76% Pump=OFF[0m
+[0;33mW (192536) DHT_FAN: DHT read failed[0m
+[0;32mI (193556) SOIL_PUMP: RAW=1926 Moisture=76% Pump=OFF[0m
+[0;33mW (194536) DHT_FAN: DHT read failed[0m
+[0;32mI (194616) SOIL_PUMP: RAW=1925 Moisture=76% Pump=OFF[0m
+[0;32mI (195676) SOIL_PUMP: RAW=1925 Moisture=76% Pump=OFF[0m
+[0;33mW (196536) DHT_FAN: DHT read failed[0m
+[0;32mI (196736) SOIL_PUMP: RAW=1925 Moisture=76% Pump=OFF[0m
+[0;32mI (197706) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (197716) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (197716) NET: WiFi disconnected, retry...[0m
+[0;32mI (197796) SOIL_PUMP: RAW=1925 Moisture=76% Pump=OFF[0m
+[0;33mW (198536) DHT_FAN: DHT read failed[0m
+[0;32mI (198856) SOIL_PUMP: RAW=1925 Moisture=76% Pump=OFF[0m
+[0;32mI (199916) SOIL_PUMP: RAW=1923 Moisture=76% Pump=OFF[0m
+[0;33mW (200136) NET: WiFi disconnected, retry...[0m
+[0;32mI (200146) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (200146) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (200156) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (200166) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (200536) DHT_FAN: DHT read failed[0m
+[0;32mI (200976) SOIL_PUMP: RAW=1924 Moisture=76% Pump=OFF[0m
+[0;32mI (202036) SOIL_PUMP: RAW=1923 Moisture=76% Pump=OFF[0m
+[0;33mW (202536) DHT_FAN: DHT read failed[0m
+[0;32mI (203096) SOIL_PUMP: RAW=1925 Moisture=76% Pump=OFF[0m
+[0;32mI (204156) SOIL_PUMP: RAW=1923 Moisture=76% Pump=OFF[0m
+[0;33mW (204536) DHT_FAN: DHT read failed[0m
+[0;32mI (205216) SOIL_PUMP: RAW=1922 Moisture=76% Pump=OFF[0m
+[0;32mI (206276) SOIL_PUMP: RAW=1923 Moisture=76% Pump=OFF[0m
+[0;33mW (206536) DHT_FAN: DHT read failed[0m
+[0;32mI (207336) SOIL_PUMP: RAW=1922 Moisture=76% Pump=OFF[0m
+[0;32mI (208396) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;33mW (208536) DHT_FAN: DHT read failed[0m
+[0;32mI (209456) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;32mI (210166) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (210176) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (210176) NET: WiFi disconnected, retry...[0m
+[0;32mI (210516) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;33mW (210536) DHT_FAN: DHT read failed[0m
+[0;32mI (211576) SOIL_PUMP: RAW=1922 Moisture=76% Pump=OFF[0m
+[0;33mW (212536) DHT_FAN: DHT read failed[0m
+[0;33mW (212596) NET: WiFi disconnected, retry...[0m
+[0;32mI (212596) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (212606) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (212636) SOIL_PUMP: RAW=1922 Moisture=76% Pump=OFF[0m
+[0;32mI (213616) wifi:state: auth -> init (0x200)[0m
+[0;32mI (213626) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (213626) NET: WiFi disconnected, retry...[0m
+[0;32mI (213696) SOIL_PUMP: RAW=1923 Moisture=76% Pump=OFF[0m
+[0;33mW (214536) DHT_FAN: DHT read failed[0m
+[0;32mI (214756) SOIL_PUMP: RAW=1922 Moisture=76% Pump=OFF[0m
+[0;32mI (215816) SOIL_PUMP: RAW=1922 Moisture=76% Pump=OFF[0m
+[0;33mW (216046) NET: WiFi disconnected, retry...[0m
+[0;32mI (216046) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (216056) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (216066) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (216076) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (216536) DHT_FAN: DHT read failed[0m
+[0;32mI (216876) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;32mI (217936) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;33mW (218536) DHT_FAN: DHT read failed[0m
+[0;32mI (218996) SOIL_PUMP: RAW=1922 Moisture=76% Pump=OFF[0m
+[0;32mI (220056) SOIL_PUMP: RAW=1922 Moisture=76% Pump=OFF[0m
+[0;33mW (220536) DHT_FAN: DHT read failed[0m
+[0;32mI (221116) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;32mI (222176) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;33mW (222536) DHT_FAN: DHT read failed[0m
+[0;32mI (223236) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;32mI (224296) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (224536) DHT_FAN: DHT read failed[0m
+[0;32mI (225356) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;32mI (226076) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (226086) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (226086) NET: WiFi disconnected, retry...[0m
+[0;32mI (226416) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (226536) DHT_FAN: DHT read failed[0m
+[0;32mI (227476) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;33mW (228506) NET: WiFi disconnected, retry...[0m
+[0;32mI (228506) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (228516) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (228536) wifi:state: auth -> assoc (0x0)[0m
+[0;33mW (228536) DHT_FAN: DHT read failed[0m
+[0;32mI (228536) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;32mI (228536) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (229596) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (230536) DHT_FAN: DHT read failed[0m
+[0;32mI (230656) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;32mI (231716) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (232536) DHT_FAN: DHT read failed[0m
+[0;32mI (232776) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (233836) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (234536) DHT_FAN: DHT read failed[0m
+[0;32mI (234896) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;32mI (235956) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (236536) DHT_FAN: DHT read failed[0m
+[0;32mI (237016) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;32mI (238076) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (238536) DHT_FAN: DHT read failed[0m
+[0;32mI (238546) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (238556) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (238556) NET: WiFi disconnected, retry...[0m
+[0;32mI (239136) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (240196) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (240536) DHT_FAN: DHT read failed[0m
+[0;33mW (240976) NET: WiFi disconnected, retry...[0m
+[0;32mI (240986) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (240986) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (240996) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (241006) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (241256) SOIL_PUMP: RAW=1921 Moisture=76% Pump=OFF[0m
+[0;32mI (242316) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (242536) DHT_FAN: DHT read failed[0m
+[0;32mI (243376) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (244436) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (244536) DHT_FAN: DHT read failed[0m
+[0;32mI (245496) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (246536) DHT_FAN: DHT read failed[0m
+[0;32mI (246556) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (247616) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (248536) DHT_FAN: DHT read failed[0m
+[0;32mI (248676) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (249736) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (250536) DHT_FAN: DHT read failed[0m
+[0;32mI (250796) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (251006) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (251016) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (251016) NET: WiFi disconnected, retry...[0m
+[0;32mI (251856) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (252536) DHT_FAN: DHT read failed[0m
+[0;32mI (252916) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (253436) NET: WiFi disconnected, retry...[0m
+[0;32mI (253446) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (253446) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (253456) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (253476) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (253976) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (254536) DHT_FAN: DHT read failed[0m
+[0;32mI (255036) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (256096) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (256536) DHT_FAN: DHT read failed[0m
+[0;32mI (257156) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;32mI (258216) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (258536) DHT_FAN: DHT read failed[0m
+[0;32mI (259276) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (260336) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (260536) DHT_FAN: DHT read failed[0m
+[0;32mI (261396) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (262456) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (262536) DHT_FAN: DHT read failed[0m
+[0;32mI (263476) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (263486) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (263486) NET: WiFi disconnected, retry...[0m
+[0;32mI (263516) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (264536) DHT_FAN: DHT read failed[0m
+[0;32mI (264576) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (265636) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (265906) NET: WiFi disconnected, retry...[0m
+[0;32mI (265916) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (265916) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (265936) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (265936) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (266536) DHT_FAN: DHT read failed[0m
+[0;32mI (266696) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (267756) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (268536) DHT_FAN: DHT read failed[0m
+[0;32mI (268816) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (269876) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (270536) DHT_FAN: DHT read failed[0m
+[0;32mI (270936) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (271996) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (272536) DHT_FAN: DHT read failed[0m
+[0;32mI (273056) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;32mI (274116) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (274536) DHT_FAN: DHT read failed[0m
+[0;32mI (275176) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (275946) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (275956) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (275956) NET: WiFi disconnected, retry...[0m
+[0;32mI (276236) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (276536) DHT_FAN: DHT read failed[0m
+[0;32mI (277296) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (278356) SOIL_PUMP: RAW=1920 Moisture=76% Pump=OFF[0m
+[0;33mW (278376) NET: WiFi disconnected, retry...[0m
+[0;32mI (278386) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (278386) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (278396) wifi:state: auth -> assoc (0x0)[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (58) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (58) boot: compile time Oct 16 2025 11:33:31[0m
+[0;32mI (58) boot: Multicore bootloader[0m
+[0;32mI (60) boot: chip revision: v3.1[0m
+[0;32mI (63) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (66) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (70) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (73) boot.esp32: PRO CPU has been reset by WDT[0m
+[0;33mW (78) boot.esp32: WDT rst info: PRO CPU PC=0x40081745[0m
+[0;33mW (83) boot.esp32: WDT rst info: APP CPU PC=0x400d2fb2[0m
+[0;32mI (88) boot: Enabling RNG early entropy source...[0m
+[0;32mI (92) boot: Partition Table:[0m
+[0;32mI (95) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (108) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (114) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (121) boot: End of partition table[0m
+[0;32mI (124) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a51ch (107804) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0002a544 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0002e4c8 vaddr=40080000 size=01b50h (  6992) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8d07ch (577660) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=000bd0a4 vaddr=40081b50 size=163e4h ( 91108) load[0m
+[0;32mI (413) esp_image: segment 5: paddr=000d3490 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (425) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (425) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (444) cpu_start: Pro cpu start user code[0m
+[0;32mI (444) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (444) app_init: Application information:[0m
+[0;32mI (444) app_init: Project name:     microgreen_control[0m
+[0;32mI (449) app_init: App version:      1[0m
+[0;32mI (452) app_init: Compile time:     Oct 16 2025 11:19:24[0m
+[0;32mI (457) app_init: ELF file SHA256:  fa3b264a9...[0m
+[0;32mI (462) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (484) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB85C0 len 00027A40 (158 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (505) heap_init: At 40097F34 len 000080CC (32 KiB): IRAM[0m
+[0;33mW (511) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (523) spi_flash: detected chip: generic[0m
+[0;32mI (527) spi_flash: flash io: dio[0m
+[0;33mW (529) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (542) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (550) main_task: Started on CPU0[0m
+[0;32mI (560) main_task: Calling app_main()[0m
+[0;32mI (560) main_task: Returned from app_main()[0m
+[0;33mW (580) DHT_FAN: DHT read failed[0m
+[0;32mI (590) wifi:wifi driver task: 3ffc31a4, prio:23, stack:6656, core=0[0m
+[0;32mI (600) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (600) wifi:wifi certification version: v7.0[0m
+[0;32mI (600) wifi:config NVS flash: enabled[0m
+[0;32mI (600) wifi:config nano formatting: disabled[0m
+[0;32mI (610) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (610) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (620) wifi:Init management short buffer num: 32[0m
+[0;32mI (620) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (620) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (630) wifi:Init static rx buffer num: 10[0m
+[0;32mI (630) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (640) wifi_init: rx ba win: 6[0m
+[0;32mI (640) wifi_init: accept mbox: 6[0m
+[0;32mI (640) wifi_init: tcpip mbox: 32[0m
+[0;32mI (640) wifi_init: udp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp tx win: 5760[0m
+[0;32mI (650) wifi_init: tcp rx win: 5760[0m
+[0;32mI (660) wifi_init: tcp mss: 1440[0m
+[0;32mI (660) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (660) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (670) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (680) SOIL_PUMP: RAW=1930 Moisture=76% Pump=OFF[0m
+[0;32mI (750) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (850) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (860) wifi:enable tsf[0m
+[0;32mI (860) NET: Connecting to Wi-Fi: Areena ...[0m
+[0;32mI (870) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (870) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (880) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (890) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1740) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (2580) DHT_FAN: DHT read failed[0m
+[0;32mI (2800) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (3860) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (4580) DHT_FAN: DHT read failed[0m
+[0;32mI (4920) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (5980) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (6580) DHT_FAN: DHT read failed[0m
+[0;32mI (7040) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;32mI (8100) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (8580) DHT_FAN: DHT read failed[0m
+[0;32mI (9160) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (10220) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (10580) DHT_FAN: DHT read failed[0m
+[0;32mI (10890) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (10910) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (10910) NET: WiFi disconnected, retry...[0m
+[0;32mI (11280) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (12340) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (12580) DHT_FAN: DHT read failed[0m
+[0;33mW (13330) NET: WiFi disconnected, retry...[0m
+[0;32mI (13340) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13340) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (13400) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (13400) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (13420) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (14460) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;33mW (14580) DHT_FAN: DHT read failed[0m
+[0;32mI (15520) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (16580) DHT_FAN: DHT read failed[0m
+[0;32mI (16580) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;32mI (17640) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (18580) DHT_FAN: DHT read failed[0m
+[0;32mI (18700) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (19760) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (20580) DHT_FAN: DHT read failed[0m
+[0;32mI (20820) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (21880) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (22580) DHT_FAN: DHT read failed[0m
+[0;32mI (22940) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (23420) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (23430) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (23430) NET: WiFi disconnected, retry...[0m
+[0;32mI (24000) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (24580) DHT_FAN: DHT read failed[0m
+[0;32mI (25060) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (25850) NET: WiFi disconnected, retry...[0m
+[0;32mI (25860) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25860) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (25880) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (25890) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (26120) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (26580) DHT_FAN: DHT read failed[0m
+[0;32mI (27180) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (28240) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (28580) DHT_FAN: DHT read failed[0m
+[0;32mI (29300) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (30360) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (30580) DHT_FAN: DHT read failed[0m
+[0;32mI (31420) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (32480) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (32580) DHT_FAN: DHT read failed[0m
+[0;32mI (33540) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (34580) DHT_FAN: DHT read failed[0m
+[0;32mI (34600) SOIL_PUMP: RAW=1919 Moisture=76% Pump=OFF[0m
+[0;32mI (35660) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (35890) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (35900) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (35900) NET: WiFi disconnected, retry...[0m
+[0;33mW (36580) DHT_FAN: DHT read failed[0m
+[0;32mI (36720) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;32mI (37780) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (38320) NET: WiFi disconnected, retry...[0m
+[0;33mW (38580) DHT_FAN: DHT read failed[0m
+[0;32mI (38840) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;32mI (39900) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (40580) DHT_FAN: DHT read failed[0m
+[0;33mW (40730) NET: WiFi disconnected, retry...[0m
+[0;32mI (40740) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (40750) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (40840) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (40850) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (40960) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (42020) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (42580) DHT_FAN: DHT read failed[0m
+[0;32mI (43080) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (44140) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (44580) DHT_FAN: DHT read failed[0m
+[0;32mI (45200) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;32mI (46260) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (46580) DHT_FAN: DHT read failed[0m
+[0;32mI (47320) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (48380) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (48580) DHT_FAN: DHT read failed[0m
+[0;32mI (49440) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (50500) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (50580) DHT_FAN: DHT read failed[0m
+[0;32mI (50850) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (50860) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (50860) NET: WiFi disconnected, retry...[0m
+[0;32mI (51560) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (52580) DHT_FAN: DHT read failed[0m
+[0;32mI (52620) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (53280) NET: WiFi disconnected, retry...[0m
+[0;32mI (53290) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (53290) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (53300) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (53310) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (53680) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (54580) DHT_FAN: DHT read failed[0m
+[0;32mI (54740) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (55800) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (56580) DHT_FAN: DHT read failed[0m
+[0;32mI (56860) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (57920) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (58580) DHT_FAN: DHT read failed[0m
+[0;32mI (58980) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (60040) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (60580) DHT_FAN: DHT read failed[0m
+[0;32mI (61100) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (62160) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (62580) DHT_FAN: DHT read failed[0m
+[0;32mI (63220) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;32mI (63310) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (63320) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (63320) NET: WiFi disconnected, retry...[0m
+[0;32mI (64280) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (64580) DHT_FAN: DHT read failed[0m
+[0;32mI (65340) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (65740) NET: WiFi disconnected, retry...[0m
+[0;32mI (65750) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (65750) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (65760) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (65770) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (66400) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (66580) DHT_FAN: DHT read failed[0m
+[0;32mI (67460) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (68520) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (68580) DHT_FAN: DHT read failed[0m
+[0;32mI (69580) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (70580) DHT_FAN: DHT read failed[0m
+[0;32mI (70640) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (71700) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (72580) DHT_FAN: DHT read failed[0m
+[0;32mI (72760) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (73820) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (74580) DHT_FAN: DHT read failed[0m
+[0;32mI (74880) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (75770) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (75780) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (75780) NET: WiFi disconnected, retry...[0m
+[0;32mI (75940) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (76580) DHT_FAN: DHT read failed[0m
+[0;32mI (77000) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (78060) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (78200) NET: WiFi disconnected, retry...[0m
+[0;32mI (78210) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (78210) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (78220) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (78240) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (78580) DHT_FAN: DHT read failed[0m
+[0;32mI (79120) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (80180) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (80580) DHT_FAN: DHT read failed[0m
+[0;32mI (81240) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (82300) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (82580) DHT_FAN: DHT read failed[0m
+[0;32mI (83360) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (84420) SOIL_PUMP: RAW=1918 Moisture=76% Pump=OFF[0m
+[0;33mW (84580) DHT_FAN: DHT read failed[0m
+[0;32mI (85480) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (86540) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (86580) DHT_FAN: DHT read failed[0m
+[0;32mI (87600) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (88240) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (88260) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (88260) NET: WiFi disconnected, retry...[0m
+[0;33mW (88580) DHT_FAN: DHT read failed[0m
+[0;32mI (88660) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (89720) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (90580) DHT_FAN: DHT read failed[0m
+[0;33mW (90680) NET: WiFi disconnected, retry...[0m
+[0;32mI (90690) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (90690) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (90700) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (90710) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (90780) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (91840) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (92580) DHT_FAN: DHT read failed[0m
+[0;32mI (92900) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (93960) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (94580) DHT_FAN: DHT read failed[0m
+[0;32mI (95020) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (96080) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (96580) DHT_FAN: DHT read failed[0m
+[0;32mI (97140) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (98200) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (98580) DHT_FAN: DHT read failed[0m
+[0;32mI (99260) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (100320) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (100580) DHT_FAN: DHT read failed[0m
+[0;32mI (100710) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (100730) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (100730) NET: WiFi disconnected, retry...[0m
+[0;32mI (101380) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (102440) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (102580) DHT_FAN: DHT read failed[0m
+[0;33mW (103150) NET: WiFi disconnected, retry...[0m
+[0;32mI (103160) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (103160) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (103180) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (103190) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (103500) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (104560) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (104580) DHT_FAN: DHT read failed[0m
+[0;32mI (105620) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (106580) DHT_FAN: DHT read failed[0m
+[0;32mI (106680) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (107740) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (108580) DHT_FAN: DHT read failed[0m
+[0;32mI (108800) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (109860) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (110580) DHT_FAN: DHT read failed[0m
+[0;32mI (110920) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (111980) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (112580) DHT_FAN: DHT read failed[0m
+[0;32mI (113040) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (113190) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (113210) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (113210) NET: WiFi disconnected, retry...[0m
+[0;32mI (114100) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (114580) DHT_FAN: DHT read failed[0m
+[0;32mI (115160) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (115630) NET: WiFi disconnected, retry...[0m
+[0;32mI (116220) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (116580) DHT_FAN: DHT read failed[0m
+[0;32mI (117280) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (118040) NET: WiFi disconnected, retry...[0m
+[0;32mI (118060) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (118060) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (118070) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (118080) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (118340) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (118580) DHT_FAN: DHT read failed[0m
+[0;32mI (119400) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (120460) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (120580) DHT_FAN: DHT read failed[0m
+[0;32mI (121520) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (122580) DHT_FAN: DHT read failed[0m
+[0;32mI (122580) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (123640) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (124580) DHT_FAN: DHT read failed[0m
+[0;32mI (124700) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (125760) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (126580) DHT_FAN: DHT read failed[0m
+[0;32mI (126820) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (127880) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (128080) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (128090) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (128090) NET: WiFi disconnected, retry...[0m
+[0;33mW (128580) DHT_FAN: DHT read failed[0m
+[0;32mI (128940) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (130000) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (130510) NET: WiFi disconnected, retry...[0m
+[0;32mI (130510) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (130520) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (130530) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (130550) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (130580) DHT_FAN: DHT read failed[0m
+[0;32mI (131060) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (132120) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (132580) DHT_FAN: DHT read failed[0m
+[0;32mI (133180) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (134240) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (134580) DHT_FAN: DHT read failed[0m
+[0;32mI (135300) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (136360) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (136580) DHT_FAN: DHT read failed[0m
+[0;32mI (137420) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (138480) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (138580) DHT_FAN: DHT read failed[0m
+[0;32mI (139540) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (140550) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (140560) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (140560) NET: WiFi disconnected, retry...[0m
+[0;33mW (140580) DHT_FAN: DHT read failed[0m
+[0;32mI (140600) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (141660) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (142580) DHT_FAN: DHT read failed[0m
+[0;32mI (142720) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (142980) NET: WiFi disconnected, retry...[0m
+[0;32mI (142990) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (142990) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (143010) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (143010) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (143780) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (144580) DHT_FAN: DHT read failed[0m
+[0;32mI (144840) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (145900) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (146580) DHT_FAN: DHT read failed[0m
+[0;32mI (146960) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (148020) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (148580) DHT_FAN: DHT read failed[0m
+[0;32mI (149080) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (150140) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (150580) DHT_FAN: DHT read failed[0m
+[0;32mI (151200) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (152260) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (152580) DHT_FAN: DHT read failed[0m
+[0;32mI (153020) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (153030) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (153030) NET: WiFi disconnected, retry...[0m
+[0;32mI (153320) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (154380) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (154580) DHT_FAN: DHT read failed[0m
+[0;32mI (155440) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;33mW (155450) NET: WiFi disconnected, retry...[0m
+[0;32mI (155460) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (155460) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (155470) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (155480) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (156500) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (156580) DHT_FAN: DHT read failed[0m
+[0;32mI (157560) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (158580) DHT_FAN: DHT read failed[0m
+[0;32mI (158620) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (159680) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (160580) DHT_FAN: DHT read failed[0m
+[0;32mI (160740) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (161800) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (162580) DHT_FAN: DHT read failed[0m
+[0;32mI (162860) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (163920) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (164580) DHT_FAN: DHT read failed[0m
+[0;32mI (164980) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (165480) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (165490) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (165490) NET: WiFi disconnected, retry...[0m
+[0;32mI (166040) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (166580) DHT_FAN: DHT read failed[0m
+[0;32mI (167100) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (167910) NET: WiFi disconnected, retry...[0m
+[0;32mI (167920) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (167920) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (167930) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (167940) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (168160) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (168580) DHT_FAN: DHT read failed[0m
+[0;32mI (169220) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (170280) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (170580) DHT_FAN: DHT read failed[0m
+[0;32mI (171340) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (172400) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (172580) DHT_FAN: DHT read failed[0m
+[0;32mI (173460) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (174520) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (174580) DHT_FAN: DHT read failed[0m
+[0;32mI (175580) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (176580) DHT_FAN: DHT read failed[0m
+[0;32mI (176640) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (177700) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (177940) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (177950) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (177950) NET: WiFi disconnected, retry...[0m
+[0;33mW (178580) DHT_FAN: DHT read failed[0m
+[0;32mI (178760) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (179820) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (180370) NET: WiFi disconnected, retry...[0m
+[0;32mI (180380) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (180380) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (180400) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (180430) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (180580) DHT_FAN: DHT read failed[0m
+[0;32mI (180880) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (181940) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (182580) DHT_FAN: DHT read failed[0m
+[0;32mI (183000) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (184060) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (184580) DHT_FAN: DHT read failed[0m
+[0;32mI (185120) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (186180) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (186580) DHT_FAN: DHT read failed[0m
+[0;32mI (187240) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (188300) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (188580) DHT_FAN: DHT read failed[0m
+[0;32mI (189360) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (190420) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (190430) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (190450) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (190450) NET: WiFi disconnected, retry...[0m
+[0;33mW (190580) DHT_FAN: DHT read failed[0m
+[0;32mI (191480) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (192540) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (192580) DHT_FAN: DHT read failed[0m
+[0;33mW (192870) NET: WiFi disconnected, retry...[0m
+[0;32mI (192880) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (192880) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (192890) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (192900) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (193600) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (194580) DHT_FAN: DHT read failed[0m
+[0;32mI (194660) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (195720) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (196580) DHT_FAN: DHT read failed[0m
+[0;32mI (196780) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (197840) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (198580) DHT_FAN: DHT read failed[0m
+[0;32mI (198900) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (199960) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (200580) DHT_FAN: DHT read failed[0m
+[0;32mI (201020) SOIL_PUMP: RAW=1912 Moisture=77% Pump=OFF[0m
+[0;32mI (202080) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (202580) DHT_FAN: DHT read failed[0m
+[0;32mI (202900) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (202920) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (202920) NET: WiFi disconnected, retry...[0m
+[0;32mI (203140) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (204200) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (204580) DHT_FAN: DHT read failed[0m
+[0;32mI (205260) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (205340) NET: WiFi disconnected, retry...[0m
+[0;32mI (205340) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (205350) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (205360) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (205370) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (206320) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (206580) DHT_FAN: DHT read failed[0m
+[0;32mI (207380) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (208440) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (208580) DHT_FAN: DHT read failed[0m
+[0;32mI (209500) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (210560) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (210580) DHT_FAN: DHT read failed[0m
+[0;32mI (211620) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (212580) DHT_FAN: DHT read failed[0m
+[0;32mI (212680) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (213740) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (214580) DHT_FAN: DHT read failed[0m
+[0;32mI (214800) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (215370) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (215380) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (215380) NET: WiFi disconnected, retry...[0m
+[0;32mI (215860) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (216580) DHT_FAN: DHT read failed[0m
+[0;32mI (216920) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (217800) NET: WiFi disconnected, retry...[0m
+[0;32mI (217820) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (217820) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (217870) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (217880) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (217980) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (218580) DHT_FAN: DHT read failed[0m
+[0;32mI (219040) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (220100) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (220580) DHT_FAN: DHT read failed[0m
+[0;32mI (221160) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (222220) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (222580) DHT_FAN: DHT read failed[0m
+[0;32mI (223280) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;32mI (224340) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (224580) DHT_FAN: DHT read failed[0m
+[0;32mI (225400) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (226460) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (226580) DHT_FAN: DHT read failed[0m
+[0;32mI (227520) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (227880) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (227890) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (227890) NET: WiFi disconnected, retry...[0m
+[0;33mW (228580) DHT_FAN: DHT read failed[0m
+[0;32mI (228580) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;32mI (229640) SOIL_PUMP: RAW=1877 Moisture=79% Pump=OFF[0m
+[0;33mW (230310) NET: WiFi disconnected, retry...[0m
+[0;33mW (230580) DHT_FAN: DHT read failed[0m
+[0;32mI (230700) SOIL_PUMP: RAW=1891 Moisture=78% Pump=OFF[0m
+[0;32mI (231760) SOIL_PUMP: RAW=1886 Moisture=78% Pump=OFF[0m
+[0;33mW (232580) DHT_FAN: DHT read failed[0m
+[0;33mW (232720) NET: WiFi disconnected, retry...[0m
+[0;32mI (232730) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (232730) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (232750) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (232770) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (232820) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;32mI (233880) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (234580) DHT_FAN: DHT read failed[0m
+[0;32mI (234940) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (236000) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (236580) DHT_FAN: DHT read failed[0m
+[0;32mI (237060) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (238120) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (238580) DHT_FAN: DHT read failed[0m
+[0;32mI (239180) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (240240) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (240580) DHT_FAN: DHT read failed[0m
+[0;32mI (241300) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (242360) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (242580) DHT_FAN: DHT read failed[0m
+[0;32mI (242780) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (242790) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (242790) NET: WiFi disconnected, retry...[0m
+[0;32mI (243420) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (244480) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (244580) DHT_FAN: DHT read failed[0m
+[0;33mW (245210) NET: WiFi disconnected, retry...[0m
+[0;32mI (245230) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (245230) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (245260) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (245270) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (245540) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (246580) DHT_FAN: DHT read failed[0m
+[0;32mI (246600) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (247660) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (248580) DHT_FAN: DHT read failed[0m
+[0;32mI (248720) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (249780) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (250580) DHT_FAN: DHT read failed[0m
+[0;32mI (250840) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (251900) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (252580) DHT_FAN: DHT read failed[0m
+[0;32mI (252960) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (254020) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (254580) DHT_FAN: DHT read failed[0m
+[0;32mI (255080) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (255270) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (255280) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (255280) NET: WiFi disconnected, retry...[0m
+[0;32mI (256140) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (256580) DHT_FAN: DHT read failed[0m
+[0;32mI (257200) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (257700) NET: WiFi disconnected, retry...[0m
+[0;32mI (257710) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (257710) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (257740) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (257760) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (258260) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (258580) DHT_FAN: DHT read failed[0m
+[0;32mI (259320) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (260380) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (260580) DHT_FAN: DHT read failed[0m
+[0;32mI (261440) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (262500) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (262580) DHT_FAN: DHT read failed[0m
+[0;32mI (263560) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (264580) DHT_FAN: DHT read failed[0m
+[0;32mI (264620) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;32mI (265680) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (266580) DHT_FAN: DHT read failed[0m
+[0;32mI (266740) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (267760) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (267770) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (267770) NET: WiFi disconnected, retry...[0m
+[0;32mI (267800) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (268580) DHT_FAN: DHT read failed[0m
+[0;32mI (268860) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (269920) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (270190) NET: WiFi disconnected, retry...[0m
+[0;32mI (270200) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (270200) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (270210) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (270220) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (270580) DHT_FAN: DHT read failed[0m
+[0;32mI (270980) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (272040) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (272580) DHT_FAN: DHT read failed[0m
+[0;32mI (273100) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (274160) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (274580) DHT_FAN: DHT read failed[0m
+[0;32mI (275220) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (276280) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (276580) DHT_FAN: DHT read failed[0m
+[0;32mI (277340) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (278400) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (278580) DHT_FAN: DHT read failed[0m
+[0;32mI (279460) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (280220) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (280230) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (280230) NET: WiFi disconnected, retry...[0m
+[0;32mI (280520) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (280580) DHT_FAN: DHT read failed[0m
+[0;32mI (281580) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (282580) DHT_FAN: DHT read failed[0m
+[0;32mI (282640) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (282650) NET: WiFi disconnected, retry...[0m
+[0;32mI (283700) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (284580) DHT_FAN: DHT read failed[0m
+[0;32mI (284760) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (285060) NET: WiFi disconnected, retry...[0m
+[0;32mI (285820) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (286580) DHT_FAN: DHT read failed[0m
+[0;32mI (286880) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (287480) NET: WiFi disconnected, retry...[0m
+[0;32mI (287940) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (288580) DHT_FAN: DHT read failed[0m
+[0;32mI (289000) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (289890) NET: WiFi disconnected, retry...[0m
+[0;32mI (290060) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (290580) DHT_FAN: DHT read failed[0m
+[0;32mI (291120) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (292180) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (292310) NET: WiFi disconnected, retry...[0m
+[0;33mW (292580) DHT_FAN: DHT read failed[0m
+[0;32mI (293240) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (294300) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (294580) DHT_FAN: DHT read failed[0m
+[0;33mW (294720) NET: WiFi disconnected, retry...[0m
+[0;32mI (295360) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (296420) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (296580) DHT_FAN: DHT read failed[0m
+[0;33mW (297140) NET: WiFi disconnected, retry...[0m
+[0;32mI (297150) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (297150) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (297160) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (297200) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (297480) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (298540) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (298580) DHT_FAN: DHT read failed[0m
+[0;32mI (299600) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (300580) DHT_FAN: DHT read failed[0m
+[0;32mI (300660) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (301720) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (302580) DHT_FAN: DHT read failed[0m
+[0;32mI (302780) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (303840) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (304580) DHT_FAN: DHT read failed[0m
+[0;32mI (304900) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (305960) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (306580) DHT_FAN: DHT read failed[0m
+[0;32mI (307020) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (307210) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (307220) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (307220) NET: WiFi disconnected, retry...[0m
+[0;32mI (308080) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (308580) DHT_FAN: DHT read failed[0m
+[0;32mI (309140) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (309640) NET: WiFi disconnected, retry...[0m
+[0;32mI (309650) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (309650) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (309660) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (309670) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (310200) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (310580) DHT_FAN: DHT read failed[0m
+[0;32mI (311260) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (312320) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (312580) DHT_FAN: DHT read failed[0m
+[0;32mI (313380) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (314440) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (314580) DHT_FAN: DHT read failed[0m
+[0;32mI (315500) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (316560) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (316580) DHT_FAN: DHT read failed[0m
+[0;32mI (317620) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (318580) DHT_FAN: DHT read failed[0m
+[0;32mI (318680) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (319670) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (319690) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (319690) NET: WiFi disconnected, retry...[0m
+[0;32mI (319740) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (320580) DHT_FAN: DHT read failed[0m
+[0;32mI (320800) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (321860) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (322110) NET: WiFi disconnected, retry...[0m
+[0;32mI (322120) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (322120) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (322130) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (322160) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (322580) DHT_FAN: DHT read failed[0m
+[0;32mI (322920) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (323980) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (324580) DHT_FAN: DHT read failed[0m
+[0;32mI (325040) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (326100) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (326580) DHT_FAN: DHT read failed[0m
+[0;32mI (327160) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (328220) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (328580) DHT_FAN: DHT read failed[0m
+[0;32mI (329280) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (330340) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (330580) DHT_FAN: DHT read failed[0m
+[0;32mI (331400) SOIL_PUMP: RAW=1912 Moisture=77% Pump=OFF[0m
+[0;32mI (332160) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (332170) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (332170) NET: WiFi disconnected, retry...[0m
+[0;32mI (332460) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (332580) DHT_FAN: DHT read failed[0m
+[0;32mI (333520) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (334580) DHT_FAN: DHT read failed[0m
+[0;32mI (334580) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (334590) NET: WiFi disconnected, retry...[0m
+[0;32mI (334610) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (334610) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (334620) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (334640) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (335640) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (336580) DHT_FAN: DHT read failed[0m
+[0;32mI (336700) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;32mI (337760) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (338580) DHT_FAN: DHT read failed[0m
+[0;32mI (338820) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (339880) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (340580) DHT_FAN: DHT read failed[0m
+[0;32mI (340940) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (342000) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (342580) DHT_FAN: DHT read failed[0m
+[0;32mI (343060) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (344120) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (344580) DHT_FAN: DHT read failed[0m
+[0;32mI (344640) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (344650) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (344650) NET: WiFi disconnected, retry...[0m
+[0;32mI (345180) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (346240) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (346580) DHT_FAN: DHT read failed[0m
+[0;33mW (347070) NET: WiFi disconnected, retry...[0m
+[0;32mI (347080) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (347080) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (347090) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (347100) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (347300) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (348360) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (348580) DHT_FAN: DHT read failed[0m
+[0;32mI (349420) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;32mI (350480) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (350580) DHT_FAN: DHT read failed[0m
+[0;32mI (351540) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (352580) DHT_FAN: DHT read failed[0m
+[0;32mI (352600) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (353660) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (354580) DHT_FAN: DHT read failed[0m
+[0;32mI (354720) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (355780) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (356580) DHT_FAN: DHT read failed[0m
+[0;32mI (356840) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (357110) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (357120) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (357120) NET: WiFi disconnected, retry...[0m
+[0;32mI (357900) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (358580) DHT_FAN: DHT read failed[0m
+[0;32mI (358960) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (359540) NET: WiFi disconnected, retry...[0m
+[0;32mI (359550) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (359550) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (359560) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (359570) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (360020) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (360580) DHT_FAN: DHT read failed[0m
+[0;32mI (361080) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (362140) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (362580) DHT_FAN: DHT read failed[0m
+[0;32mI (363200) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (364260) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (364580) DHT_FAN: DHT read failed[0m
+[0;32mI (365320) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (366380) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (366580) DHT_FAN: DHT read failed[0m
+[0;32mI (367440) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (368500) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (368580) DHT_FAN: DHT read failed[0m
+[0;32mI (369560) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (369570) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (369580) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (369580) NET: WiFi disconnected, retry...[0m
+[0;33mW (370580) DHT_FAN: DHT read failed[0m
+[0;32mI (370620) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (371680) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (372000) NET: WiFi disconnected, retry...[0m
+[0;32mI (372020) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (372020) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (372050) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (372060) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (372580) DHT_FAN: DHT read failed[0m
+[0;32mI (372740) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (373800) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (374580) DHT_FAN: DHT read failed[0m
+[0;32mI (374860) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (375920) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (376580) DHT_FAN: DHT read failed[0m
+[0;32mI (376980) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (378040) SOIL_PUMP: RAW=1912 Moisture=77% Pump=OFF[0m
+[0;33mW (378580) DHT_FAN: DHT read failed[0m
+[0;32mI (379100) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (380160) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (380580) DHT_FAN: DHT read failed[0m
+[0;32mI (381220) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (382060) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (382080) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (382080) NET: WiFi disconnected, retry...[0m
+[0;32mI (382280) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (382580) DHT_FAN: DHT read failed[0m
+[0;32mI (383340) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (384400) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (384500) NET: WiFi disconnected, retry...[0m
+[0;32mI (384510) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (384510) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (384520) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (384550) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (384580) DHT_FAN: DHT read failed[0m
+[0;32mI (385460) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (386520) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (386580) DHT_FAN: DHT read failed[0m
+[0;32mI (387580) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (388580) DHT_FAN: DHT read failed[0m
+[0;32mI (388640) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (389700) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (390580) DHT_FAN: DHT read failed[0m
+[0;32mI (390760) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (391820) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (392580) DHT_FAN: DHT read failed[0m
+[0;32mI (392880) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (393940) SOIL_PUMP: RAW=1917 Moisture=76% Pump=OFF[0m
+[0;32mI (394560) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (394570) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (394570) NET: WiFi disconnected, retry...[0m
+[0;33mW (394580) DHT_FAN: DHT read failed[0m
+[0;32mI (395000) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (396060) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (396580) DHT_FAN: DHT read failed[0m
+[0;33mW (396990) NET: WiFi disconnected, retry...[0m
+[0;32mI (397120) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (398180) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (398580) DHT_FAN: DHT read failed[0m
+[0;32mI (399240) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (399400) NET: WiFi disconnected, retry...[0m
+[0;32mI (399410) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (399410) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (399420) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (399430) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (400300) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (400580) DHT_FAN: DHT read failed[0m
+[0;32mI (401360) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (402420) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (402580) DHT_FAN: DHT read failed[0m
+[0;32mI (403480) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (404540) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (404580) DHT_FAN: DHT read failed[0m
+[0;32mI (405600) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (406580) DHT_FAN: DHT read failed[0m
+[0;32mI (406660) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (407720) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (408580) DHT_FAN: DHT read failed[0m
+[0;32mI (408780) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (409430) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (409440) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (409440) NET: WiFi disconnected, retry...[0m
+[0;32mI (409840) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (410580) DHT_FAN: DHT read failed[0m
+[0;32mI (410900) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (411860) NET: WiFi disconnected, retry...[0m
+[0;32mI (411870) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (411870) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (411960) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (412580) DHT_FAN: DHT read failed[0m
+[0;32mI (412880) wifi:state: auth -> init (0x200)[0m
+[0;32mI (412890) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (412890) NET: WiFi disconnected, retry...[0m
+[0;32mI (413020) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (414080) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (414580) DHT_FAN: DHT read failed[0m
+[0;32mI (415140) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (415310) NET: WiFi disconnected, retry...[0m
+[0;32mI (415320) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (415320) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (415350) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (415370) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (416200) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (416580) DHT_FAN: DHT read failed[0m
+[0;32mI (417260) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (418320) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (418580) DHT_FAN: DHT read failed[0m
+[0;32mI (419380) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (420440) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (420580) DHT_FAN: DHT read failed[0m
+[0;32mI (421500) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (422560) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (422580) DHT_FAN: DHT read failed[0m
+[0;32mI (423620) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (424580) DHT_FAN: DHT read failed[0m
+[0;32mI (424680) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (425370) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (425380) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (425380) NET: WiFi disconnected, retry...[0m
+[0;32mI (425740) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (426580) DHT_FAN: DHT read failed[0m
+[0;32mI (426800) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (427800) NET: WiFi disconnected, retry...[0m
+[0;32mI (427810) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (427820) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (427830) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (427850) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (427860) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (428580) DHT_FAN: DHT read failed[0m
+[0;32mI (428920) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (429980) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (430580) DHT_FAN: DHT read failed[0m
+[0;32mI (431040) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (432100) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (432580) DHT_FAN: DHT read failed[0m
+[0;32mI (433160) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (434220) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (434580) DHT_FAN: DHT read failed[0m
+[0;32mI (435280) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (436340) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (436580) DHT_FAN: DHT read failed[0m
+[0;32mI (437400) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (437850) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (437860) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (437860) NET: WiFi disconnected, retry...[0m
+[0;32mI (438460) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (438580) DHT_FAN: DHT read failed[0m
+[0;32mI (439520) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (440280) NET: WiFi disconnected, retry...[0m
+[0;32mI (440290) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (440290) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (440300) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (440310) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (440580) DHT_FAN: DHT read failed[0m
+[0;32mI (440580) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (441640) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (442580) DHT_FAN: DHT read failed[0m
+[0;32mI (442700) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (443760) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (444580) DHT_FAN: DHT read failed[0m
+[0;32mI (444820) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (445880) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (446580) DHT_FAN: DHT read failed[0m
+[0;32mI (446940) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (448000) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (448580) DHT_FAN: DHT read failed[0m
+[0;32mI (449060) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (450120) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (450310) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (450320) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (450320) NET: WiFi disconnected, retry...[0m
+[0;33mW (450580) DHT_FAN: DHT read failed[0m
+[0;32mI (451180) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (452240) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (452580) DHT_FAN: DHT read failed[0m
+[0;33mW (452740) NET: WiFi disconnected, retry...[0m
+[0;32mI (452750) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (452750) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (452760) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (452770) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (453300) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (454360) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (454580) DHT_FAN: DHT read failed[0m
+[0;32mI (455420) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (456480) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (456580) DHT_FAN: DHT read failed[0m
+[0;32mI (457540) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (458580) DHT_FAN: DHT read failed[0m
+[0;32mI (458600) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (459660) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (460580) DHT_FAN: DHT read failed[0m
+[0;32mI (460720) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (461780) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (462580) DHT_FAN: DHT read failed[0m
+[0;32mI (462770) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (462780) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (462780) NET: WiFi disconnected, retry...[0m
+[0;32mI (462840) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (463900) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (464580) DHT_FAN: DHT read failed[0m
+[0;32mI (464960) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (465200) NET: WiFi disconnected, retry...[0m
+[0;32mI (465210) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (465210) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (465220) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (465230) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (466020) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (466580) DHT_FAN: DHT read failed[0m
+[0;32mI (467080) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (468140) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (468580) DHT_FAN: DHT read failed[0m
+[0;32mI (469200) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (470260) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (470580) DHT_FAN: DHT read failed[0m
+[0;32mI (471320) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (472380) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (472580) DHT_FAN: DHT read failed[0m
+[0;32mI (473440) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (474500) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (474580) DHT_FAN: DHT read failed[0m
+[0;32mI (475230) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (475240) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (475240) NET: WiFi disconnected, retry...[0m
+[0;32mI (475560) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (476580) DHT_FAN: DHT read failed[0m
+[0;32mI (476620) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (477660) NET: WiFi disconnected, retry...[0m
+[0;32mI (477670) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (477670) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (477680) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (477680) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (477690) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (478580) DHT_FAN: DHT read failed[0m
+[0;32mI (478740) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (479800) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (480580) DHT_FAN: DHT read failed[0m
+[0;32mI (480860) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (481920) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (482580) DHT_FAN: DHT read failed[0m
+[0;32mI (482980) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (484040) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (484580) DHT_FAN: DHT read failed[0m
+[0;32mI (485100) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (486160) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (486580) DHT_FAN: DHT read failed[0m
+[0;32mI (487220) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (487690) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (487700) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (487700) NET: WiFi disconnected, retry...[0m
+[0;32mI (488280) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (488580) DHT_FAN: DHT read failed[0m
+[0;32mI (489340) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (490120) NET: WiFi disconnected, retry...[0m
+[0;32mI (490130) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (490130) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (490140) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (490150) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (490400) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (490580) DHT_FAN: DHT read failed[0m
+[0;32mI (491460) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (492520) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (492580) DHT_FAN: DHT read failed[0m
+[0;32mI (493580) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (494580) DHT_FAN: DHT read failed[0m
+[0;32mI (494640) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (495700) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (496580) DHT_FAN: DHT read failed[0m
+[0;32mI (496760) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (497820) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (498580) DHT_FAN: DHT read failed[0m
+[0;32mI (498880) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (499940) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (500150) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (500170) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (500170) NET: WiFi disconnected, retry...[0m
+[0;33mW (500580) DHT_FAN: DHT read failed[0m
+[0;32mI (501000) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (502060) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (502580) DHT_FAN: DHT read failed[0m
+[0;33mW (502590) NET: WiFi disconnected, retry...[0m
+[0;32mI (503120) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (504180) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (504580) DHT_FAN: DHT read failed[0m
+[0;33mW (505000) NET: WiFi disconnected, retry...[0m
+[0;32mI (505240) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (506300) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (506580) DHT_FAN: DHT read failed[0m
+[0;32mI (507360) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (507420) NET: WiFi disconnected, retry...[0m
+[0;32mI (508420) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (508580) DHT_FAN: DHT read failed[0m
+[0;32mI (509480) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (509830) NET: WiFi disconnected, retry...[0m
+[0;32mI (509840) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (509840) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (509850) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (509860) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (510540) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (510580) DHT_FAN: DHT read failed[0m
+[0;32mI (511600) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (512580) DHT_FAN: DHT read failed[0m
+[0;32mI (512660) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (513720) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (514580) DHT_FAN: DHT read failed[0m
+[0;32mI (514780) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (515840) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (516580) DHT_FAN: DHT read failed[0m
+[0;32mI (516900) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (517960) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (518580) DHT_FAN: DHT read failed[0m
+[0;32mI (519020) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (519860) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (519880) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (519880) NET: WiFi disconnected, retry...[0m
+[0;32mI (520080) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (520580) DHT_FAN: DHT read failed[0m
+[0;32mI (521140) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (522200) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (522300) NET: WiFi disconnected, retry...[0m
+[0;32mI (522310) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (522310) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (522330) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (522330) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (522580) DHT_FAN: DHT read failed[0m
+[0;32mI (523260) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (524320) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (524580) DHT_FAN: DHT read failed[0m
+[0;32mI (525380) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (526440) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (526580) DHT_FAN: DHT read failed[0m
+[0;32mI (527500) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (528560) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (528580) DHT_FAN: DHT read failed[0m
+[0;32mI (529620) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (530580) DHT_FAN: DHT read failed[0m
+[0;32mI (530680) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (531740) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (532340) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (532350) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (532350) NET: WiFi disconnected, retry...[0m
+[0;33mW (532580) DHT_FAN: DHT read failed[0m
+[0;32mI (532800) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (533860) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (534580) DHT_FAN: DHT read failed[0m
+[0;33mW (534770) NET: WiFi disconnected, retry...[0m
+[0;32mI (534780) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (534780) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (534790) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (534800) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (534920) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (535980) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (536580) DHT_FAN: DHT read failed[0m
+[0;32mI (537040) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (538100) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (538580) DHT_FAN: DHT read failed[0m
+[0;32mI (539160) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (540220) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (540580) DHT_FAN: DHT read failed[0m
+[0;32mI (541280) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (542340) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (542580) DHT_FAN: DHT read failed[0m
+[0;32mI (543400) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (544460) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (544580) DHT_FAN: DHT read failed[0m
+[0;32mI (544800) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (544810) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (544810) NET: WiFi disconnected, retry...[0m
+[0;32mI (545520) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (546580) DHT_FAN: DHT read failed[0m
+[0;32mI (546580) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (547230) NET: WiFi disconnected, retry...[0m
+[0;32mI (547240) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (547240) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (547250) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (547260) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (547640) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (548580) DHT_FAN: DHT read failed[0m
+[0;32mI (548700) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (549760) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (550580) DHT_FAN: DHT read failed[0m
+[0;32mI (550820) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (551880) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (552580) DHT_FAN: DHT read failed[0m
+[0;32mI (552940) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (554000) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (554580) DHT_FAN: DHT read failed[0m
+[0;32mI (555060) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (556120) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (556580) DHT_FAN: DHT read failed[0m
+[0;32mI (557180) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (557260) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (557280) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (557280) NET: WiFi disconnected, retry...[0m
+[0;32mI (558240) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (558580) DHT_FAN: DHT read failed[0m
+[0;32mI (559300) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (559700) NET: WiFi disconnected, retry...[0m
+[0;32mI (559700) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (559710) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (559720) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (559730) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (560360) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (560580) DHT_FAN: DHT read failed[0m
+[0;32mI (561420) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (562480) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (562580) DHT_FAN: DHT read failed[0m
+[0;32mI (563540) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (564580) DHT_FAN: DHT read failed[0m
+[0;32mI (564600) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (565660) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (566580) DHT_FAN: DHT read failed[0m
+[0;32mI (566720) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (567780) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (568580) DHT_FAN: DHT read failed[0m
+[0;32mI (568840) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (569740) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (569750) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (569750) NET: WiFi disconnected, retry...[0m
+[0;32mI (569900) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (570580) DHT_FAN: DHT read failed[0m
+[0;32mI (570960) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (572020) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (572170) NET: WiFi disconnected, retry...[0m
+[0;32mI (572180) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (572180) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (572190) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (572200) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (572580) DHT_FAN: DHT read failed[0m
+[0;32mI (573080) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (574140) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (574580) DHT_FAN: DHT read failed[0m
+[0;32mI (575200) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (576260) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (576580) DHT_FAN: DHT read failed[0m
+[0;32mI (577320) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (578380) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (578580) DHT_FAN: DHT read failed[0m
+[0;32mI (579440) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (580500) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;33mW (580580) DHT_FAN: DHT read failed[0m
+[0;32mI (581560) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (582200) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (582220) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (582220) NET: WiFi disconnected, retry...[0m
+[0;33mW (582580) DHT_FAN: DHT read failed[0m
+[0;32mI (582620) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (583680) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (584580) DHT_FAN: DHT read failed[0m
+[0;33mW (584640) NET: WiFi disconnected, retry...[0m
+[0;32mI (584650) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (584650) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (584660) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (584670) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (584740) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (585800) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (586580) DHT_FAN: DHT read failed[0m
+[0;32mI (586860) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (587920) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (588580) DHT_FAN: DHT read failed[0m
+[0;32mI (588980) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (590040) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;33mW (590580) DHT_FAN: DHT read failed[0m
+[0;32mI (591100) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (592160) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (592580) DHT_FAN: DHT read failed[0m
+[0;32mI (593220) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (594280) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (594580) DHT_FAN: DHT read failed[0m
+[0;32mI (594670) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (594680) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (594680) NET: WiFi disconnected, retry...[0m
+[0;32mI (595340) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (596400) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (596580) DHT_FAN: DHT read failed[0m
+[0;33mW (597100) NET: WiFi disconnected, retry...[0m
+[0;32mI (597110) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (597110) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (597120) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (597130) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (597460) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (598520) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (598580) DHT_FAN: DHT read failed[0m
+[0;32mI (599580) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (600580) DHT_FAN: DHT read failed[0m
+[0;32mI (600640) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;32mI (601700) SOIL_PUMP: RAW=1911 Moisture=77% Pump=OFF[0m
+[0;33mW (602580) DHT_FAN: DHT read failed[0m
+[0;32mI (602760) SOIL_PUMP: RAW=1916 Moisture=76% Pump=OFF[0m
+[0;32mI (603820) SOIL_PUMP: RAW=1904 Moisture=77% Pump=OFF[0m
+[0;33mW (604580) DHT_FAN: DHT read failed[0m
+[0;32mI (604880) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (605940) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (606580) DHT_FAN: DHT read failed[0m
+[0;32mI (607000) SOIL_PUMP: RAW=1913 Moisture=77% Pump=OFF[0m
+[0;32mI (607130) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (607140) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (607140) NET: WiFi disconnected, retry...[0m
+[0;32mI (608060) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (608580) DHT_FAN: DHT read failed[0m
+[0;32mI (609120) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (609560) NET: WiFi disconnected, retry...[0m
+[0;32mI (609570) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (609570) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (609580) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (609590) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (610180) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (610580) DHT_FAN: DHT read failed[0m
+[0;32mI (611240) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (612300) SOIL_PUMP: RAW=1914 Moisture=77% Pump=OFF[0m
+[0;33mW (612580) DHT_FAN: DHT read failed[0m
+[0;32mI (613360) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;32mI (614420) SOIL_PUMP: RAW=1915 Moisture=76% Pump=OFF[0m
+[0;33mW (614580) DHT_FAN: DHT read failed[0m
+[0;32mI (615480) SOIL_PUMP: RAW=2647 Moisture=36% Pump=OFF[0m
+[0;32mI (616540) SOIL_PUMP: RAW=2674 Moisture=34% Pump=ON[0m
+[0;33mW (616580) DHT_FAN: DHT read failed[0m
+[0;32mI (617600) SOIL_PUMP: RAW=2674 Moisture=34% Pump=ON[0m
+[0;33mW (618580) DHT_FAN: DHT read failed[0m
+[0;32mI (618660) SOIL_PUMP: RAW=2675 Moisture=34% Pump=ON[0m
+[0;32mI (619590) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (619600) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (619600) NET: WiFi disconnected, retry...[0m
+[0;32mI (619720) SOIL_PUMP: RAW=2675 Moisture=34% Pump=ON[0m
+[0;33mW (620580) DHT_FAN: DHT read failed[0m
+[0;32mI (620780) SOIL_PUMP: RAW=2673 Moisture=34% Pump=ON[0m
+[0;32mI (621840) SOIL_PUMP: RAW=2672 Moisture=34% Pump=ON[0m
+[0;33mW (622020) NET: WiFi disconnected, retry...[0m
+[0;32mI (622040) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (622050) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (622070) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (622070) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (622580) DHT_FAN: DHT read failed[0m
+[0;32mI (622900) SOIL_PUMP: RAW=2653 Moisture=35% Pump=ON[0m
+[0;32mI (623960) SOIL_PUMP: RAW=2358 Moisture=52% Pump=ON[0m
+[0;33mW (624580) DHT_FAN: DHT read failed[0m
+[0;32mI (625020) SOIL_PUMP: RAW=2559 Moisture=41% Pump=ON[0m
+[0;32mI (626080) SOIL_PUMP: RAW=2546 Moisture=41% Pump=ON[0m
+[0;33mW (626580) DHT_FAN: DHT read failed[0m
+[0;32mI (627140) SOIL_PUMP: RAW=2394 Moisture=50% Pump=ON[0m
+[0;32mI (628200) SOIL_PUMP: RAW=2479 Moisture=45% Pump=ON[0m
+[0;33mW (628580) DHT_FAN: DHT read failed[0m
+[0;32mI (629260) SOIL_PUMP: RAW=2487 Moisture=45% Pump=ON[0m
+[0;32mI (630320) SOIL_PUMP: RAW=2495 Moisture=44% Pump=ON[0m
+[0;33mW (630580) DHT_FAN: DHT read failed[0m
+[0;32mI (631380) SOIL_PUMP: RAW=2498 Moisture=44% Pump=ON[0m
+[0;32mI (632080) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (632090) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (632090) NET: WiFi disconnected, retry...[0m
+[0;32mI (632440) SOIL_PUMP: RAW=2505 Moisture=44% Pump=ON[0m
+[0;33mW (632580) DHT_FAN: DHT read failed[0m
+[0;32mI (633500) SOIL_PUMP: RAW=2544 Moisture=42% Pump=ON[0m
+[0;33mW (634510) NET: WiFi disconnected, retry...[0m
+[0;32mI (634520) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (634520) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (634530) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (634540) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (634560) SOIL_PUMP: RAW=2447 Moisture=47% Pump=ON[0m
+[0;33mW (634580) DHT_FAN: DHT read failed[0m
+[0;32mI (635620) SOIL_PUMP: RAW=2186 Moisture=61% Pump=OFF[0m
+[0;33mW (636580) DHT_FAN: DHT read failed[0m
+[0;32mI (636680) SOIL_PUMP: RAW=2128 Moisture=65% Pump=OFF[0m
+[0;32mI (637740) SOIL_PUMP: RAW=2141 Moisture=64% Pump=OFF[0m
+[0;33mW (638580) DHT_FAN: DHT read failed[0m
+[0;32mI (638800) SOIL_PUMP: RAW=2146 Moisture=64% Pump=OFF[0m
+[0;32mI (639860) SOIL_PUMP: RAW=2148 Moisture=64% Pump=OFF[0m
+[0;33mW (640580) DHT_FAN: DHT read failed[0m
+[0;32mI (640920) SOIL_PUMP: RAW=2153 Moisture=63% Pump=OFF[0m
+[0;32mI (641980) SOIL_PUMP: RAW=2155 Moisture=63% Pump=OFF[0m
+[0;33mW (642580) DHT_FAN: DHT read failed[0m
+[0;32mI (643040) SOIL_PUMP: RAW=2157 Moisture=63% Pump=OFF[0m
+[0;32mI (644100) SOIL_PUMP: RAW=2159 Moisture=63% Pump=OFF[0m
+[0;32mI (644540) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (644550) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (644550) NET: WiFi disconnected, retry...[0m
+[0;33mW (644580) DHT_FAN: DHT read failed[0m
+[0;32mI (645160) SOIL_PUMP: RAW=2160 Moisture=63% Pump=OFF[0m
+[0;32mI (646220) SOIL_PUMP: RAW=2160 Moisture=63% Pump=OFF[0m
+[0;33mW (646580) DHT_FAN: DHT read failed[0m
+[0;33mW (646970) NET: WiFi disconnected, retry...[0m
+[0;32mI (646980) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (646980) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (646990) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (647000) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (647280) SOIL_PUMP: RAW=2160 Moisture=63% Pump=OFF[0m
+[0;32mI (648340) SOIL_PUMP: RAW=2161 Moisture=63% Pump=OFF[0m
+[0;33mW (648580) DHT_FAN: DHT read failed[0m
+[0;32mI (649400) SOIL_PUMP: RAW=2162 Moisture=63% Pump=OFF[0m
+[0;32mI (650460) SOIL_PUMP: RAW=2163 Moisture=63% Pump=OFF[0m
+[0;33mW (650580) DHT_FAN: DHT read failed[0m
+[0;32mI (651520) SOIL_PUMP: RAW=2165 Moisture=63% Pump=OFF[0m
+[0;33mW (652580) DHT_FAN: DHT read failed[0m
+[0;32mI (652580) SOIL_PUMP: RAW=2166 Moisture=63% Pump=OFF[0m
+[0;32mI (653640) SOIL_PUMP: RAW=2167 Moisture=62% Pump=OFF[0m
+[0;33mW (654580) DHT_FAN: DHT read failed[0m
+[0;32mI (654700) SOIL_PUMP: RAW=2167 Moisture=62% Pump=OFF[0m
+[0;32mI (655760) SOIL_PUMP: RAW=2169 Moisture=62% Pump=OFF[0m
+[0;33mW (656580) DHT_FAN: DHT read failed[0m
+[0;32mI (656820) SOIL_PUMP: RAW=2170 Moisture=62% Pump=OFF[0m
+[0;32mI (657000) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (657010) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (657010) NET: WiFi disconnected, retry...[0m
+[0;32mI (657880) SOIL_PUMP: RAW=2171 Moisture=62% Pump=OFF[0m
+[0;33mW (658580) DHT_FAN: DHT read failed[0m
+[0;32mI (658940) SOIL_PUMP: RAW=2173 Moisture=62% Pump=OFF[0m
+[0;33mW (659430) NET: WiFi disconnected, retry...[0m
+[0;32mI (659440) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (659440) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (659450) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (659460) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (660000) SOIL_PUMP: RAW=2173 Moisture=62% Pump=OFF[0m
+[0;33mW (660580) DHT_FAN: DHT read failed[0m
+[0;32mI (661060) SOIL_PUMP: RAW=2176 Moisture=62% Pump=OFF[0m
+[0;32mI (662120) SOIL_PUMP: RAW=2175 Moisture=62% Pump=OFF[0m
+[0;33mW (662580) DHT_FAN: DHT read failed[0m
+[0;32mI (663180) SOIL_PUMP: RAW=2176 Moisture=62% Pump=OFF[0m
+[0;32mI (664240) SOIL_PUMP: RAW=2176 Moisture=62% Pump=OFF[0m
+[0;33mW (664580) DHT_FAN: DHT read failed[0m
+[0;32mI (665300) SOIL_PUMP: RAW=2177 Moisture=62% Pump=OFF[0m
+[0;32mI (666360) SOIL_PUMP: RAW=2177 Moisture=62% Pump=OFF[0m
+[0;33mW (666580) DHT_FAN: DHT read failed[0m
+[0;32mI (667420) SOIL_PUMP: RAW=2177 Moisture=62% Pump=OFF[0m
+[0;32mI (668480) SOIL_PUMP: RAW=2179 Moisture=62% Pump=OFF[0m
+[0;33mW (668580) DHT_FAN: DHT read failed[0m
+[0;32mI (669460) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (669470) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (669470) NET: WiFi disconnected, retry...[0m
+[0;32mI (669540) SOIL_PUMP: RAW=2189 Moisture=61% Pump=OFF[0m
+[0;33mW (670580) DHT_FAN: DHT read failed[0m
+[0;32mI (670600) SOIL_PUMP: RAW=2189 Moisture=61% Pump=OFF[0m
+[0;32mI (671660) SOIL_PUMP: RAW=2190 Moisture=61% Pump=OFF[0m
+[0;33mW (671890) NET: WiFi disconnected, retry...[0m
+[0;32mI (671900) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (671900) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (671910) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (671920) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (672580) DHT_FAN: DHT read failed[0m
+[0;32mI (672720) SOIL_PUMP: RAW=2190 Moisture=61% Pump=OFF[0m
+[0;32mI (673780) SOIL_PUMP: RAW=2190 Moisture=61% Pump=OFF[0m
+[0;33mW (674580) DHT_FAN: DHT read failed[0m
+[0;32mI (674840) SOIL_PUMP: RAW=2191 Moisture=61% Pump=OFF[0m
+[0;32mI (675900) SOIL_PUMP: RAW=2191 Moisture=61% Pump=OFF[0m
+[0;33mW (676580) DHT_FAN: DHT read failed[0m
+[0;32mI (676960) SOIL_PUMP: RAW=2191 Moisture=61% Pump=OFF[0m
+[0;32mI (678020) SOIL_PUMP: RAW=2192 Moisture=61% Pump=OFF[0m
+[0;33mW (678580) DHT_FAN: DHT read failed[0m
+[0;32mI (679080) SOIL_PUMP: RAW=2192 Moisture=61% Pump=OFF[0m
+[0;32mI (680140) SOIL_PUMP: RAW=2192 Moisture=61% Pump=OFF[0m
+[0;33mW (680580) DHT_FAN: DHT read failed[0m
+[0;32mI (681200) SOIL_PUMP: RAW=2191 Moisture=61% Pump=OFF[0m
+[0;32mI (681920) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (681930) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (681930) NET: WiFi disconnected, retry...[0m
+[0;32mI (682260) SOIL_PUMP: RAW=2192 Moisture=61% Pump=OFF[0m
+[0;33mW (682580) DHT_FAN: DHT read failed[0m
+[0;32mI (683320) SOIL_PUMP: RAW=2192 Moisture=61% Pump=OFF[0m
+[0;33mW (684350) NET: WiFi disconnected, retry...[0m
+[0;32mI (684360) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (684360) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (684370) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (684380) SOIL_PUMP: RAW=2192 Moisture=61% Pump=OFF[0m
+[0;32mI (684380) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (684580) DHT_FAN: DHT read failed[0m
+[0;32mI (685440) SOIL_PUMP: RAW=2192 Moisture=61% Pump=OFF[0m
+[0;32mI (686500) SOIL_PUMP: RAW=2192 Moisture=61% Pump=OFF[0m
+[0;33mW (686580) DHT_FAN: DHT read failed[0m
+[0;32mI (687560) SOIL_PUMP: RAW=2192 Moisture=61% Pump=OFF[0m
+[0;33mW (688580) DHT_FAN: DHT read failed[0m
+[0;32mI (688620) SOIL_PUMP: RAW=2194 Moisture=61% Pump=OFF[0m
+[0;32mI (689680) SOIL_PUMP: RAW=2193 Moisture=61% Pump=OFF[0m
+[0;33mW (690580) DHT_FAN: DHT read failed[0m
+[0;32mI (690740) SOIL_PUMP: RAW=2193 Moisture=61% Pump=OFF[0m
+[0;32mI (691800) SOIL_PUMP: RAW=2194 Moisture=61% Pump=OFF[0m
+[0;33mW (692580) DHT_FAN: DHT read failed[0m
+[0;32mI (692860) SOIL_PUMP: RAW=2193 Moisture=61% Pump=OFF[0m
+[0;32mI (693920) SOIL_PUMP: RAW=2194 Moisture=61% Pump=OFF[0m
+[0;32mI (694380) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (694400) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (694400) NET: WiFi disconnected, retry...[0m
+[0;33mW (694580) DHT_FAN: DHT read failed[0m
+[0;32mI (694980) SOIL_PUMP: RAW=2193 Moisture=61% Pump=OFF[0m
+[0;32mI (696040) SOIL_PUMP: RAW=2195 Moisture=61% Pump=OFF[0m
+[0;33mW (696580) DHT_FAN: DHT read failed[0m
+[0;33mW (696820) NET: WiFi disconnected, retry...[0m
+[0;32mI (696830) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (696830) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (696840) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (696850) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (697100) SOIL_PUMP: RAW=2194 Moisture=61% Pump=OFF[0m
+[0;32mI (698160) SOIL_PUMP: RAW=2195 Moisture=61% Pump=OFF[0m
+[0;33mW (698580) DHT_FAN: DHT read failed[0m
+[0;32mI (699220) SOIL_PUMP: RAW=2195 Moisture=61% Pump=OFF[0m
+[0;32mI (700280) SOIL_PUMP: RAW=2195 Moisture=61% Pump=OFF[0m
+[0;33mW (700580) DHT_FAN: DHT read failed[0m
+[0;32mI (701340) SOIL_PUMP: RAW=2195 Moisture=61% Pump=OFF[0m
+[0;32mI (702400) SOIL_PUMP: RAW=2197 Moisture=61% Pump=OFF[0m
+[0;33mW (702580) DHT_FAN: DHT read failed[0m
+[0;32mI (703460) SOIL_PUMP: RAW=2195 Moisture=61% Pump=OFF[0m
+[0;32mI (704520) SOIL_PUMP: RAW=2196 Moisture=61% Pump=OFF[0m
+[0;33mW (704580) DHT_FAN: DHT read failed[0m
+[0;32mI (705580) SOIL_PUMP: RAW=2195 Moisture=61% Pump=OFF[0m
+[0;33mW (706580) DHT_FAN: DHT read failed[0m
+[0;32mI (706640) SOIL_PUMP: RAW=2196 Moisture=61% Pump=OFF[0m
+[0;32mI (706860) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (706870) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (706870) NET: WiFi disconnected, retry...[0m
+[0;32mI (707700) SOIL_PUMP: RAW=2197 Moisture=61% Pump=OFF[0m
+[0;33mW (708580) DHT_FAN: DHT read failed[0m
+[0;32mI (708760) SOIL_PUMP: RAW=2195 Moisture=61% Pump=OFF[0m
+[0;33mW (709290) NET: WiFi disconnected, retry...[0m
+[0;32mI (709300) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (709300) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (709310) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (709320) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (709820) SOIL_PUMP: RAW=2197 Moisture=61% Pump=OFF[0m
+[0;33mW (710580) DHT_FAN: DHT read failed[0m
+[0;32mI (710880) SOIL_PUMP: RAW=2197 Moisture=61% Pump=OFF[0m
+[0;32mI (711940) SOIL_PUMP: RAW=2195 Moisture=61% Pump=OFF[0m
+[0;33mW (712580) DHT_FAN: DHT read failed[0m
+[0;32mI (713000) SOIL_PUMP: RAW=2198 Moisture=61% Pump=OFF[0m
+[0;32mI (714060) SOIL_PUMP: RAW=2198 Moisture=61% Pump=OFF[0m
+[0;33mW (714580) DHT_FAN: DHT read failed[0m
+[0;32mI (715120) SOIL_PUMP: RAW=2198 Moisture=61% Pump=OFF[0m
+[0;32mI (716180) SOIL_PUMP: RAW=2197 Moisture=61% Pump=OFF[0m
+[0;33mW (716580) DHT_FAN: DHT read failed[0m
+[0;32mI (717240) SOIL_PUMP: RAW=2198 Moisture=61% Pump=OFF[0m
+[0;32mI (718300) SOIL_PUMP: RAW=2197 Moisture=61% Pump=OFF[0m
+[0;33mW (718580) DHT_FAN: DHT read failed[0m
+[0;32mI (719320) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (719330) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (719330) NET: WiFi disconnected, retry...[0m
+[0;32mI (719360) SOIL_PUMP: RAW=2199 Moisture=61% Pump=OFF[0m
+[0;32mI (720420) SOIL_PUMP: RAW=2197 Moisture=61% Pump=OFF[0m
+[0;33mW (720580) DHT_FAN: DHT read failed[0m
+[0;32mI (721480) SOIL_PUMP: RAW=2198 Moisture=61% Pump=OFF[0m
+[0;33mW (721750) NET: WiFi disconnected, retry...[0m
+[0;32mI (721760) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (721760) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (721770) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (721780) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (722540) SOIL_PUMP: RAW=2196 Moisture=61% Pump=OFF[0m
+[0;33mW (722580) DHT_FAN: DHT read failed[0m
+[0;32mI (723600) SOIL_PUMP: RAW=2197 Moisture=61% Pump=OFF[0m
+[0;33mW (724580) DHT_FAN: DHT read failed[0m
+[0;32mI (724660) SOIL_PUMP: RAW=2197 Moisture=61% Pump=OFF[0m
+[0;32mI (725720) SOIL_PUMP: RAW=2199 Moisture=61% Pump=OFF[0m
+[0;33mW (726580) DHT_FAN: DHT read failed[0m
+[0;32mI (726780) SOIL_PUMP: RAW=2199 Moisture=61% Pump=OFF[0m
+[0;32mI (727840) SOIL_PUMP: RAW=2201 Moisture=61% Pump=OFF[0m
+[0;33mW (728580) DHT_FAN: DHT read failed[0m
+[0;32mI (728900) SOIL_PUMP: RAW=2199 Moisture=61% Pump=OFF[0m
+[0;32mI (729960) SOIL_PUMP: RAW=2201 Moisture=61% Pump=OFF[0m
+[0;33mW (730580) DHT_FAN: DHT read failed[0m
+[0;32mI (731020) SOIL_PUMP: RAW=2199 Moisture=61% Pump=OFF[0m
+[0;32mI (731780) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (731790) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (731790) NET: WiFi disconnected, retry...[0m
+[0;32mI (732080) SOIL_PUMP: RAW=2201 Moisture=61% Pump=OFF[0m
+[0;33mW (732580) DHT_FAN: DHT read failed[0m
+[0;32mI (733140) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;32mI (734200) SOIL_PUMP: RAW=2199 Moisture=61% Pump=OFF[0m
+[0;33mW (734210) NET: WiFi disconnected, retry...[0m
+[0;32mI (734220) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (734220) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (734230) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (734240) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (734580) DHT_FAN: DHT read failed[0m
+[0;32mI (735260) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;32mI (736320) SOIL_PUMP: RAW=2201 Moisture=61% Pump=OFF[0m
+[0;33mW (736580) DHT_FAN: DHT read failed[0m
+[0;32mI (737380) SOIL_PUMP: RAW=2201 Moisture=61% Pump=OFF[0m
+[0;32mI (738440) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;33mW (738580) DHT_FAN: DHT read failed[0m
+[0;32mI (739500) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;32mI (740560) SOIL_PUMP: RAW=2199 Moisture=61% Pump=OFF[0m
+[0;33mW (740580) DHT_FAN: DHT read failed[0m
+[0;32mI (741620) SOIL_PUMP: RAW=2201 Moisture=61% Pump=OFF[0m
+[0;33mW (742580) DHT_FAN: DHT read failed[0m
+[0;32mI (742680) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;32mI (743740) SOIL_PUMP: RAW=2201 Moisture=61% Pump=OFF[0m
+[0;32mI (744240) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (744250) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (744250) NET: WiFi disconnected, retry...[0m
+[0;33mW (744580) DHT_FAN: DHT read failed[0m
+[0;32mI (744800) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;32mI (745860) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;33mW (746580) DHT_FAN: DHT read failed[0m
+[0;33mW (746670) NET: WiFi disconnected, retry...[0m
+[0;32mI (746680) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (746680) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (746690) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (746700) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (746920) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;32mI (747980) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;33mW (748580) DHT_FAN: DHT read failed[0m
+[0;32mI (749040) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;32mI (750100) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;33mW (750580) DHT_FAN: DHT read failed[0m
+[0;32mI (751160) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;32mI (752220) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;33mW (752580) DHT_FAN: DHT read failed[0m
+[0;32mI (753280) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;32mI (754340) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;33mW (754580) DHT_FAN: DHT read failed[0m
+[0;32mI (755400) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;32mI (756460) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;33mW (756580) DHT_FAN: DHT read failed[0m
+[0;32mI (756700) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (756710) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (756710) NET: WiFi disconnected, retry...[0m
+[0;32mI (757520) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;33mW (758580) DHT_FAN: DHT read failed[0m
+[0;32mI (758580) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;33mW (759130) NET: WiFi disconnected, retry...[0m
+[0;32mI (759140) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (759140) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (759150) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (759160) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (759640) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;33mW (760580) DHT_FAN: DHT read failed[0m
+[0;32mI (760700) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;32mI (761760) SOIL_PUMP: RAW=2204 Moisture=60% Pump=OFF[0m
+[0;33mW (762580) DHT_FAN: DHT read failed[0m
+[0;32mI (762820) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;32mI (763880) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;33mW (764580) DHT_FAN: DHT read failed[0m
+[0;32mI (764940) SOIL_PUMP: RAW=2202 Moisture=61% Pump=OFF[0m
+[0;32mI (766000) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;33mW (766580) DHT_FAN: DHT read failed[0m
+[0;32mI (767060) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;32mI (768120) SOIL_PUMP: RAW=2205 Moisture=60% Pump=OFF[0m
+[0;33mW (768580) DHT_FAN: DHT read failed[0m
+[0;32mI (769160) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (769180) SOIL_PUMP: RAW=2205 Moisture=60% Pump=OFF[0m
+[0;32mI (769180) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (769180) NET: WiFi disconnected, retry...[0m
+[0;32mI (770240) SOIL_PUMP: RAW=2205 Moisture=60% Pump=OFF[0m
+[0;33mW (770580) DHT_FAN: DHT read failed[0m
+[0;32mI (771300) SOIL_PUMP: RAW=2205 Moisture=60% Pump=OFF[0m
+[0;33mW (771600) NET: WiFi disconnected, retry...[0m
+[0;32mI (771610) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (771610) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (771620) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (771630) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (772360) SOIL_PUMP: RAW=2206 Moisture=60% Pump=OFF[0m
+[0;33mW (772580) DHT_FAN: DHT read failed[0m
+[0;32mI (773420) SOIL_PUMP: RAW=2207 Moisture=60% Pump=OFF[0m
+[0;32mI (774480) SOIL_PUMP: RAW=2205 Moisture=60% Pump=OFF[0m
+[0;33mW (774580) DHT_FAN: DHT read failed[0m
+[0;32mI (775540) SOIL_PUMP: RAW=2205 Moisture=60% Pump=OFF[0m
+[0;33mW (776580) DHT_FAN: DHT read failed[0m
+[0;32mI (776600) SOIL_PUMP: RAW=2206 Moisture=60% Pump=OFF[0m
+[0;32mI (777660) SOIL_PUMP: RAW=2206 Moisture=60% Pump=OFF[0m
+[0;33mW (778580) DHT_FAN: DHT read failed[0m
+[0;32mI (778720) SOIL_PUMP: RAW=2207 Moisture=60% Pump=OFF[0m
+[0;32mI (779780) SOIL_PUMP: RAW=2207 Moisture=60% Pump=OFF[0m
+[0;33mW (780580) DHT_FAN: DHT read failed[0m
+[0;32mI (780840) SOIL_PUMP: RAW=2206 Moisture=60% Pump=OFF[0m
+[0;32mI (781630) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (781640) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (781640) NET: WiFi disconnected, retry...[0m
+[0;32mI (781900) SOIL_PUMP: RAW=2206 Moisture=60% Pump=OFF[0m
+[0;33mW (782580) DHT_FAN: DHT read failed[0m
+[0;32mI (782960) SOIL_PUMP: RAW=2207 Moisture=60% Pump=OFF[0m
+[0;32mI (784020) SOIL_PUMP: RAW=2207 Moisture=60% Pump=OFF[0m
+[0;33mW (784060) NET: WiFi disconnected, retry...[0m
+[0;32mI (784070) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (784070) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (784080) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (784100) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (784580) DHT_FAN: DHT read failed[0m
+[0;32mI (785080) SOIL_PUMP: RAW=2205 Moisture=60% Pump=OFF[0m
+[0;32mI (786140) SOIL_PUMP: RAW=2207 Moisture=60% Pump=OFF[0m
+[0;33mW (786580) DHT_FAN: DHT read failed[0m
+[0;32mI (787200) SOIL_PUMP: RAW=2208 Moisture=60% Pump=OFF[0m
+[0;32mI (788260) SOIL_PUMP: RAW=2206 Moisture=60% Pump=OFF[0m
+[0;33mW (788580) DHT_FAN: DHT read failed[0m

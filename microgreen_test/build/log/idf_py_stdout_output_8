@@ -1,0 +1,73 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Project_microgreen\microgreen_test\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Project_microgreen/microgreen_test/build/partition_table/partition-table.bin D:/Project_microgreen/microgreen_test/build/microgreen_test.bin"
+microgreen_test.bin binary size 0xc39f0 bytes. Smallest app partition is 0x100000 bytes. 0x3c610 bytes (24%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Project_microgreen\microgreen_test\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Project_microgreen/microgreen_test/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\user\esp\v5.5.1\esp-idf\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/user/esp/v5.5.1/esp-idf -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Users/user/esp/v5.5.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/Project_microgreen/microgreen_test/build -P C:/Users/user/esp/v5.5.1/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 microgreen_test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port COM3
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 44:1d:64:fb:cd:84
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d3fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26240 bytes to 16490...
+Writing at 0x00001000... (50 %)
+Writing at 0x000075f7... (100 %)
+Wrote 26240 bytes (16490 compressed) at 0x00001000 in 0.8 seconds (effective 271.1 kbit/s)...
+Hash of data verified.
+Compressed 801264 bytes to 501805...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c6b8... (6 %)
+Writing at 0x00025086... (9 %)
+Writing at 0x0003007c... (12 %)
+Writing at 0x00035b49... (16 %)
+Writing at 0x0003bd1c... (19 %)
+Writing at 0x00041a41... (22 %)
+Writing at 0x000473c1... (25 %)
+Writing at 0x0004cef0... (29 %)
+Writing at 0x00052a34... (32 %)
+Writing at 0x00058971... (35 %)
+Writing at 0x0005e81d... (38 %)
+Writing at 0x00064c24... (41 %)
+Writing at 0x0006a138... (45 %)
+Writing at 0x0006f43f... (48 %)
+Writing at 0x00075142... (51 %)
+Writing at 0x0007acd8... (54 %)
+Writing at 0x00080562... (58 %)
+Writing at 0x00085e37... (61 %)
+Writing at 0x0008bc24... (64 %)
+Writing at 0x0009145a... (67 %)
+Writing at 0x00097068... (70 %)
+Writing at 0x0009cd18... (74 %)
+Writing at 0x000a25f6... (77 %)
+Writing at 0x000a83fb... (80 %)
+Writing at 0x000b1b1c... (83 %)
+Writing at 0x000b8b80... (87 %)
+Writing at 0x000bec57... (90 %)
+Writing at 0x000c48cc... (93 %)
+Writing at 0x000cab5c... (96 %)
+Writing at 0x000cfe17... (100 %)
+Wrote 801264 bytes (501805 compressed) at 0x00010000 in 12.5 seconds (effective 513.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 484.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

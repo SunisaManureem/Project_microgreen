@@ -1,0 +1,182 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\microgreen_control\build\microgreen_control.elf D:\Project_microgreen\microgreen_control\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 16 2025 11:33:31[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a51ch (107804) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002a544 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002e4c8 vaddr=40080000 size=01b50h (  6992) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8d07ch (577660) map[0m
+[0;32mI (334) esp_image: segment 4: paddr=000bd0a4 vaddr=40081b50 size=163e4h ( 91108) load[0m
+[0;32mI (369) esp_image: segment 5: paddr=000d3490 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (381) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (381) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (400) cpu_start: Pro cpu start user code[0m
+[0;32mI (400) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (400) app_init: Application information:[0m
+[0;32mI (400) app_init: Project name:     microgreen_control[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (409) app_init: Compile time:     Oct 16 2025 11:19:24[0m
+[0;32mI (414) app_init: ELF file SHA256:  fa3b264a9...[0m
+[0;32mI (418) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (422) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (426) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (430) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (434) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (440) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (445) heap_init: At 3FFB85C0 len 00027A40 (158 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (455) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40097F34 len 000080CC (32 KiB): IRAM[0m
+[0;33mW (468) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (479) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;33mW (486) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (498) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (506) main_task: Started on CPU0[0m
+[0;32mI (516) main_task: Calling app_main()[0m
+[0;32mI (516) main_task: Returned from app_main()[0m
+[0;33mW (546) DHT_FAN: DHT read failed[0m
+[0;32mI (546) wifi:wifi driver task: 3ffc3094, prio:23, stack:6656, core=0[0m
+[0;32mI (556) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (556) wifi:wifi certification version: v7.0[0m
+[0;32mI (556) wifi:config NVS flash: enabled[0m
+[0;32mI (556) wifi:config nano formatting: disabled[0m
+[0;32mI (566) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (566) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (576) wifi:Init management short buffer num: 32[0m
+[0;32mI (576) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (576) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (586) wifi:Init static rx buffer num: 10[0m
+[0;32mI (586) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (596) wifi_init: rx ba win: 6[0m
+[0;32mI (596) wifi_init: accept mbox: 6[0m
+[0;32mI (596) wifi_init: tcpip mbox: 32[0m
+[0;32mI (596) wifi_init: udp mbox: 6[0m
+[0;32mI (606) wifi_init: tcp mbox: 6[0m
+[0;32mI (606) wifi_init: tcp tx win: 5760[0m
+[0;32mI (606) wifi_init: tcp rx win: 5760[0m
+[0;32mI (616) wifi_init: tcp mss: 1440[0m
+[0;32mI (616) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (616) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (626) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (636) SOIL_PUMP: RAW=1584 Moisture=95% Pump=OFF[0m
+[0;32mI (706) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (716) wifi:enable tsf[0m
+[0;32mI (716) NET: Connecting to Wi-Fi: Areena ...[0m
+[0;32mI (726) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (726) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (736) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (746) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1696) SOIL_PUMP: RAW=1574 Moisture=95% Pump=OFF[0m
+[0;33mW (2536) DHT_FAN: DHT read failed[0m
+[0;32mI (2756) SOIL_PUMP: RAW=1574 Moisture=95% Pump=OFF[0m
+[0;32mI (3816) SOIL_PUMP: RAW=1575 Moisture=95% Pump=OFF[0m
+[0;33mW (4536) DHT_FAN: DHT read failed[0m
+[0;32mI (4876) SOIL_PUMP: RAW=1573 Moisture=95% Pump=OFF[0m
+[0;32mI (5936) SOIL_PUMP: RAW=1574 Moisture=95% Pump=OFF[0m
+[0;33mW (6536) DHT_FAN: DHT read failed[0m
+[0;32mI (6996) SOIL_PUMP: RAW=1576 Moisture=95% Pump=OFF[0m
+[0;32mI (8056) SOIL_PUMP: RAW=1575 Moisture=95% Pump=OFF[0m
+[0;33mW (8536) DHT_FAN: DHT read failed[0m
+[0;32mI (9116) SOIL_PUMP: RAW=1575 Moisture=95% Pump=OFF[0m
+[0;32mI (10176) SOIL_PUMP: RAW=1574 Moisture=95% Pump=OFF[0m
+[0;33mW (10536) DHT_FAN: DHT read failed[0m
+[0;32mI (10746) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (10756) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (10756) NET: WiFi disconnected, retry...[0m
+[0;32mI (11236) SOIL_PUMP: RAW=1573 Moisture=95% Pump=OFF[0m
+[0;32mI (12296) SOIL_PUMP: RAW=1579 Moisture=95% Pump=OFF[0m
+[0;33mW (12536) DHT_FAN: DHT read failed[0m
+[0;33mW (13176) NET: WiFi disconnected, retry...[0m
+[0;32mI (13186) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13186) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (13196) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (13206) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (13356) SOIL_PUMP: RAW=1579 Moisture=95% Pump=OFF[0m
+[0;32mI (14416) SOIL_PUMP: RAW=1559 Moisture=96% Pump=OFF[0m
+[0;33mW (14536) DHT_FAN: DHT read failed[0m
+[0;32mI (15476) SOIL_PUMP: RAW=1571 Moisture=96% Pump=OFF[0m
+[0;33mW (16536) DHT_FAN: DHT read failed[0m
+[0;32mI (16536) SOIL_PUMP: RAW=1571 Moisture=96% Pump=OFF[0m
+[0;32mI (17596) SOIL_PUMP: RAW=1571 Moisture=96% Pump=OFF[0m
+[0;33mW (18536) DHT_FAN: DHT read failed[0m
+[0;32mI (18656) SOIL_PUMP: RAW=1563 Moisture=96% Pump=OFF[0m
+[0;32mI (19716) SOIL_PUMP: RAW=1568 Moisture=96% Pump=OFF[0m
+[0;33mW (20536) DHT_FAN: DHT read failed[0m
+[0;32mI (20776) SOIL_PUMP: RAW=1563 Moisture=96% Pump=OFF[0m
+[0;32mI (21836) SOIL_PUMP: RAW=1572 Moisture=96% Pump=OFF[0m
+[0;33mW (22536) DHT_FAN: DHT read failed[0m
+[0;32mI (22896) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;32mI (23216) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (23226) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (23226) NET: WiFi disconnected, retry...[0m
+[0;32mI (23956) SOIL_PUMP: RAW=1565 Moisture=96% Pump=OFF[0m
+[0;33mW (24536) DHT_FAN: DHT read failed[0m
+[0;32mI (25016) SOIL_PUMP: RAW=1566 Moisture=96% Pump=OFF[0m
+[0;33mW (25646) NET: WiFi disconnected, retry...[0m
+[0;32mI (25656) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25656) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (25666) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (25676) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (26076) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;33mW (26536) DHT_FAN: DHT read failed[0m
+[0;32mI (27136) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;32mI (28196) SOIL_PUMP: RAW=1565 Moisture=96% Pump=OFF[0m
+[0;33mW (28536) DHT_FAN: DHT read failed[0m
+[0;32mI (29256) SOIL_PUMP: RAW=1566 Moisture=96% Pump=OFF[0m
+[0;32mI (30316) SOIL_PUMP: RAW=1565 Moisture=96% Pump=OFF[0m
+[0;33mW (30536) DHT_FAN: DHT read failed[0m
+[0;32mI (31376) SOIL_PUMP: RAW=1566 Moisture=96% Pump=OFF[0m
+[0;32mI (32436) SOIL_PUMP: RAW=1566 Moisture=96% Pump=OFF[0m
+[0;33mW (32536) DHT_FAN: DHT read failed[0m
+[0;32mI (33496) SOIL_PUMP: RAW=1566 Moisture=96% Pump=OFF[0m
+[0;33mW (34536) DHT_FAN: DHT read failed[0m
+[0;32mI (34556) SOIL_PUMP: RAW=1564 Moisture=96% Pump=OFF[0m
+[0;32mI (35616) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;32mI (35686) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (35696) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (35696) NET: WiFi disconnected, retry...[0m
+[0;33mW (36536) DHT_FAN: DHT read failed[0m
+[0;32mI (36676) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;32mI (37736) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;33mW (38116) NET: WiFi disconnected, retry...[0m
+[0;32mI (38126) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38126) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (38146) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (38156) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (38536) DHT_FAN: DHT read failed[0m
+[0;32mI (38796) SOIL_PUMP: RAW=1566 Moisture=96% Pump=OFF[0m
+[0;32mI (39856) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;33mW (40536) DHT_FAN: DHT read failed[0m
+[0;32mI (40916) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;32mI (41976) SOIL_PUMP: RAW=1566 Moisture=96% Pump=OFF[0m
+[0;33mW (42536) DHT_FAN: DHT read failed[0m
+[0;32mI (43036) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;32mI (44096) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;33mW (44536) DHT_FAN: DHT read failed[0m
+[0;32mI (45156) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;32mI (46216) SOIL_PUMP: RAW=1567 Moisture=96% Pump=OFF[0m
+[0;33mW (46536) DHT_FAN: DHT read failed[0m

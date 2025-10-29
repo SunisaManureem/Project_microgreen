@@ -1,0 +1,110 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\microgreen_test02\build\microgreen_test02.elf D:\Project_microgreen\microgreen_test02\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x400d5ec6: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m439[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m190[0m
+[0m--- 0x400d65d0: [0;33muart_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m245[0m
+[0m--- 0x400d7906: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000182a: [0;33mwrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400d6f6d: [0;33mconsole_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_vfs_console/vfs_console.c[0m[0m:[1;31m83[0m
+[0m--- 0x400d7906: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x401458f5: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x4014f193: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x4014ebaa: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x40145be1: [0;33mvprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c[0m[0m:[1;31m34[0m
+[0m--- 0x4008f3ef: [0;33mesp_log_va[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/log/src/log.c[0m[0m:[1;31m43[0m
+[0m--- (inlined by) [0;33mesp_log[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/log/src/log.c[0m[0m:[1;31m88[0m
+[0m--- 0x400d83fd: [0;33mapply_light_policy_minute[0m[0m at [0;32mD:/Project_microgreen/microgreen_test02/main/microgreen_test02.c[0m[0m:[1;31m381[0m
+[0m--- 0x400d92f5: [0;33mgrow_cycle_task[0m[0m at [0;32mD:/Project_microgreen/microgreen_test02/main/microgreen_test02.c[0m[0m:[1;31m530[0m
+[0m--- 0x4008978d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x400d5ec6: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m439[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m190[0m
+[0m--- 0x400d65d0: [0;33muart_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m245[0m
+[0m--- 0x400d7906: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000182a: [0;33mwrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400d6f6d: [0;33mconsole_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_vfs_console/vfs_console.c[0m[0m:[1;31m83[0m
+[0m--- 0x400d7906: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x401458f5: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x4014f193: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x4014ebaa: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x40145be1: [0;33mvprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c[0m[0m:[1;31m34[0m
+[0m--- 0x4008f3ef: [0;33mesp_log_va[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/log/src/log.c[0m[0m:[1;31m43[0m
+[0m--- (inlined by) [0;33mesp_log[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/log/src/log.c[0m[0m:[1;31m88[0m
+[0m--- 0x400d83fd: [0;33mapply_light_policy_minute[0m[0m at [0;32mD:/Project_microgreen/microgreen_test02/main/microgreen_test02.c[0m[0m:[1;31m381[0m
+[0m--- 0x400d92f5: [0;33mgrow_cycle_task[0m[0m at [0;32mD:/Project_microgreen/microgreen_test02/main/microgreen_test02.c[0m[0m:[1;31m530[0m
+[0m--- 0x4008978d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x400d5ec6: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m439[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m190[0m
+[0m--- 0x400d65d0: [0;33muart_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m245[0m
+[0m--- 0x400d7906: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000182a: [0;33mwrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400d6f6d: [0;33mconsole_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_vfs_console/vfs_console.c[0m[0m:[1;31m83[0m
+[0m--- 0x400d7906: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x401458f5: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x4014f193: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x4014ebaa: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x40145be1: [0;33mvprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c[0m[0m:[1;31m34[0m
+[0m--- 0x4008f3ef: [0;33mesp_log_va[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/log/src/log.c[0m[0m:[1;31m43[0m
+[0m--- (inlined by) [0;33mesp_log[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/log/src/log.c[0m[0m:[1;31m88[0m
+[0m--- 0x400d83fd: [0;33mapply_light_policy_minute[0m[0m at [0;32mD:/Project_microgreen/microgreen_test02/main/microgreen_test02.c[0m[0m:[1;31m381[0m
+[0m--- 0x400d92f5: [0;33mgrow_cycle_task[0m[0m at [0;32mD:/Project_microgreen/microgreen_test02/main/microgreen_test02.c[0m[0m:[1;31m530[0m
+[0m--- 0x4008978d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x400d5ebc: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m439[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m190[0m
+[0m--- 0x400d65d0: [0;33muart_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m245[0m
+[0m--- 0x400d7906: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000182a: [0;33mwrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400d6f6d: [0;33mconsole_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/esp_vfs_console/vfs_console.c[0m[0m:[1;31m83[0m
+[0m--- 0x400d7906: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x401458f5: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x4014f193: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x4014ebaa: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x40145be1: [0;33mvprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c[0m[0m:[1;31m34[0m
+[0m--- 0x4008f3ef: [0;33mesp_log_va[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/log/src/log.c[0m[0m:[1;31m43[0m
+[0m--- (inlined by) [0;33mesp_log[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/log/src/log.c[0m[0m:[1;31m88[0m
+[0m--- 0x400d83fd: [0;33mapply_light_policy_minute[0m[0m at [0;32mD:/Project_microgreen/microgreen_test02/main/microgreen_test02.c[0m[0m:[1;31m381[0m
+[0m--- 0x400d92f5: [0;33mgrow_cycle_task[0m[0m at [0;32mD:/Project_microgreen/microgreen_test02/main/microgreen_test02.c[0m[0m:[1;31m530[0m
+[0m--- 0x4008978d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/user/esp/v5.5.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m

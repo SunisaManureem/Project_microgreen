@@ -1,0 +1,2 @@
+source D:/Project_microgreen/microgreen_control/build/bootloader/gdbinit/symbols
+source D:/Project_microgreen/microgreen_control/build/bootloader/gdbinit/connect

@@ -1,0 +1,840 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\microgreen_test02\build\microgreen_test02.elf D:\Project_microgreen\microgreen_test02\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 27 2025 19:38:39[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1acd0h (109776) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=0002acf8 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0002ec7c vaddr=40080000 size=0139ch (  5020) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8e614h (583188) map[0m
+[0;32mI (336) esp_image: segment 4: paddr=000be63c vaddr=4008139c size=16cach ( 93356) load[0m
+[0;32mI (373) esp_image: segment 5: paddr=000d52f0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (395) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     microgreen_test02[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Oct 27 2025 19:31:08[0m
+[0;32mI (417) app_init: ELF file SHA256:  b9d2ae49b...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (425) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (437) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (443) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (448) heap_init: At 3FFB8620 len 000279E0 (158 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (464) heap_init: At 40098048 len 00007FB8 (31 KiB): IRAM[0m
+[0;33mW (471) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (483) spi_flash: detected chip: generic[0m
+[0;32mI (486) spi_flash: flash io: dio[0m
+[0;33mW (489) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (501) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (510) main_task: Started on CPU0[0m
+[0;32mI (520) main_task: Calling app_main()[0m
+[1;31mE (540) task_wdt: esp_task_wdt_init(517): TWDT already initialized[0m
+[0;33mW (540) WDT: TWDT already initialized, reconfiguring...[0m
+[0;32mI (540) main_task: Returned from app_main()[0m
+[0;32mI (540) SOIL_PUMP: ADC calibration enabled (Vref=1072mV)[0m
+[0;32mI (1050) wifi:wifi driver task: 3ffc3208, prio:23, stack:6656, core=0[0m
+[0;32mI (1060) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1060) wifi:wifi certification version: v7.0[0m
+[0;32mI (1060) wifi:config NVS flash: enabled[0m
+[0;32mI (1060) wifi:config nano formatting: disabled[0m
+[0;32mI (1070) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1070) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1080) wifi:Init management short buffer num: 32[0m
+[0;32mI (1080) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1080) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1090) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1090) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1100) wifi_init: rx ba win: 6[0m
+[0;32mI (1100) wifi_init: accept mbox: 6[0m
+[0;32mI (1100) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1110) wifi_init: udp mbox: 6[0m
+[0;32mI (1110) wifi_init: tcp mbox: 6[0m
+[0;32mI (1110) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1110) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1120) wifi_init: tcp mss: 1440[0m
+[0;32mI (1120) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1120) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1130) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (1220) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (1220) wifi:enable tsf[0m
+[0;32mI (1220) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1220) NET: Connecting Wi-Fi: Areena ...[0m
+[0;32mI (1230) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1230) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1240) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1260) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5550) SOIL_PUMP: Moisture=0% RAW=2658 mV=2229 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (6540) DHT_FAN: T=28.2C RH=85.4% Soil=0% Fan=OFF (fail=0)[0m
+[0;33mW (11220) NET: Wi-Fi not ready after 10s, continue offline[0m
+[0;32mI (11260) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (11270) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (11270) NET: WiFi disconnected, reason=204[0m
+[0;32mI (12540) DHT_FAN: T=28.2C RH=85.3% Soil=0% Fan=OFF (fail=0)[0m
+[0;33mW (13690) NET: WiFi disconnected, reason=205[0m
+[0;33mW (16100) NET: WiFi disconnected, reason=201[0m
+[0;33mW (18520) NET: WiFi disconnected, reason=201[0m
+[0;32mI (18540) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (18540) wifi:state: init -> auth (0xb0)[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x7 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 27 2025 19:38:39[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1acd0h (109776) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=0002acf8 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0002ec7c vaddr=40080000 size=0139ch (  5020) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8e614h (583188) map[0m
+[0;32mI (336) esp_image: segment 4: paddr=000be63c vaddr=4008139c size=16cach ( 93356) load[0m
+[0;32mI (373) esp_image: segment 5: paddr=000d52f0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (395) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     microgreen_test02[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Oct 27 2025 19:31:08[0m
+[0;32mI (417) app_init: ELF file SHA256:  b9d2ae49b...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (425) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (437) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (443) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (448) heap_init: At 3FFB8620 len 000279E0 (158 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (464) heap_init: At 40098048 len 00007FB8 (31 KiB): IRAM[0m
+[0;33mW (471) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (483) spi_flash: detected chip: generic[0m
+[0;32mI (486) spi_flash: flash io: dio[0m
+[0;33mW (489) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (501) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (510) main_task: Started on CPU0[0m
+[0;32mI (520) main_task: Calling app_main()[0m
+[1;31mE (540) task_wdt: esp_task_wdt_init(517): TWDT already initialized[0m
+[0;33mW (540) WDT: TWDT already initialized, reconfiguring...[0m
+[0;32mI (540) main_task: Returned from app_main()[0m
+[0;32mI (540) SOIL_PUMP: ADC calibration enabled (Vref=1072mV)[0m
+[0;32mI (1050) wifi:wifi driver task: 3ffc3208, prio:23, stack:6656, core=0[0m
+[0;32mI (1060) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1060) wifi:wifi certification version: v7.0[0m
+[0;32mI (1060) wifi:config NVS flash: enabled[0m
+[0;32mI (1060) wifi:config nano formatting: disabled[0m
+[0;32mI (1070) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1070) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1080) wifi:Init management short buffer num: 32[0m
+[0;32mI (1080) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1080) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1090) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1090) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1100) wifi_init: rx ba win: 6[0m
+[0;32mI (1100) wifi_init: accept mbox: 6[0m
+[0;32mI (1100) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1110) wifi_init: udp mbox: 6[0m
+[0;32mI (1110) wifi_init: tcp mbox: 6[0m
+[0;32mI (1110) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1110) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1120) wifi_init: tcp mss: 1440[0m
+[0;32mI (1120) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1120) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1130) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (1220) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (1220) wifi:enable tsf[0m
+[0;32mI (1220) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1220) NET: Connecting Wi-Fi: Areena ...[0m
+[0;32mI (1240) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1240) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1260) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1260) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5550) SOIL_PUMP: Moisture=0% RAW=2661 mV=2231 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (6540) DHT_FAN: T=28.3C RH=85.3% Soil=0% Fan=OFF (fail=0)[0m
+[0;33mW (11220) NET: Wi-Fi not ready after 10s, continue offline[0m
+[0;32mI (11270) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (11280) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (11280) NET: WiFi disconnected, reason=204[0m
+[0;32mI (12540) DHT_FAN: T=28.3C RH=85.2% Soil=0% Fan=OFF (fail=0)[0m
+[0;33mW (13700) NET: WiFi disconnected, reason=205[0m
+[0;32mI (13710) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13710) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (13720) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (13730) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (18540) DHT_FAN: T=28.3C RH=85.2% Soil=0% Fan=OFF (fail=0)[0m
+[0;32mI (23730) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (23750) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (23750) NET: WiFi disconnected, reason=204[0m
+[0;32mI (24540) DHT_FAN: T=28.3C RH=85.2% Soil=0% Fan=OFF (fail=0)[0m
+[0;33mW (26170) NET: WiFi disconnected, reason=205[0m
+[0;33mW (28580) NET: WiFi disconnected, reason=201[0m
+[0;32mI (30540) DHT_FAN: Fan ON[0m
+[0;32mI (30540) DHT_FAN: T=28.3C RH=85.2% Soil=0% Fan=ON (fail=0)[0m
+[0;33mW (31000) NET: WiFi disconnected, reason=201[0m
+[0;32mI (31020) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (31020) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (31040) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (31040) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (36540) DHT_FAN: T=28.3C RH=85.2% Soil=0% Fan=ON (fail=0)[0m
+[0;32mI (41040) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (41060) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (41060) NET: WiFi disconnected, reason=204[0m
+[0;33mW (41220) NET: Time not synced (continue anyway)[0m
+[0;32mI (41220) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (42540) DHT_FAN: T=28.3C RH=85.1% Soil=0% Fan=ON (fail=0)[0m
+[0;33mW (43480) NET: WiFi disconnected, reason=205[0m
+[0;32mI (43490) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (43490) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (43510) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (43520) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (46220) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (48540) DHT_FAN: T=28.3C RH=85.1% Soil=0% Fan=ON (fail=0)[0m
+[1;31mE (51220) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (51220) task_wdt:  - grow_cycle_task (CPU 1)[0m
+[1;31mE (51220) task_wdt: Tasks currently running:[0m
+[1;31mE (51220) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (51220) task_wdt: CPU 1: grow_cycle_task[0m
+[1;31mE (51220) task_wdt: Aborting.[0m
+[1;31mE (51220) task_wdt: Print CPU 1 backtrace[0m
+
+
+
+
+Backtrace: 0x400d5ec6:0x3ffbcfb0 0x400d65d0:0x3ffbcfe0 0x400d7906:0x3ffbd010 0x4000bd83:0x3ffbd030 0x4000182a:0x3ffbd050 0x400d6f6d:0x3ffbd070 0x400d7906:0x3ffbd090 0x4000bd83:0x3ffbd0b0 0x4000117d:0x3ffbd0d0 0x400592fe:0x3ffbd0f0 0x4005937a:0x3ffbd110 0x401458f5:0x3ffbd130 0x4014f193:0x3ffbd160 0x4014ebaa:0x3ffbd180 0x40145be1:0x3ffbd4a0 0x4008f3ef:0x3ffbd4d0 0x400d83fd:0x3ffbd530 0x400d92f5:0x3ffbd550 0x4008978d:0x3ffbd580
+
+
+
+
+ELF file SHA256: b9d2ae49b
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 27 2025 19:38:39[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1acd0h (109776) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002acf8 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0002ec7c vaddr=40080000 size=0139ch (  5020) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8e614h (583188) map[0m
+[0;32mI (336) esp_image: segment 4: paddr=000be63c vaddr=4008139c size=16cach ( 93356) load[0m
+[0;32mI (373) esp_image: segment 5: paddr=000d52f0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (395) cpu_start: Multicore app[0m
+[0;32mI (403) cpu_start: Pro cpu start user code[0m
+[0;32mI (403) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     microgreen_test02[0m
+[0;32mI (408) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Oct 27 2025 19:31:08[0m
+[0;32mI (417) app_init: ELF file SHA256:  b9d2ae49b...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (425) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (437) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (443) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (448) heap_init: At 3FFB8620 len 000279E0 (158 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (464) heap_init: At 40098048 len 00007FB8 (31 KiB): IRAM[0m
+[0;33mW (471) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (482) spi_flash: detected chip: generic[0m
+[0;32mI (486) spi_flash: flash io: dio[0m
+[0;33mW (489) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (501) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (510) main_task: Started on CPU0[0m
+[0;32mI (520) main_task: Calling app_main()[0m
+[1;31mE (540) task_wdt: esp_task_wdt_init(517): TWDT already initialized[0m
+[0;33mW (540) WDT: TWDT already initialized, reconfiguring...[0m
+[0;32mI (540) main_task: Returned from app_main()[0m
+[0;32mI (540) SOIL_PUMP: ADC calibration enabled (Vref=1072mV)[0m
+[0;32mI (1050) wifi:wifi driver task: 3ffc3208, prio:23, stack:6656, core=0[0m
+[0;32mI (1060) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1060) wifi:wifi certification version: v7.0[0m
+[0;32mI (1060) wifi:config NVS flash: enabled[0m
+[0;32mI (1060) wifi:config nano formatting: disabled[0m
+[0;32mI (1070) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1070) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1080) wifi:Init management short buffer num: 32[0m
+[0;32mI (1080) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1080) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1090) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1090) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1100) wifi_init: rx ba win: 6[0m
+[0;32mI (1100) wifi_init: accept mbox: 6[0m
+[0;32mI (1100) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1110) wifi_init: udp mbox: 6[0m
+[0;32mI (1110) wifi_init: tcp mbox: 6[0m
+[0;32mI (1110) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1110) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1120) wifi_init: tcp mss: 1440[0m
+[0;32mI (1120) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1120) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1130) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (1220) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (1220) wifi:enable tsf[0m
+[0;32mI (1220) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1220) NET: Connecting Wi-Fi: Areena ...[0m
+[0;32mI (1230) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1230) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1240) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1260) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5550) SOIL_PUMP: Moisture=0% RAW=2666 mV=2235 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (6540) DHT_FAN: T=28.3C RH=85.0% Soil=0% Fan=OFF (fail=0)[0m
+[0;33mW (11220) NET: Wi-Fi not ready after 10s, continue offline[0m
+[0;32mI (11260) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (11270) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (11270) NET: WiFi disconnected, reason=204[0m
+[0;32mI (12540) DHT_FAN: T=28.3C RH=85.0% Soil=0% Fan=OFF (fail=0)[0m
+[0;33mW (13690) NET: WiFi disconnected, reason=205[0m
+[0;33mW (16100) NET: WiFi disconnected, reason=201[0m
+[0;32mI (16120) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (16120) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (16130) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (16140) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (18540) DHT_FAN: T=28.4C RH=85.0% Soil=68% Fan=OFF (fail=0)[0m
+[0;32mI (20550) SOIL_PUMP: Moisture=15% RAW=2317 mV=1961 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (24540) DHT_FAN: T=28.3C RH=84.9% Soil=13% Fan=OFF (fail=0)[0m
+[0;32mI (25550) SOIL_PUMP: Moisture=11% RAW=2368 mV=2001 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (26140) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (26150) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (26150) NET: WiFi disconnected, reason=204[0m
+[0;33mW (28570) NET: WiFi disconnected, reason=205[0m
+[0;32mI (28580) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (28580) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (28620) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (28640) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (30540) DHT_FAN: Fan ON[0m
+[0;32mI (30540) DHT_FAN: T=28.3C RH=84.9% Soil=46% Fan=ON (fail=0)[0m
+[0;32mI (30550) SOIL_PUMP: Moisture=49% RAW=1923 mV=1652 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (36540) DHT_FAN: T=28.4C RH=84.9% Soil=47% Fan=ON (fail=0)[0m
+[0;32mI (38640) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (38650) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (38650) NET: WiFi disconnected, reason=204[0m
+[0;33mW (41070) NET: WiFi disconnected, reason=205[0m
+[0;32mI (41080) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (41080) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (41220) NET: Time not synced (continue anyway)[0m
+[0;32mI (41220) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (42090) wifi:state: auth -> init (0x200)[0m
+[0;32mI (42100) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (42100) NET: WiFi disconnected, reason=2[0m
+[0;32mI (42540) DHT_FAN: T=28.4C RH=84.9% Soil=46% Fan=ON (fail=0)[0m
+[0;33mW (44520) NET: WiFi disconnected, reason=205[0m
+[0;32mI (44540) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (44540) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (44550) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (44560) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (45550) SOIL_PUMP: Moisture=45% RAW=1974 mV=1692 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (46220) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (48540) DHT_FAN: T=28.4C RH=84.9% Soil=45% Fan=ON (fail=0)[0m
+[1;31mE (51220) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (51220) task_wdt:  - grow_cycle_task (CPU 1)[0m
+[1;31mE (51220) task_wdt: Tasks currently running:[0m
+[1;31mE (51220) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (51220) task_wdt: CPU 1: grow_cycle_task[0m
+[1;31mE (51220) task_wdt: Aborting.[0m
+[1;31mE (51220) task_wdt: Print CPU 1 backtrace[0m
+
+
+
+
+Backtrace: 0x400d5ec6:0x3ffbcfb0 0x400d65d0:0x3ffbcfe0 0x400d7906:0x3ffbd010 0x4000bd83:0x3ffbd030 0x4000182a:0x3ffbd050 0x400d6f6d:0x3ffbd070 0x400d7906:0x3ffbd090 0x4000bd83:0x3ffbd0b0 0x4000117d:0x3ffbd0d0 0x400592fe:0x3ffbd0f0 0x4005937a:0x3ffbd110 0x401458f5:0x3ffbd130 0x4014f193:0x3ffbd160 0x4014ebaa:0x3ffbd180 0x40145be1:0x3ffbd4a0 0x4008f3ef:0x3ffbd4d0 0x400d83fd:0x3ffbd530 0x400d92f5:0x3ffbd550 0x4008978d:0x3ffbd580
+
+
+
+
+ELF file SHA256: b9d2ae49b
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 27 2025 19:38:39[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1acd0h (109776) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002acf8 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0002ec7c vaddr=40080000 size=0139ch (  5020) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8e614h (583188) map[0m
+[0;32mI (336) esp_image: segment 4: paddr=000be63c vaddr=4008139c size=16cach ( 93356) load[0m
+[0;32mI (373) esp_image: segment 5: paddr=000d52f0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (395) cpu_start: Multicore app[0m
+[0;32mI (403) cpu_start: Pro cpu start user code[0m
+[0;32mI (403) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     microgreen_test02[0m
+[0;32mI (408) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Oct 27 2025 19:31:08[0m
+[0;32mI (417) app_init: ELF file SHA256:  b9d2ae49b...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (425) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (437) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (443) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (448) heap_init: At 3FFB8620 len 000279E0 (158 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (464) heap_init: At 40098048 len 00007FB8 (31 KiB): IRAM[0m
+[0;33mW (471) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (482) spi_flash: detected chip: generic[0m
+[0;32mI (486) spi_flash: flash io: dio[0m
+[0;33mW (489) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (501) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+[1;31mE (539) task_wdt: esp_task_wdt_init(517): TWDT already initialized[0m
+[0;33mW (539) WDT: TWDT already initialized, reconfiguring...[0m
+[0;32mI (539) main_task: Returned from app_main()[0m
+[0;32mI (539) SOIL_PUMP: ADC calibration enabled (Vref=1072mV)[0m
+[0;32mI (1049) wifi:wifi driver task: 3ffc3208, prio:23, stack:6656, core=0[0m
+[0;32mI (1059) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1059) wifi:wifi certification version: v7.0[0m
+[0;32mI (1059) wifi:config NVS flash: enabled[0m
+[0;32mI (1059) wifi:config nano formatting: disabled[0m
+[0;32mI (1069) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1069) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1079) wifi:Init management short buffer num: 32[0m
+[0;32mI (1079) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1079) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1089) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1089) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1099) wifi_init: rx ba win: 6[0m
+[0;32mI (1099) wifi_init: accept mbox: 6[0m
+[0;32mI (1099) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1109) wifi_init: udp mbox: 6[0m
+[0;32mI (1109) wifi_init: tcp mbox: 6[0m
+[0;32mI (1109) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1109) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1119) wifi_init: tcp mss: 1440[0m
+[0;32mI (1119) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1119) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1129) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (1219) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (1219) wifi:enable tsf[0m
+[0;32mI (1219) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1219) NET: Connecting Wi-Fi: Areena ...[0m
+[0;32mI (1239) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1239) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1249) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1249) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5549) SOIL_PUMP: Moisture=44% RAW=1985 mV=1700 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (6539) DHT_FAN: T=28.4C RH=84.9% Soil=44% Fan=OFF (fail=0)[0m
+[0;33mW (11219) NET: Wi-Fi not ready after 10s, continue offline[0m
+[0;32mI (11259) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (11269) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (11269) NET: WiFi disconnected, reason=204[0m
+[0;32mI (12539) DHT_FAN: T=28.4C RH=84.9% Soil=42% Fan=OFF (fail=0)[0m
+[0;33mW (13689) NET: WiFi disconnected, reason=205[0m
+[0;33mW (16109) NET: WiFi disconnected, reason=201[0m
+[0;33mW (18519) NET: WiFi disconnected, reason=201[0m
+[0;32mI (18529) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (18529) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (18539) DHT_FAN: T=28.4C RH=84.8% Soil=42% Fan=OFF (fail=0)[0m
+[0;32mI (18549) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (18569) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (20549) SOIL_PUMP: Moisture=41% RAW=2023 mV=1730 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (24539) DHT_FAN: T=28.4C RH=84.8% Soil=40% Fan=OFF (fail=0)[0m
+[0;32mI (28569) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (28579) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (28579) NET: WiFi disconnected, reason=204[0m
+[0;32mI (30539) DHT_FAN: Fan ON[0m
+[0;32mI (30539) DHT_FAN: T=28.4C RH=84.8% Soil=37% Fan=ON (fail=0)[0m
+[0;32mI (30549) SOIL_PUMP: Moisture=34% RAW=2099 mV=1790 Pump=OFF dose#=0 lock=Y[0m
+[0;33mW (30999) NET: WiFi disconnected, reason=205[0m
+[0;32mI (31009) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (31009) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (31019) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (31029) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (36539) DHT_FAN: T=28.4C RH=84.8% Soil=33% Fan=ON (fail=0)[0m
+[0;32mI (40549) SOIL_PUMP: Moisture=30% RAW=2146 mV=1827 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (41029) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (41049) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (41049) NET: WiFi disconnected, reason=204[0m
+[0;33mW (41219) NET: Time not synced (continue anyway)[0m
+[0;32mI (41219) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (42539) DHT_FAN: T=28.4C RH=84.8% Soil=29% Fan=ON (fail=0)[0m
+[0;33mW (43469) NET: WiFi disconnected, reason=205[0m
+[0;32mI (43479) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (43479) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (43489) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (43509) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (45549) SOIL_PUMP: Moisture=26% RAW=2186 mV=1858 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (46219) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (48539) DHT_FAN: T=28.4C RH=84.8% Soil=25% Fan=ON (fail=0)[0m
+[0;32mI (50549) SOIL_PUMP: Moisture=22% RAW=2231 mV=1894 Pump=OFF dose#=0 lock=Y[0m
+[1;31mE (51219) task_wdt: Task watchdog got triggered. The following tasks/users dIi d( n5o1t2 r1e9s)et  GtRheO Ww:at cMhidongu tine  t1ime:[0m
+[1;31mE (51219) task_wdt:  - grow_cycle_task (CPU 1)[0m
+[1;31mE (51219) task_wdt: Tasks currently running:[0m
+[1;31mE (51219) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (51219) task_wdt: CPU 1: grow_cycle_task[0m
+[1;31mE (51219) task_wdt: Aborting.[0m
+[1;31mE (51219) task_wdt: Print CPU 1 backtrace[0m
+
+
+
+
+Backtrace: 0x400d5ec6:0x3ffbcfb0 0x400d65d0:0x3ffbcfe0 0x400d7906:0x3ffbd010 0x4000bd83:0x3ffbd030 0x4000182a:0x3ffbd050 0x400d6f6d:0x3ffbd070 0x400d7906:0x3ffbd090 0x4000bd83:0x3ffbd0b0 0x4000117d:0x3ffbd0d0 0x400592fe:0x3ffbd0f0 0x4005937a:0x3ffbd110 0x401458f5:0x3ffbd130 0x4014f193:0x3ffbd160 0x4014ebaa:0x3ffbd180 0x40145be1:0x3ffbd4a0 0x4008f3ef:0x3ffbd4d0 0x400d83fd:0x3ffbd530 0x400d92f5:0x3ffbd550 0x4008978d:0x3ffbd580
+
+
+
+
+ELF file SHA256: b9d2ae49b
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 27 2025 19:38:39[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1acd0h (109776) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002acf8 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0002ec7c vaddr=40080000 size=0139ch (  5020) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8e614h (583188) map[0m
+[0;32mI (336) esp_image: segment 4: paddr=000be63c vaddr=4008139c size=16cach ( 93356) load[0m
+[0;32mI (373) esp_image: segment 5: paddr=000d52f0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (395) cpu_start: Multicore app[0m
+[0;32mI (403) cpu_start: Pro cpu start user code[0m
+[0;32mI (403) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     microgreen_test02[0m
+[0;32mI (408) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Oct 27 2025 19:31:08[0m
+[0;32mI (417) app_init: ELF file SHA256:  b9d2ae49b...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (425) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (437) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (443) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (448) heap_init: At 3FFB8620 len 000279E0 (158 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (464) heap_init: At 40098048 len 00007FB8 (31 KiB): IRAM[0m
+[0;33mW (471) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (482) spi_flash: detected chip: generic[0m
+[0;32mI (486) spi_flash: flash io: dio[0m
+[0;33mW (489) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (501) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+[1;31mE (539) task_wdt: esp_task_wdt_init(517): TWDT already initialized[0m
+[0;33mW (539) WDT: TWDT already initialized, reconfiguring...[0m
+[0;32mI (539) main_task: Returned from app_main()[0m
+[0;32mI (539) SOIL_PUMP: ADC calibration enabled (Vref=1072mV)[0m
+[0;32mI (1049) wifi:wifi driver task: 3ffc3208, prio:23, stack:6656, core=0[0m
+[0;32mI (1059) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1059) wifi:wifi certification version: v7.0[0m
+[0;32mI (1059) wifi:config NVS flash: enabled[0m
+[0;32mI (1059) wifi:config nano formatting: disabled[0m
+[0;32mI (1069) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1069) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1079) wifi:Init management short buffer num: 32[0m
+[0;32mI (1079) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1079) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1089) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1089) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1099) wifi_init: rx ba win: 6[0m
+[0;32mI (1099) wifi_init: accept mbox: 6[0m
+[0;32mI (1099) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1109) wifi_init: udp mbox: 6[0m
+[0;32mI (1109) wifi_init: tcp mbox: 6[0m
+[0;32mI (1109) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1109) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1119) wifi_init: tcp mss: 1440[0m
+[0;32mI (1119) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1119) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1129) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (1219) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (1219) wifi:enable tsf[0m
+[0;32mI (1219) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1219) NET: Connecting Wi-Fi: Areena ...[0m
+[0;32mI (1239) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1239) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1249) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1259) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5549) SOIL_PUMP: Moisture=16% RAW=2307 mV=1953 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (6539) DHT_FAN: T=28.4C RH=84.8% Soil=16% Fan=OFF (fail=0)[0m
+[0;32mI (10549) SOIL_PUMP: Moisture=9% RAW=2381 mV=2011 Pump=OFF dose#=0 lock=Y[0m
+[0;33mW (11219) NET: Wi-Fi not ready after 10s, continue offline[0m
+[0;32mI (11259) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (11309) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (11309) NET: WiFi disconnected, reason=204[0m
+[0;32mI (12539) DHT_FAN: T=28.4C RH=84.8% Soil=9% Fan=OFF (fail=0)[0m
+[0;33mW (13729) NET: WiFi disconnected, reason=205[0m
+[0;32mI (13739) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13739) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (13749) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (13759) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (15549) SOIL_PUMP: Moisture=4% RAW=2448 mV=2064 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (18539) DHT_FAN: T=28.4C RH=84.8% Soil=2% Fan=OFF (fail=0)[0m
+[0;32mI (20549) SOIL_PUMP: Moisture=0% RAW=2505 mV=2109 Pump=OFF dose#=0 lock=Y[0m
+[0;32mI (23759) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (23769) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (23769) NET: WiFi disconnected, reason=204[0m
+[0;32mI (24539) DHT_FAN: T=28.4C RH=84.8% Soil=0% Fan=OFF (fail=0)[0m
+[0;33mW (26189) NET: WiFi disconnected, reason=205[0m
+[0;32mI (26199) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (26199) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (26209) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (26219) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (30539) DHT_FAN: Fan ON[0m
+[0;32mI (30539) DHT_FAN: T=28.4C RH=84.8% Soil=0% Fan=ON (fail=0)[0m
+[0;32mI (36229) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (36239) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (36239) NET: WiFi disconnected, reason=204[0m
+[0;32mI (36539) DHT_FAN: T=28.4C RH=84.7% Soil=0% Fan=ON (fail=0)[0m
+[0;33mW (38659) NET: WiFi disconnected, reason=205[0m
+[0;32mI (38669) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38669) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (38689) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (38689) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (41219) NET: Time not synced (continue anyway)[0m
+[0;32mI (41219) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (42539) DHT_FAN: T=28.4C RH=84.8% Soil=0% Fan=ON (fail=0)[0m
+[0;32mI (46219) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (48539) DHT_FAN: T=28.4C RH=84.8% Soil=0% Fan=ON (fail=0)[0m
+[0;32mI (48689) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (48709) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (48709) NET: WiFi disconnected, reason=204[0m
+[0;33mW (51129) NET: WiFi disconnected, reason=205[0m
+[0;32mI (51139) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (51139) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (51159) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (51159) wifi:state: assoc -> run (0x10)[0m
+[1;31mE (51219) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (51219) task_wdt:  - grow_cycle_task (CPU 1)[0m
+[1;31mE (51219) task_wdt: Tasks currently running:[0m
+[1;31mE (51219) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (51219) task_wdt: CPU 1: grow_cycle_task[0m
+[1;31mE (51219) task_wdt: Aborting.[0m
+[1;31mE (51219) task_wdt: Print CPU 1 backtrace[0m
+
+
+
+
+Backtrace: 0x400d5ebc:0x3ffbcfb0 0x400d65d0:0x3ffbcfe0 0x400d7906:0x3ffbd010 0x4000bd83:0x3ffbd030 0x4000182a:0x3ffbd050 0x400d6f6d:0x3ffbd070 0x400d7906:0x3ffbd090 0x4000bd83:0x3ffbd0b0 0x4000117d:0x3ffbd0d0 0x400592fe:0x3ffbd0f0 0x4005937a:0x3ffbd110 0x401458f5:0x3ffbd130 0x4014f193:0x3ffbd160 0x4014ebaa:0x3ffbd180 0x40145be1:0x3ffbd4a0 0x4008f3ef:0x3ffbd4d0 0x400d83fd:0x3ffbd530 0x400d92f5:0x3ffbd550 0x4008978d:0x3ffbd580
+
+
+
+
+ELF file SHA256: b9d2ae49b
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 27 2025 19:38:39[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1acd0h (109776) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002acf8 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0002ec7c vaddr=40080000 size=0139ch (  5020) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8e614h (583188) map[0m
+[0;32mI (336) esp_image: segment 4: paddr=000be63c vaddr=4008139c size=16cach ( 93356) load[0m
+[0;32mI (373) esp_image: segment 5: paddr=000d52f0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (395) cpu_start: Multicore app[0m
+[0;32mI (403) cpu_start: Pro cpu start user code[0m
+[0;32mI (403) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     microgreen_test02[0m
+[0;32mI (408) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Oct 27 2025 19:31:08[0m
+[0;32mI (417) app_init: ELF file SHA256:  b9d2ae49b...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (425) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (437) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (443) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (448) heap_init: At 3FFB8620 len 000279E0 (158 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (464) heap_init: At 40098048 len 00007FB8 (31 KiB): IRAM[0m
+[0;33mW (471) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (482) spi_flash: detected chip: generic[0m
+[0;32mI (486) spi_flash: flash io: dio[0m
+[0;33mW (489) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (501) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+[1;31mE (539) task_wdt: esp_task_wdt_init(517): TWDT already initialized[0m
+[0;33mW (539) WDT: TWDT already initialized, reconfiguring...[0m
+[0;32mI (539) main_task: Returned from app_main()[0m
+[0;32mI (539) SOIL_PUMP: ADC calibration enabled (Vref=1072mV)[0m
+[0;32mI (1049) wifi:wifi driver task: 3ffc328c, prio:23, stack:6656, core=0[0m
+[0;32mI (1059) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1059) wifi:wifi certification version: v7.0[0m
+[0;32mI (1059) wifi:config NVS flash: enabled[0m
+[0;32mI (1059) wifi:config nano formatting: disabled[0m
+[0;32mI (1069) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1069) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1079) wifi:Init management short buffer num: 32[0m
+[0;32mI (1079) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1079) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1089) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1089) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1099) wifi_init: rx ba win: 6[0m
+[0;32mI (1099) wifi_init: accept mbox: 6[0m
+[0;32mI (1099) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1109) wifi_init: udp mbox: 6[0m
+[0;32mI (1109) wifi_init: tcp mbox: 6[0m
+[0;32mI (1109) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1109) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1119) wifi_init: tcp mss: 1440[0m
+[0;32mI (1119) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1119) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1129) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (1219) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (1219) wifi:enable tsf[0m
+[0;32mI (1219) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1219) NET: Connecting Wi-Fi: Areena ...[0m
+[0;32mI (1239) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1239) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1249) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1259) wifi:state: assoc -> run (0x10)[0m

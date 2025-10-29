@@ -1,0 +1,41 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Project_microgreen\soilsensor\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Project_microgreen/soilsensor/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/soilsensor.c.obj
+In file included from D:/Project_microgreen/soilsensor/main/soilsensor.c:5:
+C:/Users/user/esp/v5.5.1/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/Project_microgreen/soilsensor/main/soilsensor.c:6:
+C:/Users/user/esp/v5.5.1/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/Project_microgreen/soilsensor/main/soilsensor.c: In function 'app_main':
+D:/Project_microgreen/soilsensor/main/soilsensor.c:41:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   41 |     adc1_config_channel_atten(SOIL_CH, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/user/esp/v5.5.1/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from C:/Users/user/esp/v5.5.1/esp-idf/components/driver/deprecated/driver/adc.h:15:
+C:/Users/user/esp/v5.5.1/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+D:/Project_microgreen/soilsensor/main/soilsensor.c:44:9: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   44 |         ADC_UNIT_1, ADC_ATTEN_DB_11, ADC_WIDTH_BIT_12, 1100, &adc_chars
+      |         ^~~~~~~~~~
+C:/Users/user/esp/v5.5.1/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable soilsensor.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Project_microgreen/soilsensor/build/soilsensor.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Project_microgreen\soilsensor\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Project_microgreen/soilsensor/build/partition_table/partition-table.bin D:/Project_microgreen/soilsensor/build/soilsensor.bin"
+soilsensor.bin binary size 0x2e350 bytes. Smallest app partition is 0x100000 bytes. 0xd1cb0 bytes (82%) free.

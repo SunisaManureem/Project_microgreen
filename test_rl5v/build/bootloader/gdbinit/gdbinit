@@ -1,0 +1,2 @@
+source D:/Project_microgreen/test_rl5v/build/bootloader/gdbinit/symbols
+source D:/Project_microgreen/test_rl5v/build/bootloader/gdbinit/connect

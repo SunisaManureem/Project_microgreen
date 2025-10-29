@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/Project_microgreen/microgreen_test11/build/CMakeFiles/bootloader
+D:/Project_microgreen/microgreen_test11/build/CMakeFiles/bootloader.rule
+D:/Project_microgreen/microgreen_test11/build/CMakeFiles/bootloader-complete.rule
+D:/Project_microgreen/microgreen_test11/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/Project_microgreen/microgreen_test11/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/Project_microgreen/microgreen_test11/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/Project_microgreen/microgreen_test11/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/Project_microgreen/microgreen_test11/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/Project_microgreen/microgreen_test11/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/Project_microgreen/microgreen_test11/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

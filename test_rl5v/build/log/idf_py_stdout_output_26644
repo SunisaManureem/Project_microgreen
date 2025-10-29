@@ -1,0 +1,286 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\test_rl5v\build\test_rl5v.elf D:\Project_microgreen\test_rl5v\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  3 2025 21:55:01[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a1c0h (106944) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002a1e8 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002e16c vaddr=40080000 size=01each (  7852) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8c098h (573592) map[0m
+[0;32mI (332) esp_image: segment 4: paddr=000bc0c0 vaddr=40081eac size=15fdch ( 90076) load[0m
+[0;32mI (367) esp_image: segment 5: paddr=000d20a4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (379) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (379) boot: Disabling RNG early entropy source...[0m
+[0;32mI (390) cpu_start: Multicore app[0m
+[0;32mI (398) cpu_start: Pro cpu start user code[0m
+[0;32mI (398) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (398) app_init: Application information:[0m
+[0;32mI (398) app_init: Project name:     test_rl5v[0m
+[0;32mI (402) app_init: App version:      1[0m
+[0;32mI (406) app_init: Compile time:     Oct  3 2025 21:54:10[0m
+[0;32mI (411) app_init: ELF file SHA256:  ee9093e8f...[0m
+[0;32mI (415) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (419) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (423) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (427) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (431) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (437) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (442) heap_init: At 3FFB85A0 len 00027A60 (158 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40097E88 len 00008178 (32 KiB): IRAM[0m
+[0;33mW (464) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (476) spi_flash: detected chip: generic[0m
+[0;32mI (480) spi_flash: flash io: dio[0m
+[0;33mW (483) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (496) main_task: Started on CPU0[0m
+[0;32mI (506) main_task: Calling app_main()[0m
+[0;32mI (506) main_task: Returned from app_main()[0m
+[0;32mI (536) RELAY2CH_AH: Relay test ready (Active HIGH). Pump/Fan OFF.[0m
+[0;32mI (536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (546) wifi:wifi driver task: 3ffc1e88, prio:23, stack:6656, core=0[0m
+[0;32mI (556) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (556) wifi:wifi certification version: v7.0[0m
+[0;32mI (556) wifi:config NVS flash: enabled[0m
+[0;32mI (556) wifi:config nano formatting: disabled[0m
+[0;32mI (566) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (566) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (566) wifi:Init management short buffer num: 32[0m
+[0;32mI (576) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (576) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (586) wifi:Init static rx buffer num: 10[0m
+[0;32mI (586) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (596) wifi_init: rx ba win: 6[0m
+[0;32mI (596) wifi_init: accept mbox: 6[0m
+[0;32mI (596) wifi_init: tcpip mbox: 32[0m
+[0;32mI (596) wifi_init: udp mbox: 6[0m
+[0;32mI (606) wifi_init: tcp mbox: 6[0m
+[0;32mI (606) wifi_init: tcp tx win: 5760[0m
+[0;32mI (606) wifi_init: tcp rx win: 5760[0m
+[0;32mI (616) wifi_init: tcp mss: 1440[0m
+[0;32mI (616) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (616) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (626) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (706) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (706) wifi:enable tsf[0m
+[0;32mI (716) GROW_TEST_MIN: Connecting to Wi-Fi: Areena ...[0m
+[0;32mI (726) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (726) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (736) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (756) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (806) wifi:connected with Areena, aid = 3, channel 6, BW20, bssid = 0e:64:dd:5c:a8:87[0m
+[0;32mI (806) wifi:security: WPA2-PSK, phy: bgn, rssi: -56[0m
+[0;32mI (806) wifi:pm start, type: 1[0m
+
+[0;32mI (806) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (996) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1006) wifi:<ba-add>idx:0 (ifx:0, 0e:64:dd:5c:a8:87), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2386) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2386) GROW_TEST_MIN: Got IP[0m
+[0;32mI (2386) GROW_TEST_MIN: Wi-Fi connected[0m
+[0;32mI (5536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (7386) GROW_TEST_MIN: Time synced[0m
+[0;32mI (7386) GROW_TEST_MIN: Hold RESET button 3000 ms to start a NEW 7-minute cycle.[0m
+[0;32mI (7886) GROW_TEST_MIN: Loaded start_ts  = 1759509358[0m
+[0;32mI (7886) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (10536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (12886) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (15536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (17886) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (20536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (22886) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (25536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (27886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (30536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (32886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (35536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (37886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (40536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (42886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (45536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (47886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (50536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (52886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (55536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (57886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (60536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (62886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (65536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (67886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (70536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (72886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (75536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (77886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (80536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (82886) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (85536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (87886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (90536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (92886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (95536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (97886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (100536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (102886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (105536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (107886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (110536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (112886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (115536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (117886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (120536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (122886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (125536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (127886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (130536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (132886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (135536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (137886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (140536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (142886) GROW_TEST_MIN: Minute 5: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (145536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (147886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (150536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (152886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (155536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (157886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (160536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (162886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (165536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (167886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (170536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (172886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (175536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (177886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (180536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (182886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (185536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (187886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (190536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (192886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (195536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (197886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (200536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (202886) GROW_TEST_MIN: Minute 6: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (205536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (207886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (210536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (212886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (215536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (217886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (220536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (222886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (225536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (227886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (230536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (232886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (235536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (237886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (240536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (242886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (245536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (247886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (250536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (252886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (255536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (257886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (260536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (262886) GROW_TEST_MIN: Minute 7: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (265536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (267886) GROW_TEST_MIN: Minute 8+: LIGHT = OFF (CYCLE DONE)[0m
+[0;32mI (267896) GROW_TEST_MIN: Auto-start NEW 7-minute cycle[0m
+[0;32mI (270536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (272896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (275536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (277896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (280536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (282896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (285536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (287896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (290536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (292896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (295536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (297896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (300536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (302896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (305536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (307896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (310536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (312896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (315536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (317896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (320536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (322896) GROW_TEST_MIN: Minute 1: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (325536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (327896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (330536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (332896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (335536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (337896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (340536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (342896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (345536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (347896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (350536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (352896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (355536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (357896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (360536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (362896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (365536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (367896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (370536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (372896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (375536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (377896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (380536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (382896) GROW_TEST_MIN: Minute 2: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (385536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (387896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (390536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (392896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (395536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (397896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (400536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (402896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (405536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (407896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (410536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (412896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (415536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (417896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (420536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (422896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (425536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (427896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (430536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (432896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (435536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (437896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (440536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (442896) GROW_TEST_MIN: Minute 3: LIGHT = OFF (phase 1–3 off)[0m
+[0;32mI (445536) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (447896) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (450536) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (452896) GROW_TEST_MIN: Minute 4: LIGHT = ON  (phase 4–7 on)[0m
+[0;32mI (455536) RELAY2CH_AH: Pump OFF, Fan OFF[0m

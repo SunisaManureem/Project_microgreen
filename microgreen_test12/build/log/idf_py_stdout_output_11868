@@ -1,0 +1,74 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Project_microgreen\microgreen_test12\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Project_microgreen/microgreen_test12/build/partition_table/partition-table.bin D:/Project_microgreen/microgreen_test12/build/microgreen_test12.bin"
+microgreen_test12.bin binary size 0xc6f70 bytes. Smallest app partition is 0x100000 bytes. 0x39090 bytes (22%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Project_microgreen\microgreen_test12\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Project_microgreen/microgreen_test12/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\user\esp\v5.5.1\esp-idf\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/user/esp/v5.5.1/esp-idf -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Users/user/esp/v5.5.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/Project_microgreen/microgreen_test12/build -P C:/Users/user/esp/v5.5.1/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 microgreen_test12.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 44:1d:64:fb:cd:84
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26240 bytes to 16486...
+Writing at 0x00001000... (50 %)
+Writing at 0x000075fb... (100 %)
+Wrote 26240 bytes (16486 compressed) at 0x00001000 in 0.8 seconds (effective 267.0 kbit/s)...
+Hash of data verified.
+Compressed 814960 bytes to 510572...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c715... (6 %)
+Writing at 0x000252ce... (9 %)
+Writing at 0x000306ed... (12 %)
+Writing at 0x000361b9... (15 %)
+Writing at 0x0003c174... (18 %)
+Writing at 0x0004200e... (21 %)
+Writing at 0x00047881... (25 %)
+Writing at 0x0004d379... (28 %)
+Writing at 0x0005301d... (31 %)
+Writing at 0x00058e5c... (34 %)
+Writing at 0x0005ee0b... (37 %)
+Writing at 0x000651d5... (40 %)
+Writing at 0x0006a7bf... (43 %)
+Writing at 0x0006fafc... (46 %)
+Writing at 0x000757ad... (50 %)
+Writing at 0x0007b345... (53 %)
+Writing at 0x00080b67... (56 %)
+Writing at 0x000861a3... (59 %)
+Writing at 0x0008bc60... (62 %)
+Writing at 0x000919b4... (65 %)
+Writing at 0x000973a0... (68 %)
+Writing at 0x0009d22f... (71 %)
+Writing at 0x000a2c21... (75 %)
+Writing at 0x000a828c... (78 %)
+Writing at 0x000b21c3... (81 %)
+Writing at 0x000b931c... (84 %)
+Writing at 0x000beec4... (87 %)
+Writing at 0x000c4d70... (90 %)
+Writing at 0x000cabdc... (93 %)
+Writing at 0x000d0639... (96 %)
+Writing at 0x000d5ca5... (100 %)
+Wrote 814960 bytes (510572 compressed) at 0x00010000 in 12.6 seconds (effective 517.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 588.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

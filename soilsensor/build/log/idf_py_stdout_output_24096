@@ -1,0 +1,262 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\soilsensor\build\soilsensor.elf D:\Project_microgreen\soilsensor\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ets �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  9 2025 22:32:52[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a3cch ( 41932) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a3f4 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c7f4 vaddr=40080000 size=03824h ( 14372) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14af4h ( 84724) map[0m
+[0;32mI (143) esp_image: segment 4: paddr=00034b1c vaddr=40083824 size=0978ch ( 38796) load[0m
+[0;32mI (158) esp_image: segment 5: paddr=0003e2b0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (165) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     soilsensor[0m
+[0;32mI (189) app_init: App version:      1[0m
+[0;32mI (192) app_init: Compile time:     Oct  9 2025 22:31:57[0m
+[0;32mI (197) app_init: ELF file SHA256:  1a85287c3...[0m
+[0;32mI (202) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (205) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (209) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (213) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (223) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (228) heap_init: At 3FFB2CE8 len 0002D318 (180 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (239) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (251) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (266) spi_flash: flash io: dio[0m
+[0;33mW (269) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) SOIL_TEST: Cal: eFuse Vref[0m
+[0;32mI (300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (1300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (1800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (2300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (2800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (3300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (3800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (4300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (4800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (5300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (5800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (6300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (6800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (7300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (7800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (8300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (8800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (9300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (9800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (10300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (10800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (11300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (11800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (12300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (12800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (13300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (13800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (14300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (14800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (15300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (15800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (16300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (16800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (17300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (17800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (18300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (18800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (19300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (19800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (20300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (20800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (21300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (21800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (22300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (22800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (23300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (23800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (24300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (24800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (25300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (25800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (26300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (26800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (27300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (27800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (28300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (28800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (29300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (29800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (30300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (30800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (31300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (31800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (32300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (32800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (33300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (33800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (34300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (34800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (35300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (35800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (36300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (36800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (37300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (37800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (38300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (38800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (39300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (39800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (40300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (40800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (41300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (41800) SOIL_TEST: Soil: 143 mV  | DRY[0m
+[0;32mI (42300) SOIL_TEST: Soil: 143 mV  | DRY[0m
+[0;32mI (42800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (43300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (43800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (44300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (44800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (45300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (45800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (46300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (46800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (47300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (47800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (48300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (48800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (49300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (49800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (50300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (50800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (51300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (51800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (52300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (52800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (53300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (53800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (54300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (54800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (55300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (55800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (56300) SOIL_TEST: Soil: 172 mV  | DRY[0m
+[0;32mI (56800) SOIL_TEST: Soil: 169 mV  | DRY[0m
+[0;32mI (57300) SOIL_TEST: Soil: 152 mV  | DRY[0m
+[0;32mI (57800) SOIL_TEST: Soil: 158 mV  | DRY[0m
+[0;32mI (58300) SOIL_TEST: Soil: 156 mV  | DRY[0m
+[0;32mI (58800) SOIL_TEST: Soil: 149 mV  | DRY[0m
+[0;32mI (59300) SOIL_TEST: Soil: 147 mV  | DRY[0m
+[0;32mI (59800) SOIL_TEST: Soil: 144 mV  | DRY[0m
+[0;32mI (60300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (60800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (61300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (61800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (62300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (62800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (63300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (63800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (64300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (64800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (65300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (65800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (66300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (66800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (67300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (67800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (68300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (68800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (69300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (69800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (70300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (70800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (71300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (71800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (72300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (72800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (73300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (73800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (74300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (74800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (75300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (75800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (76300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (76800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (77300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (77800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (78300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (78800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (79300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (79800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (80300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (80800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (81300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (81800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (82300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (82800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (83300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (83800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (84300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (84800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (85300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (85800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (86300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (86800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (87300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (87800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (88300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (88800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (89300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (89800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (90300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (90800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (91300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (91800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (92300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (92800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (93300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (93800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (94300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (94800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (95300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (95800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (96300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (96800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (97300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (97800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (98300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (98800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (99300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (99800) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (100300) SOIL_TEST: Soil: 142 mV  | DRY[0m
+[0;32mI (100800) SOIL_TEST: Soil: 142 mV  | DRY[0m

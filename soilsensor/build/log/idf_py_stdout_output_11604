@@ -1,0 +1,176 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\soilsensor\build\soilsensor.elf D:\Project_microgreen\soilsensor\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  9 2025 22:32:52[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a3dch ( 41948) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a404 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c804 vaddr=40080000 size=03814h ( 14356) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14b40h ( 84800) map[0m
+[0;32mI (143) esp_image: segment 4: paddr=00034b68 vaddr=40083814 size=0979ch ( 38812) load[0m
+[0;32mI (158) esp_image: segment 5: paddr=0003e30c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (165) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     soilsensor[0m
+[0;32mI (189) app_init: App version:      1[0m
+[0;32mI (192) app_init: Compile time:     Oct  9 2025 22:31:57[0m
+[0;32mI (197) app_init: ELF file SHA256:  41317cce5...[0m
+[0;32mI (202) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (205) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (209) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (213) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (228) heap_init: At 3FFB2CE8 len 0002D318 (180 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (239) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (251) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (266) spi_flash: flash io: dio[0m
+[0;33mW (269) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) SOIL_TEST: Cal: eFuse Vref[0m
+[0;32mI (300) SOIL_TEST: Soil:  221 mV |   0% | DRY[0m
+[0;32mI (5300) SOIL_TEST: Soil:  208 mV |   0% | DRY[0m
+[0;32mI (10300) SOIL_TEST: Soil:  207 mV |   0% | DRY[0m
+[0;32mI (15300) SOIL_TEST: Soil:  595 mV |   9% | DRY[0m
+[0;32mI (20300) SOIL_TEST: Soil: 1117 mV |  34% | MOIST[0m
+[0;32mI (25300) SOIL_TEST: Soil:  576 mV |   8% | DRY[0m
+[0;32mI (30300) SOIL_TEST: Soil:  483 mV |   3% | DRY[0m
+[0;32mI (35300) SOIL_TEST: Soil:  566 mV |   7% | DRY[0m
+[0;32mI (40300) SOIL_TEST: Soil:  415 mV |   0% | DRY[0m
+[0;32mI (45300) SOIL_TEST: Soil:  524 mV |   5% | DRY[0m
+[0;32mI (50300) SOIL_TEST: Soil:  356 mV |   0% | DRY[0m
+[0;32mI (55300) SOIL_TEST: Soil:  473 mV |   3% | DRY[0m
+[0;32mI (60300) SOIL_TEST: Soil:  225 mV |   0% | DRY[0m
+[0;32mI (65300) SOIL_TEST: Soil:  142 mV |   0% | DRY[0m
+[0;32mI (70300) SOIL_TEST: Soil:  224 mV |   0% | DRY[0m
+[0;32mI (75300) SOIL_TEST: Soil: 2259 mV |  88% | WET[0m
+[0;32mI (80300) SOIL_TEST: Soil: 1193 mV |  37% | MOIST[0m
+[0;32mI (85300) SOIL_TEST: Soil: 1171 mV |  36% | MOIST[0m
+[0;32mI (90300) SOIL_TEST: Soil: 1171 mV |  36% | MOIST[0m
+[0;32mI (95300) SOIL_TEST: Soil: 1174 mV |  36% | MOIST[0m
+[0;32mI (100300) SOIL_TEST: Soil: 1164 mV |  36% | MOIST[0m
+[0;32mI (105300) SOIL_TEST: Soil: 1165 mV |  36% | MOIST[0m
+[0;32mI (110300) SOIL_TEST: Soil: 1168 mV |  36% | MOIST[0m
+[0;32mI (115300) SOIL_TEST: Soil: 1169 mV |  36% | MOIST[0m
+[0;32mI (120300) SOIL_TEST: Soil: 1169 mV |  36% | MOIST[0m
+[0;32mI (125300) SOIL_TEST: Soil: 1173 mV |  36% | MOIST[0m
+[0;32mI (130300) SOIL_TEST: Soil: 1258 mV |  40% | MOIST[0m
+[0;32mI (135300) SOIL_TEST: Soil: 1248 mV |  40% | MOIST[0m
+[0;32mI (140300) SOIL_TEST: Soil: 1244 mV |  40% | MOIST[0m
+[0;32mI (145300) SOIL_TEST: Soil: 1210 mV |  38% | MOIST[0m
+[0;32mI (150300) SOIL_TEST: Soil: 1195 mV |  37% | MOIST[0m
+[0;32mI (155300) SOIL_TEST: Soil: 1196 mV |  37% | MOIST[0m
+[0;32mI (160300) SOIL_TEST: Soil: 1194 mV |  37% | MOIST[0m
+[0;32mI (165300) SOIL_TEST: Soil: 1196 mV |  37% | MOIST[0m
+[0;32mI (170300) SOIL_TEST: Soil: 1195 mV |  37% | MOIST[0m
+[0;32mI (175300) SOIL_TEST: Soil: 1197 mV |  37% | MOIST[0m
+[0;32mI (180300) SOIL_TEST: Soil: 1198 mV |  38% | MOIST[0m
+[0;32mI (185300) SOIL_TEST: Soil: 1198 mV |  38% | MOIST[0m
+[0;32mI (190300) SOIL_TEST: Soil: 1198 mV |  38% | MOIST[0m
+[0;32mI (195300) SOIL_TEST: Soil: 1201 mV |  38% | MOIST[0m
+[0;32mI (200300) SOIL_TEST: Soil: 1203 mV |  38% | MOIST[0m
+[0;32mI (205300) SOIL_TEST: Soil: 1203 mV |  38% | MOIST[0m
+[0;32mI (210300) SOIL_TEST: Soil: 1207 mV |  38% | MOIST[0m
+[0;32mI (215300) SOIL_TEST: Soil: 1208 mV |  38% | MOIST[0m
+[0;32mI (220300) SOIL_TEST: Soil: 1208 mV |  38% | MOIST[0m
+[0;32mI (225300) SOIL_TEST: Soil: 1210 mV |  38% | MOIST[0m
+[0;32mI (230300) SOIL_TEST: Soil: 1212 mV |  38% | MOIST[0m
+[0;32mI (235300) SOIL_TEST: Soil: 1211 mV |  38% | MOIST[0m
+[0;32mI (240300) SOIL_TEST: Soil: 1215 mV |  38% | MOIST[0m
+[0;32mI (245300) SOIL_TEST: Soil: 1293 mV |  42% | MOIST[0m
+[0;32mI (250300) SOIL_TEST: Soil: 1219 mV |  39% | MOIST[0m
+[0;32mI (255300) SOIL_TEST: Soil: 1222 mV |  39% | MOIST[0m
+[0;32mI (260300) SOIL_TEST: Soil: 1225 mV |  39% | MOIST[0m
+[0;32mI (265300) SOIL_TEST: Soil: 1225 mV |  39% | MOIST[0m
+[0;32mI (270300) SOIL_TEST: Soil: 1231 mV |  39% | MOIST[0m
+[0;32mI (275300) SOIL_TEST: Soil: 1231 mV |  39% | MOIST[0m
+[0;32mI (280300) SOIL_TEST: Soil: 1232 mV |  39% | MOIST[0m
+[0;32mI (285300) SOIL_TEST: Soil: 1234 mV |  39% | MOIST[0m
+[0;32mI (290300) SOIL_TEST: Soil: 1236 mV |  39% | MOIST[0m
+[0;32mI (295300) SOIL_TEST: Soil: 1236 mV |  39% | MOIST[0m
+[0;32mI (300300) SOIL_TEST: Soil: 1239 mV |  39% | MOIST[0m
+[0;32mI (305300) SOIL_TEST: Soil: 1241 mV |  40% | MOIST[0m
+[0;32mI (310300) SOIL_TEST: Soil: 1240 mV |  40% | MOIST[0m
+[0;32mI (315300) SOIL_TEST: Soil: 1243 mV |  40% | MOIST[0m
+[0;32mI (320300) SOIL_TEST: Soil: 1245 mV |  40% | MOIST[0m
+[0;32mI (325300) SOIL_TEST: Soil: 1247 mV |  40% | MOIST[0m
+[0;32mI (330300) SOIL_TEST: Soil: 1247 mV |  40% | MOIST[0m
+[0;32mI (335300) SOIL_TEST: Soil: 1248 mV |  40% | MOIST[0m
+[0;32mI (340300) SOIL_TEST: Soil: 1250 mV |  40% | MOIST[0m
+[0;32mI (345300) SOIL_TEST: Soil: 1251 mV |  40% | MOIST[0m
+[0;32mI (350300) SOIL_TEST: Soil: 1252 mV |  40% | MOIST[0m
+[0;32mI (355300) SOIL_TEST: Soil: 1255 mV |  40% | MOIST[0m
+[0;32mI (360300) SOIL_TEST: Soil: 1256 mV |  40% | MOIST[0m
+[0;32mI (365300) SOIL_TEST: Soil: 1259 mV |  40% | MOIST[0m
+[0;32mI (370300) SOIL_TEST: Soil: 1260 mV |  40% | MOIST[0m
+[0;32mI (375300) SOIL_TEST: Soil: 1262 mV |  41% | MOIST[0m
+[0;32mI (380300) SOIL_TEST: Soil: 1262 mV |  41% | MOIST[0m
+[0;32mI (385300) SOIL_TEST: Soil: 1264 mV |  41% | MOIST[0m
+[0;32mI (390300) SOIL_TEST: Soil: 1265 mV |  41% | MOIST[0m
+[0;32mI (395300) SOIL_TEST: Soil: 1264 mV |  41% | MOIST[0m
+[0;32mI (400300) SOIL_TEST: Soil: 1267 mV |  41% | MOIST[0m
+[0;32mI (405300) SOIL_TEST: Soil: 1364 mV |  45% | MOIST[0m
+[0;32mI (410300) SOIL_TEST: Soil: 1308 mV |  43% | MOIST[0m
+[0;32mI (415300) SOIL_TEST: Soil: 1268 mV |  41% | MOIST[0m
+[0;32mI (420300) SOIL_TEST: Soil: 1240 mV |  40% | MOIST[0m
+[0;32mI (425300) SOIL_TEST: Soil: 1307 mV |  43% | MOIST[0m
+[0;32mI (430300) SOIL_TEST: Soil: 1401 mV |  47% | MOIST[0m
+[0;32mI (435300) SOIL_TEST: Soil: 1426 mV |  48% | MOIST[0m
+[0;32mI (440300) SOIL_TEST: Soil: 1451 mV |  50% | MOIST[0m
+[0;32mI (445300) SOIL_TEST: Soil: 1470 mV |  50% | MOIST[0m
+[0;32mI (450300) SOIL_TEST: Soil: 1466 mV |  50% | MOIST[0m
+[0;32mI (455300) SOIL_TEST: Soil: 2164 mV |  84% | WET[0m
+[0;32mI (460300) SOIL_TEST: Soil: 2091 mV |  80% | WET[0m
+[0;32mI (465300) SOIL_TEST: Soil: 2139 mV |  82% | WET[0m
+[0;32mI (470300) SOIL_TEST: Soil: 2173 mV |  84% | WET[0m
+[0;32mI (475300) SOIL_TEST: Soil: 2217 mV |  86% | WET[0m
+[0;32mI (480300) SOIL_TEST: Soil: 2230 mV |  87% | WET[0m
+[0;32mI (485300) SOIL_TEST: Soil: 2234 mV |  87% | WET[0m
+[0;32mI (490300) SOIL_TEST: Soil: 2238 mV |  87% | WET[0m
+[0;32mI (495300) SOIL_TEST: Soil: 2238 mV |  87% | WET[0m
+[0;32mI (500300) SOIL_TEST: Soil: 2238 mV |  87% | WET[0m
+[0;32mI (505300) SOIL_TEST: Soil: 2239 mV |  87% | WET[0m
+[0;32mI (510300) SOIL_TEST: Soil: 2239 mV |  87% | WET[0m
+[0;32mI (515300) SOIL_TEST: Soil: 2240 mV |  87% | WET[0m
+[0;32mI (520300) SOIL_TEST: Soil: 2240 mV |  87% | WET[0m
+[0;32mI (525300) SOIL_TEST: Soil: 2240 mV |  87% | WET[0m
+[0;32mI (530300) SOIL_TEST: Soil: 2241 mV |  87% | WET[0m
+[0;32mI (535300) SOIL_TEST: Soil: 2239 mV |  87% | WET[0m
+[0;32mI (540300) SOIL_TEST: Soil: 2241 mV |  87% | WET[0m
+[0;32mI (545300) SOIL_TEST: Soil: 2241 mV |  87% | WET[0m
+[0;32mI (550300) SOIL_TEST: Soil: 2242 mV |  87% | WET[0m
+[0;32mI (555300) SOIL_TEST: Soil: 2242 mV |  87% | WET[0m
+[0;32mI (560300) SOIL_TEST: Soil: 2241 mV |  87% | WET[0m
+[0;32mI (565300) SOIL_TEST: Soil: 2243 mV |  87% | WET[0m
+[0;32mI (570300) SOIL_TEST: Soil: 2243 mV |  87% | WET[0m
+[0;32mI (575300) SOIL_TEST: Soil: 2245 mV |  87% | WET[0m

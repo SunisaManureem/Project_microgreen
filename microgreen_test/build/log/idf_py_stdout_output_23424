@@ -1,0 +1,361 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\microgreen_test\build\microgreen_test.elf D:\Project_microgreen\microgreen_test\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+.7% Soil=11% Fan=ON
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 19 2025 09:36:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a638h (108088) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002a660 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002e5e4 vaddr=40080000 size=01a34h (  6708) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8d474h (578676) map[0m
+[0;32mI (334) esp_image: segment 4: paddr=000bd49c vaddr=40081a34 size=16500h ( 91392) load[0m
+[0;32mI (370) esp_image: segment 5: paddr=000d39a4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (401) app_init: Project name:     microgreen_test[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (409) app_init: Compile time:     Oct 19 2025 09:36:12[0m
+[0;32mI (414) app_init: ELF file SHA256:  c734e4fb3...[0m
+[0;32mI (418) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (422) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (426) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (430) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (434) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (440) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (445) heap_init: At 3FFB85D8 len 00027A28 (158 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (456) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40097F34 len 000080CC (32 KiB): IRAM[0m
+[0;33mW (468) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (480) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;33mW (486) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (498) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (507) main_task: Started on CPU0[0m
+[0;32mI (517) main_task: Calling app_main()[0m
+[0;32mI (517) main_task: Returned from app_main()[0m
+[0;32mI (547) wifi:wifi driver task: 3ffc313c, prio:23, stack:6656, core=0[0m
+[0;32mI (557) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (557) wifi:wifi certification version: v7.0[0m
+[0;32mI (557) wifi:config NVS flash: enabled[0m
+[0;32mI (557) wifi:config nano formatting: disabled[0m
+[0;32mI (567) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (567) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (577) wifi:Init management short buffer num: 32[0m
+[0;32mI (577) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (577) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (587) wifi:Init static rx buffer num: 10[0m
+[0;32mI (587) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (597) wifi_init: rx ba win: 6[0m
+[0;32mI (597) wifi_init: accept mbox: 6[0m
+[0;32mI (597) wifi_init: tcpip mbox: 32[0m
+[0;32mI (597) wifi_init: udp mbox: 6[0m
+[0;32mI (607) wifi_init: tcp mbox: 6[0m
+[0;32mI (607) wifi_init: tcp tx win: 5760[0m
+[0;32mI (607) wifi_init: tcp rx win: 5760[0m
+[0;32mI (617) wifi_init: tcp mss: 1440[0m
+[0;32mI (617) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (617) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (627) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (657) SOIL_PUMP: RAW=2586 Moisture=9% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (707) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (737) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (737) wifi:enable tsf[0m
+[0;32mI (747) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (747) NET: Connecting to Wi-Fi: Areena ...[0m
+[0;32mI (757) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (757) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (767) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (767) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1737) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (2547) DHT_FAN: T=28.1C RH=84.6% Soil=11% Fan=OFF[0m
+[0;32mI (2817) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (3897) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (4547) DHT_FAN: T=28.1C RH=84.6% Soil=11% Fan=OFF[0m
+[0;32mI (4977) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (6057) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (6547) DHT_FAN: T=28.1C RH=84.7% Soil=11% Fan=OFF[0m
+[0;32mI (7137) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (8217) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (8547) DHT_FAN: T=28.1C RH=84.7% Soil=11% Fan=OFF[0m
+[0;32mI (9297) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (10377) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=0 lock=N[0m
+[0;32mI (10547) DHT_FAN: T=28.1C RH=84.8% Soil=11% Fan=ON[0m
+[0;33mW (10747) NET: Wi-Fi not ready after 10s, continue offline[0m
+[0;32mI (10777) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (10787) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (10787) NET: WiFi disconnected, reason=204[0m
+[0;32mI (11457) SOIL_PUMP: RAW=2559 Moisture=11% Pump=ON dose#=1 lock=N[0m
+[0;32mI (12537) SOIL_PUMP: RAW=2559 Moisture=11% Pump=ON dose#=1 lock=N[0m
+[0;32mI (12547) DHT_FAN: T=28.1C RH=85.0% Soil=11% Fan=ON[0m
+[0;33mW (13207) NET: WiFi disconnected, reason=205[0m
+[0;32mI (13217) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13217) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (13227) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (13237) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (13617) SOIL_PUMP: RAW=2559 Moisture=11% Pump=ON dose#=1 lock=N[0m
+[0;32mI (14547) DHT_FAN: T=28.1C RH=85.0% Soil=11% Fan=ON[0m
+[0;32mI (14697) SOIL_PUMP: RAW=2559 Moisture=11% Pump=ON dose#=1 lock=N[0m
+[0;32mI (15777) SOIL_PUMP: RAW=2559 Moisture=11% Pump=ON dose#=1 lock=N[0m
+[0;32mI (16547) DHT_FAN: T=28.1C RH=85.0% Soil=11% Fan=ON[0m
+[0;32mI (16857) SOIL_PUMP: RAW=2559 Moisture=11% Pump=ON dose#=1 lock=N[0m
+[0;32mI (17937) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (18547) DHT_FAN: T=28.1C RH=84.9% Soil=11% Fan=ON[0m
+[0;32mI (19017) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (20097) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (20547) DHT_FAN: T=28.1C RH=84.9% Soil=11% Fan=ON[0m
+[0;32mI (21177) SOIL_PUMP: RAW=2623 Moisture=5% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (22257) SOIL_PUMP: RAW=2160 Moisture=47% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (22547) DHT_FAN: T=28.0C RH=84.9% Soil=47% Fan=ON[0m
+[0;32mI (23237) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (23247) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (23247) NET: WiFi disconnected, reason=204[0m
+[0;32mI (23337) SOIL_PUMP: RAW=1936 Moisture=66% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (24417) SOIL_PUMP: RAW=1859 Moisture=73% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (24547) DHT_FAN: T=28.1C RH=85.0% Soil=73% Fan=ON[0m
+[0;32mI (25497) SOIL_PUMP: RAW=2638 Moisture=4% Pump=OFF dose#=1 lock=Y[0m
+[0;33mW (25667) NET: WiFi disconnected, reason=205[0m
+[0;32mI (25677) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25677) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (25687) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (25697) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (26547) DHT_FAN: T=28.0C RH=85.1% Soil=4% Fan=ON[0m
+[0;32mI (26577) SOIL_PUMP: RAW=2649 Moisture=3% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (27657) SOIL_PUMP: RAW=2651 Moisture=3% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (28547) DHT_FAN: T=28.1C RH=85.2% Soil=3% Fan=ON[0m
+[0;32mI (28737) SOIL_PUMP: RAW=2594 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (29817) SOIL_PUMP: RAW=2589 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (30547) DHT_FAN: T=28.1C RH=85.4% Soil=8% Fan=ON[0m
+[0;32mI (30897) SOIL_PUMP: RAW=2594 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (31977) SOIL_PUMP: RAW=2597 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (32547) DHT_FAN: T=28.0C RH=85.6% Soil=8% Fan=ON[0m
+[0;32mI (33057) SOIL_PUMP: RAW=2599 Moisture=7% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (34137) SOIL_PUMP: RAW=2595 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (34547) DHT_FAN: T=28.0C RH=85.5% Soil=8% Fan=ON[0m
+[0;32mI (35217) SOIL_PUMP: RAW=2591 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (35697) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (35707) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (35707) NET: WiFi disconnected, reason=204[0m
+[0;32mI (36297) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (36547) DHT_FAN: T=28.0C RH=85.6% Soil=11% Fan=ON[0m
+[0;32mI (37377) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=1 lock=Y[0m
+[0;33mW (38127) NET: WiFi disconnected, reason=205[0m
+[0;32mI (38137) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38137) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (38147) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (38157) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (38457) SOIL_PUMP: RAW=2559 Moisture=11% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (38547) DHT_FAN: T=28.0C RH=85.6% Soil=11% Fan=ON[0m
+[0;32mI (39537) SOIL_PUMP: RAW=2578 Moisture=9% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (40557) DHT_FAN: T=28.0C RH=85.5% Soil=9% Fan=ON[0m
+[0;32mI (40627) SOIL_PUMP: RAW=2582 Moisture=9% Pump=OFF dose#=1 lock=Y[0m
+[0;33mW (40747) NET: Time not synced (continue anyway)[0m
+[0;32mI (40747) GROW: Hold RESET button 3000 ms to start new cycle.[0m
+[0;32mI (41247) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (41707) SOIL_PUMP: RAW=2586 Moisture=9% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (42547) DHT_FAN: T=28.0C RH=85.4% Soil=9% Fan=ON[0m
+[0;32mI (42787) SOIL_PUMP: RAW=2587 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (43867) SOIL_PUMP: RAW=2589 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (44547) DHT_FAN: T=28.0C RH=85.4% Soil=8% Fan=ON[0m
+[0;32mI (44947) SOIL_PUMP: RAW=2590 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (46027) SOIL_PUMP: RAW=2593 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (46247) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (46547) DHT_FAN: T=28.0C RH=85.5% Soil=8% Fan=ON[0m
+[0;32mI (47107) SOIL_PUMP: RAW=2592 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (48157) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (48167) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (48167) NET: WiFi disconnected, reason=204[0m
+[0;32mI (48187) SOIL_PUMP: RAW=2595 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (48547) DHT_FAN: T=28.0C RH=85.6% Soil=8% Fan=ON[0m
+[0;32mI (49267) SOIL_PUMP: RAW=2593 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (50347) SOIL_PUMP: RAW=2592 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (50547) DHT_FAN: T=28.0C RH=85.7% Soil=8% Fan=ON[0m
+[0;33mW (50587) NET: WiFi disconnected, reason=205[0m
+[0;32mI (50597) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (50597) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (50607) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (50617) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (51247) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (51427) SOIL_PUMP: RAW=2593 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (52507) SOIL_PUMP: RAW=2593 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (52547) DHT_FAN: T=28.0C RH=85.9% Soil=8% Fan=ON[0m
+[0;32mI (53587) SOIL_PUMP: RAW=2590 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (54547) DHT_FAN: T=28.0C RH=85.9% Soil=8% Fan=ON[0m
+[0;32mI (54667) SOIL_PUMP: RAW=2587 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (55747) SOIL_PUMP: RAW=2586 Moisture=9% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (56247) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (56547) DHT_FAN: T=28.0C RH=85.9% Soil=9% Fan=ON[0m
+[0;32mI (56827) SOIL_PUMP: RAW=2583 Moisture=9% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (57907) SOIL_PUMP: RAW=2583 Moisture=9% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (58547) DHT_FAN: T=28.0C RH=85.8% Soil=9% Fan=ON[0m
+[0;32mI (58987) SOIL_PUMP: RAW=2584 Moisture=9% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (60067) SOIL_PUMP: RAW=2583 Moisture=9% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (60547) DHT_FAN: T=27.9C RH=85.7% Soil=9% Fan=ON[0m
+[0;32mI (60617) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (60627) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (60627) NET: WiFi disconnected, reason=204[0m
+[0;32mI (61147) SOIL_PUMP: RAW=2587 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (61247) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (62227) SOIL_PUMP: RAW=2591 Moisture=8% Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (62547) DHT_FAN: T=28.0C RH=85.6% Soil=8% Fan=ON[0m
+[0;33mW (63047) NET: WiFi disconnected, reason=201[0m
+[0;32mI (63077) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (63077) wifi:state: init -> auth (0xb0)[0m

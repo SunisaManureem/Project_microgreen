@@ -1,0 +1,1679 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\microgreen_control\build\microgreen_control.elf D:\Project_microgreen\microgreen_control\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+etets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 16 2025 11:33:31[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a618h (108056) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002a640 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002e5c4 vaddr=40080000 size=01a54h (  6740) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8d300h (578304) map[0m
+[0;32mI (334) esp_image: segment 4: paddr=000bd328 vaddr=40081a54 size=164e0h ( 91360) load[0m
+[0;32mI (370) esp_image: segment 5: paddr=000d3810 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (401) app_init: Project name:     microgreen_control[0m
+[0;32mI (406) app_init: App version:      1[0m
+[0;32mI (409) app_init: Compile time:     Oct 16 2025 11:19:24[0m
+[0;32mI (414) app_init: ELF file SHA256:  98836468f...[0m
+[0;32mI (418) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (422) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (426) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (430) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (434) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (440) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (445) heap_init: At 3FFB85C0 len 00027A40 (158 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (456) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40097F34 len 000080CC (32 KiB): IRAM[0m
+[0;33mW (468) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (480) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;33mW (486) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (498) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (507) main_task: Started on CPU0[0m
+[0;32mI (517) main_task: Calling app_main()[0m
+[0;32mI (517) main_task: Returned from app_main()[0m
+[0;32mI (547) wifi:wifi driver task: 3ffc3124, prio:23, stack:6656, core=0[0m
+[0;32mI (557) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (557) wifi:wifi certification version: v7.0[0m
+[0;32mI (557) wifi:config NVS flash: enabled[0m
+[0;32mI (557) wifi:config nano formatting: disabled[0m
+[0;32mI (567) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (567) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (577) wifi:Init management short buffer num: 32[0m
+[0;32mI (577) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (577) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (587) wifi:Init static rx buffer num: 10[0m
+[0;32mI (587) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (597) wifi_init: rx ba win: 6[0m
+[0;32mI (597) wifi_init: accept mbox: 6[0m
+[0;32mI (597) wifi_init: tcpip mbox: 32[0m
+[0;32mI (607) wifi_init: udp mbox: 6[0m
+[0;32mI (607) wifi_init: tcp mbox: 6[0m
+[0;32mI (607) wifi_init: tcp tx win: 5760[0m
+[0;32mI (607) wifi_init: tcp rx win: 5760[0m
+[0;32mI (617) wifi_init: tcp mss: 1440[0m
+[0;32mI (617) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (617) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (627) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (637) SOIL_PUMP: RAW=558 Moisture=100% Pump=OFF[0m
+[0;32mI (717) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (717) wifi:enable tsf[0m
+[0;32mI (717) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (717) NET: Connecting to Wi-Fi: Areena ...[0m
+[0;32mI (727) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (727) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (737) wifi:state: auth -> assoc (0x0)[0m
+[0;33mW (757) DHT_FAN: DHT read failed[0m
+[0;32mI (757) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (797) wifi:connected with Areena, aid = 2, channel 6, BW20, bssid = a6:d4:95:54:f0:0f[0m
+[0;32mI (797) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (807) wifi:pm start, type: 0[0m
+
+[0;32mI (807) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (827) wifi:<ba-add>idx:0 (ifx:0, a6:d4:95:54:f0:0f), tid:0, ssn:2, winSize:64[0m
+[0;32mI (867) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1697) SOIL_PUMP: RAW=123 Moisture=100% Pump=OFF[0m
+[0;32mI (1847) esp_netif_handlers: sta ip: 172.20.10.11, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1847) NET: Got IP[0m
+[0;32mI (1847) NET: Wi-Fi connected[0m
+���������������������������������������������������������������� (2757) SOIL_PUMP: RAW=112 Moisture=100% Pump=OFF
+[0;33mW (2767) DHT_FAN: DHT read failed[0m
+[0;32mI (3817) SOIL_PUMP: RAW=101 Moisture=100% Pump=OFF[0m
+[0;33mW (4757) DHT_FAN: DHT read failed[0m
+[0;32mI (4847) NET: Time synced[0m
+[0;32mI (4847) GROW: Hold RESET button 3000 ms to start new cycle.[0m
+[0;32mI (4877) SOIL_PUMP: RAW=107 Moisture=100% Pump=OFF[0m
+[0;32mI (5347) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (5937) SOIL_PUMP: RAW=106 Moisture=100% Pump=OFF[0m
+[0;33mW (6757) DHT_FAN: DHT read failed[0m
+[0;32mI (6997) SOIL_PUMP: RAW=95 Moisture=100% Pump=OFF[0m
+[0;32mI (8057) SOIL_PUMP: RAW=83 Moisture=100% Pump=OFF[0m
+[0;33mW (8757) DHT_FAN: DHT read failed[0m
+[0;32mI (9117) SOIL_PUMP: RAW=67 Moisture=100% Pump=OFF[0m
+[0;32mI (10177) SOIL_PUMP: RAW=59 Moisture=100% Pump=OFF[0m
+[0;32mI (10347) GROW: Minute 3: LIGHT = OFF[0m
+[0;33mW (10757) DHT_FAN: DHT read failed[0m
+[0;32mI (11237) SOIL_PUMP: RAW=44 Moisture=100% Pump=OFF[0m
+[0;32mI (12297) SOIL_PUMP: RAW=12 Moisture=100% Pump=OFF[0m
+[0;33mW (12757) DHT_FAN: DHT read failed[0m
+[0;32mI (13357) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (14417) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (14757) DHT_FAN: DHT read failed[0m
+[0;32mI (15347) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (15477) SOIL_PUMP: RAW=75 Moisture=100% Pump=OFF[0m
+[0;32mI (16537) SOIL_PUMP: RAW=53 Moisture=100% Pump=OFF[0m
+[0;33mW (16757) DHT_FAN: DHT read failed[0m
+[0;32mI (17597) SOIL_PUMP: RAW=25 Moisture=100% Pump=OFF[0m
+[0;32mI (18657) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (18757) DHT_FAN: DHT read failed[0m
+[0;32mI (19717) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (20347) GROW: Minute 3: LIGHT = OFF[0m
+[0;33mW (20757) DHT_FAN: DHT read failed[0m
+[0;32mI (20777) SOIL_PUMP: RAW=80 Moisture=100% Pump=OFF[0m
+[0;32mI (21837) SOIL_PUMP: RAW=54 Moisture=100% Pump=OFF[0m
+[0;33mW (22757) DHT_FAN: DHT read failed[0m
+[0;32mI (22897) SOIL_PUMP: RAW=26 Moisture=100% Pump=OFF[0m
+[0;32mI (23957) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (24757) DHT_FAN: DHT read failed[0m
+[0;32mI (25017) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (25347) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (26077) SOIL_PUMP: RAW=76 Moisture=100% Pump=OFF[0m
+[0;33mW (26757) DHT_FAN: DHT read failed[0m
+[0;32mI (27137) SOIL_PUMP: RAW=59 Moisture=100% Pump=OFF[0m
+[0;32mI (28197) SOIL_PUMP: RAW=55 Moisture=100% Pump=OFF[0m
+[0;33mW (28757) DHT_FAN: DHT read failed[0m
+[0;32mI (29257) SOIL_PUMP: RAW=55 Moisture=100% Pump=OFF[0m
+[0;32mI (30317) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (30347) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (30757) DHT_FAN: DHT read failed[0m
+[0;32mI (31377) SOIL_PUMP: RAW=34 Moisture=100% Pump=OFF[0m
+[0;32mI (32437) SOIL_PUMP: RAW=80 Moisture=100% Pump=OFF[0m
+[0;33mW (32757) DHT_FAN: DHT read failed[0m
+[0;32mI (33497) SOIL_PUMP: RAW=74 Moisture=100% Pump=OFF[0m
+[0;32mI (34557) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (34757) DHT_FAN: DHT read failed[0m
+[0;32mI (35347) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (35617) SOIL_PUMP: RAW=52 Moisture=100% Pump=OFF[0m
+[0;32mI (36677) SOIL_PUMP: RAW=320 Moisture=100% Pump=OFF[0m
+[0;33mW (36757) DHT_FAN: DHT read failed[0m
+[0;32mI (37737) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (38757) DHT_FAN: DHT read failed[0m
+[0;32mI (38797) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (39857) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (40347) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (40757) DHT_FAN: DHT read failed[0m
+[0;32mI (40917) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (41977) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (42757) DHT_FAN: DHT read failed[0m
+[0;32mI (43037) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (44097) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (44757) DHT_FAN: DHT read failed[0m
+[0;32mI (45157) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (45347) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (46217) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (46757) DHT_FAN: DHT read failed[0m
+[0;32mI (47277) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (48337) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (48757) DHT_FAN: DHT read failed[0m
+[0;32mI (49397) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (50347) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (50457) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (50757) DHT_FAN: DHT read failed[0m
+[0;32mI (51517) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (52577) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (52757) DHT_FAN: DHT read failed[0m
+[0;32mI (53637) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (54697) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (54767) DHT_FAN: DHT read failed[0m
+[0;32mI (55347) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (55757) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (56767) DHT_FAN: DHT read failed[0m
+[0;32mI (56817) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (57877) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (58757) DHT_FAN: DHT read failed[0m
+[0;32mI (58937) SOIL_PUMP: RAW=151 Moisture=100% Pump=OFF[0m
+[0;32mI (59997) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (60347) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (60757) DHT_FAN: DHT read failed[0m
+[0;32mI (61057) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (62117) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (62757) DHT_FAN: DHT read failed[0m
+[0;32mI (63177) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (64237) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (64757) DHT_FAN: DHT read failed[0m
+[0;32mI (65297) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (65347) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (66357) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (66757) DHT_FAN: DHT read failed[0m
+[0;32mI (67417) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (68477) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (68757) DHT_FAN: DHT read failed[0m
+[0;32mI (69537) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (70347) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (70597) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (70757) DHT_FAN: DHT read failed[0m
+[0;32mI (71657) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (72717) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (72757) DHT_FAN: DHT read failed[0m
+[0;32mI (73777) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (74757) DHT_FAN: DHT read failed[0m
+[0;32mI (74837) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (75347) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (75897) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (76757) DHT_FAN: DHT read failed[0m
+[0;32mI (76957) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (78017) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (78757) DHT_FAN: DHT read failed[0m
+[0;32mI (79077) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (80137) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (80347) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (80757) DHT_FAN: DHT read failed[0m
+[0;32mI (81197) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (82257) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (82757) DHT_FAN: DHT read failed[0m
+[0;32mI (83317) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (84377) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (84757) DHT_FAN: DHT read failed[0m
+[0;32mI (85347) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (85437) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (86497) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (86757) DHT_FAN: DHT read failed[0m
+[0;32mI (87557) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (88617) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (88757) DHT_FAN: DHT read failed[0m
+[0;32mI (89677) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (90347) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (90737) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (90757) DHT_FAN: DHT read failed[0m
+[0;32mI (91797) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (92757) DHT_FAN: DHT read failed[0m
+[0;32mI (92857) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (93917) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (94757) DHT_FAN: DHT read failed[0m
+[0;32mI (94977) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (95347) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (96037) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (96757) DHT_FAN: DHT read failed[0m
+[0;32mI (97097) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (98157) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (98757) DHT_FAN: DHT read failed[0m
+[0;32mI (99217) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (100277) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (100347) GROW: Minute 5: LIGHT = ON[0m
+[0;33mW (100757) DHT_FAN: DHT read failed[0m
+[0;32mI (101337) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (102397) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (102757) DHT_FAN: DHT read failed[0m
+[0;32mI (103457) SOIL_PUMP: RAW=1143 Moisture=100% Pump=OFF[0m
+[0;32mI (104517) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (104757) DHT_FAN: DHT read failed[0m
+[0;32mI (105347) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (105577) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (106637) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (106757) DHT_FAN: DHT read failed[0m
+[0;32mI (107697) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (108757) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (108767) DHT_FAN: DHT read failed[0m
+[0;32mI (109817) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (110347) GROW: Minute 5: LIGHT = ON[0m
+[0;33mW (110757) DHT_FAN: DHT read failed[0m
+[0;32mI (110877) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (111937) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (112757) DHT_FAN: DHT read failed[0m
+[0;32mI (112997) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (114057) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (114757) DHT_FAN: DHT read failed[0m
+[0;32mI (115117) SOIL_PUMP: RAW=16 Moisture=100% Pump=OFF[0m
+[0;32mI (115347) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (116177) SOIL_PUMP: RAW=48 Moisture=100% Pump=OFF[0m
+[0;33mW (116757) DHT_FAN: DHT read failed[0m
+[0;32mI (117237) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (118297) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (118757) DHT_FAN: DHT read failed[0m
+[0;32mI (119357) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (120347) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (120417) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (120757) DHT_FAN: DHT read failed[0m
+[0;32mI (121477) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (122537) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (122757) DHT_FAN: DHT read failed[0m
+[0;32mI (123597) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (124657) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (124757) DHT_FAN: DHT read failed[0m
+[0;32mI (125347) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (125717) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (126757) DHT_FAN: DHT read failed[0m
+[0;32mI (126777) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (127837) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (128757) DHT_FAN: DHT read failed[0m
+[0;32mI (128897) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (129957) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (130347) GROW: Minute 5: LIGHT = ON[0m
+[0;33mW (130757) DHT_FAN: DHT read failed[0m
+[0;32mI (131017) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (132077) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (132757) DHT_FAN: DHT read failed[0m
+[0;32mI (133137) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (134197) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (134757) DHT_FAN: DHT read failed[0m
+[0;32mI (135257) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (135347) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (136317) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (136757) DHT_FAN: DHT read failed[0m
+[0;32mI (137377) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (138437) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (138757) DHT_FAN: DHT read failed[0m
+[0;32mI (139497) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (140347) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (140557) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (140757) DHT_FAN: DHT read failed[0m
+[0;32mI (141617) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (142677) SOIL_PUMP: RAW=16 Moisture=100% Pump=OFF[0m
+[0;33mW (142757) DHT_FAN: DHT read failed[0m
+[0;32mI (143737) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (144757) DHT_FAN: DHT read failed[0m
+[0;32mI (144797) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (145347) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (145857) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (146757) DHT_FAN: DHT read failed[0m
+[0;32mI (146917) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (147977) SOIL_PUMP: RAW=885 Moisture=100% Pump=OFF[0m
+[0;33mW (148757) DHT_FAN: DHT read failed[0m
+[0;32mI (149037) SOIL_PUMP: RAW=267 Moisture=100% Pump=OFF[0m
+[0;32mI (150097) SOIL_PUMP: RAW=463 Moisture=100% Pump=OFF[0m
+[0;32mI (150347) GROW: Minute 6: LIGHT = ON[0m
+[0;33mW (150757) DHT_FAN: DHT read failed[0m
+[0;32mI (151157) SOIL_PUMP: RAW=326 Moisture=100% Pump=OFF[0m
+[0;32mI (152217) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (152757) DHT_FAN: DHT read failed[0m
+[0;32mI (153277) SOIL_PUMP: RAW=143 Moisture=100% Pump=OFF[0m
+[0;32mI (154337) SOIL_PUMP: RAW=8 Moisture=100% Pump=OFF[0m
+[0;33mW (154757) DHT_FAN: DHT read failed[0m
+[0;32mI (155347) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (155397) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (156457) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (156757) DHT_FAN: DHT read failed[0m
+[0;32mI (157517) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (158577) SOIL_PUMP: RAW=511 Moisture=100% Pump=OFF[0m
+[0;33mW (158757) DHT_FAN: DHT read failed[0m
+[0;32mI (159637) SOIL_PUMP: RAW=487 Moisture=100% Pump=OFF[0m
+[0;32mI (160347) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (160697) SOIL_PUMP: RAW=637 Moisture=100% Pump=OFF[0m
+[0;33mW (160767) DHT_FAN: DHT read failed[0m
+[0;32mI (161757) SOIL_PUMP: RAW=49 Moisture=100% Pump=OFF[0m
+[0;33mW (162767) DHT_FAN: DHT read failed[0m
+[0;32mI (162817) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (163877) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (164757) DHT_FAN: DHT read failed[0m
+[0;32mI (164937) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (165347) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (165997) SOIL_PUMP: RAW=7 Moisture=100% Pump=OFF[0m
+[0;33mW (166757) DHT_FAN: DHT read failed[0m
+[0;32mI (167057) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (168117) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (168757) DHT_FAN: DHT read failed[0m
+[0;32mI (169177) SOIL_PUMP: RAW=325 Moisture=100% Pump=OFF[0m
+[0;32mI (170237) SOIL_PUMP: RAW=1088 Moisture=100% Pump=OFF[0m
+[0;32mI (170347) GROW: Minute 6: LIGHT = ON[0m
+[0;33mW (170757) DHT_FAN: DHT read failed[0m
+[0;32mI (171297) SOIL_PUMP: RAW=933 Moisture=100% Pump=OFF[0m
+[0;32mI (172357) SOIL_PUMP: RAW=145 Moisture=100% Pump=OFF[0m
+[0;33mW (172757) DHT_FAN: DHT read failed[0m
+[0;32mI (173417) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (174477) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (174757) DHT_FAN: DHT read failed[0m
+[0;32mI (175347) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (175537) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Oct 16 2025 11:33:31[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v3.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (77) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (99) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a618h (108056) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0002a640 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=0002e5c4 vaddr=40080000 size=01a54h (  6740) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8d300h (578304) map[0m
+[0;32mI (362) esp_image: segment 4: paddr=000bd328 vaddr=40081a54 size=164e0h ( 91360) load[0m
+[0;32mI (398) esp_image: segment 5: paddr=000d3810 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (410) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (410) boot: Disabling RNG early entropy source...[0m
+[0;32mI (420) cpu_start: Multicore app[0m
+[0;32mI (429) cpu_start: Pro cpu start user code[0m
+[0;32mI (429) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (429) app_init: Application information:[0m
+[0;32mI (429) app_init: Project name:     microgreen_control[0m
+[0;32mI (434) app_init: App version:      1[0m
+[0;32mI (437) app_init: Compile time:     Oct 16 2025 11:19:24[0m
+[0;32mI (442) app_init: ELF file SHA256:  98836468f...[0m
+[0;32mI (446) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (450) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (454) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (458) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (462) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (468) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFB85C0 len 00027A40 (158 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (484) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (489) heap_init: At 40097F34 len 000080CC (32 KiB): IRAM[0m
+[0;33mW (496) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (508) spi_flash: detected chip: generic[0m
+[0;32mI (511) spi_flash: flash io: dio[0m
+[0;33mW (514) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (526) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (535) main_task: Started on CPU0[0m
+[0;32mI (545) main_task: Calling app_main()[0m
+[0;32mI (545) main_task: Returned from app_main()[0m
+[0;32mI (575) wifi:wifi driver task: 3ffc3124, prio:23, stack:6656, core=0[0m
+[0;32mI (585) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (585) wifi:wifi certification version: v7.0[0m
+[0;32mI (585) wifi:config NVS flash: enabled[0m
+[0;32mI (585) wifi:config nano formatting: disabled[0m
+[0;32mI (595) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (595) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (605) wifi:Init management short buffer num: 32[0m
+[0;32mI (605) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (605) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (615) wifi:Init static rx buffer num: 10[0m
+[0;32mI (615) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (625) wifi_init: rx ba win: 6[0m
+[0;32mI (625) wifi_init: accept mbox: 6[0m
+[0;32mI (625) wifi_init: tcpip mbox: 32[0m
+[0;32mI (635) wifi_init: udp mbox: 6[0m
+[0;32mI (635) wifi_init: tcp mbox: 6[0m
+[0;32mI (635) wifi_init: tcp tx win: 5760[0m
+[0;32mI (635) wifi_init: tcp rx win: 5760[0m
+[0;32mI (645) wifi_init: tcp mss: 1440[0m
+[0;32mI (645) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (645) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (655) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (665) SOIL_PUMP: RAW=791 Moisture=100% Pump=OFF[0m
+[0;32mI (735) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (745) wifi:enable tsf[0m
+[0;32mI (745) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (745) NET: Connecting to Wi-Fi: Areena ...[0m
+[0;32mI (765) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (765) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (785) DHT_FAN: DHT read failed[0m
+[0;32mI (785) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (795) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (835) wifi:connected with Areena, aid = 2, channel 6, BW20, bssid = a6:d4:95:54:f0:0f[0m
+[0;32mI (835) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (835) wifi:pm start, type: 0[0m
+
+[0;32mI (835) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (875) wifi:<ba-add>idx:0 (ifx:0, a6:d4:95:54:f0:0f), tid:0, ssn:2, winSize:64[0m
+[0;32mI (925) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1725) SOIL_PUMP: RAW=192 Moisture=100% Pump=OFF[0m
+[0;32mI (1895) esp_netif_handlers: sta ip: 172.20.10.11, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1895) NET: Got IP[0m
+[0;32mI (1895) NET: Wi-Fi connected[0m
+[0;32mI (1895) NET: Time synced[0m
+[0;32mI (1895) GROW: Hold RESET button 3000 ms to start new cycle.[0m
+[0;32mI (2405) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (2785) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (2795) DHT_FAN: DHT read failed[0m
+[0;32mI (3845) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (4785) DHT_FAN: DHT read failed[0m
+[0;32mI (4905) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (5965) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (6785) DHT_FAN: DHT read failed[0m
+[0;32mI (7025) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (7405) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (8085) SOIL_PUMP: RAW=331 Moisture=100% Pump=OFF[0m
+[0;33mW (8785) DHT_FAN: DHT read failed[0m
+[0;32mI (9145) SOIL_PUMP: RAW=1217 Moisture=100% Pump=OFF[0m
+[0;32mI (10205) SOIL_PUMP: RAW=1078 Moisture=100% Pump=OFF[0m
+[0;33mW (10785) DHT_FAN: DHT read failed[0m
+[0;32mI (11265) SOIL_PUMP: RAW=458 Moisture=100% Pump=OFF[0m
+[0;32mI (12325) SOIL_PUMP: RAW=199 Moisture=100% Pump=OFF[0m
+[0;32mI (12405) GROW: Minute 6: LIGHT = ON[0m
+[0;33mW (12785) DHT_FAN: DHT read failed[0m
+[0;32mI (13385) SOIL_PUMP: RAW=80 Moisture=100% Pump=OFF[0m
+[0;32mI (14445) SOIL_PUMP: RAW=113 Moisture=100% Pump=OFF[0m
+[0;33mW (14785) DHT_FAN: DHT read failed[0m
+[0;32mI (15505) SOIL_PUMP: RAW=54 Moisture=100% Pump=OFF[0m
+[0;32mI (16565) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (16785) DHT_FAN: DHT read failed[0m
+[0;32mI (17405) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (17625) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;32mI (18685) SOIL_PUMP: RAW=0 Moisture=100% Pump=OFF[0m
+[0;33mW (18785) DHT_FAN: DHT read failed[0m
+[0;32mI (19745) SOIL_PUMP: RAW=30 Moisture=100% Pump=OFF[0m
+[0;33mW (20785) DHT_FAN: DHT read failed[0m
+[0;32mI (20805) SOIL_PUMP: RAW=80 Moisture=100% Pump=OFF[0m
+[0;32mI (21865) SOIL_PUMP: RAW=222 Moisture=100% Pump=OFF[0m
+[0;32mI (22405) GROW: Minute 6: LIGHT = ON[0m
+[0;33mW (22785) DHT_FAN: DHT read failed[0m
+[0;32mI (22925) SOIL_PUMP: RAW=177 Moisture=100% Pump=OFF[0m
+[0;32mI (23985) SOIL_PUMP: RAW=252 Moisture=100% Pump=OFF[0m
+[0;33mW (24785) DHT_FAN: DHT read failed[0m
+[0;32mI (25045) SOIL_PUMP: RAW=2529 Moisture=42% Pump=OFF[0m
+[0;32mI (26105) SOIL_PUMP: RAW=2525 Moisture=43% Pump=OFF[0m
+[0;33mW (26785) DHT_FAN: DHT read failed[0m
+[0;32mI (27165) SOIL_PUMP: RAW=2681 Moisture=34% Pump=ON[0m
+[0;32mI (27405) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (28225) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (28785) DHT_FAN: DHT read failed[0m
+[0;32mI (29285) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (30345) SOIL_PUMP: RAW=2708 Moisture=32% Pump=ON[0m
+[0;33mW (30785) DHT_FAN: DHT read failed[0m
+[0;32mI (31405) SOIL_PUMP: RAW=2710 Moisture=32% Pump=ON[0m
+[0;32mI (32405) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (32465) SOIL_PUMP: RAW=2713 Moisture=32% Pump=ON[0m
+[0;33mW (32785) DHT_FAN: DHT read failed[0m
+[0;32mI (33525) SOIL_PUMP: RAW=2710 Moisture=32% Pump=ON[0m
+[0;32mI (34585) SOIL_PUMP: RAW=2711 Moisture=32% Pump=ON[0m
+[0;33mW (34785) DHT_FAN: DHT read failed[0m
+[0;32mI (35645) SOIL_PUMP: RAW=2711 Moisture=32% Pump=ON[0m
+[0;32mI (36705) SOIL_PUMP: RAW=2709 Moisture=32% Pump=ON[0m
+[0;33mW (36785) DHT_FAN: DHT read failed[0m
+[0;32mI (37405) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (37765) SOIL_PUMP: RAW=2709 Moisture=32% Pump=ON[0m
+[0;33mW (38785) DHT_FAN: DHT read failed[0m
+[0;32mI (38825) SOIL_PUMP: RAW=2709 Moisture=32% Pump=ON[0m
+[0;32mI (39885) SOIL_PUMP: RAW=2708 Moisture=32% Pump=ON[0m
+[0;33mW (40785) DHT_FAN: DHT read failed[0m
+[0;32mI (40945) SOIL_PUMP: RAW=2710 Moisture=32% Pump=ON[0m
+[0;32mI (42005) SOIL_PUMP: RAW=2711 Moisture=32% Pump=ON[0m
+[0;32mI (42405) GROW: Minute 7: LIGHT = ON[0m
+[0;33mW (42785) DHT_FAN: DHT read failed[0m
+[0;32mI (43065) SOIL_PUMP: RAW=2709 Moisture=32% Pump=ON[0m
+[0;32mI (44125) SOIL_PUMP: RAW=2707 Moisture=32% Pump=ON[0m
+[0;33mW (44785) DHT_FAN: DHT read failed[0m
+[0;32mI (45185) SOIL_PUMP: RAW=2709 Moisture=32% Pump=ON[0m
+[0;32mI (46245) SOIL_PUMP: RAW=2708 Moisture=32% Pump=ON[0m
+[0;33mW (46785) DHT_FAN: DHT read failed[0m
+[0;32mI (47305) SOIL_PUMP: RAW=2709 Moisture=32% Pump=ON[0m
+[0;32mI (47405) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (48365) SOIL_PUMP: RAW=2708 Moisture=32% Pump=ON[0m
+[0;33mW (48785) DHT_FAN: DHT read failed[0m
+[0;32mI (49425) SOIL_PUMP: RAW=2708 Moisture=32% Pump=ON[0m
+[0;32mI (50485) SOIL_PUMP: RAW=2709 Moisture=32% Pump=ON[0m
+[0;33mW (50785) DHT_FAN: DHT read failed[0m
+[0;32mI (51545) SOIL_PUMP: RAW=2707 Moisture=32% Pump=ON[0m
+[0;32mI (52405) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (52605) SOIL_PUMP: RAW=2709 Moisture=32% Pump=ON[0m
+[0;33mW (52785) DHT_FAN: DHT read failed[0m
+[0;32mI (53665) SOIL_PUMP: RAW=2707 Moisture=32% Pump=ON[0m
+[0;32mI (54725) SOIL_PUMP: RAW=2706 Moisture=33% Pump=ON[0m
+[0;33mW (54795) DHT_FAN: DHT read failed[0m
+[0;32mI (55785) SOIL_PUMP: RAW=2707 Moisture=32% Pump=ON[0m
+[0;33mW (56795) DHT_FAN: DHT read failed[0m
+[0;32mI (56845) SOIL_PUMP: RAW=2709 Moisture=32% Pump=ON[0m
+[0;32mI (57405) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (57905) SOIL_PUMP: RAW=2707 Moisture=32% Pump=ON[0m
+[0;33mW (58785) DHT_FAN: DHT read failed[0m
+[0;32mI (58965) SOIL_PUMP: RAW=2707 Moisture=32% Pump=ON[0m
+[0;32mI (60025) SOIL_PUMP: RAW=2708 Moisture=32% Pump=ON[0m
+[0;33mW (60785) DHT_FAN: DHT read failed[0m
+[0;32mI (61085) SOIL_PUMP: RAW=2706 Moisture=33% Pump=ON[0m
+[0;32mI (62145) SOIL_PUMP: RAW=2707 Moisture=32% Pump=ON[0m
+[0;32mI (62405) GROW: Minute 7: LIGHT = ON[0m
+[0;33mW (62785) DHT_FAN: DHT read failed[0m
+[0;32mI (63205) SOIL_PUMP: RAW=2707 Moisture=32% Pump=ON[0m
+[0;32mI (64265) SOIL_PUMP: RAW=2706 Moisture=33% Pump=ON[0m
+[0;33mW (64785) DHT_FAN: DHT read failed[0m
+[0;32mI (65325) SOIL_PUMP: RAW=2706 Moisture=33% Pump=ON[0m
+[0;32mI (66385) SOIL_PUMP: RAW=2706 Moisture=33% Pump=ON[0m
+[0;33mW (66785) DHT_FAN: DHT read failed[0m
+[0;32mI (67405) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (67445) SOIL_PUMP: RAW=2706 Moisture=33% Pump=ON[0m
+[0;32mI (68505) SOIL_PUMP: RAW=2706 Moisture=33% Pump=ON[0m
+[0;33mW (68785) DHT_FAN: DHT read failed[0m
+[0;32mI (69565) SOIL_PUMP: RAW=2707 Moisture=32% Pump=ON[0m
+[0;32mI (70625) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;33mW (70785) DHT_FAN: DHT read failed[0m
+[0;32mI (71685) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;32mI (72405) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (72745) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;33mW (72785) DHT_FAN: DHT read failed[0m
+[0;32mI (73805) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;33mW (74785) DHT_FAN: DHT read failed[0m
+[0;32mI (74865) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;32mI (75925) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;33mW (76785) DHT_FAN: DHT read failed[0m
+[0;32mI (76985) SOIL_PUMP: RAW=2706 Moisture=33% Pump=ON[0m
+[0;32mI (77405) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (78045) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;33mW (78785) DHT_FAN: DHT read failed[0m
+[0;32mI (79105) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;32mI (80165) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (80785) DHT_FAN: DHT read failed[0m
+[0;32mI (81225) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (82285) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (82405) GROW: Minute 7: LIGHT = ON[0m
+[0;33mW (82785) DHT_FAN: DHT read failed[0m
+[0;32mI (83345) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (84405) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;33mW (84785) DHT_FAN: DHT read failed[0m
+[0;32mI (85465) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (86525) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;33mW (86785) DHT_FAN: DHT read failed[0m
+[0;32mI (87405) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (87585) SOIL_PUMP: RAW=2705 Moisture=33% Pump=ON[0m
+[0;32mI (88645) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (88785) DHT_FAN: DHT read failed[0m
+[0;32mI (89705) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (90765) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (90785) DHT_FAN: DHT read failed[0m
+[0;32mI (91825) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (92405) GROW: Minute 8+: LIGHT = OFF (CYCLE DONE)[0m
+[0;32mI (92415) GROW: Auto-start new 7-min cycle[0m
+[0;33mW (92785) DHT_FAN: DHT read failed[0m
+[0;32mI (92885) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (93945) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (94785) DHT_FAN: DHT read failed[0m
+[0;32mI (95005) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (96065) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (96785) DHT_FAN: DHT read failed[0m
+[0;32mI (97125) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (97415) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (98185) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (98785) DHT_FAN: DHT read failed[0m
+[0;32mI (99245) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (100305) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (100785) DHT_FAN: DHT read failed[0m
+[0;32mI (101365) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (102415) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (102425) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (102785) DHT_FAN: DHT read failed[0m
+[0;32mI (103485) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (104545) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (104785) DHT_FAN: DHT read failed[0m
+[0;32mI (105605) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (106665) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (106785) DHT_FAN: DHT read failed[0m
+[0;32mI (107415) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (107725) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (108785) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (108795) DHT_FAN: DHT read failed[0m
+[0;32mI (109845) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (110785) DHT_FAN: DHT read failed[0m
+[0;32mI (110905) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (111965) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (112415) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (112785) DHT_FAN: DHT read failed[0m
+[0;32mI (113025) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (114085) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (114785) DHT_FAN: DHT read failed[0m
+[0;32mI (115145) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;32mI (116205) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;33mW (116785) DHT_FAN: DHT read failed[0m
+[0;32mI (117265) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (117415) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (118325) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (118785) DHT_FAN: DHT read failed[0m
+[0;32mI (119385) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;32mI (120445) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (120785) DHT_FAN: DHT read failed[0m
+[0;32mI (121505) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;32mI (122415) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (122565) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;33mW (122785) DHT_FAN: DHT read failed[0m
+[0;32mI (123625) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;32mI (124685) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (124785) DHT_FAN: DHT read failed[0m
+[0;32mI (125745) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;33mW (126785) DHT_FAN: DHT read failed[0m
+[0;32mI (126805) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;32mI (127415) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (127865) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;33mW (128785) DHT_FAN: DHT read failed[0m
+[0;32mI (128925) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;32mI (129985) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;33mW (130785) DHT_FAN: DHT read failed[0m
+[0;32mI (131045) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;32mI (132105) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (132415) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (132785) DHT_FAN: DHT read failed[0m
+[0;32mI (133165) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;32mI (134225) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;33mW (134785) DHT_FAN: DHT read failed[0m
+[0;32mI (135285) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;32mI (136345) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;33mW (136785) DHT_FAN: DHT read failed[0m
+[0;32mI (137405) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+[0;32mI (137415) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (138465) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;33mW (138785) DHT_FAN: DHT read failed[0m
+[0;32mI (139525) SOIL_PUMP: RAW=2703 Moisture=33% Pump=ON[0m
+����������������������������������������������������������������40585) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON
+[0;33mW (140785) DHT_FAN: DHT read failed[0m
+[0;32mI (141645) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;32mI (142415) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (142705) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (142785) DHT_FAN: DHT read failed[0m
+[0;32mI (143765) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (144785) DHT_FAN: DHT read failed[0m
+[0;32mI (144825) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;32mI (145885) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;33mW (146785) DHT_FAN: DHT read failed[0m
+[0;32mI (146945) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;32mI (147415) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (148005) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;33mW (148785) DHT_FAN: DHT read failed[0m
+[0;32mI (149065) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;32mI (150125) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;33mW (150785) DHT_FAN: DHT read failed[0m
+[0;32mI (151185) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;32mI (152245) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;32mI (152415) GROW: Minute 2: LIGHT = OFF[0m
+[0;33mW (152785) DHT_FAN: DHT read failed[0m
+[0;32mI (153305) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;32mI (154365) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (154785) DHT_FAN: DHT read failed[0m
+[0;32mI (155425) SOIL_PUMP: RAW=2704 Moisture=33% Pump=ON[0m
+[0;32mI (156485) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;33mW (156785) DHT_FAN: DHT read failed[0m
+[0;32mI (157415) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (157545) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;32mI (158605) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;33mW (158785) DHT_FAN: DHT read failed[0m
+[0;32mI (159665) SOIL_PUMP: RAW=2700 Moisture=33% Pump=ON[0m
+[0;32mI (160725) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;33mW (160795) DHT_FAN: DHT read failed[0m
+[0;32mI (161785) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;32mI (162415) GROW: Minute 2: LIGHT = OFF[0m
+[0;33mW (162795) DHT_FAN: DHT read failed[0m
+[0;32mI (162845) SOIL_PUMP: RAW=2700 Moisture=33% Pump=ON[0m
+[0;32mI (163905) SOIL_PUMP: RAW=2696 Moisture=33% Pump=ON[0m
+[0;33mW (164785) DHT_FAN: DHT read failed[0m
+[0;32mI (164965) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;32mI (166025) SOIL_PUMP: RAW=2667 Moisture=35% Pump=ON[0m
+[0;33mW (166785) DHT_FAN: DHT read failed[0m
+[0;32mI (167085) SOIL_PUMP: RAW=2543 Moisture=42% Pump=ON[0m
+[0;32mI (167415) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (168145) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (168785) DHT_FAN: DHT read failed[0m
+[0;32mI (169205) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (170265) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;33mW (170785) DHT_FAN: DHT read failed[0m
+[0;32mI (171325) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;32mI (172385) SOIL_PUMP: RAW=2700 Moisture=33% Pump=ON[0m
+[0;32mI (172415) GROW: Minute 2: LIGHT = OFF[0m
+[0;33mW (172785) DHT_FAN: DHT read failed[0m
+[0;32mI (173445) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (174505) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;33mW (174785) DHT_FAN: DHT read failed[0m
+[0;32mI (175565) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (176625) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (176785) DHT_FAN: DHT read failed[0m
+[0;32mI (177415) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (177685) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;32mI (178745) SOIL_PUMP: RAW=2700 Moisture=33% Pump=ON[0m
+[0;33mW (178785) DHT_FAN: DHT read failed[0m
+[0;32mI (179805) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;33mW (180785) DHT_FAN: DHT read failed[0m
+[0;32mI (180865) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (181925) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (182415) GROW: Minute 2: LIGHT = OFF[0m
+[0;33mW (182785) DHT_FAN: DHT read failed[0m
+[0;32mI (182985) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (184045) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;33mW (184785) DHT_FAN: DHT read failed[0m
+[0;32mI (185105) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (186165) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (186785) DHT_FAN: DHT read failed[0m
+[0;32mI (187225) SOIL_PUMP: RAW=2702 Moisture=33% Pump=ON[0m
+[0;32mI (187415) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (188285) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (188785) DHT_FAN: DHT read failed[0m
+[0;32mI (189345) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (190405) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (190785) DHT_FAN: DHT read failed[0m
+[0;32mI (191465) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (192415) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (192525) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (192785) DHT_FAN: DHT read failed[0m
+[0;32mI (193585) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (194645) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (194785) DHT_FAN: DHT read failed[0m
+[0;32mI (195705) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (196765) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;33mW (196785) DHT_FAN: DHT read failed[0m
+[0;32mI (197415) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (197825) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;33mW (198785) DHT_FAN: DHT read failed[0m
+[0;32mI (198885) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (199945) SOIL_PUMP: RAW=2701 Moisture=33% Pump=ON[0m
+[0;33mW (200785) DHT_FAN: DHT read failed[0m
+[0;32mI (201005) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;32mI (202065) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;32mI (202415) GROW: Minute 2: LIGHT = OFF[0m
+[0;33mW (202785) DHT_FAN: DHT read failed[0m
+[0;32mI (203125) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (204185) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (204785) DHT_FAN: DHT read failed[0m
+[0;32mI (205245) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (206305) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (206785) DHT_FAN: DHT read failed[0m
+[0;32mI (207365) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (207415) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (208425) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;33mW (208785) DHT_FAN: DHT read failed[0m
+[0;32mI (209485) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (210545) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;33mW (210785) DHT_FAN: DHT read failed[0m
+[0;32mI (211605) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;32mI (212415) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (212665) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;33mW (212785) DHT_FAN: DHT read failed[0m
+[0;32mI (213725) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (214785) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;33mW (214795) DHT_FAN: DHT read failed[0m
+[0;32mI (215845) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;33mW (216785) DHT_FAN: DHT read failed[0m
+[0;32mI (216905) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (217415) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (217965) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (218785) DHT_FAN: DHT read failed[0m
+[0;32mI (219025) SOIL_PUMP: RAW=2700 Moisture=33% Pump=ON[0m
+[0;32mI (220085) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (220785) DHT_FAN: DHT read failed[0m
+[0;32mI (221145) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;32mI (222205) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (222415) GROW: Minute 3: LIGHT = OFF[0m
+[0;33mW (222785) DHT_FAN: DHT read failed[0m
+[0;32mI (223265) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (224325) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;33mW (224785) DHT_FAN: DHT read failed[0m
+[0;32mI (225385) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;32mI (226445) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;33mW (226785) DHT_FAN: DHT read failed[0m
+[0;32mI (227415) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (227505) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (228565) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;33mW (228785) DHT_FAN: DHT read failed[0m
+[0;32mI (229625) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (230685) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (230785) DHT_FAN: DHT read failed[0m
+[0;32mI (231745) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;32mI (232415) GROW: Minute 3: LIGHT = OFF[0m
+[0;33mW (232785) DHT_FAN: DHT read failed[0m
+[0;32mI (232805) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;32mI (233865) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;33mW (234785) DHT_FAN: DHT read failed[0m
+[0;32mI (234925) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+����������������������������������������������������������������235985) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON
+[0;33mW (236785) DHT_FAN: DHT read failed[0m
+[0;32mI (237045) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (237415) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (238105) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (238785) DHT_FAN: DHT read failed[0m
+[0;32mI (239165) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (240225) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;33mW (240785) DHT_FAN: DHT read failed[0m
+[0;32mI (241285) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;32mI (242345) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;32mI (242415) GROW: Minute 3: LIGHT = OFF[0m
+[0;33mW (242785) DHT_FAN: DHT read failed[0m
+[0;32mI (243405) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;32mI (244465) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (244785) DHT_FAN: DHT read failed[0m
+[0;32mI (245525) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;32mI (246585) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;33mW (246785) DHT_FAN: DHT read failed[0m
+[0;32mI (247415) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (247645) SOIL_PUMP: RAW=2699 Moisture=33% Pump=ON[0m
+[0;32mI (248705) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (248785) DHT_FAN: DHT read failed[0m
+[0;32mI (249765) SOIL_PUMP: RAW=2696 Moisture=33% Pump=ON[0m
+[0;33mW (250785) DHT_FAN: DHT read failed[0m
+[0;32mI (250825) SOIL_PUMP: RAW=2352 Moisture=52% Pump=ON[0m
+[0;32mI (251885) SOIL_PUMP: RAW=1038 Moisture=100% Pump=OFF[0m
+[0;32mI (252415) GROW: Minute 3: LIGHT = OFF[0m
+[0;33mW (252785) DHT_FAN: DHT read failed[0m
+[0;32mI (252945) SOIL_PUMP: RAW=1004 Moisture=100% Pump=OFF[0m
+[0;32mI (254005) SOIL_PUMP: RAW=998 Moisture=100% Pump=OFF[0m
+[0;33mW (254785) DHT_FAN: DHT read failed[0m
+[0;32mI (255065) SOIL_PUMP: RAW=995 Moisture=100% Pump=OFF[0m
+[0;32mI (256125) SOIL_PUMP: RAW=1980 Moisture=73% Pump=OFF[0m
+[0;33mW (256785) DHT_FAN: DHT read failed[0m
+[0;32mI (257185) SOIL_PUMP: RAW=2203 Moisture=60% Pump=OFF[0m
+[0;32mI (257415) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (258245) SOIL_PUMP: RAW=2314 Moisture=54% Pump=OFF[0m
+[0;33mW (258785) DHT_FAN: DHT read failed[0m
+[0;32mI (259305) SOIL_PUMP: RAW=1822 Moisture=82% Pump=OFF[0m
+[0;32mI (260365) SOIL_PUMP: RAW=2633 Moisture=37% Pump=OFF[0m
+[0;33mW (260785) DHT_FAN: DHT read failed[0m
+[0;32mI (261425) SOIL_PUMP: RAW=2671 Moisture=34% Pump=OFF[0m
+[0;32mI (262415) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (262485) SOIL_PUMP: RAW=2671 Moisture=34% Pump=ON[0m
+[0;33mW (262785) DHT_FAN: DHT read failed[0m
+[0;32mI (263545) SOIL_PUMP: RAW=2528 Moisture=42% Pump=ON[0m
+[0;32mI (264605) SOIL_PUMP: RAW=2652 Moisture=36% Pump=ON[0m
+[0;33mW (264785) DHT_FAN: DHT read failed[0m
+[0;32mI (265665) SOIL_PUMP: RAW=2160 Moisture=63% Pump=ON[0m
+[0;32mI (266725) SOIL_PUMP: RAW=2099 Moisture=66% Pump=ON[0m
+[0;33mW (266795) DHT_FAN: DHT read failed[0m
+[0;32mI (267415) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (267785) SOIL_PUMP: RAW=2420 Moisture=48% Pump=ON[0m
+[0;33mW (268795) DHT_FAN: DHT read failed[0m
+[0;32mI (268845) SOIL_PUMP: RAW=1891 Moisture=78% Pump=ON[0m
+[0;32mI (269905) SOIL_PUMP: RAW=2151 Moisture=63% Pump=ON[0m
+[0;33mW (270785) DHT_FAN: DHT read failed[0m
+[0;32mI (270965) SOIL_PUMP: RAW=2685 Moisture=34% Pump=ON[0m
+[0;32mI (272025) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (272415) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (272785) DHT_FAN: DHT read failed[0m
+[0;32mI (273085) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (274145) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (274785) DHT_FAN: DHT read failed[0m
+[0;32mI (275205) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (276265) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (276785) DHT_FAN: DHT read failed[0m
+[0;32mI (277325) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (277415) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (278385) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;33mW (278785) DHT_FAN: DHT read failed[0m
+[0;32mI (279445) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;32mI (280505) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (280785) DHT_FAN: DHT read failed[0m
+[0;32mI (281565) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;32mI (282415) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (282625) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;33mW (282785) DHT_FAN: DHT read failed[0m
+[0;32mI (283685) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;32mI (284745) SOIL_PUMP: RAW=2697 Moisture=33% Pump=ON[0m
+[0;33mW (284785) DHT_FAN: DHT read failed[0m
+[0;32mI (285805) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (286785) DHT_FAN: DHT read failed[0m
+[0;32mI (286865) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;32mI (287415) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (287925) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;33mW (288785) DHT_FAN: DHT read failed[0m
+[0;32mI (288985) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;32mI (290045) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (290785) DHT_FAN: DHT read failed[0m
+[0;32mI (291105) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (292165) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (292415) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (292785) DHT_FAN: DHT read failed[0m
+[0;32mI (293225) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (294285) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (294785) DHT_FAN: DHT read failed[0m
+[0;32mI (295345) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;32mI (296405) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (296785) DHT_FAN: DHT read failed[0m
+[0;32mI (297415) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (297465) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (298525) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (298785) DHT_FAN: DHT read failed[0m
+[0;32mI (299585) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (300645) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (300785) DHT_FAN: DHT read failed[0m
+[0;32mI (301705) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (302415) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (302765) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (302785) DHT_FAN: DHT read failed[0m
+[0;32mI (303825) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (304785) DHT_FAN: DHT read failed[0m
+[0;32mI (304885) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;32mI (305945) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;33mW (306785) DHT_FAN: DHT read failed[0m
+[0;32mI (307005) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (307415) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (308065) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;33mW (308785) DHT_FAN: DHT read failed[0m
+[0;32mI (309125) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (310185) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (310785) DHT_FAN: DHT read failed[0m
+[0;32mI (311245) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (312305) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (312415) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (312785) DHT_FAN: DHT read failed[0m
+[0;32mI (313365) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (314425) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (314785) DHT_FAN: DHT read failed[0m
+[0;32mI (315485) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (316545) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (316785) DHT_FAN: DHT read failed[0m
+[0;32mI (317415) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (317605) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (318665) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (318785) DHT_FAN: DHT read failed[0m
+[0;32mI (319725) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (320785) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (320795) DHT_FAN: DHT read failed[0m
+[0;32mI (321845) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;32mI (322415) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (322785) DHT_FAN: DHT read failed[0m
+[0;32mI (322905) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (323965) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (324785) DHT_FAN: DHT read failed[0m
+[0;32mI (325025) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;32mI (326085) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (326785) DHT_FAN: DHT read failed[0m
+[0;32mI (327145) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;32mI (327415) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (328205) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (328785) DHT_FAN: DHT read failed[0m
+[0;32mI (329265) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;32mI (330325) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (330785) DHT_FAN: DHT read failed[0m
+[0;32mI (331385) SOIL_PUMP: RAW=2698 Moisture=33% Pump=ON[0m
+[0;32mI (332415) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (332445) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (332785) DHT_FAN: DHT read failed[0m
+[0;32mI (333505) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;32mI (334565) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (334785) DHT_FAN: DHT read failed[0m
+[0;32mI (335625) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (336685) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (336785) DHT_FAN: DHT read failed[0m
+[0;32mI (337415) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (337745) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (338785) DHT_FAN: DHT read failed[0m
+[0;32mI (338805) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (339865) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (340785) DHT_FAN: DHT read failed[0m
+[0;32mI (340925) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+����������������������������������������������������������������41985) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON
+[0;32mI (342415) GROW: Minute 5: LIGHT = ON[0m
+[0;33mW (342785) DHT_FAN: DHT read failed[0m
+[0;32mI (343045) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (344105) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (344785) DHT_FAN: DHT read failed[0m
+[0;32mI (345165) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (346225) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;33mW (346785) DHT_FAN: DHT read failed[0m
+[0;32mI (347285) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (347415) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (348345) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (348785) DHT_FAN: DHT read failed[0m
+[0;32mI (349405) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (350465) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (350785) DHT_FAN: DHT read failed[0m
+[0;32mI (351525) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (352415) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (352585) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (352785) DHT_FAN: DHT read failed[0m
+[0;32mI (353645) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (354705) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (354785) DHT_FAN: DHT read failed[0m
+[0;32mI (355765) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (356785) DHT_FAN: DHT read failed[0m
+[0;32mI (356825) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (357415) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (357885) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (358785) DHT_FAN: DHT read failed[0m
+[0;32mI (358945) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (360005) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (360785) DHT_FAN: DHT read failed[0m
+[0;32mI (361065) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (362125) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (362415) GROW: Minute 5: LIGHT = ON[0m
+[0;33mW (362785) DHT_FAN: DHT read failed[0m
+[0;32mI (363185) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (364245) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (364785) DHT_FAN: DHT read failed[0m
+[0;32mI (365305) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (366365) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (366785) DHT_FAN: DHT read failed[0m
+[0;32mI (367415) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (367425) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (368485) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (368785) DHT_FAN: DHT read failed[0m
+[0;32mI (369545) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (370605) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (370785) DHT_FAN: DHT read failed[0m
+[0;32mI (371665) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (372415) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (372725) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (372795) DHT_FAN: DHT read failed[0m
+[0;32mI (373785) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;33mW (374795) DHT_FAN: DHT read failed[0m
+[0;32mI (374845) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (375905) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;33mW (376785) DHT_FAN: DHT read failed[0m
+[0;32mI (376965) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (377415) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (378025) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (378785) DHT_FAN: DHT read failed[0m
+[0;32mI (379085) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (380145) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (380785) DHT_FAN: DHT read failed[0m
+[0;32mI (381205) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (382265) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (382415) GROW: Minute 5: LIGHT = ON[0m
+[0;33mW (382785) DHT_FAN: DHT read failed[0m
+[0;32mI (383325) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (384385) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (384785) DHT_FAN: DHT read failed[0m
+[0;32mI (385445) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (386505) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (386785) DHT_FAN: DHT read failed[0m
+[0;32mI (387415) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (387565) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (388625) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (388785) DHT_FAN: DHT read failed[0m
+[0;32mI (389685) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (390745) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (390785) DHT_FAN: DHT read failed[0m
+[0;32mI (391805) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (392415) GROW: Minute 6: LIGHT = ON[0m
+[0;33mW (392785) DHT_FAN: DHT read failed[0m
+[0;32mI (392865) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (393925) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (394785) DHT_FAN: DHT read failed[0m
+[0;32mI (394985) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (396045) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (396785) DHT_FAN: DHT read failed[0m
+[0;32mI (397105) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (397415) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (398165) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (398785) DHT_FAN: DHT read failed[0m
+[0;32mI (399225) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (400285) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (400785) DHT_FAN: DHT read failed[0m
+[0;32mI (401345) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (402405) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (402415) GROW: Minute 6: LIGHT = ON[0m
+[0;33mW (402785) DHT_FAN: DHT read failed[0m
+[0;32mI (403465) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (404525) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (404785) DHT_FAN: DHT read failed[0m
+[0;32mI (405585) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (406645) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (406785) DHT_FAN: DHT read failed[0m
+[0;32mI (407415) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (407705) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (408765) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (408785) DHT_FAN: DHT read failed[0m
+[0;32mI (409825) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;33mW (410785) DHT_FAN: DHT read failed[0m
+[0;32mI (410885) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (411945) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (412415) GROW: Minute 6: LIGHT = ON[0m
+[0;33mW (412785) DHT_FAN: DHT read failed[0m
+[0;32mI (413005) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (414065) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (414785) DHT_FAN: DHT read failed[0m
+[0;32mI (415125) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (416185) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (416785) DHT_FAN: DHT read failed[0m
+[0;32mI (417245) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (417415) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (418305) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (418785) DHT_FAN: DHT read failed[0m
+[0;32mI (419365) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (420425) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (420785) DHT_FAN: DHT read failed[0m
+[0;32mI (421485) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (422415) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (422545) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;33mW (422785) DHT_FAN: DHT read failed[0m
+[0;32mI (423605) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (424665) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (424785) DHT_FAN: DHT read failed[0m
+[0;32mI (425725) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (426785) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (426795) DHT_FAN: DHT read failed[0m
+[0;32mI (427415) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (427845) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (428785) DHT_FAN: DHT read failed[0m
+[0;32mI (428905) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (429965) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (430785) DHT_FAN: DHT read failed[0m
+[0;32mI (431025) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (432085) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (432415) GROW: Minute 6: LIGHT = ON[0m
+[0;33mW (432785) DHT_FAN: DHT read failed[0m
+[0;32mI (433145) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (434205) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (434785) DHT_FAN: DHT read failed[0m
+[0;32mI (435265) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (436325) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (436785) DHT_FAN: DHT read failed[0m
+[0;32mI (437385) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (437415) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (438445) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (438785) DHT_FAN: DHT read failed[0m
+[0;32mI (439505) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (440565) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (440785) DHT_FAN: DHT read failed[0m
+[0;32mI (441625) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (442415) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (442685) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (442785) DHT_FAN: DHT read failed[0m
+[0;32mI (443745) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (444785) DHT_FAN: DHT read failed[0m
+[0;32mI (444805) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (445865) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;33mW (446785) DHT_FAN: DHT read failed[0m
+[0;32mI (446925) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (447415) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (447985) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (448785) DHT_FAN: DHT read failed[0m
+[0;32mI (449045) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (450105) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (450785) DHT_FAN: DHT read failed[0m
+[0;32mI (451165) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (452225) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (452415) GROW: Minute 7: LIGHT = ON[0m
+[0;33mW (452785) DHT_FAN: DHT read failed[0m
+[0;32mI (453285) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (454345) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (454785) DHT_FAN: DHT read failed[0m
+[0;32mI (455405) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (456465) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (456785) DHT_FAN: DHT read failed[0m
+[0;32mI (457415) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (457525) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (458585) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (458785) DHT_FAN: DHT read failed[0m
+[0;32mI (459645) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (460705) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (460785) DHT_FAN: DHT read failed[0m
+[0;32mI (461765) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (462415) GROW: Minute 7: LIGHT = ON[0m
+[0;33mW (462785) DHT_FAN: DHT read failed[0m
+[0;32mI (462825) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (463885) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (464785) DHT_FAN: DHT read failed[0m
+[0;32mI (464945) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (466005) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;33mW (466785) DHT_FAN: DHT read failed[0m
+[0;32mI (467065) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (467415) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (468125) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;33mW (468785) DHT_FAN: DHT read failed[0m
+[0;32mI (469185) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (470245) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (470785) DHT_FAN: DHT read failed[0m
+[0;32mI (471305) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (472365) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (472415) GROW: Minute 7: LIGHT = ON[0m
+[0;33mW (472785) DHT_FAN: DHT read failed[0m
+[0;32mI (473425) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (474485) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (474785) DHT_FAN: DHT read failed[0m
+[0;32mI (475545) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (476605) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (476785) DHT_FAN: DHT read failed[0m
+[0;32mI (477415) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (477665) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (478725) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (478795) DHT_FAN: DHT read failed[0m
+[0;32mI (479785) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (480795) DHT_FAN: DHT read failed[0m
+[0;32mI (480845) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (481905) SOIL_PUMP: RAW=2694 Moisture=33% Pump=ON[0m
+[0;32mI (482415) GROW: Minute 7: LIGHT = ON[0m
+[0;33mW (482785) DHT_FAN: DHT read failed[0m
+[0;32mI (482965) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (484025) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (484785) DHT_FAN: DHT read failed[0m
+[0;32mI (485085) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (486145) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (486785) DHT_FAN: DHT read failed[0m
+[0;32mI (487205) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (487415) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (488265) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (488785) DHT_FAN: DHT read failed[0m
+[0;32mI (489325) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (490385) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (490785) DHT_FAN: DHT read failed[0m
+[0;32mI (491445) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (492415) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (492505) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (492785) DHT_FAN: DHT read failed[0m
+[0;32mI (493565) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (494625) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (494785) DHT_FAN: DHT read failed[0m
+[0;32mI (495685) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (496745) SOIL_PUMP: RAW=2695 Moisture=33% Pump=ON[0m
+[0;33mW (496785) DHT_FAN: DHT read failed[0m
+[0;32mI (497415) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (497805) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (498785) DHT_FAN: DHT read failed[0m
+[0;32mI (498865) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (499925) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (500785) DHT_FAN: DHT read failed[0m
+[0;32mI (500985) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (502045) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (502415) GROW: Minute 7: LIGHT = ON[0m
+[0;33mW (502785) DHT_FAN: DHT read failed[0m
+[0;32mI (503105) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (504165) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (504785) DHT_FAN: DHT read failed[0m
+[0;32mI (505225) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (506285) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (506785) DHT_FAN: DHT read failed[0m
+[0;32mI (507345) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (507415) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (508405) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (508785) DHT_FAN: DHT read failed[0m
+[0;32mI (509465) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (510525) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (510785) DHT_FAN: DHT read failed[0m
+[0;32mI (511585) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (512415) GROW: Minute 8+: LIGHT = OFF (CYCLE DONE)[0m
+[0;32mI (512425) GROW: Auto-start new 7-min cycle[0m
+[0;32mI (512645) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (512785) DHT_FAN: DHT read failed[0m
+[0;32mI (513705) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (514765) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (514785) DHT_FAN: DHT read failed[0m
+[0;32mI (515825) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (516785) DHT_FAN: DHT read failed[0m
+[0;32mI (516885) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (517425) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (517945) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (518785) DHT_FAN: DHT read failed[0m
+[0;32mI (519005) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (520065) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (520785) DHT_FAN: DHT read failed[0m
+[0;32mI (521125) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (522185) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (522425) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (522785) DHT_FAN: DHT read failed[0m
+[0;32mI (523245) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (524305) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (524785) DHT_FAN: DHT read failed[0m
+[0;32mI (525365) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (526425) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (526785) DHT_FAN: DHT read failed[0m
+[0;32mI (527425) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (527485) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (528545) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (528785) DHT_FAN: DHT read failed[0m
+[0;32mI (529605) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (530665) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (530785) DHT_FAN: DHT read failed[0m
+[0;32mI (531725) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (532425) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (532785) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (532795) DHT_FAN: DHT read failed[0m
+[0;32mI (533845) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (534785) DHT_FAN: DHT read failed[0m
+[0;32mI (534905) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (535965) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (536785) DHT_FAN: DHT read failed[0m
+[0;32mI (537025) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (537425) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (538085) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (538785) DHT_FAN: DHT read failed[0m
+[0;32mI (539145) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (540205) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (540785) DHT_FAN: DHT read failed[0m
+[0;32mI (541265) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (542325) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (542425) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (542785) DHT_FAN: DHT read failed[0m
+[0;32mI (543385) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (544445) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (544785) DHT_FAN: DHT read failed[0m
+[0;32mI (545505) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (546565) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (546785) DHT_FAN: DHT read failed[0m
+[0;32mI (547425) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (547625) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (548685) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (548785) DHT_FAN: DHT read failed[0m
+[0;32mI (549745) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (550785) DHT_FAN: DHT read failed[0m
+[0;32mI (550805) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (551865) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (552425) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (552785) DHT_FAN: DHT read failed[0m
+[0;32mI (552925) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (553985) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (554785) DHT_FAN: DHT read failed[0m
+[0;32mI (555045) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (556105) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (556785) DHT_FAN: DHT read failed[0m
+[0;32mI (557165) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (557425) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (558225) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (558785) DHT_FAN: DHT read failed[0m
+[0;32mI (559285) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (560345) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (560785) DHT_FAN: DHT read failed[0m
+[0;32mI (561405) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (562425) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (562465) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (562785) DHT_FAN: DHT read failed[0m
+[0;32mI (563525) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (564585) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (564785) DHT_FAN: DHT read failed[0m
+[0;32mI (565645) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (566705) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (566785) DHT_FAN: DHT read failed[0m
+[0;32mI (567425) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (567765) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (568785) DHT_FAN: DHT read failed[0m
+[0;32mI (568825) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (569885) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (570785) DHT_FAN: DHT read failed[0m
+[0;32mI (570945) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (572005) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (572425) GROW: Minute 2: LIGHT = OFF[0m
+[0;33mW (572785) DHT_FAN: DHT read failed[0m
+[0;32mI (573065) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (574125) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (574785) DHT_FAN: DHT read failed[0m
+[0;32mI (575185) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (576245) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (576785) DHT_FAN: DHT read failed[0m
+[0;32mI (577305) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (577425) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (578365) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (578785) DHT_FAN: DHT read failed[0m
+[0;32mI (579425) SOIL_PUMP: RAW=2687 Moisture=34% Pump=ON[0m
+[0;32mI (580485) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (580785) DHT_FAN: DHT read failed[0m
+[0;32mI (581545) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (582425) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (582605) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (582785) DHT_FAN: DHT read failed[0m
+[0;32mI (583665) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;32mI (584725) SOIL_PUMP: RAW=2687 Moisture=34% Pump=ON[0m
+[0;33mW (584795) DHT_FAN: DHT read failed[0m
+[0;32mI (585785) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (586795) DHT_FAN: DHT read failed[0m
+[0;32mI (586845) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (587425) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (587905) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (588785) DHT_FAN: DHT read failed[0m
+[0;32mI (588965) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (590025) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (590785) DHT_FAN: DHT read failed[0m
+[0;32mI (591085) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (592145) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (592425) GROW: Minute 2: LIGHT = OFF[0m
+[0;33mW (592785) DHT_FAN: DHT read failed[0m
+[0;32mI (593205) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (594265) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (594785) DHT_FAN: DHT read failed[0m
+[0;32mI (595325) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (596385) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (596785) DHT_FAN: DHT read failed[0m
+[0;32mI (597425) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (597445) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (598505) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (598785) DHT_FAN: DHT read failed[0m
+[0;32mI (599565) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (600625) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (600785) DHT_FAN: DHT read failed[0m
+[0;32mI (601685) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (602425) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (602745) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (602785) DHT_FAN: DHT read failed[0m
+[0;32mI (603805) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (604785) DHT_FAN: DHT read failed[0m
+[0;32mI (604865) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (605925) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (606785) DHT_FAN: DHT read failed[0m
+[0;32mI (606985) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (607425) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (608045) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (608785) DHT_FAN: DHT read failed[0m
+[0;32mI (609105) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (610165) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (610785) DHT_FAN: DHT read failed[0m
+[0;32mI (611225) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (612285) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (612425) GROW: Minute 2: LIGHT = OFF[0m
+[0;33mW (612785) DHT_FAN: DHT read failed[0m
+����������������������������������������������������������������613345) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON
+[0;32mI (614405) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (614785) DHT_FAN: DHT read failed[0m
+[0;32mI (615465) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (616525) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (616785) DHT_FAN: DHT read failed[0m
+[0;32mI (617425) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (617585) SOIL_PUMP: RAW=2687 Moisture=34% Pump=ON[0m
+[0;32mI (618645) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (618785) DHT_FAN: DHT read failed[0m
+[0;32mI (619705) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (620765) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (620785) DHT_FAN: DHT read failed[0m
+[0;32mI (621825) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;32mI (622425) GROW: Minute 2: LIGHT = OFF[0m
+[0;33mW (622785) DHT_FAN: DHT read failed[0m
+[0;32mI (622885) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (623945) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;33mW (624785) DHT_FAN: DHT read failed[0m
+[0;32mI (625005) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (626065) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (626785) DHT_FAN: DHT read failed[0m
+[0;32mI (627125) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (627425) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (628185) SOIL_PUMP: RAW=2693 Moisture=33% Pump=ON[0m
+[0;33mW (628785) DHT_FAN: DHT read failed[0m
+[0;32mI (629245) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (630305) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (630785) DHT_FAN: DHT read failed[0m
+[0;32mI (631365) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (632425) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (632425) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (632785) DHT_FAN: DHT read failed[0m
+[0;32mI (633485) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (634545) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;33mW (634785) DHT_FAN: DHT read failed[0m
+[0;32mI (635605) SOIL_PUMP: RAW=2692 Moisture=33% Pump=ON[0m
+[0;32mI (636665) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (636785) DHT_FAN: DHT read failed[0m
+[0;32mI (637425) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (637725) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;32mI (638785) SOIL_PUMP: RAW=2691 Moisture=33% Pump=ON[0m
+[0;33mW (638795) DHT_FAN: DHT read failed[0m
+[0;32mI (639845) SOIL_PUMP: RAW=2689 Moisture=33% Pump=ON[0m
+[0;33mW (640785) DHT_FAN: DHT read failed[0m
+[0;32mI (640905) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (641965) SOIL_PUMP: RAW=2690 Moisture=33% Pump=ON[0m
+[0;32mI (642425) GROW: Minute 3: LIGHT = OFF[0m
+[0;33mW (642785) DHT_FAN: DHT read failed[0m
+[0;32mI (643025) SOIL_PUMP: RAW=2688 Moisture=34% Pump=ON[0m
+[0;32mI (644085) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;33mW (644785) DHT_FAN: DHT read failed[0m
+[0;32mI (645145) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (646205) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;33mW (646785) DHT_FAN: DHT read failed[0m
+[0;32mI (647265) SOIL_PUMP: RAW=2681 Moisture=34% Pump=ON[0m
+[0;32mI (647425) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (648325) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;33mW (648785) DHT_FAN: DHT read failed[0m
+[0;32mI (649385) SOIL_PUMP: RAW=2682 Moisture=34% Pump=ON[0m
+[0;32mI (650445) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;33mW (650785) DHT_FAN: DHT read failed[0m
+[0;32mI (651505) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (652425) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (652565) SOIL_PUMP: RAW=2682 Moisture=34% Pump=ON[0m
+[0;33mW (652785) DHT_FAN: DHT read failed[0m
+[0;32mI (653625) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (654685) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;33mW (654785) DHT_FAN: DHT read failed[0m
+[0;32mI (655745) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;33mW (656785) DHT_FAN: DHT read failed[0m
+[0;32mI (656805) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;32mI (657425) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (657865) SOIL_PUMP: RAW=2678 Moisture=34% Pump=ON[0m
+[0;33mW (658785) DHT_FAN: DHT read failed[0m
+[0;32mI (658925) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (659985) SOIL_PUMP: RAW=2683 Moisture=34% Pump=ON[0m
+[0;33mW (660785) DHT_FAN: DHT read failed[0m
+[0;32mI (661045) SOIL_PUMP: RAW=2683 Moisture=34% Pump=ON[0m
+[0;32mI (662105) SOIL_PUMP: RAW=2683 Moisture=34% Pump=ON[0m
+[0;32mI (662425) GROW: Minute 3: LIGHT = OFF[0m
+[0;33mW (662785) DHT_FAN: DHT read failed[0m
+[0;32mI (663165) SOIL_PUMP: RAW=2684 Moisture=34% Pump=ON[0m
+[0;32mI (664225) SOIL_PUMP: RAW=2686 Moisture=34% Pump=ON[0m
+[0;33mW (664785) DHT_FAN: DHT read failed[0m
+[0;32mI (665285) SOIL_PUMP: RAW=2686 Moisture=34% Pump=ON[0m
+[0;32mI (666345) SOIL_PUMP: RAW=2683 Moisture=34% Pump=ON[0m
+[0;33mW (666785) DHT_FAN: DHT read failed[0m
+[0;32mI (667405) SOIL_PUMP: RAW=2684 Moisture=34% Pump=ON[0m
+[0;32mI (667425) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (668465) SOIL_PUMP: RAW=2683 Moisture=34% Pump=ON[0m
+[0;33mW (668785) DHT_FAN: DHT read failed[0m
+[0;32mI (669525) SOIL_PUMP: RAW=2682 Moisture=34% Pump=ON[0m
+[0;32mI (670585) SOIL_PUMP: RAW=2685 Moisture=34% Pump=ON[0m
+[0;33mW (670785) DHT_FAN: DHT read failed[0m
+[0;32mI (671645) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (672425) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (672705) SOIL_PUMP: RAW=2683 Moisture=34% Pump=ON[0m
+[0;33mW (672785) DHT_FAN: DHT read failed[0m
+[0;32mI (673765) SOIL_PUMP: RAW=2682 Moisture=34% Pump=ON[0m
+[0;33mW (674785) DHT_FAN: DHT read failed[0m
+[0;32mI (674825) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (675885) SOIL_PUMP: RAW=2682 Moisture=34% Pump=ON[0m
+[0;33mW (676785) DHT_FAN: DHT read failed[0m
+[0;32mI (676945) SOIL_PUMP: RAW=2682 Moisture=34% Pump=ON[0m
+[0;32mI (677425) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (678005) SOIL_PUMP: RAW=2681 Moisture=34% Pump=ON[0m
+[0;33mW (678785) DHT_FAN: DHT read failed[0m
+[0;32mI (679065) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (680125) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;33mW (680785) DHT_FAN: DHT read failed[0m
+[0;32mI (681185) SOIL_PUMP: RAW=2682 Moisture=34% Pump=ON[0m
+[0;32mI (682245) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;32mI (682425) GROW: Minute 3: LIGHT = OFF[0m
+[0;33mW (682785) DHT_FAN: DHT read failed[0m
+[0;32mI (683305) SOIL_PUMP: RAW=2678 Moisture=34% Pump=ON[0m
+[0;32mI (684365) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;33mW (684785) DHT_FAN: DHT read failed[0m
+[0;32mI (685425) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (686485) SOIL_PUMP: RAW=2681 Moisture=34% Pump=ON[0m
+[0;33mW (686785) DHT_FAN: DHT read failed[0m
+[0;32mI (687425) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (687545) SOIL_PUMP: RAW=2675 Moisture=34% Pump=ON[0m
+[0;32mI (688605) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;33mW (688785) DHT_FAN: DHT read failed[0m
+[0;32mI (689665) SOIL_PUMP: RAW=2678 Moisture=34% Pump=ON[0m
+[0;32mI (690725) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;33mW (690795) DHT_FAN: DHT read failed[0m
+[0;32mI (691785) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (692425) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (692795) DHT_FAN: DHT read failed[0m
+[0;32mI (692845) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (693905) SOIL_PUMP: RAW=2675 Moisture=34% Pump=ON[0m
+[0;33mW (694785) DHT_FAN: DHT read failed[0m
+[0;32mI (694965) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (696025) SOIL_PUMP: RAW=2675 Moisture=34% Pump=ON[0m
+[0;33mW (696785) DHT_FAN: DHT read failed[0m
+[0;32mI (697085) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;32mI (697425) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (698145) SOIL_PUMP: RAW=2678 Moisture=34% Pump=ON[0m
+[0;33mW (698785) DHT_FAN: DHT read failed[0m
+[0;32mI (699205) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (700265) SOIL_PUMP: RAW=2676 Moisture=34% Pump=ON[0m
+[0;33mW (700785) DHT_FAN: DHT read failed[0m
+[0;32mI (701325) SOIL_PUMP: RAW=2678 Moisture=34% Pump=ON[0m
+[0;32mI (702385) SOIL_PUMP: RAW=2676 Moisture=34% Pump=ON[0m
+[0;32mI (702425) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (702785) DHT_FAN: DHT read failed[0m
+[0;32mI (703445) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;32mI (704505) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;33mW (704785) DHT_FAN: DHT read failed[0m
+[0;32mI (705565) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;32mI (706625) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;33mW (706785) DHT_FAN: DHT read failed[0m
+[0;32mI (707425) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (707685) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;32mI (708745) SOIL_PUMP: RAW=2675 Moisture=34% Pump=ON[0m
+[0;33mW (708785) DHT_FAN: DHT read failed[0m
+[0;32mI (709805) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;33mW (710785) DHT_FAN: DHT read failed[0m
+[0;32mI (710865) SOIL_PUMP: RAW=2675 Moisture=34% Pump=ON[0m
+[0;32mI (711925) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;32mI (712425) GROW: Minute 4: LIGHT = ON[0m
+[0;33mW (712785) DHT_FAN: DHT read failed[0m
+[0;32mI (712985) SOIL_PUMP: RAW=2675 Moisture=34% Pump=ON[0m
+[0;32mI (714045) SOIL_PUMP: RAW=2679 Moisture=34% Pump=ON[0m
+[0;33mW (714785) DHT_FAN: DHT read failed[0m
+[0;32mI (715105) SOIL_PUMP: RAW=2675 Moisture=34% Pump=ON[0m
+[0;32mI (716165) SOIL_PUMP: RAW=2677 Moisture=34% Pump=ON[0m
+[0;33mW (716785) DHT_FAN: DHT read failed[0m

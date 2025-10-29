@@ -1,0 +1,145 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\relay2ch_active_high\build\relay2ch_active_high.elf D:\Project_microgreen\relay2ch_active_high\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 26 2025 18:10:59[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2a0h ( 41632) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a2c8 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c6c8 vaddr=40080000 size=03950h ( 14672) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=145ech ( 83436) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=00034614 vaddr=40083950 size=09660h ( 38496) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003dc7c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (184) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     relay2ch_active_high[0m
+[0;32mI (189) app_init: App version:      1[0m
+[0;32mI (192) app_init: Compile time:     Sep 26 2025 18:10:36[0m
+[0;32mI (197) app_init: ELF file SHA256:  f97d5ac85...[0m
+[0;32mI (202) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (209) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (213) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 3FFB2CC0 len 0002D340 (180 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (239) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (251) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (282) main_task: Started on CPU0[0m
+[0;32mI (292) main_task: Calling app_main()[0m
+[0;32mI (292) RELAY2CH_AH: Relay test ready (Active HIGH). Pump/Fan OFF.[0m
+[0;32mI (292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (5292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (10292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (15292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (20292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (25292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (30292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (35292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (40292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (45292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (50292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (55292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (60292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (65292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (70292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (75292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (80292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (85292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (90292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (95292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (100292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (105292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (110292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (115292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (120292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (125292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (130292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (135292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (140292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (145292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (150292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (155292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (160292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (165292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (170292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (175292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (180292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (185292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (190292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (195292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (200292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (205292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (210292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (215292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (220292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (225292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (230292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (235292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (240292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (245292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (250292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (255292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (260292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (265292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (270292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (275292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (280292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (285292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (290292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (295292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (300292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (305292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (310292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (315292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (320292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (325292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (330292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (335292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (340292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (345292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (350292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (355292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (360292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (365292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (370292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (375292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (380292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (385292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (390292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (395292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (400292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (405292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (410292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (415292) RELAY2CH_AH: Pump OFF, Fan OFF[0m
+[0;32mI (420292) RELAY2CH_AH: Pump ON, Fan ON[0m
+[0;32mI (425292) RELAY2CH_AH: Pump OFF, Fan OFF[0m

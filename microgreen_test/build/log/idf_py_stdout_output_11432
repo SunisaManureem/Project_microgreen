@@ -1,0 +1,1674 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\microgreen_test\build\microgreen_test.elf D:\Project_microgreen\microgreen_test\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 19 2025 09:36:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a618h (108056) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002a640 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002e5c4 vaddr=40080000 size=01a54h (  6740) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8d3a0h (578464) map[0m
+[0;32mI (334) esp_image: segment 4: paddr=000bd3c8 vaddr=40081a54 size=164e0h ( 91360) load[0m
+[0;32mI (370) esp_image: segment 5: paddr=000d38b0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (401) app_init: Project name:     microgreen_test[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (409) app_init: Compile time:     Oct 19 2025 09:36:12[0m
+[0;32mI (414) app_init: ELF file SHA256:  5cc764e94...[0m
+[0;32mI (418) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (422) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (426) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (430) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (434) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (440) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (445) heap_init: At 3FFB85C8 len 00027A38 (158 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (456) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40097F34 len 000080CC (32 KiB): IRAM[0m
+[0;33mW (468) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (479) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;33mW (486) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (498) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (507) main_task: Started on CPU0[0m
+[0;32mI (517) main_task: Calling app_main()[0m
+[0;32mI (517) main_task: Returned from app_main()[0m
+[0;32mI (547) wifi:wifi driver task: 3ffc309c, prio:23, stack:6656, core=0[0m
+[0;32mI (557) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (557) wifi:wifi certification version: v7.0[0m
+[0;32mI (557) wifi:config NVS flash: enabled[0m
+[0;32mI (557) wifi:config nano formatting: disabled[0m
+[0;32mI (567) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (567) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (577) wifi:Init management short buffer num: 32[0m
+[0;32mI (577) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (587) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (587) wifi:Init static rx buffer num: 10[0m
+[0;32mI (587) wifi:Init dynamic rx buffer num: 32[0m[0;32mI (597) wifi_init: rx ba win: 6[0m
+[0;32mI (597) wifi_init: accept mbox: 6[0m
+[0;32mI (597) wifi_init: tcpip mbox: 32[0m
+[0;32mI (607) wifi_init: udp mbox: 6[0m
+[0;32mI (607) wifi_init: tcp mbox: 6[0m
+[0;32mI (607) wifi_init: tcp tx win: 5760[0m
+[0;32mI (607) wifi_init: tcp rx win: 5760[0m
+[0;32mI (617) wifi_init: tcp mss: 1440[0m
+[0;32mI (617) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (617) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (627) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (657) SOIL_PUMP: RAW=1456 Moisture=100% Pump=OFF[0m
+[0;32mI (707) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (787) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (787) wifi:enable tsf[0m
+[0;32mI (787) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (787) NET: Connecting to Wi-Fi: Areena ...[0m
+[0;32mI (797) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (807) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (817) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (827) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (867) wifi:connected with Areena, aid = 2, channel 6, BW20, bssid = 0e:7c:55:7b:d1:af[0m
+[0;32mI (867) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+[0;32mI (877) wifi:pm start, type: 0[0m
+
+[0;32mI (877) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (897) wifi:<ba-add>idx:0 (ifx:0, 0e:7c:55:7b:d1:af), tid:0, ssn:2, winSize:64[0m
+[0;32mI (947) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1737) SOIL_PUMP: RAW=1449 Moisture=100% Pump=OFF[0m
+[0;32mI (1917) esp_netif_handlers: sta ip: 172.20.10.11, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1917) NET: Got IP[0m
+[0;32mI (1917) NET: Wi-Fi connected[0m
+[0;32mI (2547) DHT_FAN: T=29.0C RH=86.2% Soil=100% Fan=OFF[0m
+[0;32mI (2817) SOIL_PUMP: RAW=1451 Moisture=100% Pump=OFF[0m
+[0;32mI (3897) SOIL_PUMP: RAW=1450 Moisture=100% Pump=OFF[0m
+[0;32mI (4547) DHT_FAN: T=29.0C RH=86.3% Soil=100% Fan=OFF[0m
+[0;32mI (4917) NET: Time synced[0m
+[0;32mI (4917) GROW: Hold RESET button 3000 ms to start new cycle.[0m
+[0;32mI (4977) SOIL_PUMP: RAW=1449 Moisture=100% Pump=OFF[0m
+[0;32mI (5417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (6057) SOIL_PUMP: RAW=1459 Moisture=100% Pump=OFF[0m
+[0;32mI (6547) DHT_FAN: T=29.0C RH=86.4% Soil=100% Fan=OFF[0m
+[0;32mI (7137) SOIL_PUMP: RAW=1458 Moisture=100% Pump=OFF[0m
+[0;32mI (8217) SOIL_PUMP: RAW=1460 Moisture=100% Pump=OFF[0m
+[0;32mI (8547) DHT_FAN: T=29.0C RH=86.4% Soil=100% Fan=OFF[0m
+[0;32mI (9297) SOIL_PUMP: RAW=1458 Moisture=100% Pump=OFF[0m
+[0;32mI (10377) SOIL_PUMP: RAW=1460 Moisture=100% Pump=OFF[0m
+[0;32mI (10417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (10547) DHT_FAN: T=29.0C RH=86.4% Soil=100% Fan=ON[0m
+[0;32mI (11457) SOIL_PUMP: RAW=1461 Moisture=100% Pump=OFF[0m
+[0;32mI (12537) SOIL_PUMP: RAW=1461 Moisture=100% Pump=OFF[0m
+[0;32mI (12547) DHT_FAN: T=29.0C RH=86.3% Soil=100% Fan=ON[0m
+[0;32mI (13617) SOIL_PUMP: RAW=1461 Moisture=100% Pump=OFF[0m
+[0;32mI (14547) DHT_FAN: T=29.0C RH=86.3% Soil=100% Fan=ON[0m
+[0;32mI (14697) SOIL_PUMP: RAW=1461 Moisture=100% Pump=OFF[0m
+[0;32mI (15417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (15777) SOIL_PUMP: RAW=1460 Moisture=100% Pump=OFF[0m
+[0;32mI (16547) DHT_FAN: T=29.0C RH=86.2% Soil=100% Fan=ON[0m
+[0;32mI (16857) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (17937) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (18547) DHT_FAN: T=29.0C RH=86.2% Soil=100% Fan=ON[0m
+[0;32mI (19017) SOIL_PUMP: RAW=1462 Moisture=100% Pump=OFF[0m
+[0;32mI (20097) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (20417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (20547) DHT_FAN: T=29.0C RH=86.2% Soil=100% Fan=ON[0m
+[0;32mI (21177) SOIL_PUMP: RAW=1464 Moisture=100% Pump=OFF[0m
+[0;32mI (22257) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (22547) DHT_FAN: T=29.0C RH=86.2% Soil=100% Fan=ON[0m
+[0;32mI (23337) SOIL_PUMP: RAW=1462 Moisture=100% Pump=OFF[0m
+[0;32mI (24417) SOIL_PUMP: RAW=1465 Moisture=100% Pump=OFF[0m
+[0;32mI (24547) DHT_FAN: T=29.0C RH=86.1% Soil=100% Fan=ON[0m
+[0;32mI (25417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (25497) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (26547) DHT_FAN: T=29.0C RH=86.1% Soil=100% Fan=ON[0m
+[0;32mI (26577) SOIL_PUMP: RAW=1465 Moisture=100% Pump=OFF[0m
+[0;32mI (27657) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (28547) DHT_FAN: T=29.0C RH=85.9% Soil=100% Fan=ON[0m
+[0;32mI (28737) SOIL_PUMP: RAW=1465 Moisture=100% Pump=OFF[0m
+[0;32mI (29817) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (30417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (30547) DHT_FAN: T=29.0C RH=85.8% Soil=100% Fan=ON[0m
+[0;32mI (30897) SOIL_PUMP: RAW=1464 Moisture=100% Pump=OFF[0m
+[0;32mI (31977) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (32547) DHT_FAN: T=29.1C RH=85.7% Soil=100% Fan=ON[0m
+[0;32mI (33057) SOIL_PUMP: RAW=1465 Moisture=100% Pump=OFF[0m
+[0;32mI (34137) SOIL_PUMP: RAW=1465 Moisture=100% Pump=OFF[0m
+[0;32mI (34547) DHT_FAN: T=29.1C RH=85.6% Soil=100% Fan=ON[0m
+[0;32mI (35217) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (35417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (36297) SOIL_PUMP: RAW=1465 Moisture=100% Pump=OFF[0m
+[0;32mI (36547) DHT_FAN: T=29.1C RH=85.7% Soil=100% Fan=ON[0m
+[0;32mI (37377) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (38457) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (38547) DHT_FAN: T=29.1C RH=85.9% Soil=100% Fan=ON[0m
+[0;32mI (39537) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (40417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (40547) DHT_FAN: T=29.1C RH=86.0% Soil=100% Fan=ON[0m
+[0;32mI (40617) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (41697) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (42547) DHT_FAN: T=29.1C RH=86.0% Soil=100% Fan=ON[0m
+[0;32mI (42777) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (43857) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (44547) DHT_FAN: T=29.1C RH=85.9% Soil=100% Fan=ON[0m
+[0;32mI (44937) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (45417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (46017) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (46547) DHT_FAN: T=29.1C RH=86.1% Soil=100% Fan=ON[0m
+[0;32mI (47097) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (48177) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (48547) DHT_FAN: T=29.1C RH=86.0% Soil=100% Fan=ON[0m
+[0;32mI (49257) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (50337) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (50417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (50547) DHT_FAN: T=29.1C RH=86.0% Soil=100% Fan=ON[0m
+[0;32mI (51417) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (52497) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (52547) DHT_FAN: T=29.1C RH=86.1% Soil=100% Fan=ON[0m
+[0;32mI (53577) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (54547) DHT_FAN: T=29.1C RH=86.0% Soil=100% Fan=ON[0m
+[0;32mI (54657) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (55417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (55737) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (56547) DHT_FAN: T=29.1C RH=85.9% Soil=100% Fan=ON[0m
+[0;32mI (56817) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (57897) SOIL_PUMP: RAW=1468 Moisture=100% Pump=OFF[0m
+[0;32mI (58547) DHT_FAN: T=29.1C RH=85.9% Soil=100% Fan=ON[0m
+[0;32mI (58977) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (60057) SOIL_PUMP: RAW=1468 Moisture=100% Pump=OFF[0m
+[0;32mI (60417) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (60547) DHT_FAN: T=29.1C RH=86.0% Soil=100% Fan=ON[0m
+[0;32mI (61137) SOIL_PUMP: RAW=1468 Moisture=100% Pump=OFF[0m
+[0;32mI (62217) SOIL_PUMP: RAW=1468 Moisture=100% Pump=OFF[0m
+[0;32mI (62547) DHT_FAN: T=29.2C RH=86.1% Soil=100% Fan=ON[0m
+[0;32mI (63297) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (64377) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (64547) DHT_FAN: T=29.2C RH=86.2% Soil=100% Fan=ON[0m
+[0;32mI (65417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (65457) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (66537) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (66547) DHT_FAN: T=29.2C RH=86.3% Soil=100% Fan=ON[0m
+[0;32mI (67617) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (68547) DHT_FAN: T=29.2C RH=86.6% Soil=100% Fan=ON[0m
+[0;32mI (68697) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (69777) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (70417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (70547) DHT_FAN: T=29.2C RH=86.7% Soil=100% Fan=ON[0m
+[0;32mI (70857) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (71937) SOIL_PUMP: RAW=1471 Moisture=100% Pump=OFF[0m
+[0;32mI (72547) DHT_FAN: T=29.2C RH=86.8% Soil=100% Fan=ON[0m
+[0;32mI (73017) SOIL_PUMP: RAW=1471 Moisture=100% Pump=OFF[0m
+[0;32mI (74097) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (74547) DHT_FAN: T=29.2C RH=86.9% Soil=100% Fan=ON[0m
+[0;32mI (75177) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (75417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (76257) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (76547) DHT_FAN: T=29.2C RH=87.0% Soil=100% Fan=ON[0m
+[0;32mI (77337) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (78417) SOIL_PUMP: RAW=1472 Moisture=100% Pump=OFF[0m
+[0;32mI (78547) DHT_FAN: T=29.2C RH=86.9% Soil=100% Fan=ON[0m
+[0;32mI (79497) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (80417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (80547) DHT_FAN: T=29.2C RH=86.9% Soil=100% Fan=ON[0m
+[0;32mI (80577) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (81657) SOIL_PUMP: RAW=1471 Moisture=100% Pump=OFF[0m
+[0;32mI (82547) DHT_FAN: T=29.2C RH=86.8% Soil=100% Fan=ON[0m
+[0;32mI (82737) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (83817) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (84547) DHT_FAN: T=29.2C RH=86.8% Soil=100% Fan=ON[0m
+[0;32mI (84897) SOIL_PUMP: RAW=1471 Moisture=100% Pump=OFF[0m
+[0;32mI (85417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (85977) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (86547) DHT_FAN: T=29.2C RH=86.8% Soil=100% Fan=ON[0m
+[0;32mI (87057) SOIL_PUMP: RAW=1471 Moisture=100% Pump=OFF[0m
+[0;32mI (88137) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (88547) DHT_FAN: T=29.2C RH=86.9% Soil=100% Fan=ON[0m
+[0;32mI (89217) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (90297) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (90417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (90547) DHT_FAN: T=29.2C RH=86.9% Soil=100% Fan=ON[0m
+[0;32mI (91377) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (92457) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (92547) DHT_FAN: T=29.2C RH=87.0% Soil=100% Fan=ON[0m
+[0;32mI (93537) SOIL_PUMP: RAW=1468 Moisture=100% Pump=OFF[0m
+[0;32mI (94547) DHT_FAN: T=29.2C RH=87.0% Soil=100% Fan=ON[0m
+[0;32mI (94617) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (95417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (95697) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (96547) DHT_FAN: T=29.2C RH=87.1% Soil=100% Fan=ON[0m
+[0;32mI (96777) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (97857) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (98547) DHT_FAN: T=29.2C RH=87.1% Soil=100% Fan=ON[0m
+[0;32mI (98937) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (100017) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (100417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (100547) DHT_FAN: T=29.2C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (101097) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (102177) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (102547) DHT_FAN: T=29.2C RH=87.1% Soil=100% Fan=ON[0m
+[0;32mI (103257) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (104337) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (104547) DHT_FAN: T=29.2C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (105417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (105417) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (106497) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (106547) DHT_FAN: T=29.2C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (107577) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (108547) DHT_FAN: T=29.2C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (108657) SOIL_PUMP: RAW=1470 Moisture=100% Pump=OFF[0m
+[0;32mI (109737) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (110417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (110547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (110817) SOIL_PUMP: RAW=1468 Moisture=100% Pump=OFF[0m
+[0;32mI (111897) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (112547) DHT_FAN: T=29.1C RH=87.4% Soil=100% Fan=ON[0m
+[0;32mI (112977) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (114057) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (114547) DHT_FAN: T=29.1C RH=87.4% Soil=100% Fan=ON[0m
+[0;32mI (115137) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (115417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (116217) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (116547) DHT_FAN: T=29.1C RH=87.4% Soil=100% Fan=ON[0m
+[0;32mI (117297) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (118377) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (118547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (119457) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (120417) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (120537) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (120547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (121617) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (122547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (122697) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (123777) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (124547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (124857) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (125417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (125937) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (126547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (127017) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (128097) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (128547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (129177) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (130257) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (130417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (130547) DHT_FAN: T=29.1C RH=87.5% Soil=100% Fan=ON[0m
+[0;32mI (131337) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (132417) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (132547) DHT_FAN: T=29.1C RH=87.4% Soil=100% Fan=ON[0m
+[0;32mI (133497) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (134547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (134577) SOIL_PUMP: RAW=1469 Moisture=100% Pump=OFF[0m
+[0;32mI (135417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (135657) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (136547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (136737) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (137817) SOIL_PUMP: RAW=1467 Moisture=100% Pump=OFF[0m
+[0;32mI (138547) DHT_FAN: T=29.1C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (138897) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (139977) SOIL_PUMP: RAW=1465 Moisture=100% Pump=OFF[0m
+[0;32mI (140417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (140547) DHT_FAN: T=29.1C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (141057) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (142137) SOIL_PUMP: RAW=1464 Moisture=100% Pump=OFF[0m
+[0;32mI (142547) DHT_FAN: T=29.1C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (143217) SOIL_PUMP: RAW=1465 Moisture=100% Pump=OFF[0m
+[0;32mI (144297) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (144547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (145377) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (145417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (146457) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (146547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (147537) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (148557) DHT_FAN: T=29.1C RH=87.4% Soil=100% Fan=ON[0m
+[0;32mI (148627) SOIL_PUMP: RAW=1462 Moisture=100% Pump=OFF[0m
+[0;32mI (149707) SOIL_PUMP: RAW=1462 Moisture=100% Pump=OFF[0m
+[0;32mI (150417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (150547) DHT_FAN: T=29.1C RH=87.4% Soil=100% Fan=ON[0m
+[0;32mI (150787) SOIL_PUMP: RAW=1520 Moisture=100% Pump=OFF[0m
+[0;32mI (151867) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (152547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (152947) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (154027) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (154547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (155107) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (155417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (156187) SOIL_PUMP: RAW=1463 Moisture=100% Pump=OFF[0m
+[0;32mI (156547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (157267) SOIL_PUMP: RAW=1466 Moisture=100% Pump=OFF[0m
+[0;32mI (158347) SOIL_PUMP: RAW=1602 Moisture=96% Pump=OFF[0m
+[0;32mI (158547) DHT_FAN: T=29.1C RH=87.5% Soil=96% Fan=ON[0m
+[0;32mI (159427) SOIL_PUMP: RAW=1523 Moisture=100% Pump=OFF[0m
+[0;32mI (160417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (160507) SOIL_PUMP: RAW=1734 Moisture=84% Pump=OFF[0m
+[0;32mI (160547) DHT_FAN: T=29.1C RH=87.5% Soil=84% Fan=ON[0m
+[0;32mI (161587) SOIL_PUMP: RAW=1427 Moisture=100% Pump=OFF[0m
+[0;32mI (162547) DHT_FAN: T=29.1C RH=87.6% Soil=100% Fan=ON[0m
+[0;32mI (162667) SOIL_PUMP: RAW=1419 Moisture=100% Pump=OFF[0m
+[0;32mI (163747) SOIL_PUMP: RAW=1413 Moisture=100% Pump=OFF[0m
+[0;32mI (164547) DHT_FAN: T=29.1C RH=87.8% Soil=100% Fan=ON[0m
+[0;32mI (164827) SOIL_PUMP: RAW=1412 Moisture=100% Pump=OFF[0m
+[0;32mI (165417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (165907) SOIL_PUMP: RAW=1413 Moisture=100% Pump=OFF[0m
+[0;32mI (166547) DHT_FAN: T=29.1C RH=87.9% Soil=100% Fan=ON[0m
+[0;32mI (166987) SOIL_PUMP: RAW=1411 Moisture=100% Pump=OFF[0m
+[0;32mI (168067) SOIL_PUMP: RAW=1413 Moisture=100% Pump=OFF[0m
+[0;32mI (168547) DHT_FAN: T=29.1C RH=87.9% Soil=100% Fan=ON[0m
+[0;32mI (169147) SOIL_PUMP: RAW=1414 Moisture=100% Pump=OFF[0m
+[0;32mI (170227) SOIL_PUMP: RAW=1789 Moisture=80% Pump=OFF[0m
+[0;32mI (170417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (170547) DHT_FAN: T=29.1C RH=88.0% Soil=80% Fan=ON[0m
+[0;32mI (171307) SOIL_PUMP: RAW=2075 Moisture=54% Pump=ON[0m
+[0;32mI (172387) SOIL_PUMP: RAW=2176 Moisture=45% Pump=ON[0m
+[0;32mI (172547) DHT_FAN: T=29.1C RH=88.0% Soil=45% Fan=ON[0m
+[0;32mI (173467) SOIL_PUMP: RAW=2509 Moisture=15% Pump=ON[0m
+[0;32mI (174547) DHT_FAN: T=29.1C RH=88.0% Soil=15% Fan=ON[0m
+[0;32mI (174557) SOIL_PUMP: RAW=2670 Moisture=1% Pump=ON[0m
+[0;32mI (175417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (175637) SOIL_PUMP: RAW=2694 Moisture=0% Pump=ON[0m
+[0;32mI (176547) DHT_FAN: T=29.1C RH=88.0% Soil=0% Fan=ON[0m
+[0;32mI (176717) SOIL_PUMP: RAW=2693 Moisture=0% Pump=ON[0m
+[0;32mI (177797) SOIL_PUMP: RAW=2511 Moisture=15% Pump=ON[0m
+[0;32mI (178547) DHT_FAN: T=29.1C RH=87.9% Soil=15% Fan=ON[0m
+[0;32mI (178877) SOIL_PUMP: RAW=1821 Moisture=77% Pump=ON[0m
+[0;32mI (179957) SOIL_PUMP: RAW=1417 Moisture=100% Pump=ON[0m
+[0;32mI (180417) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (180547) DHT_FAN: T=29.1C RH=87.8% Soil=100% Fan=ON[0m
+[0;32mI (181037) SOIL_PUMP: RAW=1410 Moisture=100% Pump=ON[0m
+[0;32mI (182117) SOIL_PUMP: RAW=1409 Moisture=100% Pump=ON[0m
+[0;32mI (182547) DHT_FAN: T=29.1C RH=87.7% Soil=100% Fan=ON[0m
+[0;32mI (183197) SOIL_PUMP: RAW=1409 Moisture=100% Pump=ON[0m
+[0;32mI (184277) SOIL_PUMP: RAW=1408 Moisture=100% Pump=ON[0m
+[0;32mI (184547) DHT_FAN: T=29.1C RH=87.7% Soil=100% Fan=ON[0m
+[0;32mI (185357) SOIL_PUMP: RAW=1408 Moisture=100% Pump=ON[0m
+[0;32mI (185417) GROW: Minute 8+: LIGHT = OFF (CYCLE DONE)[0m
+[0;32mI (185427) GROW: Auto-start new 7-min cycle[0m
+[0;32mI (186437) SOIL_PUMP: RAW=1403 Moisture=100% Pump=OFF[0m
+[0;32mI (186547) DHT_FAN: T=29.1C RH=87.7% Soil=100% Fan=ON[0m
+[0;32mI (187517) SOIL_PUMP: RAW=1398 Moisture=100% Pump=OFF[0m
+[0;32mI (188547) DHT_FAN: T=29.1C RH=87.6% Soil=100% Fan=ON[0m
+[0;32mI (188597) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (189677) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (190427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (190547) DHT_FAN: T=29.1C RH=87.6% Soil=100% Fan=ON[0m
+[0;32mI (190757) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (191837) SOIL_PUMP: RAW=1393 Moisture=100% Pump=OFF[0m
+[0;32mI (192547) DHT_FAN: T=29.1C RH=87.7% Soil=100% Fan=ON[0m
+[0;32mI (192917) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (193997) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (194547) DHT_FAN: T=29.1C RH=87.7% Soil=100% Fan=ON[0m
+[0;32mI (195077) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (195427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (196157) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (196547) DHT_FAN: T=29.1C RH=87.6% Soil=100% Fan=ON[0m
+[0;32mI (197237) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (198317) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (198547) DHT_FAN: T=29.1C RH=87.5% Soil=100% Fan=ON[0m
+[0;32mI (199397) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (200427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (200477) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (200547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (201557) SOIL_PUMP: RAW=1391 Moisture=100% Pump=OFF[0m
+[0;32mI (202547) DHT_FAN: T=29.1C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (202637) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (203717) SOIL_PUMP: RAW=1391 Moisture=100% Pump=OFF[0m
+[0;32mI (204547) DHT_FAN: T=29.1C RH=87.1% Soil=100% Fan=ON[0m
+[0;32mI (204797) SOIL_PUMP: RAW=1389 Moisture=100% Pump=OFF[0m
+[0;32mI (205427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (205877) SOIL_PUMP: RAW=1391 Moisture=100% Pump=OFF[0m
+[0;32mI (206547) DHT_FAN: T=29.1C RH=87.1% Soil=100% Fan=ON[0m
+[0;32mI (206957) SOIL_PUMP: RAW=1391 Moisture=100% Pump=OFF[0m
+[0;32mI (208037) SOIL_PUMP: RAW=1389 Moisture=100% Pump=OFF[0m
+[0;32mI (208547) DHT_FAN: T=29.1C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (209117) SOIL_PUMP: RAW=1389 Moisture=100% Pump=OFF[0m
+[0;32mI (210197) SOIL_PUMP: RAW=1389 Moisture=100% Pump=OFF[0m
+[0;32mI (210427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (210547) DHT_FAN: T=29.1C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (211277) SOIL_PUMP: RAW=1387 Moisture=100% Pump=OFF[0m
+[0;32mI (212357) SOIL_PUMP: RAW=1388 Moisture=100% Pump=OFF[0m
+[0;32mI (212547) DHT_FAN: T=29.2C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (213437) SOIL_PUMP: RAW=1386 Moisture=100% Pump=OFF[0m
+[0;32mI (214517) SOIL_PUMP: RAW=1386 Moisture=100% Pump=OFF[0m
+[0;32mI (214547) DHT_FAN: T=29.1C RH=87.4% Soil=100% Fan=ON[0m
+[0;32mI (215427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (215597) SOIL_PUMP: RAW=1386 Moisture=100% Pump=OFF[0m
+[0;32mI (216547) DHT_FAN: T=29.1C RH=87.5% Soil=100% Fan=ON[0m
+[0;32mI (216677) SOIL_PUMP: RAW=1385 Moisture=100% Pump=OFF[0m
+[0;32mI (217757) SOIL_PUMP: RAW=1383 Moisture=100% Pump=OFF[0m
+[0;32mI (218547) DHT_FAN: T=29.2C RH=87.4% Soil=100% Fan=ON[0m
+[0;32mI (218837) SOIL_PUMP: RAW=1386 Moisture=100% Pump=OFF[0m
+[0;32mI (219917) SOIL_PUMP: RAW=1385 Moisture=100% Pump=OFF[0m
+[0;32mI (220427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (220547) DHT_FAN: T=29.1C RH=87.4% Soil=100% Fan=ON[0m
+[0;32mI (220997) SOIL_PUMP: RAW=1384 Moisture=100% Pump=OFF[0m
+[0;32mI (222077) SOIL_PUMP: RAW=1383 Moisture=100% Pump=OFF[0m
+[0;32mI (222547) DHT_FAN: T=29.1C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (223157) SOIL_PUMP: RAW=1385 Moisture=100% Pump=OFF[0m
+[0;32mI (224237) SOIL_PUMP: RAW=1383 Moisture=100% Pump=OFF[0m
+[0;32mI (224547) DHT_FAN: T=29.2C RH=87.3% Soil=100% Fan=ON[0m
+[0;32mI (225317) SOIL_PUMP: RAW=1386 Moisture=100% Pump=OFF[0m
+[0;32mI (225427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (226397) SOIL_PUMP: RAW=1385 Moisture=100% Pump=OFF[0m
+[0;32mI (226547) DHT_FAN: T=29.1C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (227477) SOIL_PUMP: RAW=1386 Moisture=100% Pump=OFF[0m
+[0;32mI (228547) DHT_FAN: T=29.1C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (228557) SOIL_PUMP: RAW=1383 Moisture=100% Pump=OFF[0m
+[0;32mI (229637) SOIL_PUMP: RAW=1385 Moisture=100% Pump=OFF[0m
+[0;32mI (230427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (230547) DHT_FAN: T=29.1C RH=87.2% Soil=100% Fan=ON[0m
+[0;32mI (230717) SOIL_PUMP: RAW=1382 Moisture=100% Pump=OFF[0m
+[0;32mI (231797) SOIL_PUMP: RAW=1387 Moisture=100% Pump=OFF[0m
+[0;32mI (232547) DHT_FAN: T=29.2C RH=87.1% Soil=100% Fan=ON[0m
+[0;32mI (232877) SOIL_PUMP: RAW=1385 Moisture=100% Pump=OFF[0m
+[0;32mI (233957) SOIL_PUMP: RAW=1419 Moisture=100% Pump=OFF[0m
+[0;32mI (234547) DHT_FAN: T=29.2C RH=87.0% Soil=100% Fan=ON[0m
+[0;32mI (235037) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (235427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (236117) SOIL_PUMP: RAW=1425 Moisture=100% Pump=OFF[0m
+[0;32mI (236547) DHT_FAN: T=29.2C RH=86.9% Soil=100% Fan=ON[0m
+[0;32mI (237197) SOIL_PUMP: RAW=1427 Moisture=100% Pump=OFF[0m
+[0;32mI (238277) SOIL_PUMP: RAW=1431 Moisture=100% Pump=OFF[0m
+[0;32mI (238547) DHT_FAN: T=29.2C RH=86.9% Soil=100% Fan=ON[0m
+[0;32mI (239357) SOIL_PUMP: RAW=1431 Moisture=100% Pump=OFF[0m
+[0;32mI (240427) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (240437) SOIL_PUMP: RAW=1437 Moisture=100% Pump=OFF[0m
+[0;32mI (240547) DHT_FAN: T=29.3C RH=86.9% Soil=100% Fan=ON[0m
+[0;32mI (241517) SOIL_PUMP: RAW=1438 Moisture=100% Pump=OFF[0m
+[0;32mI (242547) DHT_FAN: T=29.3C RH=86.8% Soil=100% Fan=ON[0m
+[0;32mI (242597) SOIL_PUMP: RAW=1437 Moisture=100% Pump=OFF[0m
+[0;32mI (243677) SOIL_PUMP: RAW=1439 Moisture=100% Pump=OFF[0m
+[0;32mI (244547) DHT_FAN: T=29.3C RH=86.8% Soil=100% Fan=ON[0m
+[0;32mI (244757) SOIL_PUMP: RAW=1437 Moisture=100% Pump=OFF[0m
+[0;32mI (245427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (245837) SOIL_PUMP: RAW=1442 Moisture=100% Pump=OFF[0m
+[0;32mI (246547) DHT_FAN: T=29.4C RH=86.8% Soil=100% Fan=ON[0m
+[0;32mI (246917) SOIL_PUMP: RAW=1441 Moisture=100% Pump=OFF[0m
+[0;32mI (247997) SOIL_PUMP: RAW=1441 Moisture=100% Pump=OFF[0m
+[0;32mI (248547) DHT_FAN: T=29.5C RH=86.8% Soil=100% Fan=ON[0m
+[0;32mI (249077) SOIL_PUMP: RAW=1431 Moisture=100% Pump=OFF[0m
+[0;32mI (250157) SOIL_PUMP: RAW=1433 Moisture=100% Pump=OFF[0m
+[0;32mI (250427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (250547) DHT_FAN: T=29.5C RH=86.7% Soil=100% Fan=ON[0m
+[0;32mI (251237) SOIL_PUMP: RAW=1410 Moisture=100% Pump=OFF[0m
+[0;32mI (252317) SOIL_PUMP: RAW=1409 Moisture=100% Pump=OFF[0m
+[0;32mI (252547) DHT_FAN: T=29.6C RH=86.6% Soil=100% Fan=ON[0m
+[0;32mI (253397) SOIL_PUMP: RAW=1410 Moisture=100% Pump=OFF[0m
+[0;32mI (254477) SOIL_PUMP: RAW=1410 Moisture=100% Pump=OFF[0m
+[0;32mI (254547) DHT_FAN: T=29.6C RH=86.5% Soil=100% Fan=ON[0m
+[0;32mI (255427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (255557) SOIL_PUMP: RAW=1409 Moisture=100% Pump=OFF[0m
+[0;32mI (256547) DHT_FAN: T=29.7C RH=86.3% Soil=100% Fan=ON[0m
+[0;32mI (256637) SOIL_PUMP: RAW=1409 Moisture=100% Pump=OFF[0m
+[0;32mI (257717) SOIL_PUMP: RAW=1410 Moisture=100% Pump=OFF[0m
+[0;32mI (258547) DHT_FAN: T=29.8C RH=86.0% Soil=100% Fan=ON[0m
+[0;32mI (258797) SOIL_PUMP: RAW=1409 Moisture=100% Pump=OFF[0m
+[0;32mI (259877) SOIL_PUMP: RAW=1411 Moisture=100% Pump=OFF[0m
+[0;32mI (260427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (260547) DHT_FAN: T=29.8C RH=85.8% Soil=100% Fan=ON[0m
+[0;32mI (260957) SOIL_PUMP: RAW=1409 Moisture=100% Pump=OFF[0m
+[0;32mI (262037) SOIL_PUMP: RAW=1410 Moisture=100% Pump=OFF[0m
+[0;32mI (262547) DHT_FAN: T=29.9C RH=85.5% Soil=100% Fan=ON[0m
+[0;32mI (263117) SOIL_PUMP: RAW=1411 Moisture=100% Pump=OFF[0m
+[0;32mI (264197) SOIL_PUMP: RAW=1414 Moisture=100% Pump=OFF[0m
+[0;32mI (264547) DHT_FAN: T=30.0C RH=85.2% Soil=100% Fan=ON[0m
+[0;32mI (265277) SOIL_PUMP: RAW=1410 Moisture=100% Pump=OFF[0m
+[0;32mI (265427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (266357) SOIL_PUMP: RAW=1411 Moisture=100% Pump=OFF[0m
+[0;32mI (266547) DHT_FAN: T=30.0C RH=85.0% Soil=100% Fan=ON[0m
+[0;32mI (267437) SOIL_PUMP: RAW=1411 Moisture=100% Pump=OFF[0m
+[0;32mI (268517) SOIL_PUMP: RAW=1411 Moisture=100% Pump=OFF[0m
+[0;32mI (268547) DHT_FAN: T=30.1C RH=84.8% Soil=100% Fan=ON[0m
+[0;32mI (269597) SOIL_PUMP: RAW=1411 Moisture=100% Pump=OFF[0m
+[0;32mI (270427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (270547) DHT_FAN: T=30.2C RH=84.7% Soil=100% Fan=ON[0m
+[0;32mI (270677) SOIL_PUMP: RAW=1411 Moisture=100% Pump=OFF[0m
+[0;32mI (271757) SOIL_PUMP: RAW=1413 Moisture=100% Pump=OFF[0m
+[0;32mI (272547) DHT_FAN: T=30.2C RH=84.6% Soil=100% Fan=ON[0m
+[0;32mI (272837) SOIL_PUMP: RAW=1410 Moisture=100% Pump=OFF[0m
+[0;32mI (273917) SOIL_PUMP: RAW=1408 Moisture=100% Pump=OFF[0m
+[0;32mI (274547) DHT_FAN: T=30.3C RH=84.4% Soil=100% Fan=ON[0m
+[0;32mI (274997) SOIL_PUMP: RAW=1414 Moisture=100% Pump=OFF[0m
+[0;32mI (275427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (276077) SOIL_PUMP: RAW=1413 Moisture=100% Pump=OFF[0m
+[0;32mI (276547) DHT_FAN: T=30.4C RH=84.1% Soil=100% Fan=ON[0m
+[0;32mI (277157) SOIL_PUMP: RAW=1415 Moisture=100% Pump=OFF[0m
+[0;32mI (278237) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (278547) DHT_FAN: T=30.4C RH=83.7% Soil=100% Fan=ON[0m
+[0;32mI (279317) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (280397) SOIL_PUMP: RAW=1393 Moisture=100% Pump=OFF[0m
+[0;32mI (280427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (280547) DHT_FAN: T=30.5C RH=83.4% Soil=100% Fan=ON[0m
+[0;32mI (281477) SOIL_PUMP: RAW=1393 Moisture=100% Pump=OFF[0m
+[0;32mI (282547) DHT_FAN: T=30.6C RH=83.3% Soil=100% Fan=ON[0m
+[0;32mI (282557) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (283637) SOIL_PUMP: RAW=1393 Moisture=100% Pump=OFF[0m
+[0;32mI (284547) DHT_FAN: T=30.7C RH=83.1% Soil=100% Fan=ON[0m
+[0;32mI (284717) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (285427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (285797) SOIL_PUMP: RAW=1394 Moisture=100% Pump=OFF[0m
+[0;32mI (286547) DHT_FAN: T=30.7C RH=82.8% Soil=100% Fan=ON[0m
+[0;32mI (286877) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (287957) SOIL_PUMP: RAW=1394 Moisture=100% Pump=OFF[0m
+[0;32mI (288547) DHT_FAN: T=30.8C RH=82.7% Soil=100% Fan=ON[0m
+[0;32mI (289037) SOIL_PUMP: RAW=1393 Moisture=100% Pump=OFF[0m
+[0;32mI (290117) SOIL_PUMP: RAW=1394 Moisture=100% Pump=OFF[0m
+[0;32mI (290427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (290547) DHT_FAN: T=30.9C RH=82.5% Soil=100% Fan=ON[0m
+[0;32mI (291197) SOIL_PUMP: RAW=1396 Moisture=100% Pump=OFF[0m
+[0;32mI (292277) SOIL_PUMP: RAW=1396 Moisture=100% Pump=OFF[0m
+[0;32mI (292547) DHT_FAN: T=31.0C RH=82.3% Soil=100% Fan=ON[0m
+[0;32mI (293357) SOIL_PUMP: RAW=1397 Moisture=100% Pump=OFF[0m
+[0;32mI (294437) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (294547) DHT_FAN: T=31.0C RH=82.2% Soil=100% Fan=ON[0m
+[0;32mI (295427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (295517) SOIL_PUMP: RAW=1394 Moisture=100% Pump=OFF[0m
+[0;32mI (296547) DHT_FAN: T=31.1C RH=82.1% Soil=100% Fan=ON[0m
+[0;32mI (296597) SOIL_PUMP: RAW=1392 Moisture=100% Pump=OFF[0m
+[0;32mI (297677) SOIL_PUMP: RAW=1397 Moisture=100% Pump=OFF[0m
+[0;32mI (298547) DHT_FAN: T=31.1C RH=81.7% Soil=100% Fan=ON[0m
+[0;32mI (298757) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (299837) SOIL_PUMP: RAW=1396 Moisture=100% Pump=OFF[0m
+[0;32mI (300427) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (300547) DHT_FAN: T=31.1C RH=81.5% Soil=100% Fan=ON[0m
+[0;32mI (300917) SOIL_PUMP: RAW=1396 Moisture=100% Pump=OFF[0m
+[0;32mI (301997) SOIL_PUMP: RAW=1397 Moisture=100% Pump=OFF[0m
+[0;32mI (302547) DHT_FAN: T=31.2C RH=81.2% Soil=100% Fan=ON[0m
+[0;32mI (303077) SOIL_PUMP: RAW=1397 Moisture=100% Pump=OFF[0m
+[0;32mI (304157) SOIL_PUMP: RAW=1396 Moisture=100% Pump=OFF[0m
+[0;32mI (304547) DHT_FAN: T=31.2C RH=81.0% Soil=100% Fan=ON[0m
+[0;32mI (305237) SOIL_PUMP: RAW=1394 Moisture=100% Pump=OFF[0m
+[0;32mI (305427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (306317) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (306547) DHT_FAN: T=31.3C RH=80.9% Soil=100% Fan=ON[0m
+[0;32mI (307397) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (308477) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (308547) DHT_FAN: T=31.4C RH=80.7% Soil=100% Fan=ON[0m
+[0;32mI (309557) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (310427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (310547) DHT_FAN: T=31.5C RH=80.5% Soil=100% Fan=ON[0m
+[0;32mI (310637) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (311717) SOIL_PUMP: RAW=1397 Moisture=100% Pump=OFF[0m
+[0;32mI (312547) DHT_FAN: T=31.5C RH=80.2% Soil=100% Fan=ON[0m
+[0;32mI (312797) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (313877) SOIL_PUMP: RAW=1401 Moisture=100% Pump=OFF[0m
+[0;32mI (314547) DHT_FAN: T=31.6C RH=80.1% Soil=100% Fan=ON[0m
+[0;32mI (314957) SOIL_PUMP: RAW=1398 Moisture=100% Pump=OFF[0m
+[0;32mI (315427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (316037) SOIL_PUMP: RAW=1399 Moisture=100% Pump=OFF[0m
+[0;32mI (316547) DHT_FAN: T=31.7C RH=79.9% Soil=100% Fan=ON[0m
+[0;32mI (317117) SOIL_PUMP: RAW=1393 Moisture=100% Pump=OFF[0m
+[0;32mI (318197) SOIL_PUMP: RAW=1394 Moisture=100% Pump=OFF[0m
+[0;32mI (318547) DHT_FAN: T=31.7C RH=79.8% Soil=100% Fan=ON[0m
+[0;32mI (319277) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (320357) SOIL_PUMP: RAW=1393 Moisture=100% Pump=OFF[0m
+[0;32mI (320427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (320547) DHT_FAN: T=31.8C RH=79.6% Soil=100% Fan=ON[0m
+[0;32mI (321437) SOIL_PUMP: RAW=1394 Moisture=100% Pump=OFF[0m
+[0;32mI (322517) SOIL_PUMP: RAW=1396 Moisture=100% Pump=OFF[0m
+[0;32mI (322547) DHT_FAN: T=31.8C RH=79.4% Soil=100% Fan=ON[0m
+[0;32mI (323597) SOIL_PUMP: RAW=1397 Moisture=100% Pump=OFF[0m
+[0;32mI (324547) DHT_FAN: T=31.9C RH=79.2% Soil=100% Fan=ON[0m
+[0;32mI (324677) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (325427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (325757) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (326547) DHT_FAN: T=31.9C RH=79.0% Soil=100% Fan=ON[0m
+[0;32mI (326837) SOIL_PUMP: RAW=1395 Moisture=100% Pump=OFF[0m
+[0;32mI (327917) SOIL_PUMP: RAW=1394 Moisture=100% Pump=OFF[0m
+[0;32mI (328547) DHT_FAN: T=32.0C RH=78.8% Soil=100% Fan=ON[0m
+[0;32mI (328997) SOIL_PUMP: RAW=1394 Moisture=100% Pump=OFF[0m
+[0;32mI (330077) SOIL_PUMP: RAW=1398 Moisture=100% Pump=OFF[0m
+[0;32mI (330427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (330547) DHT_FAN: T=32.0C RH=78.6% Soil=100% Fan=ON[0m
+[0;32mI (331157) SOIL_PUMP: RAW=1404 Moisture=100% Pump=OFF[0m
+[0;32mI (332237) SOIL_PUMP: RAW=1406 Moisture=100% Pump=OFF[0m
+[0;32mI (332547) DHT_FAN: T=32.1C RH=78.3% Soil=100% Fan=ON[0m
+[0;32mI (333317) SOIL_PUMP: RAW=1407 Moisture=100% Pump=OFF[0m
+[0;32mI (334397) SOIL_PUMP: RAW=1407 Moisture=100% Pump=OFF[0m
+[0;32mI (334547) DHT_FAN: T=32.4C RH=78.2% Soil=100% Fan=ON[0m
+[0;32mI (335427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (335477) SOIL_PUMP: RAW=1407 Moisture=100% Pump=OFF[0m
+[0;32mI (336547) DHT_FAN: T=32.8C RH=78.0% Soil=100% Fan=ON[0m
+[0;32mI (336557) SOIL_PUMP: RAW=1407 Moisture=100% Pump=OFF[0m
+[0;32mI (337637) SOIL_PUMP: RAW=1411 Moisture=100% Pump=OFF[0m
+[0;32mI (338547) DHT_FAN: T=33.3C RH=77.7% Soil=100% Fan=ON[0m
+[0;32mI (338717) SOIL_PUMP: RAW=1419 Moisture=100% Pump=OFF[0m
+[0;32mI (339797) SOIL_PUMP: RAW=1422 Moisture=100% Pump=OFF[0m
+[0;32mI (340427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (340547) DHT_FAN: T=33.6C RH=77.4% Soil=100% Fan=ON[0m
+[0;32mI (340877) SOIL_PUMP: RAW=1422 Moisture=100% Pump=OFF[0m
+[0;32mI (341957) SOIL_PUMP: RAW=1409 Moisture=100% Pump=OFF[0m
+[0;32mI (342547) DHT_FAN: T=34.0C RH=77.2% Soil=100% Fan=ON[0m
+[0;32mI (343037) SOIL_PUMP: RAW=1433 Moisture=100% Pump=OFF[0m
+[0;32mI (344117) SOIL_PUMP: RAW=1420 Moisture=100% Pump=OFF[0m
+[0;32mI (344547) DHT_FAN: T=34.5C RH=76.7% Soil=100% Fan=ON[0m
+[0;32mI (345197) SOIL_PUMP: RAW=1422 Moisture=100% Pump=OFF[0m
+[0;32mI (345427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (346277) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (346547) DHT_FAN: T=34.9C RH=76.3% Soil=100% Fan=ON[0m
+[0;32mI (347357) SOIL_PUMP: RAW=1426 Moisture=100% Pump=OFF[0m
+[0;32mI (348437) SOIL_PUMP: RAW=1426 Moisture=100% Pump=OFF[0m
+[0;32mI (348547) DHT_FAN: T=35.5C RH=75.6% Soil=100% Fan=ON[0m
+[0;32mI (349517) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (350427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (350547) DHT_FAN: T=35.8C RH=74.9% Soil=100% Fan=ON[0m
+[0;32mI (350597) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (351677) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (352547) DHT_FAN: T=36.2C RH=74.3% Soil=100% Fan=ON[0m
+[0;32mI (352757) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (353837) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (354547) DHT_FAN: T=36.5C RH=73.6% Soil=100% Fan=ON[0m
+[0;32mI (354917) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (355427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (355997) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (356547) DHT_FAN: T=36.7C RH=72.6% Soil=100% Fan=ON[0m
+[0;32mI (357077) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (358157) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (358547) DHT_FAN: T=37.0C RH=71.7% Soil=100% Fan=ON[0m
+[0;32mI (359237) SOIL_PUMP: RAW=1424 Moisture=100% Pump=OFF[0m
+[0;32mI (360317) SOIL_PUMP: RAW=1423 Moisture=100% Pump=OFF[0m
+[0;32mI (360427) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (360547) DHT_FAN: T=37.2C RH=70.7% Soil=100% Fan=ON[0m
+[0;32mI (361397) SOIL_PUMP: RAW=1423 Moisture=100% Pump=OFF[0m
+[0;32mI (362477) SOIL_PUMP: RAW=1421 Moisture=100% Pump=OFF[0m
+[0;32mI (362547) DHT_FAN: T=37.3C RH=69.9% Soil=100% Fan=ON[0m
+[0;32mI (363557) SOIL_PUMP: RAW=1422 Moisture=100% Pump=OFF[0m
+[0;32mI (364547) DHT_FAN: T=37.4C RH=69.3% Soil=100% Fan=ON[0m
+[0;32mI (364637) SOIL_PUMP: RAW=1419 Moisture=100% Pump=OFF[0m
+[0;32mI (365427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (365717) SOIL_PUMP: RAW=1490 Moisture=100% Pump=OFF[0m
+[0;32mI (366547) DHT_FAN: T=37.6C RH=68.6% Soil=100% Fan=ON[0m
+[0;32mI (366797) SOIL_PUMP: RAW=1490 Moisture=100% Pump=OFF[0m
+[0;32mI (367877) SOIL_PUMP: RAW=1430 Moisture=100% Pump=OFF[0m
+[0;32mI (368547) DHT_FAN: T=37.6C RH=67.9% Soil=100% Fan=ON[0m
+[0;32mI (368957) SOIL_PUMP: RAW=1430 Moisture=100% Pump=OFF[0m
+[0;32mI (370037) SOIL_PUMP: RAW=1456 Moisture=100% Pump=OFF[0m
+[0;32mI (370427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (370547) DHT_FAN: T=37.7C RH=67.3% Soil=100% Fan=ON[0m
+[0;32mI (371117) SOIL_PUMP: RAW=1373 Moisture=100% Pump=OFF[0m
+[0;32mI (372197) SOIL_PUMP: RAW=1322 Moisture=100% Pump=OFF[0m
+[0;32mI (372547) DHT_FAN: T=37.8C RH=66.9% Soil=100% Fan=ON[0m
+[0;32mI (373277) SOIL_PUMP: RAW=1479 Moisture=100% Pump=OFF[0m
+[0;32mI (374357) SOIL_PUMP: RAW=1296 Moisture=100% Pump=OFF[0m
+[0;32mI (374547) DHT_FAN: T=37.9C RH=66.5% Soil=100% Fan=ON[0m
+[0;32mI (375427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (375437) SOIL_PUMP: RAW=1293 Moisture=100% Pump=OFF[0m
+[0;32mI (376517) SOIL_PUMP: RAW=1293 Moisture=100% Pump=OFF[0m
+[0;32mI (376547) DHT_FAN: T=37.9C RH=66.1% Soil=100% Fan=ON[0m
+[0;32mI (377597) SOIL_PUMP: RAW=1291 Moisture=100% Pump=OFF[0m
+[0;32mI (378547) DHT_FAN: T=37.9C RH=66.0% Soil=100% Fan=ON[0m
+[0;32mI (378677) SOIL_PUMP: RAW=1293 Moisture=100% Pump=OFF[0m
+[0;32mI (379757) SOIL_PUMP: RAW=1291 Moisture=100% Pump=OFF[0m
+[0;32mI (380427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (380547) DHT_FAN: T=37.9C RH=65.9% Soil=100% Fan=ON[0m
+[0;32mI (380837) SOIL_PUMP: RAW=1309 Moisture=100% Pump=OFF[0m
+[0;32mI (381917) SOIL_PUMP: RAW=1290 Moisture=100% Pump=OFF[0m
+[0;32mI (382547) DHT_FAN: T=37.9C RH=65.9% Soil=100% Fan=ON[0m
+[0;32mI (382997) SOIL_PUMP: RAW=2509 Moisture=15% Pump=ON[0m
+[0;32mI (384077) SOIL_PUMP: RAW=2539 Moisture=13% Pump=ON[0m
+[0;32mI (384547) DHT_FAN: T=37.9C RH=65.6% Soil=13% Fan=ON[0m
+[0;32mI (385157) SOIL_PUMP: RAW=2559 Moisture=11% Pump=ON[0m
+[0;32mI (385427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (386237) SOIL_PUMP: RAW=2602 Moisture=7% Pump=ON[0m
+[0;32mI (386547) DHT_FAN: T=37.9C RH=65.3% Soil=7% Fan=ON[0m
+[0;32mI (387317) SOIL_PUMP: RAW=2636 Moisture=4% Pump=ON[0m
+[0;32mI (388397) SOIL_PUMP: RAW=2657 Moisture=2% Pump=ON[0m
+[0;32mI (388547) DHT_FAN: T=37.9C RH=65.1% Soil=2% Fan=ON[0m
+[0;32mI (389477) SOIL_PUMP: RAW=2674 Moisture=1% Pump=ON[0m
+[0;32mI (390427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (390547) DHT_FAN: T=37.9C RH=64.9% Soil=1% Fan=ON[0m
+[0;32mI (390557) SOIL_PUMP: RAW=2688 Moisture=0% Pump=ON[0m
+[0;32mI (391637) SOIL_PUMP: RAW=2681 Moisture=0% Pump=ON[0m
+[0;32mI (392547) DHT_FAN: T=37.8C RH=64.8% Soil=0% Fan=ON[0m
+[0;32mI (392717) SOIL_PUMP: RAW=2699 Moisture=0% Pump=ON[0m
+[0;32mI (393797) SOIL_PUMP: RAW=2410 Moisture=24% Pump=ON[0m
+[0;32mI (394547) DHT_FAN: T=37.8C RH=64.7% Soil=24% Fan=ON[0m
+[0;32mI (394877) SOIL_PUMP: RAW=2702 Moisture=0% Pump=ON[0m
+[0;32mI (395427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (395957) SOIL_PUMP: RAW=2833 Moisture=0% Pump=ON[0m
+[0;32mI (396547) DHT_FAN: T=37.8C RH=64.8% Soil=0% Fan=ON[0m
+[0;32mI (397037) SOIL_PUMP: RAW=2701 Moisture=0% Pump=ON[0m
+[0;32mI (398117) SOIL_PUMP: RAW=2726 Moisture=0% Pump=ON[0m
+[0;32mI (398547) DHT_FAN: T=37.8C RH=64.8% Soil=0% Fan=ON[0m
+[0;32mI (399197) SOIL_PUMP: RAW=2733 Moisture=0% Pump=ON[0m
+[0;32mI (400277) SOIL_PUMP: RAW=2731 Moisture=0% Pump=ON[0m
+[0;32mI (400427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (400547) DHT_FAN: T=37.7C RH=64.8% Soil=0% Fan=ON[0m
+[0;32mI (401357) SOIL_PUMP: RAW=2731 Moisture=0% Pump=ON[0m
+[0;32mI (402437) SOIL_PUMP: RAW=2730 Moisture=0% Pump=ON[0m
+[0;32mI (402547) DHT_FAN: T=37.7C RH=64.9% Soil=0% Fan=ON[0m
+[0;32mI (403517) SOIL_PUMP: RAW=2732 Moisture=0% Pump=ON[0m
+[0;32mI (404547) DHT_FAN: T=37.6C RH=64.9% Soil=0% Fan=ON[0m
+[0;32mI (404597) SOIL_PUMP: RAW=2729 Moisture=0% Pump=ON[0m
+[0;32mI (405427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (405677) SOIL_PUMP: RAW=2036 Moisture=58% Pump=ON[0m
+[0;32mI (406547) DHT_FAN: T=37.6C RH=64.8% Soil=58% Fan=ON[0m
+[0;32mI (406757) SOIL_PUMP: RAW=2045 Moisture=57% Pump=ON[0m
+[0;32mI (407837) SOIL_PUMP: RAW=2042 Moisture=57% Pump=ON[0m
+[0;32mI (408547) DHT_FAN: T=37.5C RH=64.7% Soil=57% Fan=ON[0m
+[0;32mI (408917) SOIL_PUMP: RAW=2040 Moisture=57% Pump=ON[0m
+[0;32mI (409997) SOIL_PUMP: RAW=2037 Moisture=57% Pump=ON[0m
+[0;32mI (410427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (410547) DHT_FAN: T=37.4C RH=64.6% Soil=57% Fan=ON[0m
+[0;32mI (411077) SOIL_PUMP: RAW=2031 Moisture=58% Pump=ON[0m
+[0;32mI (412157) SOIL_PUMP: RAW=2031 Moisture=58% Pump=ON[0m
+[0;32mI (412547) DHT_FAN: T=37.3C RH=64.4% Soil=58% Fan=ON[0m
+[0;32mI (413237) SOIL_PUMP: RAW=2019 Moisture=59% Pump=ON[0m
+[0;32mI (414317) SOIL_PUMP: RAW=1782 Moisture=80% Pump=OFF[0m
+[0;32mI (414547) DHT_FAN: T=37.3C RH=64.4% Soil=80% Fan=ON[0m
+[0;32mI (415397) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (415427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (416477) SOIL_PUMP: RAW=1689 Moisture=88% Pump=OFF[0m
+[0;32mI (416547) DHT_FAN: T=37.2C RH=64.5% Soil=88% Fan=ON[0m
+[0;32mI (417557) SOIL_PUMP: RAW=1690 Moisture=88% Pump=OFF[0m
+[0;32mI (418547) DHT_FAN: T=37.2C RH=64.6% Soil=88% Fan=ON[0m
+[0;32mI (418637) SOIL_PUMP: RAW=1689 Moisture=88% Pump=OFF[0m
+[0;32mI (419717) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (420427) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (420547) DHT_FAN: T=37.1C RH=64.8% Soil=88% Fan=ON[0m
+[0;32mI (420797) SOIL_PUMP: RAW=1686 Moisture=89% Pump=OFF[0m
+[0;32mI (421877) SOIL_PUMP: RAW=1685 Moisture=89% Pump=OFF[0m
+[0;32mI (422547) DHT_FAN: T=37.0C RH=65.0% Soil=89% Fan=ON[0m
+[0;32mI (422957) SOIL_PUMP: RAW=1683 Moisture=89% Pump=OFF[0m
+[0;32mI (424037) SOIL_PUMP: RAW=1683 Moisture=89% Pump=OFF[0m
+[0;32mI (424547) DHT_FAN: T=37.0C RH=65.1% Soil=89% Fan=ON[0m
+[0;32mI (425117) SOIL_PUMP: RAW=1683 Moisture=89% Pump=OFF[0m
+[0;32mI (425427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (426197) SOIL_PUMP: RAW=1681 Moisture=89% Pump=OFF[0m
+[0;32mI (426547) DHT_FAN: T=36.9C RH=65.2% Soil=89% Fan=ON[0m
+[0;32mI (427277) SOIL_PUMP: RAW=1681 Moisture=89% Pump=OFF[0m
+[0;32mI (428357) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (428547) DHT_FAN: T=36.8C RH=65.2% Soil=89% Fan=ON[0m
+[0;32mI (429437) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (430427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (430517) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (430547) DHT_FAN: T=36.8C RH=65.2% Soil=89% Fan=ON[0m
+[0;32mI (431597) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (432547) DHT_FAN: T=36.7C RH=65.2% Soil=89% Fan=ON[0m
+[0;32mI (432677) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (433757) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (434547) DHT_FAN: T=36.6C RH=65.2% Soil=89% Fan=ON[0m
+[0;32mI (434837) SOIL_PUMP: RAW=1679 Moisture=89% Pump=OFF[0m
+[0;32mI (435427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (435917) SOIL_PUMP: RAW=1679 Moisture=89% Pump=OFF[0m
+[0;32mI (436547) DHT_FAN: T=36.5C RH=65.4% Soil=89% Fan=ON[0m
+[0;32mI (436997) SOIL_PUMP: RAW=1677 Moisture=90% Pump=OFF[0m
+[0;32mI (438077) SOIL_PUMP: RAW=1677 Moisture=90% Pump=OFF[0m
+[0;32mI (438547) DHT_FAN: T=36.4C RH=65.5% Soil=90% Fan=ON[0m
+[0;32mI (439157) SOIL_PUMP: RAW=1675 Moisture=90% Pump=OFF[0m
+[0;32mI (440237) SOIL_PUMP: RAW=1675 Moisture=90% Pump=OFF[0m
+[0;32mI (440427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (440547) DHT_FAN: T=36.4C RH=65.7% Soil=90% Fan=ON[0m
+[0;32mI (441317) SOIL_PUMP: RAW=1674 Moisture=90% Pump=OFF[0m
+[0;32mI (442397) SOIL_PUMP: RAW=1675 Moisture=90% Pump=OFF[0m
+[0;32mI (442547) DHT_FAN: T=36.3C RH=66.0% Soil=90% Fan=ON[0m
+[0;32mI (443477) SOIL_PUMP: RAW=1671 Moisture=90% Pump=OFF[0m
+[0;32mI (444547) DHT_FAN: T=36.2C RH=66.2% Soil=90% Fan=ON[0m
+[0;32mI (444557) SOIL_PUMP: RAW=1671 Moisture=90% Pump=OFF[0m
+[0;32mI (445427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (445637) SOIL_PUMP: RAW=1673 Moisture=90% Pump=OFF[0m
+[0;32mI (446547) DHT_FAN: T=36.2C RH=66.3% Soil=90% Fan=ON[0m
+[0;32mI (446717) SOIL_PUMP: RAW=1669 Moisture=90% Pump=OFF[0m
+[0;32mI (447797) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (448547) DHT_FAN: T=36.1C RH=66.3% Soil=90% Fan=ON[0m
+[0;32mI (448877) SOIL_PUMP: RAW=1669 Moisture=90% Pump=OFF[0m
+[0;32mI (449957) SOIL_PUMP: RAW=1669 Moisture=90% Pump=OFF[0m
+[0;32mI (450427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (450547) DHT_FAN: T=36.0C RH=66.4% Soil=90% Fan=ON[0m
+[0;32mI (451037) SOIL_PUMP: RAW=1667 Moisture=90% Pump=OFF[0m
+[0;32mI (452117) SOIL_PUMP: RAW=1667 Moisture=90% Pump=OFF[0m
+[0;32mI (452547) DHT_FAN: T=35.9C RH=66.4% Soil=90% Fan=ON[0m
+[0;32mI (453197) SOIL_PUMP: RAW=1667 Moisture=90% Pump=OFF[0m
+[0;32mI (454277) SOIL_PUMP: RAW=1665 Moisture=91% Pump=OFF[0m
+[0;32mI (454547) DHT_FAN: T=35.9C RH=66.5% Soil=91% Fan=ON[0m
+[0;32mI (455357) SOIL_PUMP: RAW=1666 Moisture=91% Pump=OFF[0m
+[0;32mI (455427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (456437) SOIL_PUMP: RAW=1666 Moisture=91% Pump=OFF[0m
+[0;32mI (456547) DHT_FAN: T=35.8C RH=66.6% Soil=91% Fan=ON[0m
+[0;32mI (457517) SOIL_PUMP: RAW=1665 Moisture=91% Pump=OFF[0m
+[0;32mI (458547) DHT_FAN: T=35.7C RH=66.8% Soil=91% Fan=ON[0m
+[0;32mI (458597) SOIL_PUMP: RAW=1666 Moisture=91% Pump=OFF[0m
+[0;32mI (459677) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (460427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (460547) DHT_FAN: T=35.7C RH=67.0% Soil=91% Fan=ON[0m
+[0;32mI (460757) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (461837) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (462547) DHT_FAN: T=35.6C RH=67.2% Soil=91% Fan=ON[0m
+[0;32mI (462917) SOIL_PUMP: RAW=1663 Moisture=91% Pump=OFF[0m
+[0;32mI (463997) SOIL_PUMP: RAW=1662 Moisture=91% Pump=OFF[0m
+[0;32mI (464547) DHT_FAN: T=35.5C RH=67.4% Soil=91% Fan=ON[0m
+[0;32mI (465077) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (465427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (466157) SOIL_PUMP: RAW=1663 Moisture=91% Pump=OFF[0m
+[0;32mI (466547) DHT_FAN: T=35.4C RH=67.5% Soil=91% Fan=ON[0m
+[0;32mI (467237) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (468317) SOIL_PUMP: RAW=1663 Moisture=91% Pump=OFF[0m
+[0;32mI (468547) DHT_FAN: T=35.4C RH=67.7% Soil=91% Fan=ON[0m
+[0;32mI (469397) SOIL_PUMP: RAW=1662 Moisture=91% Pump=OFF[0m
+[0;32mI (470427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (470477) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (470547) DHT_FAN: T=35.3C RH=67.7% Soil=91% Fan=ON[0m
+[0;32mI (471557) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (472547) DHT_FAN: T=35.3C RH=67.9% Soil=91% Fan=ON[0m
+[0;32mI (472637) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (473717) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (474547) DHT_FAN: T=35.2C RH=68.0% Soil=91% Fan=ON[0m
+[0;32mI (474797) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (475427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (475877) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (476547) DHT_FAN: T=35.1C RH=68.1% Soil=91% Fan=ON[0m
+[0;32mI (476957) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (478037) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (478547) DHT_FAN: T=35.1C RH=68.3% Soil=91% Fan=ON[0m
+[0;32mI (479117) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (480197) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (480427) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (480547) DHT_FAN: T=35.0C RH=68.4% Soil=91% Fan=ON[0m
+[0;32mI (481277) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (482357) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (482547) DHT_FAN: T=34.9C RH=68.7% Soil=91% Fan=ON[0m
+[0;32mI (483437) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (484517) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (484547) DHT_FAN: T=34.9C RH=68.9% Soil=91% Fan=ON[0m
+[0;32mI (485427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (485597) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (486547) DHT_FAN: T=34.8C RH=69.1% Soil=91% Fan=ON[0m
+[0;32mI (486677) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (487757) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (488547) DHT_FAN: T=34.8C RH=69.2% Soil=91% Fan=ON[0m
+[0;32mI (488837) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (489917) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (490427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (490547) DHT_FAN: T=34.7C RH=69.3% Soil=92% Fan=ON[0m
+[0;32mI (490997) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (492077) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (492547) DHT_FAN: T=34.6C RH=69.3% Soil=91% Fan=ON[0m
+[0;32mI (493157) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (494237) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (494547) DHT_FAN: T=34.6C RH=69.4% Soil=91% Fan=ON[0m
+[0;32mI (495317) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (495427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (496397) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (496547) DHT_FAN: T=34.5C RH=69.5% Soil=91% Fan=ON[0m
+[0;32mI (497477) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (498547) DHT_FAN: T=34.5C RH=69.7% Soil=91% Fan=ON[0m
+[0;32mI (498557) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (499637) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (500427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (500547) DHT_FAN: T=34.4C RH=69.9% Soil=92% Fan=ON[0m
+[0;32mI (500717) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (501797) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (502547) DHT_FAN: T=34.3C RH=70.1% Soil=92% Fan=ON[0m
+[0;32mI (502877) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (503957) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (504547) DHT_FAN: T=34.3C RH=70.4% Soil=92% Fan=ON[0m
+[0;32mI (505037) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (505427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (506117) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (506547) DHT_FAN: T=34.2C RH=70.5% Soil=92% Fan=ON[0m
+[0;32mI (507197) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (508277) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (508547) DHT_FAN: T=34.2C RH=70.7% Soil=92% Fan=ON[0m
+[0;32mI (509357) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (510427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (510437) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (510547) DHT_FAN: T=34.1C RH=70.7% Soil=92% Fan=ON[0m
+[0;32mI (511517) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (512547) DHT_FAN: T=34.1C RH=70.9% Soil=92% Fan=ON[0m
+[0;32mI (512597) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (513677) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (514547) DHT_FAN: T=34.0C RH=70.9% Soil=92% Fan=ON[0m
+[0;32mI (514757) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (515427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (515837) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (516547) DHT_FAN: T=34.0C RH=71.0% Soil=92% Fan=ON[0m
+[0;32mI (516917) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (517997) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (518547) DHT_FAN: T=33.9C RH=71.2% Soil=92% Fan=ON[0m
+[0;32mI (519077) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (520157) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (520427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (520547) DHT_FAN: T=33.9C RH=71.3% Soil=92% Fan=ON[0m
+[0;32mI (521237) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (522317) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (522547) DHT_FAN: T=33.8C RH=71.6% Soil=92% Fan=ON[0m
+[0;32mI (523397) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (524477) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (524547) DHT_FAN: T=33.8C RH=71.8% Soil=92% Fan=ON[0m
+[0;32mI (525427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (525557) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (526547) DHT_FAN: T=33.7C RH=71.9% Soil=92% Fan=ON[0m
+[0;32mI (526637) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (527717) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (528547) DHT_FAN: T=33.6C RH=72.1% Soil=92% Fan=ON[0m
+[0;32mI (528797) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (529877) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (530427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (530547) DHT_FAN: T=33.6C RH=72.1% Soil=92% Fan=ON[0m
+[0;32mI (530957) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (532037) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (532547) DHT_FAN: T=33.6C RH=72.2% Soil=92% Fan=ON[0m
+[0;32mI (533117) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (534197) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (534547) DHT_FAN: T=33.5C RH=72.3% Soil=92% Fan=ON[0m
+[0;32mI (535277) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (535427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (536357) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (536547) DHT_FAN: T=33.5C RH=72.3% Soil=92% Fan=ON[0m
+[0;32mI (537437) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (538517) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (538547) DHT_FAN: T=33.4C RH=72.4% Soil=92% Fan=ON[0m
+[0;32mI (539597) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (540427) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (540547) DHT_FAN: T=33.4C RH=72.6% Soil=92% Fan=ON[0m
+[0;32mI (540677) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (541757) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (542547) DHT_FAN: T=33.3C RH=72.8% Soil=92% Fan=ON[0m
+[0;32mI (542837) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (543917) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (544547) DHT_FAN: T=33.3C RH=73.0% Soil=92% Fan=ON[0m
+[0;32mI (544997) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (545427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (546077) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (546547) DHT_FAN: T=33.2C RH=73.2% Soil=92% Fan=ON[0m
+[0;32mI (547157) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (548237) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (548547) DHT_FAN: T=33.2C RH=73.4% Soil=92% Fan=ON[0m
+[0;32mI (549317) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (550397) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (550427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (550547) DHT_FAN: T=33.1C RH=73.5% Soil=92% Fan=ON[0m
+[0;32mI (551477) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (552547) DHT_FAN: T=33.1C RH=73.4% Soil=92% Fan=ON[0m
+[0;32mI (552557) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (553637) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (554547) DHT_FAN: T=33.1C RH=73.5% Soil=92% Fan=ON[0m
+[0;32mI (554717) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (555427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (555797) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (556547) DHT_FAN: T=33.0C RH=73.5% Soil=92% Fan=ON[0m
+[0;32mI (556877) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (557957) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (558547) DHT_FAN: T=33.0C RH=73.6% Soil=92% Fan=ON[0m
+[0;32mI (559037) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (560117) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (560427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (560547) DHT_FAN: T=32.9C RH=73.7% Soil=92% Fan=ON[0m
+[0;32mI (561197) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (562277) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (562547) DHT_FAN: T=32.9C RH=73.9% Soil=92% Fan=ON[0m
+[0;32mI (563357) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (564437) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (564547) DHT_FAN: T=32.9C RH=74.1% Soil=92% Fan=ON[0m
+[0;32mI (565427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (565517) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (566547) DHT_FAN: T=32.8C RH=74.3% Soil=92% Fan=ON[0m
+[0;32mI (566597) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (567677) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (568547) DHT_FAN: T=32.8C RH=74.4% Soil=92% Fan=ON[0m
+[0;32mI (568757) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (569837) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (570427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (570547) DHT_FAN: T=32.7C RH=74.5% Soil=92% Fan=ON[0m
+[0;32mI (570917) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (571997) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (572547) DHT_FAN: T=32.7C RH=74.5% Soil=92% Fan=ON[0m
+[0;32mI (573077) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (574157) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (574547) DHT_FAN: T=32.7C RH=74.6% Soil=90% Fan=ON[0m
+[0;32mI (575237) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (575427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (576317) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (576547) DHT_FAN: T=32.6C RH=74.7% Soil=91% Fan=ON[0m
+[0;32mI (577397) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (578477) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (578547) DHT_FAN: T=32.6C RH=74.7% Soil=92% Fan=ON[0m
+[0;32mI (579557) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (580427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (580547) DHT_FAN: T=32.6C RH=74.9% Soil=92% Fan=ON[0m
+[0;32mI (580637) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (581717) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (582547) DHT_FAN: T=32.5C RH=75.0% Soil=92% Fan=ON[0m
+[0;32mI (582797) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (583877) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (584547) DHT_FAN: T=32.5C RH=75.1% Soil=92% Fan=ON[0m
+[0;32mI (584957) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (585427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (586037) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (586547) DHT_FAN: T=32.5C RH=75.3% Soil=92% Fan=ON[0m
+[0;32mI (587117) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (588197) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (588547) DHT_FAN: T=32.4C RH=75.4% Soil=91% Fan=ON[0m
+[0;32mI (589277) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (590357) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (590427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (590547) DHT_FAN: T=32.4C RH=75.5% Soil=92% Fan=ON[0m
+[0;32mI (591437) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (592517) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (592547) DHT_FAN: T=32.4C RH=75.6% Soil=92% Fan=ON[0m
+[0;32mI (593597) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (594547) DHT_FAN: T=32.4C RH=75.7% Soil=91% Fan=ON[0m
+[0;32mI (594677) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (595427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (595757) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (596547) DHT_FAN: T=32.3C RH=75.7% Soil=91% Fan=ON[0m
+[0;32mI (596837) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (597917) SOIL_PUMP: RAW=1656 Moisture=91% Pump=OFF[0m
+[0;32mI (598547) DHT_FAN: T=32.3C RH=75.7% Soil=91% Fan=ON[0m
+[0;32mI (598997) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (600077) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (600427) GROW: Minute 7: LIGHT = ON[0m
+[0;32mI (600547) DHT_FAN: T=32.3C RH=75.8% Soil=91% Fan=ON[0m
+[0;32mI (601157) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (602237) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (602547) DHT_FAN: T=32.3C RH=75.9% Soil=91% Fan=ON[0m
+[0;32mI (603317) SOIL_PUMP: RAW=1656 Moisture=91% Pump=OFF[0m
+[0;32mI (604397) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (604547) DHT_FAN: T=32.2C RH=76.0% Soil=91% Fan=ON[0m
+[0;32mI (605427) GROW: Minute 8+: LIGHT = OFF (CYCLE DONE)[0m
+[0;32mI (605437) GROW: Auto-start new 7-min cycle[0m
+[0;32mI (605477) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (606547) DHT_FAN: T=32.2C RH=76.2% Soil=92% Fan=ON[0m
+[0;32mI (606557) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (607637) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (608547) DHT_FAN: T=32.2C RH=76.3% Soil=92% Fan=ON[0m
+[0;32mI (608717) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (609797) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (610437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (610547) DHT_FAN: T=32.1C RH=76.5% Soil=92% Fan=ON[0m
+[0;32mI (610877) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (611957) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (612547) DHT_FAN: T=32.1C RH=76.5% Soil=92% Fan=ON[0m
+[0;32mI (613037) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (614117) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (614547) DHT_FAN: T=32.1C RH=76.6% Soil=92% Fan=ON[0m
+[0;32mI (615197) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (615437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (616277) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (616547) DHT_FAN: T=32.0C RH=76.6% Soil=92% Fan=ON[0m
+[0;32mI (617357) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (618437) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (618547) DHT_FAN: T=32.0C RH=76.7% Soil=92% Fan=ON[0m
+[0;32mI (619517) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (620437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (620547) DHT_FAN: T=32.0C RH=76.7% Soil=92% Fan=ON[0m
+[0;32mI (620597) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (621677) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (622547) DHT_FAN: T=31.9C RH=76.8% Soil=92% Fan=ON[0m
+[0;32mI (622757) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (623837) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (624547) DHT_FAN: T=31.9C RH=76.9% Soil=92% Fan=ON[0m
+[0;32mI (624917) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (625437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (625997) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (626547) DHT_FAN: T=31.9C RH=77.0% Soil=92% Fan=ON[0m
+[0;32mI (627077) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (628157) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (628547) DHT_FAN: T=31.9C RH=77.2% Soil=92% Fan=ON[0m
+[0;32mI (629237) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (630317) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (630437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (630547) DHT_FAN: T=31.9C RH=77.3% Soil=92% Fan=ON[0m
+[0;32mI (631397) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (632477) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (632547) DHT_FAN: T=31.8C RH=77.4% Soil=92% Fan=ON[0m
+[0;32mI (633557) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (634547) DHT_FAN: T=31.8C RH=77.4% Soil=92% Fan=ON[0m
+[0;32mI (634637) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (635437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (635717) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (636547) DHT_FAN: T=31.8C RH=77.4% Soil=92% Fan=ON[0m
+[0;32mI (636797) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (637877) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (638547) DHT_FAN: T=31.8C RH=77.4% Soil=92% Fan=ON[0m
+[0;32mI (638957) SOIL_PUMP: RAW=1648 Moisture=92% Pump=OFF[0m
+[0;32mI (640037) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (640437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (640547) DHT_FAN: T=31.8C RH=77.4% Soil=92% Fan=ON[0m
+[0;32mI (641117) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (642197) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (642547) DHT_FAN: T=31.7C RH=77.4% Soil=92% Fan=ON[0m
+[0;32mI (643277) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (644357) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (644547) DHT_FAN: T=31.7C RH=77.5% Soil=92% Fan=ON[0m
+[0;32mI (645437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (645437) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (646517) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (646547) DHT_FAN: T=31.7C RH=77.6% Soil=92% Fan=ON[0m
+[0;32mI (647597) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (648547) DHT_FAN: T=31.7C RH=77.8% Soil=92% Fan=ON[0m
+[0;32mI (648677) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (649757) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (650437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (650547) DHT_FAN: T=31.6C RH=77.9% Soil=92% Fan=ON[0m
+[0;32mI (650837) SOIL_PUMP: RAW=1649 Moisture=92% Pump=OFF[0m
+[0;32mI (651917) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (652547) DHT_FAN: T=31.6C RH=78.0% Soil=92% Fan=ON[0m
+[0;32mI (652997) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (654077) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (654547) DHT_FAN: T=31.6C RH=78.0% Soil=92% Fan=ON[0m
+[0;32mI (655157) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (655437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (656237) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (656547) DHT_FAN: T=31.6C RH=78.0% Soil=92% Fan=ON[0m
+[0;32mI (657317) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (658397) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (658547) DHT_FAN: T=31.5C RH=78.0% Soil=92% Fan=ON[0m
+[0;32mI (659477) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (660437) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (660547) DHT_FAN: T=31.5C RH=78.0% Soil=92% Fan=ON[0m
+[0;32mI (660557) SOIL_PUMP: RAW=1652 Moisture=92% Pump=OFF[0m
+[0;32mI (661637) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (662547) DHT_FAN: T=31.5C RH=78.0% Soil=92% Fan=ON[0m
+[0;32mI (662717) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (663797) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (664547) DHT_FAN: T=31.5C RH=78.1% Soil=92% Fan=ON[0m
+[0;32mI (664877) SOIL_PUMP: RAW=1652 Moisture=92% Pump=OFF[0m
+[0;32mI (665437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (665957) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (666547) DHT_FAN: T=31.5C RH=78.2% Soil=92% Fan=ON[0m
+[0;32mI (667037) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (668117) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (668547) DHT_FAN: T=31.4C RH=78.3% Soil=92% Fan=ON[0m
+[0;32mI (669197) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (670277) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (670437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (670547) DHT_FAN: T=31.4C RH=78.5% Soil=92% Fan=ON[0m
+[0;32mI (671357) SOIL_PUMP: RAW=1652 Moisture=92% Pump=OFF[0m
+[0;32mI (672437) SOIL_PUMP: RAW=1652 Moisture=92% Pump=OFF[0m
+[0;32mI (672547) DHT_FAN: T=31.4C RH=78.6% Soil=92% Fan=ON[0m
+[0;32mI (673517) SOIL_PUMP: RAW=1650 Moisture=92% Pump=OFF[0m
+[0;32mI (674547) DHT_FAN: T=31.4C RH=78.6% Soil=92% Fan=ON[0m
+[0;32mI (674597) SOIL_PUMP: RAW=1651 Moisture=92% Pump=OFF[0m
+[0;32mI (675437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (675677) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (676547) DHT_FAN: T=31.4C RH=78.6% Soil=92% Fan=ON[0m
+[0;32mI (676757) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (677837) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (678547) DHT_FAN: T=31.4C RH=78.6% Soil=92% Fan=ON[0m
+[0;32mI (678917) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (679997) SOIL_PUMP: RAW=1652 Moisture=92% Pump=OFF[0m
+[0;32mI (680437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (680547) DHT_FAN: T=31.3C RH=78.7% Soil=92% Fan=ON[0m
+[0;32mI (681077) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (682157) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (682547) DHT_FAN: T=31.3C RH=78.7% Soil=92% Fan=ON[0m
+[0;32mI (683237) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (684317) SOIL_PUMP: RAW=1653 Moisture=92% Pump=OFF[0m
+[0;32mI (684547) DHT_FAN: T=31.3C RH=78.7% Soil=92% Fan=ON[0m
+[0;32mI (685397) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (685437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (686477) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (686547) DHT_FAN: T=31.3C RH=78.8% Soil=91% Fan=ON[0m
+[0;32mI (687557) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (688547) DHT_FAN: T=31.2C RH=78.9% Soil=91% Fan=ON[0m
+[0;32mI (688637) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (689717) SOIL_PUMP: RAW=1656 Moisture=91% Pump=OFF[0m
+[0;32mI (690437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (690547) DHT_FAN: T=31.2C RH=79.0% Soil=91% Fan=ON[0m
+[0;32mI (690797) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (691877) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (692547) DHT_FAN: T=31.2C RH=79.2% Soil=91% Fan=ON[0m
+[0;32mI (692957) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (694037) SOIL_PUMP: RAW=1654 Moisture=92% Pump=OFF[0m
+[0;32mI (694547) DHT_FAN: T=31.2C RH=79.3% Soil=92% Fan=ON[0m
+[0;32mI (695117) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (695437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (696197) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (696547) DHT_FAN: T=31.2C RH=79.3% Soil=91% Fan=ON[0m
+[0;32mI (697277) SOIL_PUMP: RAW=1655 Moisture=91% Pump=OFF[0m
+[0;32mI (698357) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (698547) DHT_FAN: T=31.2C RH=79.3% Soil=91% Fan=ON[0m
+[0;32mI (699437) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (700437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (700517) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (700547) DHT_FAN: T=31.1C RH=79.3% Soil=91% Fan=ON[0m
+[0;32mI (701597) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (702547) DHT_FAN: T=31.1C RH=79.3% Soil=91% Fan=ON[0m
+[0;32mI (702677) SOIL_PUMP: RAW=1657 Moisture=91% Pump=OFF[0m
+[0;32mI (703757) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (704547) DHT_FAN: T=31.1C RH=79.4% Soil=91% Fan=ON[0m
+[0;32mI (704837) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (705437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (705917) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (706547) DHT_FAN: T=31.1C RH=79.4% Soil=91% Fan=ON[0m
+[0;32mI (706997) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (708077) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (708547) DHT_FAN: T=31.1C RH=79.6% Soil=91% Fan=ON[0m
+[0;32mI (709157) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (710237) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (710437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (710547) DHT_FAN: T=31.1C RH=79.6% Soil=91% Fan=ON[0m
+[0;32mI (711317) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (712397) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (712547) DHT_FAN: T=31.0C RH=79.7% Soil=91% Fan=ON[0m
+[0;32mI (713477) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (714547) DHT_FAN: T=31.0C RH=79.9% Soil=91% Fan=ON[0m
+[0;32mI (714557) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (715437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (715637) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (716547) DHT_FAN: T=31.0C RH=80.0% Soil=91% Fan=ON[0m
+[0;32mI (716717) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (717797) SOIL_PUMP: RAW=1659 Moisture=91% Pump=OFF[0m
+[0;32mI (718547) DHT_FAN: T=31.0C RH=79.9% Soil=91% Fan=ON[0m
+[0;32mI (718877) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (719957) SOIL_PUMP: RAW=1658 Moisture=91% Pump=OFF[0m
+[0;32mI (720437) GROW: Minute 2: LIGHT = OFF[0m
+[0;32mI (720547) DHT_FAN: T=31.0C RH=79.9% Soil=91% Fan=ON[0m
+[0;32mI (721037) SOIL_PUMP: RAW=1660 Moisture=91% Pump=OFF[0m
+[0;32mI (722117) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (722547) DHT_FAN: T=31.0C RH=79.9% Soil=91% Fan=ON[0m
+[0;32mI (723197) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (724277) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (724547) DHT_FAN: T=30.9C RH=80.0% Soil=91% Fan=ON[0m
+[0;32mI (725357) SOIL_PUMP: RAW=1662 Moisture=91% Pump=OFF[0m
+[0;32mI (725437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (726437) SOIL_PUMP: RAW=1663 Moisture=91% Pump=OFF[0m
+[0;32mI (726547) DHT_FAN: T=31.0C RH=80.0% Soil=91% Fan=ON[0m
+[0;32mI (727517) SOIL_PUMP: RAW=1662 Moisture=91% Pump=OFF[0m
+[0;32mI (728547) DHT_FAN: T=30.9C RH=80.0% Soil=91% Fan=ON[0m
+[0;32mI (728597) SOIL_PUMP: RAW=1662 Moisture=91% Pump=OFF[0m
+[0;32mI (729677) SOIL_PUMP: RAW=1662 Moisture=91% Pump=OFF[0m
+[0;32mI (730437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (730547) DHT_FAN: T=30.9C RH=80.1% Soil=91% Fan=ON[0m
+[0;32mI (730757) SOIL_PUMP: RAW=1661 Moisture=91% Pump=OFF[0m
+[0;32mI (731837) SOIL_PUMP: RAW=1663 Moisture=91% Pump=OFF[0m
+[0;32mI (732547) DHT_FAN: T=30.9C RH=80.2% Soil=91% Fan=ON[0m
+[0;32mI (732917) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (733997) SOIL_PUMP: RAW=1663 Moisture=91% Pump=OFF[0m
+[0;32mI (734547) DHT_FAN: T=30.9C RH=80.3% Soil=91% Fan=ON[0m
+[0;32mI (735077) SOIL_PUMP: RAW=1663 Moisture=91% Pump=OFF[0m
+[0;32mI (735437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (736157) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (736547) DHT_FAN: T=30.8C RH=80.3% Soil=91% Fan=ON[0m
+[0;32mI (737237) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (738317) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (738547) DHT_FAN: T=30.8C RH=80.4% Soil=91% Fan=ON[0m
+[0;32mI (739397) SOIL_PUMP: RAW=1665 Moisture=91% Pump=OFF[0m
+[0;32mI (740437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (740477) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (740547) DHT_FAN: T=30.8C RH=80.4% Soil=91% Fan=ON[0m
+[0;32mI (741557) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (742547) DHT_FAN: T=30.8C RH=80.4% Soil=91% Fan=ON[0m
+[0;32mI (742637) SOIL_PUMP: RAW=1664 Moisture=91% Pump=OFF[0m
+[0;32mI (743717) SOIL_PUMP: RAW=1666 Moisture=91% Pump=OFF[0m
+[0;32mI (744547) DHT_FAN: T=30.8C RH=80.4% Soil=91% Fan=ON[0m
+[0;32mI (744797) SOIL_PUMP: RAW=1665 Moisture=91% Pump=OFF[0m
+[0;32mI (745437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (745877) SOIL_PUMP: RAW=1667 Moisture=90% Pump=OFF[0m
+[0;32mI (746547) DHT_FAN: T=30.8C RH=80.4% Soil=90% Fan=ON[0m
+[0;32mI (746957) SOIL_PUMP: RAW=1665 Moisture=91% Pump=OFF[0m
+[0;32mI (748037) SOIL_PUMP: RAW=1666 Moisture=91% Pump=OFF[0m
+[0;32mI (748547) DHT_FAN: T=30.8C RH=80.5% Soil=91% Fan=ON[0m
+[0;32mI (749117) SOIL_PUMP: RAW=1666 Moisture=91% Pump=OFF[0m
+[0;32mI (750197) SOIL_PUMP: RAW=1665 Moisture=91% Pump=OFF[0m
+[0;32mI (750437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (750547) DHT_FAN: T=30.8C RH=80.6% Soil=91% Fan=ON[0m
+[0;32mI (751277) SOIL_PUMP: RAW=1666 Moisture=91% Pump=OFF[0m
+[0;32mI (752357) SOIL_PUMP: RAW=1665 Moisture=91% Pump=OFF[0m
+[0;32mI (752547) DHT_FAN: T=30.8C RH=80.7% Soil=91% Fan=ON[0m
+[0;32mI (753437) SOIL_PUMP: RAW=1665 Moisture=91% Pump=OFF[0m
+[0;32mI (754517) SOIL_PUMP: RAW=1668 Moisture=90% Pump=OFF[0m
+[0;32mI (754547) DHT_FAN: T=30.7C RH=80.7% Soil=90% Fan=ON[0m
+[0;32mI (755437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (755597) SOIL_PUMP: RAW=1668 Moisture=90% Pump=OFF[0m
+[0;32mI (756547) DHT_FAN: T=30.7C RH=80.9% Soil=90% Fan=ON[0m
+[0;32mI (756677) SOIL_PUMP: RAW=1665 Moisture=91% Pump=OFF[0m
+[0;32mI (757757) SOIL_PUMP: RAW=1667 Moisture=90% Pump=OFF[0m
+[0;32mI (758547) DHT_FAN: T=30.7C RH=80.9% Soil=90% Fan=ON[0m
+[0;32mI (758837) SOIL_PUMP: RAW=1668 Moisture=90% Pump=OFF[0m
+[0;32mI (759917) SOIL_PUMP: RAW=1669 Moisture=90% Pump=OFF[0m
+[0;32mI (760437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (760547) DHT_FAN: T=30.7C RH=80.9% Soil=90% Fan=ON[0m
+[0;32mI (760997) SOIL_PUMP: RAW=1667 Moisture=90% Pump=OFF[0m
+[0;32mI (762077) SOIL_PUMP: RAW=1669 Moisture=90% Pump=OFF[0m
+[0;32mI (762547) DHT_FAN: T=30.7C RH=80.8% Soil=90% Fan=ON[0m
+[0;32mI (763157) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (764237) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (764547) DHT_FAN: T=30.7C RH=80.9% Soil=90% Fan=ON[0m
+[0;32mI (765317) SOIL_PUMP: RAW=1673 Moisture=90% Pump=OFF[0m
+[0;32mI (765437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (766397) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (766547) DHT_FAN: T=30.7C RH=80.8% Soil=90% Fan=ON[0m
+[0;32mI (767477) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (768547) DHT_FAN: T=30.7C RH=80.9% Soil=90% Fan=ON[0m
+[0;32mI (768557) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (769637) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (770437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (770547) DHT_FAN: T=30.7C RH=81.0% Soil=90% Fan=ON[0m
+[0;32mI (770717) SOIL_PUMP: RAW=1669 Moisture=90% Pump=OFF[0m
+[0;32mI (771797) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (772547) DHT_FAN: T=30.6C RH=81.0% Soil=90% Fan=ON[0m
+[0;32mI (772877) SOIL_PUMP: RAW=1671 Moisture=90% Pump=OFF[0m
+[0;32mI (773957) SOIL_PUMP: RAW=1671 Moisture=90% Pump=OFF[0m
+[0;32mI (774547) DHT_FAN: T=30.6C RH=81.2% Soil=90% Fan=ON[0m
+[0;32mI (775037) SOIL_PUMP: RAW=1669 Moisture=90% Pump=OFF[0m
+[0;32mI (775437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (776117) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (776547) DHT_FAN: T=30.6C RH=81.2% Soil=90% Fan=ON[0m
+[0;32mI (777197) SOIL_PUMP: RAW=1671 Moisture=90% Pump=OFF[0m
+[0;32mI (778277) SOIL_PUMP: RAW=1671 Moisture=90% Pump=OFF[0m
+[0;32mI (778547) DHT_FAN: T=30.6C RH=81.3% Soil=90% Fan=ON[0m
+[0;32mI (779357) SOIL_PUMP: RAW=1673 Moisture=90% Pump=OFF[0m
+[0;32mI (780437) GROW: Minute 3: LIGHT = OFF[0m
+[0;32mI (780437) SOIL_PUMP: RAW=1672 Moisture=90% Pump=OFF[0m
+[0;32mI (780547) DHT_FAN: T=30.6C RH=81.3% Soil=90% Fan=ON[0m
+[0;32mI (781517) SOIL_PUMP: RAW=1670 Moisture=90% Pump=OFF[0m
+[0;32mI (782547) DHT_FAN: T=30.6C RH=81.4% Soil=90% Fan=ON[0m
+[0;32mI (782597) SOIL_PUMP: RAW=1671 Moisture=90% Pump=OFF[0m
+[0;32mI (783677) SOIL_PUMP: RAW=1674 Moisture=90% Pump=OFF[0m
+[0;32mI (784547) DHT_FAN: T=30.6C RH=81.3% Soil=90% Fan=ON[0m
+[0;32mI (784757) SOIL_PUMP: RAW=1673 Moisture=90% Pump=OFF[0m
+[0;32mI (785437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (785837) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (786547) DHT_FAN: T=30.6C RH=81.4% Soil=89% Fan=ON[0m
+[0;32mI (786917) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (787997) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (788547) DHT_FAN: T=30.5C RH=81.3% Soil=89% Fan=ON[0m
+[0;32mI (789077) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (790157) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (790437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (790547) DHT_FAN: T=30.5C RH=81.4% Soil=89% Fan=ON[0m
+[0;32mI (791237) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (792317) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (792547) DHT_FAN: T=30.5C RH=81.5% Soil=89% Fan=ON[0m
+[0;32mI (793397) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (794477) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (794547) DHT_FAN: T=30.5C RH=81.7% Soil=89% Fan=ON[0m
+[0;32mI (795437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (795557) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (796547) DHT_FAN: T=30.5C RH=81.7% Soil=89% Fan=ON[0m
+[0;32mI (796637) SOIL_PUMP: RAW=1681 Moisture=89% Pump=OFF[0m
+[0;32mI (797717) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (798547) DHT_FAN: T=30.5C RH=81.8% Soil=89% Fan=ON[0m
+[0;32mI (798797) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (799877) SOIL_PUMP: RAW=1680 Moisture=89% Pump=OFF[0m
+[0;32mI (800437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (800547) DHT_FAN: T=30.5C RH=81.8% Soil=89% Fan=ON[0m
+[0;32mI (800957) SOIL_PUMP: RAW=1682 Moisture=89% Pump=OFF[0m
+[0;32mI (802037) SOIL_PUMP: RAW=1681 Moisture=89% Pump=OFF[0m
+[0;32mI (802547) DHT_FAN: T=30.5C RH=81.8% Soil=89% Fan=ON[0m
+[0;32mI (803117) SOIL_PUMP: RAW=1681 Moisture=89% Pump=OFF[0m
+[0;32mI (804197) SOIL_PUMP: RAW=1681 Moisture=89% Pump=OFF[0m
+[0;32mI (804547) DHT_FAN: T=30.5C RH=81.9% Soil=89% Fan=ON[0m
+[0;32mI (805277) SOIL_PUMP: RAW=1683 Moisture=89% Pump=OFF[0m
+[0;32mI (805437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (806357) SOIL_PUMP: RAW=1686 Moisture=89% Pump=OFF[0m
+[0;32mI (806547) DHT_FAN: T=30.4C RH=81.9% Soil=89% Fan=ON[0m
+[0;32mI (807437) SOIL_PUMP: RAW=1682 Moisture=89% Pump=OFF[0m
+[0;32mI (808517) SOIL_PUMP: RAW=1682 Moisture=89% Pump=OFF[0m
+[0;32mI (808547) DHT_FAN: T=30.5C RH=81.9% Soil=89% Fan=ON[0m
+[0;32mI (809597) SOIL_PUMP: RAW=1683 Moisture=89% Pump=OFF[0m
+[0;32mI (810437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (810547) DHT_FAN: T=30.4C RH=82.0% Soil=89% Fan=ON[0m
+[0;32mI (810677) SOIL_PUMP: RAW=1685 Moisture=89% Pump=OFF[0m
+[0;32mI (811757) SOIL_PUMP: RAW=1685 Moisture=89% Pump=OFF[0m
+[0;32mI (812547) DHT_FAN: T=30.4C RH=82.1% Soil=89% Fan=ON[0m
+[0;32mI (812837) SOIL_PUMP: RAW=1683 Moisture=89% Pump=OFF[0m
+[0;32mI (813917) SOIL_PUMP: RAW=1685 Moisture=89% Pump=OFF[0m
+[0;32mI (814547) DHT_FAN: T=30.4C RH=82.2% Soil=89% Fan=ON[0m
+[0;32mI (814997) SOIL_PUMP: RAW=1683 Moisture=89% Pump=OFF[0m
+[0;32mI (815437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (816077) SOIL_PUMP: RAW=1683 Moisture=89% Pump=OFF[0m
+[0;32mI (816547) DHT_FAN: T=30.4C RH=82.2% Soil=89% Fan=ON[0m
+[0;32mI (817157) SOIL_PUMP: RAW=1684 Moisture=89% Pump=OFF[0m
+[0;32mI (818237) SOIL_PUMP: RAW=1684 Moisture=89% Pump=OFF[0m
+[0;32mI (818547) DHT_FAN: T=30.4C RH=82.4% Soil=89% Fan=ON[0m
+[0;32mI (819317) SOIL_PUMP: RAW=1684 Moisture=89% Pump=OFF[0m
+[0;32mI (820397) SOIL_PUMP: RAW=1685 Moisture=89% Pump=OFF[0m
+[0;32mI (820437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (820547) DHT_FAN: T=30.4C RH=82.3% Soil=89% Fan=ON[0m
+[0;32mI (821477) SOIL_PUMP: RAW=1685 Moisture=89% Pump=OFF[0m
+[0;32mI (822547) DHT_FAN: T=30.4C RH=82.3% Soil=89% Fan=ON[0m
+[0;32mI (822557) SOIL_PUMP: RAW=1686 Moisture=89% Pump=OFF[0m
+[0;32mI (823637) SOIL_PUMP: RAW=1687 Moisture=89% Pump=OFF[0m
+[0;32mI (824547) DHT_FAN: T=30.4C RH=82.3% Soil=89% Fan=ON[0m
+[0;32mI (824717) SOIL_PUMP: RAW=1685 Moisture=89% Pump=OFF[0m
+[0;32mI (825437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (825797) SOIL_PUMP: RAW=1687 Moisture=89% Pump=OFF[0m
+[0;32mI (826547) DHT_FAN: T=30.4C RH=82.3% Soil=89% Fan=ON[0m
+[0;32mI (826877) SOIL_PUMP: RAW=1687 Moisture=89% Pump=OFF[0m
+[0;32mI (827957) SOIL_PUMP: RAW=1689 Moisture=88% Pump=OFF[0m
+[0;32mI (828547) DHT_FAN: T=30.3C RH=82.2% Soil=88% Fan=ON[0m
+[0;32mI (829037) SOIL_PUMP: RAW=1686 Moisture=89% Pump=OFF[0m
+[0;32mI (830117) SOIL_PUMP: RAW=1687 Moisture=89% Pump=OFF[0m
+[0;32mI (830437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (830547) DHT_FAN: T=30.3C RH=82.3% Soil=89% Fan=ON[0m
+[0;32mI (831197) SOIL_PUMP: RAW=1687 Moisture=89% Pump=OFF[0m
+[0;32mI (832277) SOIL_PUMP: RAW=1689 Moisture=88% Pump=OFF[0m
+[0;32mI (832547) DHT_FAN: T=30.3C RH=82.4% Soil=88% Fan=ON[0m
+[0;32mI (833357) SOIL_PUMP: RAW=1689 Moisture=88% Pump=OFF[0m
+[0;32mI (834437) SOIL_PUMP: RAW=1689 Moisture=88% Pump=OFF[0m
+[0;32mI (834547) DHT_FAN: T=30.3C RH=82.6% Soil=88% Fan=ON[0m
+[0;32mI (835437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (835517) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (836547) DHT_FAN: T=30.3C RH=82.6% Soil=88% Fan=ON[0m
+[0;32mI (836597) SOIL_PUMP: RAW=1687 Moisture=89% Pump=OFF[0m
+[0;32mI (837677) SOIL_PUMP: RAW=1689 Moisture=88% Pump=OFF[0m
+[0;32mI (838547) DHT_FAN: T=30.3C RH=82.7% Soil=88% Fan=ON[0m
+[0;32mI (838757) SOIL_PUMP: RAW=1689 Moisture=88% Pump=OFF[0m
+[0;32mI (839837) SOIL_PUMP: RAW=1688 Moisture=89% Pump=OFF[0m
+[0;32mI (840437) GROW: Minute 4: LIGHT = ON[0m
+[0;32mI (840547) DHT_FAN: T=30.3C RH=82.7% Soil=89% Fan=ON[0m
+[0;32mI (840917) SOIL_PUMP: RAW=1690 Moisture=88% Pump=OFF[0m
+[0;32mI (841997) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (842547) DHT_FAN: T=30.3C RH=82.7% Soil=88% Fan=ON[0m
+[0;32mI (843077) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (844157) SOIL_PUMP: RAW=1690 Moisture=88% Pump=OFF[0m
+[0;32mI (844547) DHT_FAN: T=30.3C RH=82.7% Soil=88% Fan=ON[0m
+[0;32mI (845237) SOIL_PUMP: RAW=1690 Moisture=88% Pump=OFF[0m
+[0;32mI (845437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (846317) SOIL_PUMP: RAW=1689 Moisture=88% Pump=OFF[0m
+[0;32mI (846547) DHT_FAN: T=30.3C RH=82.8% Soil=88% Fan=ON[0m
+[0;32mI (847397) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (848477) SOIL_PUMP: RAW=1690 Moisture=88% Pump=OFF[0m
+[0;32mI (848547) DHT_FAN: T=30.2C RH=82.8% Soil=88% Fan=ON[0m
+[0;32mI (849557) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (850437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (850547) DHT_FAN: T=30.2C RH=82.9% Soil=88% Fan=ON[0m
+[0;32mI (850637) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (851717) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (852547) DHT_FAN: T=30.2C RH=83.0% Soil=88% Fan=ON[0m
+[0;32mI (852797) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (853877) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (854547) DHT_FAN: T=30.2C RH=83.1% Soil=88% Fan=ON[0m
+[0;32mI (854957) SOIL_PUMP: RAW=1690 Moisture=88% Pump=OFF[0m
+[0;32mI (855437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (856037) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (856547) DHT_FAN: T=30.2C RH=83.2% Soil=88% Fan=ON[0m
+[0;32mI (857117) SOIL_PUMP: RAW=1690 Moisture=88% Pump=OFF[0m
+[0;32mI (858197) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (858547) DHT_FAN: T=30.2C RH=83.3% Soil=88% Fan=ON[0m
+[0;32mI (859277) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (860357) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (860437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (860547) DHT_FAN: T=30.2C RH=83.4% Soil=88% Fan=ON[0m
+[0;32mI (861437) SOIL_PUMP: RAW=1690 Moisture=88% Pump=OFF[0m
+[0;32mI (862517) SOIL_PUMP: RAW=1693 Moisture=88% Pump=OFF[0m
+[0;32mI (862547) DHT_FAN: T=30.2C RH=83.4% Soil=88% Fan=ON[0m
+[0;32mI (863597) SOIL_PUMP: RAW=1692 Moisture=88% Pump=OFF[0m
+[0;32mI (864547) DHT_FAN: T=30.2C RH=83.4% Soil=88% Fan=ON[0m
+[0;32mI (864677) SOIL_PUMP: RAW=1693 Moisture=88% Pump=OFF[0m
+[0;32mI (865437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (865757) SOIL_PUMP: RAW=1693 Moisture=88% Pump=OFF[0m
+[0;32mI (866547) DHT_FAN: T=30.2C RH=83.4% Soil=88% Fan=ON[0m
+[0;32mI (866837) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (867917) SOIL_PUMP: RAW=1694 Moisture=88% Pump=OFF[0m
+[0;32mI (868547) DHT_FAN: T=30.2C RH=83.4% Soil=88% Fan=ON[0m
+[0;32mI (868997) SOIL_PUMP: RAW=1694 Moisture=88% Pump=OFF[0m
+[0;32mI (870077) SOIL_PUMP: RAW=1694 Moisture=88% Pump=OFF[0m
+[0;32mI (870437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (870547) DHT_FAN: T=30.1C RH=83.4% Soil=88% Fan=ON[0m
+[0;32mI (871157) SOIL_PUMP: RAW=1693 Moisture=88% Pump=OFF[0m
+[0;32mI (872237) SOIL_PUMP: RAW=1694 Moisture=88% Pump=OFF[0m
+[0;32mI (872547) DHT_FAN: T=30.1C RH=83.5% Soil=88% Fan=ON[0m
+[0;32mI (873317) SOIL_PUMP: RAW=1693 Moisture=88% Pump=OFF[0m
+[0;32mI (874397) SOIL_PUMP: RAW=1694 Moisture=88% Pump=OFF[0m
+[0;32mI (874547) DHT_FAN: T=30.1C RH=83.6% Soil=88% Fan=ON[0m
+[0;32mI (875437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (875477) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (876547) DHT_FAN: T=30.1C RH=83.7% Soil=88% Fan=ON[0m
+[0;32mI (876557) SOIL_PUMP: RAW=1693 Moisture=88% Pump=OFF[0m
+[0;32mI (877637) SOIL_PUMP: RAW=1694 Moisture=88% Pump=OFF[0m
+[0;32mI (878547) DHT_FAN: T=30.1C RH=83.8% Soil=88% Fan=ON[0m
+[0;32mI (878717) SOIL_PUMP: RAW=1693 Moisture=88% Pump=OFF[0m
+[0;32mI (879797) SOIL_PUMP: RAW=1694 Moisture=88% Pump=OFF[0m
+[0;32mI (880437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (880547) DHT_FAN: T=30.1C RH=83.8% Soil=88% Fan=ON[0m
+[0;32mI (880877) SOIL_PUMP: RAW=1691 Moisture=88% Pump=OFF[0m
+[0;32mI (881957) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (882547) DHT_FAN: T=30.1C RH=83.8% Soil=88% Fan=ON[0m
+[0;32mI (883037) SOIL_PUMP: RAW=1694 Moisture=88% Pump=OFF[0m
+[0;32mI (884117) SOIL_PUMP: RAW=1693 Moisture=88% Pump=OFF[0m
+[0;32mI (884547) DHT_FAN: T=30.1C RH=83.8% Soil=88% Fan=ON[0m
+[0;32mI (885197) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (885437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (886277) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (886547) DHT_FAN: T=30.1C RH=83.8% Soil=88% Fan=ON[0m
+[0;32mI (887357) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (888437) SOIL_PUMP: RAW=1696 Moisture=88% Pump=OFF[0m
+[0;32mI (888547) DHT_FAN: T=30.1C RH=83.8% Soil=88% Fan=ON[0m
+[0;32mI (889517) SOIL_PUMP: RAW=1696 Moisture=88% Pump=OFF[0m
+[0;32mI (890437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (890547) DHT_FAN: T=30.0C RH=83.8% Soil=88% Fan=ON[0m
+[0;32mI (890597) SOIL_PUMP: RAW=1696 Moisture=88% Pump=OFF[0m
+[0;32mI (891677) SOIL_PUMP: RAW=1694 Moisture=88% Pump=OFF[0m
+[0;32mI (892547) DHT_FAN: T=30.0C RH=83.8% Soil=88% Fan=ON[0m
+[0;32mI (892757) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (893837) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (894547) DHT_FAN: T=30.0C RH=83.9% Soil=88% Fan=ON[0m
+[0;32mI (894917) SOIL_PUMP: RAW=1697 Moisture=88% Pump=OFF[0m
+[0;32mI (895437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (895997) SOIL_PUMP: RAW=1697 Moisture=88% Pump=OFF[0m
+[0;32mI (896547) DHT_FAN: T=30.0C RH=83.9% Soil=88% Fan=ON[0m
+[0;32mI (897077) SOIL_PUMP: RAW=1696 Moisture=88% Pump=OFF[0m
+[0;32mI (898157) SOIL_PUMP: RAW=1696 Moisture=88% Pump=OFF[0m
+[0;32mI (898547) DHT_FAN: T=30.0C RH=84.0% Soil=88% Fan=ON[0m
+[0;32mI (899237) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (900317) SOIL_PUMP: RAW=1696 Moisture=88% Pump=OFF[0m
+[0;32mI (900437) GROW: Minute 5: LIGHT = ON[0m
+[0;32mI (900547) DHT_FAN: T=30.0C RH=84.1% Soil=88% Fan=ON[0m
+[0;32mI (901397) SOIL_PUMP: RAW=1697 Moisture=88% Pump=OFF[0m
+[0;32mI (902477) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (902547) DHT_FAN: T=30.0C RH=84.1% Soil=88% Fan=ON[0m
+[0;32mI (903557) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (904547) DHT_FAN: T=30.0C RH=84.2% Soil=88% Fan=ON[0m
+[0;32mI (904637) SOIL_PUMP: RAW=1696 Moisture=88% Pump=OFF[0m
+[0;32mI (905437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (905717) SOIL_PUMP: RAW=1696 Moisture=88% Pump=OFF[0m
+[0;32mI (906547) DHT_FAN: T=30.0C RH=84.1% Soil=88% Fan=ON[0m
+[0;32mI (906797) SOIL_PUMP: RAW=1695 Moisture=88% Pump=OFF[0m
+[0;32mI (907877) SOIL_PUMP: RAW=1697 Moisture=88% Pump=OFF[0m
+[0;32mI (908547) DHT_FAN: T=30.0C RH=84.1% Soil=88% Fan=ON[0m
+[0;32mI (908957) SOIL_PUMP: RAW=1698 Moisture=88% Pump=OFF[0m
+[0;32mI (910037) SOIL_PUMP: RAW=1696 Moisture=88% Pump=OFF[0m
+[0;32mI (910437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (910547) DHT_FAN: T=30.0C RH=84.0% Soil=88% Fan=ON[0m
+[0;32mI (911117) SOIL_PUMP: RAW=1697 Moisture=88% Pump=OFF[0m
+[0;32mI (912197) SOIL_PUMP: RAW=1698 Moisture=88% Pump=OFF[0m
+[0;32mI (912547) DHT_FAN: T=30.0C RH=84.0% Soil=88% Fan=ON[0m
+[0;32mI (913277) SOIL_PUMP: RAW=1698 Moisture=88% Pump=OFF[0m
+[0;32mI (914357) SOIL_PUMP: RAW=1697 Moisture=88% Pump=OFF[0m
+[0;32mI (914547) DHT_FAN: T=30.0C RH=84.0% Soil=88% Fan=ON[0m
+[0;32mI (915437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (915437) SOIL_PUMP: RAW=1697 Moisture=88% Pump=OFF[0m
+[0;32mI (916517) SOIL_PUMP: RAW=1698 Moisture=88% Pump=OFF[0m
+[0;32mI (916547) DHT_FAN: T=30.0C RH=84.1% Soil=88% Fan=ON[0m
+[0;32mI (917597) SOIL_PUMP: RAW=1698 Moisture=88% Pump=OFF[0m
+[0;32mI (918547) DHT_FAN: T=30.0C RH=84.1% Soil=88% Fan=ON[0m
+[0;32mI (918677) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (919757) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (920437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (920547) DHT_FAN: T=30.0C RH=84.2% Soil=88% Fan=ON[0m
+[0;32mI (920837) SOIL_PUMP: RAW=1698 Moisture=88% Pump=OFF[0m
+[0;32mI (921917) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (922547) DHT_FAN: T=29.9C RH=84.3% Soil=88% Fan=ON[0m
+[0;32mI (922997) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (924077) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (924547) DHT_FAN: T=29.9C RH=84.3% Soil=87% Fan=ON[0m
+[0;32mI (925157) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (925437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (926237) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (926547) DHT_FAN: T=29.9C RH=84.3% Soil=87% Fan=ON[0m
+[0;32mI (927317) SOIL_PUMP: RAW=1700 Moisture=87% Pump=OFF[0m
+[0;32mI (928397) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (928547) DHT_FAN: T=29.9C RH=84.4% Soil=88% Fan=ON[0m
+[0;32mI (929477) SOIL_PUMP: RAW=1700 Moisture=87% Pump=OFF[0m
+[0;32mI (930437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (930547) DHT_FAN: T=29.9C RH=84.3% Soil=87% Fan=ON[0m
+[0;32mI (930557) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (931637) SOIL_PUMP: RAW=1700 Moisture=87% Pump=OFF[0m
+[0;32mI (932547) DHT_FAN: T=29.9C RH=84.3% Soil=87% Fan=ON[0m
+[0;32mI (932717) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (933797) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (934547) DHT_FAN: T=29.9C RH=84.3% Soil=87% Fan=ON[0m
+[0;32mI (934877) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (935437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (935957) SOIL_PUMP: RAW=1700 Moisture=87% Pump=OFF[0m
+[0;32mI (936547) DHT_FAN: T=29.9C RH=84.3% Soil=87% Fan=ON[0m
+[0;32mI (937037) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (938117) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (938547) DHT_FAN: T=29.9C RH=84.4% Soil=87% Fan=ON[0m
+[0;32mI (939197) SOIL_PUMP: RAW=1702 Moisture=87% Pump=OFF[0m
+[0;32mI (940277) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (940437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (940547) DHT_FAN: T=29.9C RH=84.4% Soil=87% Fan=ON[0m
+[0;32mI (941357) SOIL_PUMP: RAW=1700 Moisture=87% Pump=OFF[0m
+[0;32mI (942437) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (942547) DHT_FAN: T=29.9C RH=84.5% Soil=87% Fan=ON[0m
+[0;32mI (943517) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (944547) DHT_FAN: T=29.9C RH=84.5% Soil=87% Fan=ON[0m
+[0;32mI (944597) SOIL_PUMP: RAW=1702 Moisture=87% Pump=OFF[0m
+[0;32mI (945437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (945677) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (946547) DHT_FAN: T=29.9C RH=84.6% Soil=87% Fan=ON[0m
+[0;32mI (946757) SOIL_PUMP: RAW=1702 Moisture=87% Pump=OFF[0m
+[0;32mI (947837) SOIL_PUMP: RAW=1702 Moisture=87% Pump=OFF[0m
+[0;32mI (948547) DHT_FAN: T=29.9C RH=84.5% Soil=87% Fan=ON[0m
+[0;32mI (948917) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (949997) SOIL_PUMP: RAW=1699 Moisture=88% Pump=OFF[0m
+[0;32mI (950437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (950547) DHT_FAN: T=29.9C RH=84.5% Soil=88% Fan=ON[0m
+[0;32mI (951077) SOIL_PUMP: RAW=1702 Moisture=87% Pump=OFF[0m
+[0;32mI (952157) SOIL_PUMP: RAW=1703 Moisture=87% Pump=OFF[0m
+[0;32mI (952547) DHT_FAN: T=29.8C RH=84.5% Soil=87% Fan=ON[0m
+[0;32mI (953237) SOIL_PUMP: RAW=1703 Moisture=87% Pump=OFF[0m
+[0;32mI (954317) SOIL_PUMP: RAW=1703 Moisture=87% Pump=OFF[0m
+[0;32mI (954547) DHT_FAN: T=29.8C RH=84.5% Soil=87% Fan=ON[0m
+[0;32mI (955397) SOIL_PUMP: RAW=1702 Moisture=87% Pump=OFF[0m
+[0;32mI (955437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (956477) SOIL_PUMP: RAW=1703 Moisture=87% Pump=OFF[0m
+[0;32mI (956547) DHT_FAN: T=29.8C RH=84.5% Soil=87% Fan=ON[0m
+[0;32mI (957557) SOIL_PUMP: RAW=1702 Moisture=87% Pump=OFF[0m
+[0;32mI (958547) DHT_FAN: T=29.8C RH=84.6% Soil=87% Fan=ON[0m
+[0;32mI (958637) SOIL_PUMP: RAW=1701 Moisture=87% Pump=OFF[0m
+[0;32mI (959717) SOIL_PUMP: RAW=1703 Moisture=87% Pump=OFF[0m
+[0;32mI (960437) GROW: Minute 6: LIGHT = ON[0m
+[0;32mI (960547) DHT_FAN: T=29.8C RH=84.6% Soil=87% Fan=ON[0m
+[0;32mI (960797) SOIL_PUMP: RAW=1705 Moisture=87% Pump=OFF[0m
+[0;32mI (961877) SOIL_PUMP: RAW=1703 Moisture=87% Pump=OFF[0m
+[0;32mI (962547) DHT_FAN: T=29.8C RH=84.6% Soil=87% Fan=ON[0m
+[0;32mI (962957) SOIL_PUMP: RAW=1702 Moisture=87% Pump=OFF[0m
+[0;32mI (964037) SOIL_PUMP: RAW=1703 Moisture=87% Pump=OFF[0m
+[0;32mI (964547) DHT_FAN: T=29.8C RH=84.6% Soil=87% Fan=ON[0m
+I (965117

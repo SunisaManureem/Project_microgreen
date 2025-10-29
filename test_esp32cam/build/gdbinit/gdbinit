@@ -1,0 +1,2 @@
+source D:/Project_microgreen/test_esp32cam/build/gdbinit/symbols
+source D:/Project_microgreen/test_esp32cam/build/gdbinit/connect

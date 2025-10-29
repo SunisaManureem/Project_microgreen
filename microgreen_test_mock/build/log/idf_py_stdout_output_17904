@@ -1,0 +1,28 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Project_microgreen\microgreen_test_mock\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Project_microgreen/microgreen_test_mock/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/microgreen_test_mock.c.obj
+In file included from D:/Project_microgreen/microgreen_test_mock/main/microgreen_test_mock.c:28:
+C:/Users/user/esp/v5.5.1/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+D:/Project_microgreen/microgreen_test_mock/main/microgreen_test_mock.c:575:13: warning: 'is_in_light_window' defined but not used [-Wunused-function]
+  575 | static bool is_in_light_window(time_t now_ts) {
+      |             ^~~~~~~~~~~~~~~~~~
+D:/Project_microgreen/microgreen_test_mock/main/microgreen_test_mock.c:563:13: warning: 'button_held_ms' defined but not used [-Wunused-function]
+  563 | static bool button_held_ms(uint32_t hold_ms) {
+      |             ^~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable microgreen_test_mock.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Project_microgreen/microgreen_test_mock/build/microgreen_test_mock.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Project_microgreen\microgreen_test_mock\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/user/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Project_microgreen/microgreen_test_mock/build/partition_table/partition-table.bin D:/Project_microgreen/microgreen_test_mock/build/microgreen_test_mock.bin"
+microgreen_test_mock.bin binary size 0xc70a0 bytes. Smallest app partition is 0x100000 bytes. 0x38f60 bytes (22%) free.

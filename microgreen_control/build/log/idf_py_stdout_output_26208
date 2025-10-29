@@ -1,0 +1,3070 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\microgreen_control\build\microgreen_control.elf D:\Project_microgreen\microgreen_control\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 16 2025 11:33:31[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a618h (108056) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002a640 vaddr=3ffb0000 size=03f7ch ( 16252) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002e5c4 vaddr=40080000 size=01a54h (  6740) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8d300h (578304) map[0m
+[0;32mI (334) esp_image: segment 4: paddr=000bd328 vaddr=40081a54 size=164e0h ( 91360) load[0m
+[0;32mI (370) esp_image: segment 5: paddr=000d3810 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (401) app_init: Project name:     microgreen_control[0m
+[0;32mI (406) app_init: App version:      1[0m
+[0;32mI (409) app_init: Compile time:     Oct 16 2025 11:19:24[0m
+[0;32mI (414) app_init: ELF file SHA256:  98836468f...[0m
+[0;32mI (418) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (422) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (426) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (430) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (434) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (440) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (445) heap_init: At 3FFB85C0 len 00027A40 (158 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (456) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40097F34 len 000080CC (32 KiB): IRAM[0m
+[0;33mW (468) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (480) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;33mW (486) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (498) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (507) main_task: Started on CPU0[0m
+[0;32mI (517) main_task: Calling app_main()[0m
+[0;32mI (517) main_task: Returned from app_main()[0m
+[0;32mI (547) wifi:wifi driver task: 3ffc3124, prio:23, stack:6656, core=0[0m
+[0;32mI (557) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (557) wifi:wifi certification version: v7.0[0m
+[0;32mI (557) wifi:config NVS flash: enabled[0m
+[0;32mI (557) wifi:config nano formatting: disabled[0m
+[0;32mI (567) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (567) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (577) wifi:Init management short buffer num: 32[0m
+[0;32mI (577) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (577) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (587) wifi:Init static rx buffer num: 10[0m
+[0;32mI (587) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (597) wifi_init: rx ba win: 6[0m
+[0;32mI (597) wifi_init: accept mbox: 6[0m
+[0;32mI (597) wifi_init: tcpip mbox: 32[0m
+[0;32mI (607) wifi_init: udp mbox: 6[0m
+[0;32mI (607) wifi_init: tcp mbox: 6[0m
+[0;32mI (607) wifi_init: tcp tx win: 5760[0m
+[0;32mI (607) wifi_init: tcp rx win: 5760[0m
+[0;32mI (617) wifi_init: tcp mss: 1440[0m
+[0;32mI (617) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (617) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (627) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (637) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (717) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (717) wifi:enable tsf[0m
+[0;32mI (717) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (717) NET: Connecting to Wi-Fi: Areena ...[0m
+[0;32mI (737) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (737) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (747) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (747) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1697) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (2577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (2757) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (3817) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (4577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (4877) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (5937) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (6577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (6997) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (8057) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (8577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (9117) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (10177) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (10577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (10717) NET: Wi-Fi not ready after 10s, continue offline[0m
+[0;32mI (10757) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (10767) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (10767) NET: WiFi disconnected, reason=204[0m
+[0;32mI (11237) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (12297) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (12577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (13187) NET: WiFi disconnected, reason=205[0m
+[0;32mI (13197) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13197) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (13207) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (13217) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (13357) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (14417) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (14577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (15477) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (16537) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (16577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (17597) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (18577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (18657) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (19717) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (20577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (20777) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (21837) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (22577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (22897) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (23217) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (23227) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (23227) NET: WiFi disconnected, reason=204[0m
+[0;32mI (23957) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (24577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (25017) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;33mW (25647) NET: WiFi disconnected, reason=205[0m
+[0;32mI (25657) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25657) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (25667) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (25687) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (26077) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (26577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (27137) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (28197) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (28577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (29257) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (30317) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (30577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (31377) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (32437) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (32577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (33497) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (34557) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (34577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (35617) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (35687) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (35697) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (35697) NET: WiFi disconnected, reason=204[0m
+[0;32mI (36577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (36677) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (37737) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;33mW (38117) NET: WiFi disconnected, reason=205[0m
+[0;32mI (38127) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38127) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (38137) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (38147) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (38577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (38797) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (39857) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (40577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (40717) NET: Time not synced (continue anyway)[0m
+[0;32mI (40717) GROW: Hold RESET button 3000 ms to start new cycle.[0m
+[0;32mI (40917) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (41217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (41977) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (42577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (43037) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (44097) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (44577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (45157) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (46217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (46217) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (46577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (47277) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (48147) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (48157) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (48157) NET: WiFi disconnected, reason=204[0m
+[0;32mI (48337) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (48577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (49397) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (50457) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;33mW (50577) NET: WiFi disconnected, reason=205[0m
+[0;32mI (50577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (50587) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (50587) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (50597) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (50607) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (51217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (51517) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (52577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (52577) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (53637) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (54577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (54697) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (55757) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (56217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (56577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (56817) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (57877) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (58577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (58937) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (59997) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (60577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (60607) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (60617) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (60617) NET: WiFi disconnected, reason=204[0m
+[0;32mI (61057) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (61217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (62117) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (62577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (63037) NET: WiFi disconnected, reason=205[0m
+[0;32mI (63047) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (63047) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (63077) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (63087) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (63177) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (64237) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (64577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (65297) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (66217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (66357) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (66577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (67417) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (68477) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (68577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (69537) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (70577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (70597) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (71217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (71657) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (72577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (72717) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (73097) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (73107) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (73107) NET: WiFi disconnected, reason=204[0m
+[0;32mI (73777) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (74577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (74837) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;33mW (75527) NET: WiFi disconnected, reason=205[0m
+[0;32mI (75547) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (75547) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (75587) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (75597) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (75897) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (76217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (76577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (76957) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (78017) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (78577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (79077) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (80137) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (80577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (81197) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (81217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (82257) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (82577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (83317) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (84377) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (84577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (85437) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (85597) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (85607) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (85607) NET: WiFi disconnected, reason=204[0m
+[0;32mI (86217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (86497) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (86577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (87557) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;33mW (88027) NET: WiFi disconnected, reason=205[0m
+[0;32mI (88037) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (88037) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (88047) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (88067) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (88577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (88617) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (89677) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (90577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (90737) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (91217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (91797) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (92577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (92857) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (93917) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (94577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (94977) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (96037) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (96217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (96577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (97097) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (98067) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (98077) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (98077) NET: WiFi disconnected, reason=204[0m
+[0;32mI (98157) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (98577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (99217) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (100277) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;33mW (100497) NET: WiFi disconnected, reason=205[0m
+[0;32mI (100507) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (100507) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (100517) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (100527) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (100577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (101217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (101337) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (102397) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (102577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (103457) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (104517) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (104577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (105577) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (106217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (106577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (106637) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (107697) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (108577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (108757) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (109817) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (110527) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (110537) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (110537) NET: WiFi disconnected, reason=204[0m
+[0;32mI (110577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (110877) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (111217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (111937) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (112577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (112957) NET: WiFi disconnected, reason=201[0m
+[0;32mI (112967) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (112967) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (112987) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (112997) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (113007) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (114057) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (114577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (115117) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (116177) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (116217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (116577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (117237) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (118297) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (118577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (119357) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (120417) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (120577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (121217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (121477) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (122537) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (122577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (123007) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (123017) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (123017) NET: WiFi disconnected, reason=204[0m
+[0;32mI (123597) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (124577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (124657) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;33mW (125437) NET: WiFi disconnected, reason=205[0m
+[0;32mI (125447) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (125447) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (125487) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (125497) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (125717) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (126217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (126577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (126777) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (127837) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (128577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (128897) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (129957) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (130577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (131017) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (131217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (132077) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (132577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (133137) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (134197) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (134577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (135257) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (135497) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (135507) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (135507) NET: WiFi disconnected, reason=204[0m
+[0;32mI (136217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (136317) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (136577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (137377) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;33mW (137927) NET: WiFi disconnected, reason=205[0m
+[0;32mI (138437) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (138577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (139497) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;33mW (140337) NET: WiFi disconnected, reason=201[0m
+[0;32mI (140357) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (140357) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (140557) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (140577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (141217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (141367) wifi:state: auth -> init (0x200)[0m
+[0;32mI (141377) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (141377) NET: WiFi disconnected, reason=2[0m
+[0;32mI (141617) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (142577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (142677) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (143737) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;33mW (143797) NET: WiFi disconnected, reason=205[0m
+[0;32mI (144577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (144797) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (145857) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;33mW (146207) NET: WiFi disconnected, reason=201[0m
+[0;32mI (146217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (146227) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (146227) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (146237) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (146277) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (146577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (146917) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (147977) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (148577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (149037) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (150097) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (150577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (151157) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (151217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (152217) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (152577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (153277) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (154337) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (154577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (155397) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (156217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (156277) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (156287) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (156287) NET: WiFi disconnected, reason=204[0m
+[0;32mI (156457) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (156577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (157517) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (158577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (158577) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;33mW (158707) NET: WiFi disconnected, reason=205[0m
+[0;32mI (158717) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (158717) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (158727) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (158737) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (159637) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (160577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (160697) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (161217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (161757) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (162577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (162817) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (163877) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (164577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (164937) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (165997) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (166217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (166577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (167057) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (168117) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (168577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (168737) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (168747) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (168747) NET: WiFi disconnected, reason=204[0m
+[0;32mI (169177) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (170237) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (170577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (171167) NET: WiFi disconnected, reason=205[0m
+[0;32mI (171177) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (171177) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (171197) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (171197) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (171217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (171297) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (172357) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (172577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (173417) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (174477) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (174577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (175537) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (176217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (176577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (176597) SOIL_PUMP: RAW=2384 Moisture=50% Pump=OFF[0m
+[0;32mI (177657) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (178577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (178717) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (179777) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (180577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (180837) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (181207) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (181217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (181217) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (181217) NET: WiFi disconnected, reason=204[0m
+[0;32mI (181897) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (182577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (182957) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;33mW (183637) NET: WiFi disconnected, reason=205[0m
+[0;32mI (183647) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (183647) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (183657) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (183667) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (184017) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (184577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (185077) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (186137) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (186217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (186577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (187197) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (188257) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (188577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (189317) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (190377) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (190577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (191217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (191437) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (192497) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (192577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (193557) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (193667) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (193677) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (193677) NET: WiFi disconnected, reason=204[0m
+[0;32mI (194577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (194617) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (195677) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;33mW (196097) NET: WiFi disconnected, reason=205[0m
+[0;32mI (196107) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (196107) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (196117) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (196147) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (196217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (196577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (196737) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (197797) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (198577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (198857) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (199917) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (200577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (200977) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (201217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (202037) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (202577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (203097) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (204157) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (204577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (205217) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (206147) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (206157) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (206157) NET: WiFi disconnected, reason=204[0m
+[0;32mI (206217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (206277) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (206577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (207337) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (208397) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;33mW (208577) NET: WiFi disconnected, reason=205[0m
+[0;32mI (208577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (208587) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (208587) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (208597) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (208607) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (209457) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (210517) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (210577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (211217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (211577) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (212577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (212637) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (213697) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (214577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (214757) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (215817) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (216217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (216577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (216877) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (217937) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (218577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (218607) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (218617) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (218617) NET: WiFi disconnected, reason=204[0m
+[0;32mI (218997) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (220057) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (220577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (221037) NET: WiFi disconnected, reason=205[0m
+[0;32mI (221047) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (221047) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (221067) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (221077) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (221117) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (221217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (222177) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (222577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (223237) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (224297) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (224577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (225357) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (226217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (226417) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (226577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (227477) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (228537) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (228577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (229597) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (230577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (230657) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (231077) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (231087) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (231087) NET: WiFi disconnected, reason=204[0m
+[0;32mI (231217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (231717) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (232577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (232777) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;33mW (233507) NET: WiFi disconnected, reason=205[0m
+[0;32mI (233517) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (233517) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (233537) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (233547) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (233837) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (234577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (234897) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (235957) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (236217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (236577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (237017) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (238077) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (238577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (239137) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (240197) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (240577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (241217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (241257) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (242317) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (242577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (243377) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (243547) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (243557) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (243557) NET: WiFi disconnected, reason=204[0m
+[0;32mI (244437) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (244577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (245497) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;33mW (245977) NET: WiFi disconnected, reason=205[0m
+[0;32mI (245987) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (245987) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (245997) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (246007) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (246217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (246557) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (246577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (247617) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (248577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (248677) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (249737) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (250577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (250797) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (251217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (251857) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (252577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (252917) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (253977) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (254577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (255037) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (256007) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (256027) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (256027) NET: WiFi disconnected, reason=204[0m
+[0;32mI (256097) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (256217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (256577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (257157) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (258217) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;33mW (258447) NET: WiFi disconnected, reason=201[0m
+[0;32mI (258577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (259277) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (260337) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (260577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (260857) NET: WiFi disconnected, reason=201[0m
+[0;32mI (260867) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (260877) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (260887) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (260897) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (261217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (261397) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (262457) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (262577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (263517) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (264577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (264577) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (265637) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (266217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (266577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (266697) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (267757) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (268577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (268817) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (269877) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (270577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (270897) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (270907) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (270907) NET: WiFi disconnected, reason=204[0m
+[0;32mI (270937) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (271217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (271997) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (272577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (273057) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;33mW (273327) NET: WiFi disconnected, reason=205[0m
+[0;32mI (273337) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (273337) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (273357) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (273367) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (274117) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (274577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (275177) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (276217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (276237) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (276577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (277297) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (278357) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (278577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (279417) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (280477) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (280577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (281217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (281537) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (282577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (282597) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (283367) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (283377) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (283377) NET: WiFi disconnected, reason=204[0m
+[0;32mI (283657) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (284577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (284717) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (285777) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;33mW (285797) NET: WiFi disconnected, reason=205[0m
+[0;32mI (285807) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (285807) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (285827) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (285837) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (286217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (286577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (286837) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (287897) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (288577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (288957) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (290017) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (290577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (291077) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (291217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (292137) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (292577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (293197) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (294257) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (294577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (295317) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (295837) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (295847) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (295847) NET: WiFi disconnected, reason=204[0m
+[0;32mI (296217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (296377) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (296577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (297437) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;33mW (298267) NET: WiFi disconnected, reason=205[0m
+[0;32mI (298277) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (298277) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (298287) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (298297) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (298497) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (298577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (299557) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (300577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (300617) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (301217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (301677) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (302577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (302737) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (303797) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (304577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (304857) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (305917) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (306217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (306577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (306977) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (308037) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (308297) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (308307) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (308307) NET: WiFi disconnected, reason=204[0m
+[0;32mI (308577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (309097) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (310157) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (310577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (310727) NET: WiFi disconnected, reason=205[0m
+[0;32mI (310737) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (310737) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (310747) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (310757) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (311217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (311217) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (312277) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (312577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (313337) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (314397) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (314577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (315457) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (316217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (316517) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (316577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (317577) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (318577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (318637) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (319697) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (320577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (320757) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (320757) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (320767) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (320767) NET: WiFi disconnected, reason=204[0m
+[0;32mI (321217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (321817) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (322577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (322877) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;33mW (323187) NET: WiFi disconnected, reason=205[0m
+[0;32mI (323937) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (324577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (324997) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;33mW (325597) NET: WiFi disconnected, reason=201[0m
+[0;32mI (325617) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (325617) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (326057) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (326217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (326577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (326627) wifi:state: auth -> init (0x200)[0m
+[0;32mI (326637) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (326637) NET: WiFi disconnected, reason=2[0m
+[0;32mI (327117) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (328177) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (328577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (329047) NET: WiFi disconnected, reason=201[0m
+[0;32mI (329067) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (329067) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (329077) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (329087) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (329237) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (330297) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (330577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (331217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (331357) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (332417) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (332577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (333477) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (334537) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (334577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (335597) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (336217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (336577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (336657) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (337717) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (338577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (338777) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (339087) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (339097) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (339097) NET: WiFi disconnected, reason=204[0m
+[0;32mI (339837) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (340577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (340897) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (341217) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (341517) NET: WiFi disconnected, reason=205[0m
+[0;32mI (341527) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (341527) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (341537) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (341547) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (341957) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (342577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (343017) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (344077) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (344577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (345137) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (346197) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (346217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (346577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (347257) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (348317) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (348577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (349377) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (350437) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (350577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (351217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (351497) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (351547) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (351567) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (351567) NET: WiFi disconnected, reason=204[0m
+[0;32mI (352557) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (352577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (353617) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;33mW (353987) NET: WiFi disconnected, reason=205[0m
+[0;32mI (353997) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (353997) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (354007) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (354017) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (354577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (354677) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (355737) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (356217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (356577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (356797) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (357857) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (358577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (358917) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (359977) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (360577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (361037) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (361217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (362097) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (362577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (363157) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (364017) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (364027) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (364027) NET: WiFi disconnected, reason=204[0m
+[0;32mI (364217) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (364577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (365277) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (366217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (366337) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;33mW (366447) NET: WiFi disconnected, reason=205[0m
+[0;32mI (366457) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (366457) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (366487) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (366507) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (366577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (367397) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (368457) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (368577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (369517) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (370577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (370577) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (371217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (371637) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (372577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (372697) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (373757) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (374577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (374817) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (375877) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (376217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (376507) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (376527) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (376527) NET: WiFi disconnected, reason=204[0m
+[0;32mI (376577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (376937) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (377997) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (378577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (378947) NET: WiFi disconnected, reason=205[0m
+[0;32mI (378957) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (378957) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (378967) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (378977) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (379057) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (380117) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (380577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (381177) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (381217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (382237) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (382577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (383297) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (384357) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (384577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (385417) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (386217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (386477) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (386577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (387537) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (388577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (388597) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (388977) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (388987) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (388987) NET: WiFi disconnected, reason=204[0m
+[0;32mI (389657) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (390577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (390717) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (391217) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (391407) NET: WiFi disconnected, reason=205[0m
+[0;32mI (391417) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (391417) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (391427) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (391437) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (391777) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (392577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (392837) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (393897) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (394577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (394957) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (396017) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (396217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (396577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (397077) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (398137) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (398577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (399197) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (400257) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (400577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (401217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (401317) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (401437) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (401447) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (401447) NET: WiFi disconnected, reason=204[0m
+[0;32mI (402377) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (402577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (403437) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;33mW (403867) NET: WiFi disconnected, reason=205[0m
+[0;32mI (403877) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (403877) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (403887) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (403897) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (404497) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (404577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (405557) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (406217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (406577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (406617) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (407677) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (408577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (408737) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (409797) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (410577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (410857) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (411217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (411917) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (412577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (412977) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (413897) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (413907) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (413907) NET: WiFi disconnected, reason=204[0m
+[0;32mI (414037) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (414577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (415097) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (416157) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (416217) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (416327) NET: WiFi disconnected, reason=205[0m
+[0;32mI (416337) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (416337) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (416357) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (416377) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (416577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (417217) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (418277) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (418577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (419337) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (420397) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (420577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (421217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (421457) SOIL_PUMP: RAW=2392 Moisture=50% Pump=OFF[0m
+[0;32mI (422517) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (422577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (423577) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (424577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (424637) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (425697) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (426217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (426377) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (426387) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (426387) NET: WiFi disconnected, reason=204[0m
+[0;32mI (426577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (426757) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (427817) SOIL_PUMP: RAW=2392 Moisture=50% Pump=OFF[0m
+[0;32mI (428577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (428807) NET: WiFi disconnected, reason=205[0m
+[0;32mI (428817) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (428817) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (428827) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (428837) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (428877) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (429937) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (430577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (430997) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (431217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (432057) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (432577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (433117) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (434177) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (434577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (435237) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (436217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (436297) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (436577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (437357) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (438417) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (438577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (438837) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (438857) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (438857) NET: WiFi disconnected, reason=204[0m
+[0;32mI (439477) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (440537) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (440577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (441217) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (441277) NET: WiFi disconnected, reason=205[0m
+[0;32mI (441287) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (441287) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (441297) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (441327) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (441597) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (442577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (442657) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (443717) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (444577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (444777) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (445837) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (446217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (446577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (446897) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (447957) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (448577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (449017) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (450077) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (450577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (451137) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (451217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (451327) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (451337) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (451337) NET: WiFi disconnected, reason=204[0m
+[0;32mI (452197) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (452577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (453257) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;33mW (453757) NET: WiFi disconnected, reason=205[0m
+[0;32mI (453767) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (453767) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (453777) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (453787) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (454317) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (454577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (455377) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (456217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (456437) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (456577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (457497) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (458557) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (458577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (459617) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (460577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (460677) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (461217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (461737) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (462577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (462797) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (463797) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (463807) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (463807) NET: WiFi disconnected, reason=204[0m
+[0;32mI (463857) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (464577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (464917) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (465977) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (466217) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (466227) NET: WiFi disconnected, reason=205[0m
+[0;32mI (466577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (467037) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (468097) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (468577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (468637) NET: WiFi disconnected, reason=201[0m
+[0;32mI (468657) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (468657) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (468677) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (468677) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (469157) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (470217) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (470577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (471217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (471277) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (472337) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (472577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (473397) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (474457) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (474577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (475517) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (476217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (476577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (476577) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (477637) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (478577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (478677) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (478697) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (478697) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (478697) NET: WiFi disconnected, reason=204[0m
+[0;32mI (479757) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (480577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (480817) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;33mW (481117) NET: WiFi disconnected, reason=205[0m
+[0;32mI (481127) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (481127) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (481147) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (481157) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (481217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (481877) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (482577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (482937) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (483997) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (484577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (485057) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (486117) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (486217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (486577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (487177) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (488237) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (488577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (489297) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (490357) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (490577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (491157) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (491167) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (491167) NET: WiFi disconnected, reason=204[0m
+[0;32mI (491217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (491417) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (492477) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (492577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (493537) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;33mW (493587) NET: WiFi disconnected, reason=205[0m
+[0;32mI (493597) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (493597) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (493607) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (493617) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (494577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (494597) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (495657) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (496217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (496577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (496717) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (497777) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (498577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (498837) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (499897) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (500577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (500957) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (501217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (502017) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (502577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (503077) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (503617) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (503627) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (503627) NET: WiFi disconnected, reason=204[0m
+[0;32mI (504137) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (504577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (505197) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;33mW (506047) NET: WiFi disconnected, reason=205[0m
+[0;32mI (506057) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (506057) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (506067) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (506077) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (506217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (506257) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (506577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (507317) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (508377) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (508577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (509437) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (510497) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (510577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (511217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (511557) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (512577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (512617) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (513677) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (514577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (514737) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (515797) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (516077) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (516087) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (516087) NET: WiFi disconnected, reason=204[0m
+[0;32mI (516217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (516577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (516857) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (517917) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;33mW (518507) NET: WiFi disconnected, reason=205[0m
+[0;32mI (518517) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (518517) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (518527) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (518537) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (518577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (518977) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (520037) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (520577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (521097) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (521217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (522157) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (522577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (523217) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (524277) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (524577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (525337) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (526217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (526397) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (526577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (527457) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (528517) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (528537) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (528547) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (528547) NET: WiFi disconnected, reason=204[0m
+[0;32mI (528577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (529577) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (530577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (530637) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;33mW (530967) NET: WiFi disconnected, reason=205[0m
+[0;32mI (530977) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (530977) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (531007) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (531017) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (531217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (531697) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (532577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (532757) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (533817) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (534577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (534877) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (535937) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (536217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (536577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (536997) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (538057) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (538577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (539117) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (540177) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (540577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (541017) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (541027) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (541027) NET: WiFi disconnected, reason=204[0m
+[0;32mI (541217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (541237) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (542297) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (542577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (543357) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;33mW (543447) NET: WiFi disconnected, reason=205[0m
+[0;32mI (543457) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (543457) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (543467) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (543477) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (544417) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (544577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (545477) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (546217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (546537) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (546577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (547597) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (548577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (548657) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (549717) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (550577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (550777) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (551217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (551837) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (552577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (552897) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (553477) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (553487) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (553487) NET: WiFi disconnected, reason=204[0m
+[0;32mI (553957) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (554577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (555017) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;33mW (555907) NET: WiFi disconnected, reason=205[0m
+[0;32mI (555917) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (555917) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (556077) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (556217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (556577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (556927) wifi:state: auth -> init (0x200)[0m
+[0;32mI (556937) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (556937) NET: WiFi disconnected, reason=2[0m
+[0;32mI (557137) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (558197) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (558577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (559257) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;33mW (559357) NET: WiFi disconnected, reason=205[0m
+[0;32mI (560317) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (560577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (561217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (561377) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;33mW (561767) NET: WiFi disconnected, reason=201[0m
+[0;32mI (562437) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (562577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (563497) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;33mW (564187) NET: WiFi disconnected, reason=201[0m
+[0;32mI (564197) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (564197) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (564207) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (564217) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (564557) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (564577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (565617) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (566217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (566577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (566677) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (567737) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (568577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (568797) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (569857) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (570577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (570917) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (571217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (571977) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (572577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (573037) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (574097) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (574217) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (574227) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (574227) NET: WiFi disconnected, reason=204[0m
+[0;32mI (574577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (575157) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (576217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (576217) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (576577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (576647) NET: WiFi disconnected, reason=205[0m
+[0;32mI (576657) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (576657) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (576667) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (576677) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (577277) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (578337) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (578577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (579397) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (580457) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (580577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (581217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (581517) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (582577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (582577) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (583637) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (584577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (584697) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (585757) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (586217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (586577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (586677) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (586687) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (586687) NET: WiFi disconnected, reason=204[0m
+[0;32mI (586817) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (587877) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (588577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (588937) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;33mW (589107) NET: WiFi disconnected, reason=205[0m
+[0;32mI (589117) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (589117) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (589137) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (589147) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (589997) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (590577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (591057) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (591217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (592117) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (592577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (593177) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (594237) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (594577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (595297) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (596217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (596357) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (596577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (597417) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (598477) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (598577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (599147) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (599157) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (599157) NET: WiFi disconnected, reason=204[0m
+[0;32mI (599537) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (600577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (600597) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (601217) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (601577) NET: WiFi disconnected, reason=205[0m
+[0;32mI (601587) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (601587) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (601597) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (601607) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (601657) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (602577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (602717) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (603777) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (604577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (604837) SOIL_PUMP: RAW=2386 Moisture=50% Pump=OFF[0m
+[0;32mI (605897) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (606217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (606577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (606957) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (608017) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (608577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (609077) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (610137) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (610577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (611197) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (611217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (611607) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (611627) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (611627) NET: WiFi disconnected, reason=204[0m
+[0;32mI (612257) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (612577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (613317) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;33mW (614047) NET: WiFi disconnected, reason=205[0m
+[0;32mI (614057) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (614057) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (614067) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (614077) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (614377) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (614577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (615437) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (616217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (616497) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (616577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (617557) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (618577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (618617) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (619677) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (620577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (620737) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (621217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (621797) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (622577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (622857) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (623917) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (624077) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (624087) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (624087) NET: WiFi disconnected, reason=204[0m
+[0;32mI (624577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (624977) SOIL_PUMP: RAW=2385 Moisture=50% Pump=OFF[0m
+[0;32mI (626037) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (626217) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (626507) NET: WiFi disconnected, reason=205[0m
+[0;32mI (626517) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (626517) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (626527) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (626537) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (626577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (627097) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (628157) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (628577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (629217) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (630277) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (630577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (631217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (631337) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (632397) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (632577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (633457) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (634517) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (634577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (635577) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (636217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (636537) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (636547) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (636547) NET: WiFi disconnected, reason=204[0m
+[0;32mI (636577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (636637) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (637697) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (638577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (638757) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;33mW (638967) NET: WiFi disconnected, reason=205[0m
+[0;32mI (639817) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (640577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (640877) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (641217) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (641377) NET: WiFi disconnected, reason=201[0m
+[0;32mI (641397) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (641397) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (641937) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (642407) wifi:state: auth -> init (0x200)[0m
+[0;32mI (642417) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (642417) NET: WiFi disconnected, reason=2[0m
+[0;32mI (642577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (642997) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (644057) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (644577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (644837) NET: WiFi disconnected, reason=205[0m
+[0;32mI (644847) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (644847) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (644857) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (644867) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (645117) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (646177) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (646217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (646577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (647237) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (648297) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (648577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (649357) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (650417) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (650577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (651217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (651477) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (652537) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (652577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (653597) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (654577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (654657) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (654867) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (654877) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (654877) NET: WiFi disconnected, reason=204[0m
+[0;32mI (655717) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (656217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (656577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (656777) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;33mW (657297) NET: WiFi disconnected, reason=205[0m
+[0;32mI (657307) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (657307) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (657317) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (657327) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (657837) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (658577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (658897) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (659957) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (660577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (661017) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (661217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (662077) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (662577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (663137) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (664197) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (664577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (665257) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (666217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (666317) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (666577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (667327) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (667337) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (667337) NET: WiFi disconnected, reason=204[0m
+[0;32mI (667377) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (668437) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (668577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (669497) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;33mW (669757) NET: WiFi disconnected, reason=205[0m
+[0;32mI (669767) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (669767) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (669787) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (669807) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (670557) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (670577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (671217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (671617) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (672577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (672677) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (673737) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (674577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (674797) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (675857) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (676217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (676577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (676917) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (677977) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (678577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (679037) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (679817) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (679827) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (679827) NET: WiFi disconnected, reason=204[0m
+[0;32mI (680097) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (680577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (681157) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (681217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (682217) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;33mW (682247) NET: WiFi disconnected, reason=205[0m
+[0;32mI (682257) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (682257) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (682267) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (682297) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (682577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (683277) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (684337) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (684577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (685397) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (686217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (686457) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (686577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (687517) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (688577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (688577) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (689637) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (690577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (690697) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (691217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (691757) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (692297) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (692307) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (692307) NET: WiFi disconnected, reason=204[0m
+[0;32mI (692577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (692817) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (693877) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (694577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (694727) NET: WiFi disconnected, reason=205[0m
+[0;32mI (694737) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (694737) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (694747) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (694757) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (694937) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (695997) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (696217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (696577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (697057) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (698117) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (698577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (699177) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (700237) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (700577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (701217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (701297) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (702357) SOIL_PUMP: RAW=2387 Moisture=50% Pump=OFF[0m
+[0;32mI (702577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (703417) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (704477) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (704577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (704757) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (704767) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (704767) NET: WiFi disconnected, reason=204[0m
+[0;32mI (705537) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (706217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (706577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (706597) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;33mW (707187) NET: WiFi disconnected, reason=205[0m
+[0;32mI (707197) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (707197) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (707207) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (707217) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (707657) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (708577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (708717) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (709777) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (710577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (710837) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (711217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (711897) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (712577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (712957) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (714017) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (714577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (715077) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (716137) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (716217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (716577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (717197) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (717217) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (717227) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (717227) NET: WiFi disconnected, reason=204[0m
+[0;32mI (718257) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (718577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (719317) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;33mW (719647) NET: WiFi disconnected, reason=205[0m
+[0;32mI (719657) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (719657) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (720377) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (720577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (720667) wifi:state: auth -> init (0x200)[0m
+[0;32mI (720677) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (720677) NET: WiFi disconnected, reason=2[0m
+[0;32mI (721217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (721437) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (722497) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (722577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (723097) NET: WiFi disconnected, reason=205[0m
+[0;32mI (723117) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (723117) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (723127) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (723137) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (723557) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (724577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (724617) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (725677) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (726217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (726577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (726737) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (727797) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (728577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (728857) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (729917) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (730577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (730977) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (731217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (732037) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (732577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (733097) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (733137) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (733157) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (733157) NET: WiFi disconnected, reason=204[0m
+[0;32mI (734157) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (734577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (735217) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;33mW (735577) NET: WiFi disconnected, reason=205[0m
+[0;32mI (735587) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (735587) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (735607) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (735607) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (736217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (736277) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (736577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (737337) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (738397) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (738577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (739457) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (740517) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (740577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (741217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (741577) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (742577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (742637) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (743697) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (744577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (744757) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (745607) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (745627) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (745627) NET: WiFi disconnected, reason=204[0m
+[0;32mI (745817) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (746217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (746577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (746877) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (747937) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;33mW (748047) NET: WiFi disconnected, reason=205[0m
+[0;32mI (748057) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (748057) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (748067) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (748077) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (748577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (748997) SOIL_PUMP: RAW=2388 Moisture=50% Pump=OFF[0m
+[0;32mI (750057) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (750577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (751117) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (751217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (752177) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (752577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (753237) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (754297) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (754577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (755357) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (756217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (756417) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (756577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (757477) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (758077) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (758087) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (758087) NET: WiFi disconnected, reason=204[0m
+[0;32mI (758537) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (758577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (759597) SOIL_PUMP: RAW=2392 Moisture=50% Pump=OFF[0m
+[0;33mW (760507) NET: WiFi disconnected, reason=205[0m
+[0;32mI (760517) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (760517) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (760527) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (760537) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (760577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (760657) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (761217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (761717) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (762577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (762777) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (763837) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (764577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (764897) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (765957) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (766217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (766577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (767017) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (768077) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (768577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (769137) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (770197) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (770537) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (770557) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (770557) NET: WiFi disconnected, reason=204[0m
+[0;32mI (770577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (771217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (771257) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (772317) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (772577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (772977) NET: WiFi disconnected, reason=205[0m
+[0;32mI (772987) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (772987) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (772997) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (773007) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (773377) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (774437) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (774577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (775497) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (776217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (776557) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (776577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (777617) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (778577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (778677) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (779737) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (780577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (780797) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (781217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (781857) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (782577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (782917) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (783007) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (783017) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (783017) NET: WiFi disconnected, reason=204[0m
+[0;32mI (783977) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (784577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (785037) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;33mW (785437) NET: WiFi disconnected, reason=205[0m
+[0;32mI (785447) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (785447) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (785457) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (785467) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (786097) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (786217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (786577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (787157) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (788217) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (788577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (789277) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (790337) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (790577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (791217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (791397) SOIL_PUMP: RAW=2392 Moisture=50% Pump=OFF[0m
+[0;32mI (792457) SOIL_PUMP: RAW=2392 Moisture=50% Pump=OFF[0m
+[0;32mI (792577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (793517) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (794577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (794577) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (795467) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (795477) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (795477) NET: WiFi disconnected, reason=204[0m
+[0;32mI (795637) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (796217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (796577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (796697) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (797757) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;33mW (797897) NET: WiFi disconnected, reason=205[0m
+[0;32mI (797907) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (797907) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (797917) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (797927) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (798577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (798817) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (799877) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (800577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (800937) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (801217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (801997) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (802577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (803057) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (804117) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (804577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (805177) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (806217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (806237) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (806577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (807297) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (807927) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (807947) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (807947) NET: WiFi disconnected, reason=204[0m
+[0;32mI (808357) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (808577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (809417) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;33mW (810367) NET: WiFi disconnected, reason=205[0m
+[0;32mI (810377) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (810377) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (810387) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (810397) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (810477) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (810577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (811217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (811537) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (812577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (812597) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (813657) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (814577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (814717) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (815777) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (816217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (816577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (816837) SOIL_PUMP: RAW=2389 Moisture=50% Pump=OFF[0m
+[0;32mI (817897) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (818577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (818957) SOIL_PUMP: RAW=2392 Moisture=50% Pump=OFF[0m
+[0;32mI (820017) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (820397) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (820407) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (820407) NET: WiFi disconnected, reason=204[0m
+[0;32mI (820577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (821077) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (821217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (822137) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (822577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (822827) NET: WiFi disconnected, reason=205[0m
+[0;32mI (822837) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (822837) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (822847) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (822857) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (823197) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (824257) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (824577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (825317) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (826217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (826377) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (826577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (827437) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (828497) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (828577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (829557) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (830577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (830617) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (831217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (831677) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (832577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (832737) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (832857) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (832867) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (832867) NET: WiFi disconnected, reason=204[0m
+[0;32mI (833797) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (834577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (834857) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;33mW (835287) NET: WiFi disconnected, reason=205[0m
+[0;32mI (835297) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (835297) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (835307) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (835317) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (835917) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (836217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (836577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (836977) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (838037) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (838577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (839097) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (840157) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (840577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (841217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (841217) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (842277) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (842577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (843337) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (844397) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (844577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (845317) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (845327) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (845327) NET: WiFi disconnected, reason=204[0m
+[0;32mI (845457) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (846217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (846517) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (846577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (847577) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;33mW (847747) NET: WiFi disconnected, reason=205[0m
+[0;32mI (848577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (848637) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (849697) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;33mW (850157) NET: WiFi disconnected, reason=201[0m
+[0;32mI (850177) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (850177) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (850187) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (850197) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (850577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (850757) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (851217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (851817) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (852577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (852877) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (853937) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (854577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (854997) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (856057) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (856217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (856577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (857117) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (858177) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (858577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (859237) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (860197) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (860207) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (860207) NET: WiFi disconnected, reason=204[0m
+[0;32mI (860297) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (860577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (861217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (861357) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (862417) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (862577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (862627) NET: WiFi disconnected, reason=205[0m
+[0;32mI (862637) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (862637) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (862647) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (862657) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (863477) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (864537) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (864577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (865597) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (866217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (866577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (866657) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (867717) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (868577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (868777) SOIL_PUMP: RAW=2390 Moisture=50% Pump=OFF[0m
+[0;32mI (869837) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (870577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (870897) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (871217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (871957) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (872577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (872657) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (872667) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (872667) NET: WiFi disconnected, reason=204[0m
+[0;32mI (873017) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (874077) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (874577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (875087) NET: WiFi disconnected, reason=205[0m
+[0;32mI (875137) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (876197) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (876217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (876577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (877257) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;33mW (877497) NET: WiFi disconnected, reason=201[0m
+[0;32mI (877507) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (877517) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (877527) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (877537) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (878317) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (878577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (879377) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (880437) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (880577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (881217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (881497) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (882557) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (882577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (883617) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (884577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (884677) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (885737) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (886217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (886577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (886797) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (887537) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (887557) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (887557) NET: WiFi disconnected, reason=204[0m
+[0;32mI (887857) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (888577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (888917) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (889977) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;33mW (889977) NET: WiFi disconnected, reason=205[0m
+[0;32mI (889987) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (889987) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (890037) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (890047) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (890577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (891037) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (891217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (892097) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (892577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (893157) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (894217) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (894577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (895277) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (896217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (896337) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (896577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (897397) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (898457) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (898577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (899517) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (900047) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (900057) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (900057) NET: WiFi disconnected, reason=204[0m
+[0;32mI (900577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (900577) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (901217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (901637) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;33mW (902477) NET: WiFi disconnected, reason=205[0m
+[0;32mI (902487) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (902487) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (902497) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (902507) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (902577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (902697) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (903757) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (904577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (904817) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (905877) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (906217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (906577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (906937) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (907997) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (908577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (909057) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (910117) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (910577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (911177) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (911217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (912237) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (912507) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (912517) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (912517) NET: WiFi disconnected, reason=204[0m
+[0;32mI (912577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (913297) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (914357) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (914577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (914937) NET: WiFi disconnected, reason=205[0m
+[0;32mI (914947) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (914947) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (914957) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (914967) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (915417) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (916217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (916477) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (916577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (917537) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (918577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (918597) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (919657) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (920577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (920717) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (921217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (921777) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (922577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (922837) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (923897) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (924577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (924957) SOIL_PUMP: RAW=2391 Moisture=50% Pump=OFF[0m
+[0;32mI (924967) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (924987) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (924987) NET: WiFi disconnected, reason=204[0m
+[0;32mI (926017) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (926217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (926577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (927077) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;33mW (927407) NET: WiFi disconnected, reason=205[0m
+[0;32mI (927417) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (927417) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (927437) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (927437) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (928137) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (928577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (929197) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (930257) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (930577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (931217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (931317) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (932377) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (932577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (933437) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (934497) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (934577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (935557) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (936217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (936577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (936617) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (937447) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (937457) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (937457) NET: WiFi disconnected, reason=204[0m
+[0;32mI (937677) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (938577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (938737) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (939797) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;33mW (939877) NET: WiFi disconnected, reason=205[0m
+[0;32mI (939897) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (939907) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (939917) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (939937) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (940577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (940857) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (941217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (941917) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (942577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (942977) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (944037) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (944577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (945097) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (946157) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (946217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (946577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (947217) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (948277) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (948577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (949337) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (949937) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (949947) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (949947) NET: WiFi disconnected, reason=204[0m
+[0;32mI (950397) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (950577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (951217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (951457) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;33mW (952367) NET: WiFi disconnected, reason=205[0m
+[0;32mI (952377) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (952377) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (952387) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (952397) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (952517) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (952577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (953577) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (954577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (954637) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (955697) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (956217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (956577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (956757) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (957817) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (958577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (958877) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (959937) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (960577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (960997) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (961217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (962057) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (962397) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (962407) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (962407) NET: WiFi disconnected, reason=204[0m
+[0;32mI (962577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (963117) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (964177) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (964577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (964827) NET: WiFi disconnected, reason=205[0m
+[0;32mI (964837) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (964837) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (964847) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (964857) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (965237) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (966217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (966297) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (966577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (967357) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (968417) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (968577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (969477) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (970537) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (970577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (971217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (971597) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (972577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (972657) SOIL_PUMP: RAW=2399 Moisture=50% Pump=OFF[0m
+[0;32mI (973717) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (974577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (974777) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (974857) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (974867) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (974867) NET: WiFi disconnected, reason=204[0m
+[0;32mI (975837) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (976217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (976577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (976897) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;33mW (977287) NET: WiFi disconnected, reason=205[0m
+[0;32mI (977297) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (977297) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (977307) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (977317) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (977957) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (978577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (979017) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (980077) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (980577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (981137) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (981217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (982197) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (982577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (983257) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (984317) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (984577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (985377) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (986217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (986437) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (986577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (987317) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (987327) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (987327) NET: WiFi disconnected, reason=204[0m
+[0;32mI (987497) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (988557) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (988577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (989617) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;33mW (989747) NET: WiFi disconnected, reason=205[0m
+[0;32mI (989757) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (989757) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (989767) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (989777) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (990577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (990677) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (991217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (991737) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (992577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (992797) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (993857) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (994577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (994917) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (995977) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (996217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (996577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (997037) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (998097) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (998577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (999157) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (999787) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (999797) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (999797) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1000217) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1000577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1001217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1001277) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;33mW (1002217) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1002227) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1002227) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1002237) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1002257) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1002337) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1002577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1003397) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1004457) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1004577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1005517) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1006217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1006577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1006577) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1007637) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1008577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1008697) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1009757) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1010577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1010817) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1011217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1011877) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1012267) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1012277) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1012277) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1012577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1012937) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1013997) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1014577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (1014697) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1014717) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1014717) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1014757) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1014777) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1015057) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1016117) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1016217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1016577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1017177) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1018237) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1018577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1019297) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1020357) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1020577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1021217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1021417) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1022477) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1022577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1023537) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1024577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1024597) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1024777) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1024787) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1024787) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1025657) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1026217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1026577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1026717) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;33mW (1027207) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1027237) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1027237) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1027267) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1027297) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1027777) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1028577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1028837) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1029897) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1030577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1030957) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1031217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1032017) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1032577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1033077) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1034137) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1034577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1035197) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1036217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1036257) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1036577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1037297) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1037317) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1037317) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1037317) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1038377) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1038577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1039437) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;33mW (1039737) NET: WiFi disconnected, reason=201[0m
+[0;32mI (1039747) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1039747) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1039777) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1039797) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1040497) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1040577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1041217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1041557) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1042577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1042617) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1043677) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1044577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1044737) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1045797) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1046217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1046577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1046857) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1047917) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1048577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1048977) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1049797) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1049807) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1049807) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1050037) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1050577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1051097) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1051217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1052157) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;33mW (1052227) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1052237) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1052237) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1052247) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1052257) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1052577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1053217) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1054277) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1054577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1055337) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1056217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1056397) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1056577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1057457) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1058517) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1058577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1059577) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1060577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1060637) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1061217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1061697) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1062257) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1062267) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1062267) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1062577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1062757) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1063817) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1064577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (1064687) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1064707) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1064707) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1064747) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1064767) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1064877) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1065937) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1066217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1066577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1066997) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1068057) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1068577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1069117) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1070177) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1070577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1071217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1071237) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1072297) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1072577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1073357) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1074417) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1074577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1074767) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1074777) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1074777) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1075477) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1076217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1076537) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1076577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (1077197) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1077227) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1077227) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1077237) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1077277) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1077597) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1078577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1078657) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1079717) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1080577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1080777) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1081217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1081837) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1082577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1082897) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1083957) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1084577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1085017) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1086077) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1086217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1086577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1087137) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1087277) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1087287) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1087287) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1088197) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1088577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1089257) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;33mW (1089707) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1089737) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1089737) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1089747) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1089777) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1090317) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1090577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1091217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1091377) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1092437) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (1092577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1093497) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1094557) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1094577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1095617) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1096217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1096577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1096677) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1097737) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1098577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1098797) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1099777) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1099787) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1099787) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1099857) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1100577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1100917) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1101217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1101977) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;33mW (1102207) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1102217) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1102217) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1102247) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1102267) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1102577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1103037) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1104097) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1104577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1105157) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1106217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1106217) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1106577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1107277) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1108337) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1108577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1109397) SOIL_PUMP: RAW=2392 Moisture=50% Pump=OFF[0m
+[0;32mI (1110457) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1110577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1111217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1111517) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1112267) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1112287) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1112287) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1112577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1112577) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1113637) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1114577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1114697) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;33mW (1114707) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1114727) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1114727) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1114777) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1114857) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1115757) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1116217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1116577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1116817) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1117877) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1118577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1118937) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1119997) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1120577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1121057) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1121217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1122117) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1122577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1123177) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1124237) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1124577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1124857) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1124867) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1124867) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1125297) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1126217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1126357) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1126577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (1127287) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1127307) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1127307) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1127357) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1127367) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1127417) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1128477) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1128577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1129537) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1130577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1130597) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1131217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1131657) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1132577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1132717) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1133777) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1134577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1134837) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1135897) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1136217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1136577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1136957) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1137367) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (1137377) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1137377) NET: WiFi disconnected, reason=204[0m
+[0;32mI (1138017) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1138577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1139077) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;33mW (1139797) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1140137) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1140577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1141197) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1141217) GROW: Minute 1: LIGHT = OFF[0m
+[0;33mW (1142207) NET: WiFi disconnected, reason=201[0m
+[0;32mI (1142227) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1142227) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1142257) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1142287) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1142297) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1142577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1143317) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1144377) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1144577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1145437) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1146217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1146497) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1146577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1147557) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1148577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1148617) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1149677) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1150577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1150737) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1151217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1151797) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1152057) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (1152067) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1152067) NET: WiFi disconnected, reason=2[0m
+[0;32mI (1152577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1152857) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1153917) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;33mW (1154487) NET: WiFi disconnected, reason=205[0m
+[0;32mI (1154577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1154977) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1156037) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1156217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1156577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;33mW (1156897) NET: WiFi disconnected, reason=201[0m
+[0;32mI (1156957) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1156957) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1157017) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1157027) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1157097) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1157127) wifi:connected with Areena, aid = 1, channel 6, BW20, bssid = 06:96:61:05:d3:e5[0m
+[0;32mI (1157127) wifi:security: WPA2-PSK, phy: bgn, rssi: -54[0m
+[0;32mI (1157127) wifi:pm start, type: 0[0m
+
+[0;32mI (1157127) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1157197) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1157267) wifi:<ba-add>idx:0 (ifx:0, 06:96:61:05:d3:e5), tid:0, ssn:2, winSize:64[0m
+[0;32mI (1158157) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1158337) esp_netif_handlers: sta ip: 172.20.10.11, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1158337) NET: Got IP[0m
+[0;32mI (1158577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1159217) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1160277) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1160577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1161217) GROW: Minute 1: LIGHT = OFF[0m
+I (1161337) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF
+[0;32mI (1162397) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1162577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1163457) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1164517) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1164577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1165577) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1166217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1166577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1166637) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1167697) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1168577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1168757) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1169817) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1170577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1170877) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1171217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1171937) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1172577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1172997) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1174057) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1174577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1175117) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1176177) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1176217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1176577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1177237) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1178297) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1178577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1179357) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (1180417) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1180577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1181217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1181477) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1182537) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1182577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1183597) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1184577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1184657) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1185717) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1186217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1186577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1186777) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (1187837) SOIL_PUMP: RAW=2393 Moisture=50% Pump=OFF[0m
+[0;32mI (1188577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1188897) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1189957) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1190577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1191017) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1191217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1192077) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1192577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1193137) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1194197) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1194577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1195257) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1196217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1196317) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1196577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1197377) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1198437) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1198577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1199497) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1200557) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1200577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1201217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1201617) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1202577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1202677) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1203737) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1204577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1204797) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1205857) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1206217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1206577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1206917) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1207977) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1208577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1209037) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1210097) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1210577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1211157) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1211217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1212217) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1212577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1213277) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1214337) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1214577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1215397) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1216217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1216457) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1216577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1217517) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1218577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1218577) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1219637) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1220577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1220697) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1221217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1221757) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1222577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1222817) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1223877) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1224577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1224937) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1225997) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1226217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1226577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1227057) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1228117) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1228577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1229177) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1230237) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1230577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1231217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1231297) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1232357) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1232577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1233417) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1234477) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1234577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1235537) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1236217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1236577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1236597) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1237657) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1238577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1238717) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1239777) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1240577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1240837) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1241217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1241897) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1242577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1242957) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1244017) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1244577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1245077) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1246137) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1246217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1246577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1247197) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1248257) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1248577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1249317) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1250377) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1250577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1251217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1251437) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1252497) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1252577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1253557) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1254577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1254617) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1255677) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1256217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1256577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1256737) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1257797) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1258577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1258857) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1259917) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1260577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1260977) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1261217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1262037) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1262577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1263097) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1264157) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1264577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1265217) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1266217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1266277) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1266577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1267337) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1268397) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1268577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1269457) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1270517) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1270577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1271217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1271577) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1272577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1272637) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1273697) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1274577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1274757) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1275817) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1276217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1276577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1276877) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1277937) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1278577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1278997) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1280057) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1280577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1281117) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1281217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1282177) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1282577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1283237) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1284297) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1284577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1285357) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1286217) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1286417) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1286577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1287477) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1288537) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1288577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1289597) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1290577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1290657) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1291217) GROW: Minute 211+: LIGHT = OFF (CYCLE DONE)[0m
+[0;32mI (1291227) GROW: Auto-start new 7-min cycle[0m
+[0;32mI (1291717) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1292577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1292777) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1293837) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1294577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1294897) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1295957) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1296227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1296577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1297017) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1298077) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1298577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1299137) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1300197) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1300577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1301227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1301257) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1302317) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1302577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1303377) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1304437) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1304577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1305497) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1306227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1306557) SOIL_PUMP: RAW=2394 Moisture=50% Pump=OFF[0m
+[0;32mI (1306577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1307617) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1308577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1308677) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1309737) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1310577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1310797) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1311227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1311857) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1312577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1312917) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1313977) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1314577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1315037) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1316097) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1316227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1316577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1317157) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1318217) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1318577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1319277) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1320337) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1320577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1321227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1321397) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1322457) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1322577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1323517) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1324577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1324577) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1325637) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1326227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1326577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1326697) SOIL_PUMP: RAW=2399 Moisture=50% Pump=OFF[0m
+[0;32mI (1327757) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1328577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1328817) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1329877) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1330577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1330937) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1331227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1331997) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1332577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1333057) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1334117) SOIL_PUMP: RAW=2399 Moisture=50% Pump=OFF[0m
+[0;32mI (1334577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1335177) SOIL_PUMP: RAW=2399 Moisture=50% Pump=OFF[0m
+[0;32mI (1336227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1336237) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1336577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1337297) SOIL_PUMP: RAW=2396 Moisture=50% Pump=OFF[0m
+[0;32mI (1338357) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1338577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1339417) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1340477) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1340577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1341227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1341537) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1342577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1342597) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1343657) SOIL_PUMP: RAW=2399 Moisture=50% Pump=OFF[0m
+[0;32mI (1344577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1344717) SOIL_PUMP: RAW=2399 Moisture=50% Pump=OFF[0m
+[0;32mI (1345777) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1346227) GROW: Minute 1: LIGHT = OFF[0m
+[0;32mI (1346577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1346837) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m
+[0;32mI (1347897) SOIL_PUMP: RAW=2398 Moisture=50% Pump=OFF[0m
+[0;32mI (1348577) DHT_FAN: T=0.0C RH=0.0% Fan=OFF[0m
+[0;32mI (1348957) SOIL_PUMP: RAW=2395 Moisture=50% Pump=OFF[0m
+[0;32mI (1350017) SOIL_PUMP: RAW=2397 Moisture=50% Pump=OFF[0m

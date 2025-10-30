@@ -1,0 +1,808 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\user\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Project_microgreen\microgreen_test_mock\build\microgreen_test_mock.elf D:\Project_microgreen\microgreen_test_mock\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\user\esp\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ses=2
+ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET),boot:0x17 (S0x1 (POWERON_RESET)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 29 2025 19:36:14[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b32ch (111404) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=0002b354 vaddr=3ffb0000 size=03f8ch ( 16268) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0002f2e8 vaddr=40080000 size=00d30h (  3376) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8fe28h (589352) map[0m
+[0;32mI (339) esp_image: segment 4: paddr=000bfe50 vaddr=40080d30 size=17204h ( 94724) load[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d705c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (388) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (388) boot: Disabling RNG early entropy source...[0m
+[0;32mI (398) cpu_start: Multicore app[0m
+[0;32mI (407) cpu_start: Pro cpu start user code[0m
+[0;32mI (407) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (407) app_init: Application information:[0m
+[0;32mI (407) app_init: Project name:     microgreen_test_mock[0m
+[0;32mI (412) app_init: App version:      1[0m
+[0;32mI (415) app_init: Compile time:     Oct 29 2025 19:24:32[0m
+[0;32mI (420) app_init: ELF file SHA256:  a6ea2ca2a...[0m
+[0;32mI (425) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (429) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (432) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (436) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (440) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (447) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (452) heap_init: At 3FFB8618 len 000279E8 (158 KiB): DRAM[0m
+[0;32mI (457) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (462) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (468) heap_init: At 40097F34 len 000080CC (32 KiB): IRAM[0m
+[0;33mW (474) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (486) spi_flash: detected chip: generic[0m
+[0;32mI (490) spi_flash: flash io: dio[0m
+[0;33mW (493) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (505) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (513) main_task: Started on CPU0[0m
+[0;32mI (523) main_task: Calling app_main()[0m
+[1;31mE (543) task_wdt: esp_task_wdt_init(517): TWDT already initialized[0m
+[0;33mW (543) WDT: TWDT already initialized, keep existing config[0m
+[0;32mI (563) wifi:wifi driver task: 3ffc06b4, prio:23, stack:6656, core=0[0m
+[0;32mI (573) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (573) wifi:wifi certification version: v7.0[0m
+[0;32mI (573) wifi:config NVS flash: enabled[0m
+[0;32mI (573) wifi:config nano formatting: disabled[0m
+[0;32mI (583) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (583) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (593) wifi:Init management short buffer num: 32[0m
+[0;32mI (593) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (593) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (603) wifi:Init static rx buffer num: 10[0m
+[0;32mI (603) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (613) wifi_init: rx ba win: 6[0m
+[0;32mI (613) wifi_init: accept mbox: 6[0m
+[0;32mI (613) wifi_init: tcpip mbox: 32[0m
+[0;32mI (613) wifi_init: udp mbox: 6[0m
+[0;32mI (623) wifi_init: tcp mbox: 6[0m
+[0;32mI (623) wifi_init: tcp tx win: 5760[0m
+[0;32mI (623) wifi_init: tcp rx win: 5760[0m
+[0;32mI (633) wifi_init: tcp mss: 1440[0m
+[0;32mI (633) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (633) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (643) wifi:(2.4G)set country: cc=TH  schan=1 nchan=13 policy=1[0m
+
+[0;32mI (653) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (653) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (733) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (753) wifi:mode : sta (44:1d:64:fb:cd:84)[0m
+[0;32mI (753) wifi:enable tsf[0m
+[0;32mI (763) NET: Wi-Fi started[0m
+[0;32mI (763) NET: Applying BSSID lock ch=6 and connecting…[0m
+[0;32mI (2343) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2343) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2353) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2363) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2413) wifi:connected with Areena, aid = 2, channel 6, BW20, bssid = 82:13:9b:8b:a9:be[0m
+[0;32mI (2413) wifi:security: WPA2-PSK, phy: bgn, rssi: -48[0m
+[0;32mI (2413) wifi:pm start, type: 0[0m
+
+[0;32mI (2423) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2433) NET: Associated to AP[0m
+[0;32mI (2443) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2503) wifi:<ba-add>idx:0 (ifx:0, 82:13:9b:8b:a9:be), tid:0, ssn:2, winSize:64[0m
+[0;32mI (3523) esp_netif_handlers: sta ip: 172.20.10.11, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (3523) NET: Got IP: 172.20.10.11[0m
+[0;32mI (3523) NET: Wi-Fi ready (connected + IP)[0m
+[0;32mI (8523) NET: Time synced[0m
+[0;32mI (8523) main_task: Returned from app_main()[0m
+[0;32mI (8523) GROW: Test Minute 7/7 started (ts=1761830402)[0m
+[0;32mI (8523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (8613) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=0 doses=0[0m
+[0;32mI (8613) SOIL_PUMP: Moisture=100% RAW=1477 Pump=OFF dose#=0 lock=N[0m
+[0;32mI (9523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (9693) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=0 doses=0[0m
+[0;32mI (10523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (10533) DHT_FAN: Fan ON[0m
+[0;32mI (10533) DHT_FAN: T=28.4C RH=94.4% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (10773) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=0[0m
+[0;32mI (11523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (11853) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=0[0m
+[0;32mI (12523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (12933) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=0[0m
+[0;32mI (13523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (14013) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=0[0m
+[0;32mI (14523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (15093) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=0[0m
+[0;32mI (15523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (16173) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=1 off_gap_ok=1 doses=0[0m
+[0;32mI (16523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (16533) DHT_FAN: T=28.3C RH=93.8% Soil=11% Fan=ON (fail=0)[0m
+[0;32mI (17253) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=2 off_gap_ok=1 doses=0[0m
+[0;32mI (17523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (18333) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=3 off_gap_ok=1 doses=0[0m
+[0;32mI (18523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (19413) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=4 off_gap_ok=1 doses=0[0m
+[0;32mI (19413) SOIL_PUMP: Moisture=0% RAW=2448 Pump=OFF dose#=0 lock=N[0m
+[0;32mI (19523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (20493) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=0[0m
+[0;32mI (20493) SOIL_PUMP: Pump ON (dose#=1)[0m
+[0;32mI (20523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (21523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (21573) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=1 off_gap_ok=0 doses=1[0m
+[0;32mI (22523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (22533) DHT_FAN: T=28.3C RH=93.7% Soil=0% Fan=ON (fail=0)[0m
+[0;32mI (22653) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=2 off_gap_ok=0 doses=1[0m
+[0;32mI (23523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (23733) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=3 off_gap_ok=0 doses=1[0m
+[0;32mI (24523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (24813) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=4 off_gap_ok=0 doses=1[0m
+[0;32mI (25523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (25893) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (26523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (26973) SOIL_PUMP: Pump OFF (dose#=1)[0m
+[0;32mI (26973) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (27523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (28053) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (28523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (28533) DHT_FAN: T=28.3C RH=93.3% Soil=0% Fan=ON (fail=0)[0m
+[0;32mI (29133) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (29523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (30213) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (30213) SOIL_PUMP: Moisture=5% RAW=2065 Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (30523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (31293) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (31523) GROW: Minute 1368+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (32373) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (32523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (33453) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (33523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (34523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (34533) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (34993) DHT_FAN: T=28.3C RH=93.5% Soil=0% Fan=ON (fail=0)[0m
+[0;32mI (35523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (35613) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (35613) SOIL_PUMP: Moisture=0% RAW=2120 Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (36523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (36693) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=0 doses=1[0m
+[0;32mI (37523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (37773) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (38523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (38853) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (39523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (39933) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (40523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (40533) DHT_FAN: T=28.2C RH=93.4% Soil=5% Fan=ON (fail=0)[0m
+[0;32mI (41013) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (41013) SOIL_PUMP: Moisture=11% RAW=2032 Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (41523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (42093) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (42523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (43173) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (43523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (44253) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (44523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (45333) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (45523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (46413) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (46413) SOIL_PUMP: Moisture=0% RAW=2133 Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (46523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (46533) DHT_FAN: T=28.2C RH=93.5% Soil=0% Fan=ON (fail=0)[0m
+[0;32mI (47493) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (47523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (48523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (48583) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (49523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (49663) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (50523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (50743) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (51523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (51823) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (52523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (52533) DHT_FAN: T=28.2C RH=93.5% Soil=0% Fan=ON (fail=0)[0m
+[0;32mI (52903) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (53523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (53983) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (54523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (55063) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (55523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (56143) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=5 off_gap_ok=1 doses=1[0m
+[0;32mI (56523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (57223) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (57223) SOIL_PUMP: Moisture=69% RAW=1685 Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (57523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (58303) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=1 off_gap_ok=1 doses=1[0m
+[0;32mI (58523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (58533) DHT_FAN: T=28.2C RH=93.5% Soil=37% Fan=ON (fail=0)[0m
+[0;32mI (59383) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=2 off_gap_ok=1 doses=1[0m
+[0;32mI (59523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (60463) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (60523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (61523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (61543) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (62523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (62623) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (62623) SOIL_PUMP: Moisture=100% RAW=1293 Pump=OFF dose#=1 lock=Y[0m
+[0;32mI (63523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (63703) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (64523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (64533) DHT_FAN: T=28.2C RH=94.0% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (64783) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (65523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (65863) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (66523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (66943) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (67523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (68023) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (68523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (69103) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (69523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (70183) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (70523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (70533) DHT_FAN: T=28.2C RH=93.8% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (71263) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (71523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (72343) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (72523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (73423) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (73523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (74503) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (74523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (75523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (75583) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (76523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (76533) DHT_FAN: T=28.2C RH=94.2% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (76663) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (77523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (77743) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (78523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (78823) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (79523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (79903) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (80523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (80983) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (81523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (82063) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (82523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (82533) DHT_FAN: T=28.2C RH=94.1% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (83143) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (83523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (84223) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (84523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (85303) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (85523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (86383) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (86523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (87463) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (87523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (88523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (88543) DHT_FAN: T=28.2C RH=94.2% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (88553) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (89523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (89633) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (90523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (90713) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (91523) GROW: Minute 1369+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (91793) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (92523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (92873) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (93523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (93953) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (94523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (94533) DHT_FAN: T=28.2C RH=94.5% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (95033) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (95523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (96113) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (96523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (97193) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (97523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (98273) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (98523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (99353) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (99523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (100433) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (100523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (100533) DHT_FAN: T=28.1C RH=94.4% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (101513) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (101523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (102523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (102593) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (103523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (103673) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (104523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (104753) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (105523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (105833) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (106523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (106533) DHT_FAN: T=28.1C RH=94.8% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (106913) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (107523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (107993) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (108523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (109073) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (109523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (110153) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (110523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (111233) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (111523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (112313) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (112523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (112533) DHT_FAN: T=28.1C RH=94.6% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (113393) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (113523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (114473) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (114523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (115523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (115553) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (116523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (116633) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (117523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (117713) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (118523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (118533) DHT_FAN: T=28.1C RH=94.9% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (118793) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (119523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (119873) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (120523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (120953) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (121523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (122033) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (122523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (123113) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (123523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (124193) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (124523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (124533) DHT_FAN: T=28.1C RH=94.9% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (125273) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (125523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (126353) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (126523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (127433) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (127523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (128513) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (128523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (129523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (129593) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (130523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (130533) DHT_FAN: T=28.1C RH=95.0% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (130673) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (131523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (131753) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (132523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (132833) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (133523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (133913) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (134523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (134993) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (135523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (136073) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (136523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (136533) DHT_FAN: T=28.1C RH=95.3% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (137153) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (137523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (138233) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (138523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (139313) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (139523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (140393) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (140523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (141473) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (141523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (142523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (142533) DHT_FAN: T=28.1C RH=95.4% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (142563) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (143523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (143643) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (144523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (144723) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (145523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (145803) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (146523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (146883) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (147523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (147963) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (148523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (148533) DHT_FAN: T=28.1C RH=95.8% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (149043) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (149523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (150123) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (150523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (151203) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (151523) GROW: Minute 1370+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (152283) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (152523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (153363) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (153523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (154443) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (154523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (154533) DHT_FAN: T=28.1C RH=95.8% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (155523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (155523) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (156523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (156613) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (157523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (157693) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (158523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (158773) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (159523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (159853) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (160523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (160533) DHT_FAN: T=28.1C RH=95.9% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (160933) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (161523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (162013) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (162523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (163093) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (163523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (164173) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (164523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (165253) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (165523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (166333) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (166523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (166533) DHT_FAN: T=28.0C RH=96.0% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (167413) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (167523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (168493) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (168523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (169523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (169573) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (170523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (170653) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (171523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (171733) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (172523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (172533) DHT_FAN: T=28.0C RH=96.0% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (172813) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (173523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (173893) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (174523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (174973) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (175523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (176053) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (176523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (177133) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (177523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (178213) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (178523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (178533) DHT_FAN: T=28.0C RH=96.3% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (179293) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (179523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (180373) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (180523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (181453) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (181523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (182523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (182533) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (183523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (183613) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (184523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (184533) DHT_FAN: T=28.0C RH=96.3% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (184693) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (185523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (185773) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (186523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (186853) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (187523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (187933) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (188523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (189013) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (189523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (190093) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (190523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (190533) DHT_FAN: T=28.0C RH=96.5% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (191173) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (191523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (192253) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (192523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (193333) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (193523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (194413) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (194523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (195493) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (195523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (196523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (196543) DHT_FAN: T=28.0C RH=96.7% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (196573) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (197523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (197653) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (198523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (198733) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (199523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (199813) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (200523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (200893) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (201523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (201973) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (202523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (202533) DHT_FAN: T=28.0C RH=96.9% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (203053) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (203523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (204133) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (204523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (205213) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (205523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (206293) SOIL_PUMP: DECIDE: lock=1 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (206523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (207373) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (207523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (208453) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (208523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (208533) DHT_FAN: T=28.0C RH=97.2% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (209523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (209533) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (210523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (210623) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (211523) GROW: Minute 1371+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (211703) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (212523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (212783) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (213523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (213863) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (214523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (214533) DHT_FAN: T=28.0C RH=97.2% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (214943) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (215523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (216023) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (216523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (217103) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (217523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (218183) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (218523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (219263) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (219523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (220343) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (220523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (220533) DHT_FAN: T=28.0C RH=97.4% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (221423) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (221523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (222503) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (222523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (223523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (223583) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (224523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (224663) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (225523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (225743) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (226523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (226533) DHT_FAN: T=28.0C RH=97.6% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (226823) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (227523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (227903) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (228523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (228983) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (229523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (230063) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (230523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (231143) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (231523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (232223) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (232523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (232533) DHT_FAN: T=28.0C RH=97.8% Soil=100% Fan=ON (fail=0)[0m
+[0;32mI (233303) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (233523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (234383) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (234523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (235463) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m
+[0;32mI (235523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (236523) GROW: Minute 1372+: LIGHT = OFF (beyond planned 7 minutes)[0m
+[0;32mI (236543) SOIL_PUMP: DECIDE: lock=0 hard_invalid=0 suspect=0 below_cnt=0 off_gap_ok=1 doses=1[0m

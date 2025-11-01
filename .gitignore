@@ -1,0 +1,15 @@
+# Ignore ESP-IDF build and generated files
+build/
+sdkconfig.old
+*.bin
+*.elf
+*.log
+*.map
+*.pyc
+*.o
+*.obj
+.vscode/
+.idea/
+.pio/
+.cache/
+.clangd/

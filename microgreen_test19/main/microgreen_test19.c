@@ -2,7 +2,8 @@
 // Wi-Fi start→scan fix removed, WDT-safe, RAW-calibrated ADC, pulse irrigation,
 // multi-factor fan, REAL-DAY grow light (REL window: start+6h → 14h ON for Day4–7)
 // + Firebase REST (ESP32 → Realtime DB) + terminal-friendly STATE logs
-// + Crop profiles selectable via Firebase `control/crop_profile`) =====
+// + Crop profiles selectable via Firebase: control/crop_profile
+// + Control mode (auto/manual) + manual override for light/pump/fan via Firebase ) =====
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
@@ -100,9 +101,9 @@ typedef struct {
     int   soil_th_low;       // ≤ low → เริ่มรดน้ำ
     int   soil_th_high;      // ≥ high → หยุดรดน้ำทันที
     float fan_on_temp;       // T ≥ → เปิดพัดลม
-    float fan_off_temp;      // T ≤ → ปิดได้
+    float fan_off_temp;      // T ≤ → ปิดพัดลมได้
     float fan_on_rh;         // RH ≥ → เปิดพัดลม
-    float fan_off_rh;        // RH ≤ → ปิดได้
+    float fan_off_rh;        // RH ≤ → ปิดพัดลมได้
     int   soil_sat_on_pct;   // ความชื้นดิน ≥ → ถือว่าอิ่มน้ำ ใช้ช่วยตัดสินใจเปิดพัดลม
     int   soil_sat_off_pct;  // ≤ → ถือว่าหายอิ่มน้ำแล้ว
 } crop_profile_t;
@@ -156,6 +157,11 @@ static crop_profile_t g_profile = {
 /* id ของโปรไฟล์ปัจจุบัน (ไว้เช็คว่าเปลี่ยนหรือยัง) */
 static char g_profile_id[16] = "sunflower";
 
+/* ดีเลย์พัดลมกับเวลาเปิดปั๊ม + min on/off (ใช้ร่วมกับ dht22_fan_task) */
+static const uint32_t SOIL_FAN_DELAY_MS   = 120*1000;  // 120 วินาทีหลังจากปั๊มเคยเปิด
+static const uint32_t FAN_MIN_ON_MS       = 10*1000;   // พัดลมต้องเปิดอย่างน้อย 10 วิ
+static const uint32_t FAN_MIN_OFF_MS      = 10*1000;   // พัดลมต้องปิดอย่างน้อย 10 วิ
+
 /* Logging control */
 static const uint32_t HEARTBEAT_SOIL_MS   = 2000;   // 2s
 static const uint32_t HEARTBEAT_DHT_MS    = 2000;   // 2s
@@ -167,6 +173,16 @@ static const char *TAG_GROW = "GROW";
 static const char *TAG_NET  = "NET";
 static const char *TAG_SOIL = "SOIL_PUMP";
 static const char *TAG_DHT  = "DHT_FAN";
+
+/* Control mode (auto/manual) */
+typedef enum {
+    CTRL_MODE_AUTO = 0,
+    CTRL_MODE_MANUAL = 1
+} control_mode_t;
+static volatile control_mode_t g_control_mode = CTRL_MODE_AUTO;
+static volatile bool g_manual_light = false;
+static volatile bool g_manual_pump  = false;
+static volatile bool g_manual_fan   = false;
 
 /* ================= Wrap-safe ms helpers ================= */
 static inline uint32_t ms32(void){ return (uint32_t)(esp_timer_get_time()/1000ULL); }
@@ -705,36 +721,41 @@ static esp_err_t firebase_get_int64(const char *path, int64_t *out_val)
 
     esp_http_client_handle_t client = esp_http_client_init(&cfg);
     if (!client) {
-        ESP_LOGE("FIREBASE", "GET init client fail");
+        ESP_LOGE("FIREBASE", "GET(init,int64) fail");
         return ESP_FAIL;
     }
 
-    esp_err_t err = esp_http_client_perform(client);
+    esp_err_t err = esp_http_client_open(client, 0);
     if (err != ESP_OK) {
-        ESP_LOGE("FIREBASE", "GET perform fail: %s", esp_err_to_name(err));
+        ESP_LOGE("FIREBASE", "GET(open,int64) fail: %s", esp_err_to_name(err));
         esp_http_client_cleanup(client);
         return err;
     }
 
-    int status = esp_http_client_get_status_code(client);
-    if (status != 200) {
-        ESP_LOGW("FIREBASE", "GET %s HTTP %d", path, status);
-        esp_http_client_cleanup(client);
-        return ESP_FAIL;
-    }
-
-    int len = esp_http_client_get_content_length(client);
-    if (len <= 0 || len >= 63) len = 63;
+    /* อ่าน header (จะใช้หรือไม่ใช้ก็ได้) */
+    esp_http_client_fetch_headers(client);
 
     char buf[64];
-    int read_len = esp_http_client_read(client, buf, len);
-    if (read_len <= 0) {
+    int read_len = esp_http_client_read_response(client, buf, sizeof(buf) - 1);
+    if (read_len < 0) {
+        ESP_LOGE("FIREBASE", "GET(read,int64) fail");
+        esp_http_client_close(client);
         esp_http_client_cleanup(client);
         return ESP_FAIL;
     }
     buf[read_len] = '\0';
 
+    int status = esp_http_client_get_status_code(client);
+
+    ESP_LOGI("FIREBASE", "GET(int64) body for %s: %s", path, buf);
+
+    esp_http_client_close(client);
     esp_http_client_cleanup(client);
+
+    if (status != 200) {
+        ESP_LOGW("FIREBASE", "GET(int64) %s HTTP %d", path, status);
+        return ESP_FAIL;
+    }
 
     if (strcmp(buf, "null") == 0) {
         return ESP_ERR_NOT_FOUND;
@@ -745,7 +766,7 @@ static esp_err_t firebase_get_int64(const char *path, int64_t *out_val)
     return ESP_OK;
 }
 
-/* GET helper สำหรับอ่าน string จาก Firebase (ใช้กับ control/crop_profile) */
+/* GET helper สำหรับอ่าน string จาก Firebase (ใช้กับ control/crop_profile, control/mode) */
 static esp_err_t firebase_get_string(const char *path, char *out, size_t out_sz)
 {
     if (!out || out_sz == 0) return ESP_ERR_INVALID_ARG;
@@ -766,42 +787,47 @@ static esp_err_t firebase_get_string(const char *path, char *out, size_t out_sz)
         return ESP_FAIL;
     }
 
-    esp_err_t err = esp_http_client_perform(client);
+    esp_err_t err = esp_http_client_open(client, 0);
     if (err != ESP_OK) {
-        ESP_LOGE("FIREBASE", "GET(str) perform fail: %s", esp_err_to_name(err));
+        ESP_LOGE("FIREBASE", "GET(open,str) fail: %s", esp_err_to_name(err));
         esp_http_client_cleanup(client);
         return err;
     }
 
-    int status = esp_http_client_get_status_code(client);
-    if (status != 200) {
-        ESP_LOGW("FIREBASE", "GET(str) %s HTTP %d", path, status);
-        esp_http_client_cleanup(client);
-        return ESP_FAIL;
-    }
+    /* อ่าน header (ไม่จำเป็นต้องใช้ค่า แต่ช่วยให้ flow ถูกต้อง) */
+    esp_http_client_fetch_headers(client);
 
-    int len = esp_http_client_get_content_length(client);
-    if (len <= 0 || len >= 63) len = 63;
-
-    char buf[64];
-    int read_len = esp_http_client_read(client, buf, len);
-    if (read_len <= 0) {
+    char buf[128];
+    int read_len = esp_http_client_read_response(client, buf, sizeof(buf) - 1);
+    if (read_len < 0) {
+        ESP_LOGE("FIREBASE", "GET(read,str) fail");
+        esp_http_client_close(client);
         esp_http_client_cleanup(client);
         return ESP_FAIL;
     }
     buf[read_len] = '\0';
 
+    int status = esp_http_client_get_status_code(client);
+
+    ESP_LOGI("FIREBASE", "GET(str) body for %s: %s", path, buf);
+
+    esp_http_client_close(client);
     esp_http_client_cleanup(client);
+
+    if (status != 200) {
+        ESP_LOGW("FIREBASE", "GET(str) %s HTTP %d", path, status);
+        return ESP_FAIL;
+    }
 
     if (strcmp(buf, "null") == 0) {
         return ESP_ERR_NOT_FOUND;
     }
 
-    // ตัดช่องว่างหน้า/หลัง
+    // trim leading spaces
     char *p = buf;
     while (*p && isspace((unsigned char)*p)) p++;
 
-    // ถ้าเป็น string แบบ "sunflower"
+    // ถ้าเป็น string แบบ "sunflower" / "kale"
     if (*p == '"') {
         p++;
         char *q = strchr(p, '"');
@@ -811,10 +837,116 @@ static esp_err_t firebase_get_string(const char *path, char *out, size_t out_sz)
         memcpy(out, p, n);
         out[n] = '\0';
     } else {
-        // ไม่ใช่ string ปิด quote (เช่น plain text) ก็ copy ตรง ๆ
+        // plain text
         strncpy(out, p, out_sz - 1);
         out[out_sz - 1] = '\0';
     }
+
+    return ESP_OK;
+}
+
+/* GET helper สำหรับอ่าน JSON manual control (light/pump/fan) */
+static esp_err_t firebase_get_manual_control(const char *path,
+                                             bool *light,
+                                             bool *pump,
+                                             bool *fan)
+{
+    char url[256];
+    snprintf(url, sizeof(url), "%s/%s.json", FIREBASE_BASE_URL, path);
+
+    esp_http_client_config_t cfg = {
+        .url = url,
+        .method = HTTP_METHOD_GET,
+        .crt_bundle_attach = esp_crt_bundle_attach,
+        .timeout_ms = 5000,
+    };
+
+    esp_http_client_handle_t client = esp_http_client_init(&cfg);
+    if (!client) {
+        ESP_LOGE("FIREBASE", "GET(init,manual) fail");
+        return ESP_FAIL;
+    }
+
+    esp_err_t err = esp_http_client_open(client, 0);
+    if (err != ESP_OK) {
+        ESP_LOGE("FIREBASE", "GET(open,manual) fail: %s", esp_err_to_name(err));
+        esp_http_client_cleanup(client);
+        return err;
+    }
+
+    esp_http_client_fetch_headers(client);
+
+    char buf[256];
+    int read_len = esp_http_client_read_response(client, buf, sizeof(buf) - 1);
+    if (read_len < 0) {
+        ESP_LOGE("FIREBASE", "GET(read,manual) fail");
+        esp_http_client_close(client);
+        esp_http_client_cleanup(client);
+        return ESP_FAIL;
+    }
+    buf[read_len] = '\0';
+
+    int status = esp_http_client_get_status_code(client);
+
+    ESP_LOGI("FIREBASE", "GET(manual) body for %s: %s", path, buf);
+
+    esp_http_client_close(client);
+    esp_http_client_cleanup(client);
+
+    if (status != 200) {
+        ESP_LOGW("FIREBASE", "GET(manual) %s HTTP %d", path, status);
+        return ESP_FAIL;
+    }
+
+    if (strcmp(buf, "null") == 0) {
+        return ESP_ERR_NOT_FOUND;
+    }
+
+    bool l = light ? *light : false;
+    bool p = pump  ? *pump  : false;
+    bool f = fan   ? *fan   : false;
+
+    char *pos, *colon, *val;
+
+    /* light */
+    pos = strstr(buf, "\"light\"");
+    if (pos) {
+        colon = strchr(pos, ':');
+        if (colon) {
+            val = colon + 1;
+            while (*val && isspace((unsigned char)*val)) val++;
+            if (strncmp(val, "true", 4) == 0)      l = true;
+            else if (strncmp(val, "false", 5) == 0) l = false;
+        }
+    }
+
+    /* pump */
+    pos = strstr(buf, "\"pump\"");
+    if (pos) {
+        colon = strchr(pos, ':');
+        if (colon) {
+            val = colon + 1;
+            while (*val && isspace((unsigned char)*val)) val++;
+            if (strncmp(val, "true", 4) == 0)      p = true;
+            else if (strncmp(val, "false", 5) == 0) p = false;
+        }
+    }
+
+    /* fan */
+    pos = strstr(buf, "\"fan\"");
+    if (pos) {
+        colon = strchr(pos, ':');
+        if (colon) {
+            val = colon + 1;
+            while (*val && isspace((unsigned char)*val)) val++;
+            if (strncmp(val, "true", 4) == 0)      f = true;
+            else if (strncmp(val, "false", 5) == 0) f = false;
+        }
+    }
+
+    if (light) *light = l;
+    if (pump)  *pump  = p;
+    if (fan)   *fan   = f;
 
     return ESP_OK;
 }
@@ -825,14 +957,16 @@ static void firebase_send_grow(int day, bool light, bool in_window)
 {
     int64_t tsms; char iso[40];
     now_ts_iso(&tsms, iso, sizeof(iso));
+    const char *ctrl_mode = (g_control_mode == CTRL_MODE_AUTO) ? "auto" : "manual";
 
     char body[256];
     snprintf(body, sizeof(body),
              "{\"ts\":%lld,\"iso\":\"%s\",\"day\":%d,"
-             "\"light\":%s,\"in_window\":%s}",
+             "\"light\":%s,\"in_window\":%s,\"ctrl_mode\":\"%s\"}",
              (long long)tsms, iso, day,
              light ? "true" : "false",
-             in_window ? "true" : "false");
+             in_window ? "true" : "false",
+             ctrl_mode);
 
     char path[128];
     snprintf(path, sizeof(path),
@@ -1075,7 +1209,7 @@ static void grow_cycle_task(void *arg) {
         }
         // ===== END BUTTON HANDLER =====
 
-        // ===== เช็คคำสั่งจาก Firebase: start new cycle + crop_profile =====
+        // ===== เช็คคำสั่งจาก Firebase: start new cycle + crop_profile + mode + manual =====
         if (elapsed_since(ctrl_poll_ms, 10000)) { // ทุก 10 วินาที
             ctrl_poll_ms = ms32();
 
@@ -1107,6 +1241,48 @@ static void grow_cycle_task(void *arg) {
 
                 ESP_LOGI(TAG_GROW, "New crop_profile from Firebase: \"%s\"", new_profile);
                 apply_crop_profile_by_id(new_profile);
+            } else if (e != ESP_OK && e != ESP_ERR_NOT_FOUND) {
+                ESP_LOGW(TAG_GROW, "GET crop_profile fail: %s", esp_err_to_name(e));
+            }
+
+            /* 3) control/mode: auto / manual */
+            char mode_str[16] = {0};
+            e = firebase_get_string(
+                "devices/" FIREBASE_DEVICE_ID "/control/mode",
+                mode_str, sizeof(mode_str)
+            );
+            if (e == ESP_OK && mode_str[0] != '\0') {
+                control_mode_t new_mode = CTRL_MODE_AUTO;
+                if (strcmp(mode_str, "manual") == 0) new_mode = CTRL_MODE_MANUAL;
+                else if (strcmp(mode_str, "auto") != 0) {
+                    ESP_LOGW(TAG_GROW, "Unknown control mode \"%s\", keep %s",
+                             mode_str,
+                             (g_control_mode == CTRL_MODE_AUTO ? "auto" : "manual"));
+                }
+                if (new_mode != g_control_mode) {
+                    g_control_mode = new_mode;
+                    ESP_LOGI(TAG_GROW, "Control mode from Firebase: %s", mode_str);
+                }
+            } else if (e != ESP_OK && e != ESP_ERR_NOT_FOUND) {
+                ESP_LOGW(TAG_GROW, "GET control/mode fail: %s", esp_err_to_name(e));
+            }
+
+            /* 4) control/manual: light/pump/fan */
+            bool ml = g_manual_light;
+            bool mp = g_manual_pump;
+            bool mf = g_manual_fan;
+            e = firebase_get_manual_control(
+                "devices/" FIREBASE_DEVICE_ID "/control/manual",
+                &ml, &mp, &mf
+            );
+            if (e == ESP_OK) {
+                g_manual_light = ml;
+                g_manual_pump  = mp;
+                g_manual_fan   = mf;
+                ESP_LOGI(TAG_GROW, "Manual control flags: light=%d pump=%d fan=%d",
+                         (int)ml, (int)mp, (int)mf);
+            } else if (e != ESP_OK && e != ESP_ERR_NOT_FOUND) {
+                ESP_LOGW(TAG_GROW, "GET control/manual fail: %s", esp_err_to_name(e));
             }
         }
         // ===== END เช็คคำสั่ง Firebase =====
@@ -1121,28 +1297,45 @@ static void grow_cycle_task(void *arg) {
             ESP_LOGI(TAG_GROW, "Grow Day %d/%d started (ts=%ld)", day_display, TOTAL_DAYS, (long)now);
         }
 
-        apply_light_policy_day(d, now, start_ts);
+        /* Apply light policy ตามโหมด */
+        if (g_control_mode == CTRL_MODE_AUTO) {
+            apply_light_policy_day(d, now, start_ts);
+        } else {
+            // MANUAL: ใช้คำสั่งจากแอป
+            if (g_manual_light) {
+                grow_on();
+            } else {
+                grow_off();
+            }
+        }
 
         // รายงานสถานะไฟปลูกทุก 1 นาที + JSON (โหมด REL)
         if (elapsed_since(grow_status_ms, GROW_STATUS_LOG_MS)) {
             grow_status_ms = ms32();
-            bool inwin = is_in_light_window_relative(start_ts, now);
+            bool inwin_auto = is_in_light_window_relative(start_ts, now);
+            bool inwin = (g_control_mode == CTRL_MODE_AUTO) ? inwin_auto : false;
+
+            const char *ctrl_mode_str = (g_control_mode == CTRL_MODE_AUTO) ? "AUTO" : "MANUAL";
+            const char *ctrl_mode_json = (g_control_mode == CTRL_MODE_AUTO) ? "auto" : "manual";
 
             // human log
-            ESP_LOGI(TAG_GROW, "STATUS(1m): day=%d LIGHT=%s window=%s (REL: +%dh/%dh)",
+            ESP_LOGI(TAG_GROW,
+                     "STATUS(1m): day=%d LIGHT=%s window=%s (REL: +%dh/%dh, ctrl=%s)",
                      day_display, g_light_on?"ON":"OFF", inwin? "IN":"OUT",
-                     REL_LIGHT_OFFSET_H, REL_LIGHT_DURATION_H);
+                     REL_LIGHT_OFFSET_H, REL_LIGHT_DURATION_H, ctrl_mode_str);
 
             // JSON → terminal
             int64_t tsms; char iso[40];
             now_ts_iso(&tsms, iso, sizeof(iso));
             ESP_LOGI("STATE",
                      "{\"ts\":%lld,\"iso\":\"%s\",\"mod\":\"grow\",\"day\":%d,"
-                     "\"light\":%s,\"in_window\":%s,\"mode\":\"REL\",\"offset_h\":%d,\"dur_h\":%d}",
+                     "\"light\":%s,\"in_window\":%s,\"mode\":\"REL\",\"offset_h\":%d,\"dur_h\":%d,"
+                     "\"ctrl_mode\":\"%s\"}",
                      (long long)tsms, iso, day_display,
                      g_light_on? "true":"false",
                      inwin? "true":"false",
-                     REL_LIGHT_OFFSET_H, REL_LIGHT_DURATION_H);
+                     REL_LIGHT_OFFSET_H, REL_LIGHT_DURATION_H,
+                     ctrl_mode_json);
 
             // JSON → Firebase
             firebase_send_grow(day_display, g_light_on, inwin);
@@ -1197,68 +1390,84 @@ static void soil_pump_task(void *arg)
             pump_doses_in_round   = 0;
         }
 
-        // ความปลอดภัยปั๊ม
+        // ความปลอดภัยปั๊ม (max continuous time) — ใช้ทั้ง auto/manual
         if (pumpOn && elapsed_since(pump_on_started_ms, PUMP_MAX_CONT_ON_MS)) {
             set_pump(false);
             ESP_LOGW(TAG_SOIL, "SAFETY: pump forced OFF (max-cont)");
         }
 
-        /* ===== ตัดปั๊มทันทีเมื่อความชื้นถึง HIGH ===== */
-        if (pumpOn && pct >= g_profile.soil_th_high) {
-            set_pump(false);  // ยังมี short lock 3 นาทีตามเดิม
-            ESP_LOGI(TAG_SOIL, "Cutoff: moisture ≥ %d%% → stop now", g_profile.soil_th_high);
-        }
+        bool is_manual = (g_control_mode == CTRL_MODE_MANUAL);
 
-        // ปิดเมื่อครบโดส 6 วิ
-        if (pumpOn && elapsed_since(pump_dose_started_ms, PUMP_DOSE_MS)) {
-            set_pump(false);
-        }
-
-        // คอนเฟิร์มต่ำกว่า LOW ต่อเนื่อง
-        if (!hard_invalid && pct <= g_profile.soil_th_low) {
-            if (below_low_consec_cnt < BELOW_LOW_CONFIRM_N) below_low_consec_cnt++;
+        if (is_manual) {
+            /* โหมด MANUAL: ปั๊มตามคำสั่งจากแอป โดยยังมี max-cont safety ด้านบน */
+            below_low_consec_cnt = 0;  // รีเซ็ต counter hysteresis
+            if (g_manual_pump) {
+                if (!pumpOn) set_pump(true);
+            } else {
+                if (pumpOn) set_pump(false);
+            }
         } else {
-            below_low_consec_cnt = 0;
-        }
+            /* ===== AUTO MODE: hysteresis + pulse irrigation ===== */
 
-        bool off_gap_ok = elapsed_since(pump_last_change_ms, PUMP_MIN_OFF_MS);
-        bool short_locked = not_yet(pump_lock_until_ms);
+            /* ตัดปั๊มทันทีเมื่อความชื้นถึง HIGH (ตามโปรไฟล์) */
+            if (pumpOn && pct >= g_profile.soil_th_high) {
+                set_pump(false);  // ยังมี short lock 3 นาทีตามเดิม
+                ESP_LOGI(TAG_SOIL, "Cutoff: moisture ≥ %d%% → stop now", g_profile.soil_th_high);
+            }
 
-        // round-limit?
-        bool round_limit = (pump_round_started_ms!=0 && pump_doses_in_round >= PUMP_MAX_DOSES_PER_ROUND);
-        uint32_t round_reset_left_ms = 0;
-        if (pump_round_started_ms!=0 && !elapsed_since(pump_round_started_ms, PUMP_ROUND_RESET_MS)) {
-            round_reset_left_ms = PUMP_ROUND_RESET_MS - (now - pump_round_started_ms);
-        }
-
-        bool can_try_open =
-            (!pumpOn) &&
-            !hard_invalid &&
-            !short_locked &&
-            !round_limit &&
-            off_gap_ok &&
-            (below_low_consec_cnt >= BELOW_LOW_CONFIRM_N);
-
-        // ตัดสินใจ (human log)
-        ESP_LOGI(TAG_SOIL,
-                 "DECIDE: lock=%d hard_invalid=%d suspect=%d below_cnt=%d off_gap_ok=%d doses=%d round_limit=%d",
-                 short_locked?1:0, hard_invalid?1:0, suspect?1:0,
-                 below_low_consec_cnt, off_gap_ok?1:0, pump_doses_in_round, round_limit?1:0);
-
-        if (can_try_open) {
-            set_pump(true);
-            below_low_consec_cnt = 0;
-        }
-
-        if (suspect) {
-            static uint32_t last_suspect_log_ms = 0;
-            if (pumpOn && elapsed_since(pump_last_change_ms, PUMP_MIN_ON_MS)) {
+            // ปิดเมื่อครบโดส 6 วิ
+            if (pumpOn && elapsed_since(pump_dose_started_ms, PUMP_DOSE_MS)) {
                 set_pump(false);
             }
-            if (elapsed_since(last_suspect_log_ms, 10000)) {
-                last_suspect_log_ms = now;
-                ESP_LOGW(TAG_SOIL, "Soil sensor suspect: RAW=%d same_cnt=%d (tol=%d thr=%d)",
-                         raw, same_raw_cnt, RAW_TOLERANCE, RAW_STUCK_THRESHOLD);
+
+            // คอนเฟิร์มต่ำกว่า LOW ต่อเนื่อง (ตามโปรไฟล์)
+            if (!hard_invalid && pct <= g_profile.soil_th_low) {
+                if (below_low_consec_cnt < BELOW_LOW_CONFIRM_N) below_low_consec_cnt++;
+            } else {
+                below_low_consec_cnt = 0;
+            }
+
+            bool off_gap_ok = elapsed_since(pump_last_change_ms, PUMP_MIN_OFF_MS);
+            bool short_locked = not_yet(pump_lock_until_ms);
+
+            // round-limit?
+            bool round_limit = (pump_round_started_ms!=0 && pump_doses_in_round >= PUMP_MAX_DOSES_PER_ROUND);
+            uint32_t round_reset_left_ms = 0;
+            if (pump_round_started_ms!=0 && !elapsed_since(pump_round_started_ms, PUMP_ROUND_RESET_MS)) {
+                round_reset_left_ms = PUMP_ROUND_RESET_MS - (now - pump_round_started_ms);
+            }
+
+            bool can_try_open =
+                (!pumpOn) &&
+                !hard_invalid &&
+                !short_locked &&
+                !round_limit &&
+                off_gap_ok &&
+                (below_low_consec_cnt >= BELOW_LOW_CONFIRM_N);
+
+            // ตัดสินใจ (human log)
+            ESP_LOGI(TAG_SOIL,
+                     "DECIDE: lock=%d hard_invalid=%d suspect=%d below_cnt=%d off_gap_ok=%d doses=%d round_limit=%d th_lo=%d th_hi=%d",
+                     short_locked?1:0, hard_invalid?1:0, suspect?1:0,
+                     below_low_consec_cnt, off_gap_ok?1:0, pump_doses_in_round, round_limit?1:0,
+                     g_profile.soil_th_low, g_profile.soil_th_high);
+
+            if (can_try_open) {
+                set_pump(true);
+                below_low_consec_cnt = 0;
+            }
+
+            /* เซนเซอร์ผิดปกติ: ใช้เฉพาะในโหมด auto (ถ้าใช้ manual จะทำให้ปั๊มกระพริบ) */
+            if (suspect) {
+                static uint32_t last_suspect_log_ms = 0;
+                if (pumpOn && elapsed_since(pump_last_change_ms, PUMP_MIN_ON_MS)) {
+                    set_pump(false);
+                }
+                if (elapsed_since(last_suspect_log_ms, 10000)) {
+                    last_suspect_log_ms = now;
+                    ESP_LOGW(TAG_SOIL, "Soil sensor suspect: RAW=%d same_cnt=%d (tol=%d thr=%d)",
+                             raw, same_raw_cnt, RAW_TOLERANCE, RAW_STUCK_THRESHOLD);
+                }
             }
         }
 
@@ -1266,8 +1475,15 @@ static void soil_pump_task(void *arg)
         if (elapsed_since(hb_ms, HEARTBEAT_SOIL_MS)) {
             hb_ms = now;
 
+            bool short_locked = not_yet(pump_lock_until_ms);
             uint32_t short_left = remain_ms(pump_lock_until_ms);
             uint32_t short_left_s = (short_left+999)/1000;
+
+            bool round_limit = (pump_round_started_ms!=0 && pump_doses_in_round >= PUMP_MAX_DOSES_PER_ROUND);
+            uint32_t round_reset_left_ms = 0;
+            if (pump_round_started_ms!=0 && !elapsed_since(pump_round_started_ms, PUMP_ROUND_RESET_MS)) {
+                round_reset_left_ms = PUMP_ROUND_RESET_MS - (now - pump_round_started_ms);
+            }
             uint32_t round_left_s = (round_reset_left_ms+999)/1000;
 
             // human
@@ -1343,24 +1559,31 @@ static void dht22_fan_task(void *arg)
             dht_fail_cnt = 0;
 
             uint32_t now = ms32();
-            bool can_on  = (!fanOn) && elapsed_since(fan_last_change_ms, FAN_MIN_OFF_MS);
-            bool can_off = ( fanOn) && elapsed_since(fan_last_change_ms, FAN_MIN_ON_MS);
+            int  soil_pct = g_soil_pct;
 
-            int  soil_pct       = g_soil_pct;
-            bool soil_delay_ok  = elapsed_since(g_last_pump_on_ms, SOIL_FAN_DELAY_MS);
+            if (g_control_mode == CTRL_MODE_MANUAL) {
+                /* โหมด MANUAL: ให้พัดลมทำตามคำสั่งจากแอปโดยตรง (ยังอ่าน DHT เพื่อส่งค่าไป Firebase) */
+                set_fan(g_manual_fan);
+            } else {
+                /* AUTO MODE: multi-factor control */
+                bool can_on  = (!fanOn) && elapsed_since(fan_last_change_ms, FAN_MIN_OFF_MS);
+                bool can_off = ( fanOn) && elapsed_since(fan_last_change_ms, FAN_MIN_ON_MS);
 
-            bool need_by_temp = (t >= g_profile.fan_on_temp);
-            bool need_by_rh   = (h >= g_profile.fan_on_rh);
-            bool need_by_soil = (soil_delay_ok && soil_pct >= g_profile.soil_sat_on_pct);
+                bool soil_delay_ok  = elapsed_since(g_last_pump_on_ms, SOIL_FAN_DELAY_MS);
 
-            bool relax_temp = (t <= g_profile.fan_off_temp);
-            bool relax_rh   = (h <= g_profile.fan_off_rh);
-            bool relax_soil = (soil_pct <= g_profile.soil_sat_off_pct);
+                bool need_by_temp = (t >= g_profile.fan_on_temp);
+                bool need_by_rh   = (h >= g_profile.fan_on_rh);
+                bool need_by_soil = (soil_delay_ok && soil_pct >= g_profile.soil_sat_on_pct);
 
-            if (!fanOn && can_on && (need_by_temp || need_by_rh || need_by_soil)) {
-                set_fan(true);
-            } else if (fanOn && can_off && (relax_temp && relax_rh && relax_soil)) {
-                set_fan(false);
+                bool relax_temp = (t <= g_profile.fan_off_temp);
+                bool relax_rh   = (h <= g_profile.fan_off_rh);
+                bool relax_soil = (soil_pct <= g_profile.soil_sat_off_pct);
+
+                if (!fanOn && can_on && (need_by_temp || need_by_rh || need_by_soil)) {
+                    set_fan(true);
+                } else if (fanOn && can_off && (relax_temp && relax_rh && relax_soil)) {
+                    set_fan(false);
+                }
             }
 
             // human + JSON ทุก 2 วินาที

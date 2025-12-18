@@ -27,8 +27,8 @@
 
 // ====== USER CONFIG ======
 // Wi-Fi
-#define WIFI_SSID            "Adil"
-#define WIFI_PASS            "0622198015"
+#define WIFI_SSID            "Areena"
+#define WIFI_PASS            "1234567890"
 #define WIFI_FIXED_CHANNEL   6          // ล็อกช่องที่ AP ใช้อยู่ (ถ้าจริงไม่ใช่ ch6 ให้แก้เลขนี้)
 
 // Static IP (ช่วยลดโอกาส DHCP ช้า → reason 204)
@@ -247,17 +247,36 @@ static esp_err_t camera_init(void)
 static const char *INDEX_HTML =
 "<!DOCTYPE html><html><head><meta charset='utf-8'/>"
 "<title>ESP32-CAM</title>"
-"<style>body{font-family:sans-serif;margin:24px}a,button{padding:8px 14px;display:inline-block}</style>"
+"<style>"
+"body{font-family:sans-serif;margin:24px}"
+"button{padding:10px 18px;font-size:16px;margin-right:8px}"
+"img{margin-top:12px;border:1px solid #ccc}"
+"</style>"
 "</head><body>"
-"<h2>ESP32-CAM Live</h2>"
-"<p><img src='/stream' width='480' /></p>"
-"<h3>Manual capture</h3>"
-"<p><a href='/jpg'>Take Photo (/jpg)</a></p>"
-"<p><a href='/jpg?flash=on'>/jpg?flash=on</a> | <a href='/jpg?flash=off'>/jpg?flash=off</a></p>"
+
+"<h2>ESP32-CAM Capture</h2>"
+
+"<button onclick=\"takePhoto(false)\">📸 Take Photo</button>"
+"<button onclick=\"takePhoto(true)\">💡 Flash Photo</button><br/>"
+
+"<img id='photo' width='480'/>"
+
+"<script>"
+"function takePhoto(flash){"
+"  let url = '/jpg';"
+"  if(flash) url += '?flash=on';"
+"  document.getElementById('photo').src = url + '&t=' + Date.now();"
+"}"
+"</script>"
+
 "</body></html>";
+
 
 static esp_err_t root_get_handler(httpd_req_t *req)
 {
+    // [แก้ไข CORS] อนุญาตให้เข้าถึงจากทุก Origin
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    
     httpd_resp_set_type(req, "text/html");
     httpd_resp_send(req, INDEX_HTML, HTTPD_RESP_USE_STRLEN);
     return ESP_OK;
@@ -291,6 +310,8 @@ static esp_err_t jpg_get_handler(httpd_req_t *req)
     }
 
     httpd_resp_set_type(req, "image/jpeg");
+    // [แก้ไข CORS] เพิ่มบรรทัดนี้เพื่อแก้ปัญหา ClientException: Failed to fetch
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
     httpd_resp_set_hdr(req, "Cache-Control", "no-store, no-cache, must-revalidate, max-age=0");
     esp_err_t res = httpd_resp_send(req, (const char *)fb->buf, fb->len);
     esp_camera_fb_return(fb);
@@ -303,6 +324,9 @@ static esp_err_t stream_handler(httpd_req_t *req)
     static const char* _STREAM_CONTENT_TYPE = "multipart/x-mixed-replace;boundary=frame";
     static const char* _STREAM_BOUNDARY     = "\r\n--frame\r\n";
     static const char* _STREAM_PART         = "Content-Type: image/jpeg\r\nContent-Length: %u\r\n\r\n";
+
+    // [แก้ไข CORS] เพิ่มที่นี่ด้วยเผื่ออนาคตใช้ stream
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
 
     httpd_resp_set_type(req, _STREAM_CONTENT_TYPE);
 

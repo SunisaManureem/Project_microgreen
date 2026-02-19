@@ -1,4 +1,5 @@
 {
-    "idf.portWin": "COM3",
-    "cmake.sourceDirectory": "D:/Project_microgreen/relay2ch_active_high"
+    "idf.portWin": "COM4",
+    "cmake.sourceDirectory": "D:/Project_microgreen/relay2ch_active_high",
+    "idf.currentSetup": "C:\\Users\\user\\esp\\v5.5.1\\esp-idf"
 }

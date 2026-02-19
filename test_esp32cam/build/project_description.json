@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "test_esp32cam",
-    "project_version":    "e6eba2cf-dirty",
+    "project_version":    "0fdf8688-dirty",
     "project_path":       "D:/Project_microgreen/test_esp32cam",
     "idf_path":           "C:/Users/user/esp/v5.5.1/esp-idf",
     "build_dir":          "D:/Project_microgreen/test_esp32cam/build",

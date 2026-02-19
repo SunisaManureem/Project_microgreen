@@ -57,7 +57,7 @@
 #define SOLENOID_POSTCLOSE_DELAY_MS  300   // ปิดปั๊มแล้วหน่วงก่อนปิดโซลินอยด์ (ms)
 
 /* Reset button */
-#define RESET_BTN_PIN           GPIO_NUM_0
+#define RESET_BTN_PIN           GPIO_NUM_16
 #define RESET_HOLD_MS           3000
 #define WIFI_CLEAR_HOLD_MS      8000   // long-press to FULL NVS erase (Wi-Fi + provisioning + grow)
 
